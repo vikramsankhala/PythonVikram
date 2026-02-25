@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Course Book | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Weeks</a>
+  </nav>
+  <main class="container coursebook-container">
+    <header class="coursebook-header">
+      <h1>Python Mastery — Complete Course Book</h1>
+      <p class="coursebook-subtitle">Full contents from python_mastery_coursebook.docx, exactly as in the original document.</p>
+    </header>
+    <article class="coursebook-content">
+      <pre class="coursebook-pre">
+🐍
+PYTHON MASTERY
+Major Libraries Training — Complete Course Book
+
+
+
+Data Science · Machine Learning · Scientific Computing
+For Absolute Beginners → Production-Ready Practitioners
+
+
+Online Delivery | Sandboxed Coding Environment | Cohort-Based
+
+Table of Contents
+
+
+About This Course
+3
+How to Use This Book
+4
+PART I – FOUNDATIONS (Weeks 1–4)
+
+  Week 1: Python Foundations &amp; Standard Library
+6
+  Week 2: NumPy – Arrays &amp; Vectorized Computing
+14
+  Week 3: Pandas – DataFrames &amp; Data Handling
+22
+  Week 4: Visualization – Matplotlib &amp; Seaborn
+30
+PART II – WORKING WITH DATA &amp; WEB (Weeks 5–8)
+
+  Week 5: File Formats &amp; Data Pipelines
+38
+  Week 6: HTTP, APIs &amp; Web Scraping
+45
+  Week 7: Web Frameworks – Flask &amp; FastAPI
+52
+  Week 8: Machine Learning with scikit-learn
+60
+PART III – SCIENCE, NLP &amp; VISION (Weeks 9–12)
+
+  Week 9: Scientific Python – SciPy &amp; SymPy
+70
+  Week 10: Practical Statistics for Data Science
+78
+  Week 11: NLP – NLTK, spaCy &amp; Transformers
+85
+  Week 12: Computer Vision with OpenCV
+93
+PART IV – ENGINEERING &amp; AUTOMATION (Weeks 13–14)
+
+  Week 13: Databases &amp; Data Engineering
+100
+  Week 14: Automation, Scripting &amp; Testing
+107
+PART V – CAPSTONE (Weeks 15–16)
+
+  Week 15: Capstone – Design &amp; Implementation
+114
+  Week 16: Capstone – Polish, Package &amp; Present
+119
+Pricing &amp; Delivery Structure
+124
+Appendix: Quick Reference &amp; Cheat Sheets
+127
+
+About This Course
+
+Python Mastery is a rigorous 16-week, 160-block online program designed to take absolute beginners to confident, production-ready Python practitioners in the areas of Data Science, Machine Learning, and Scientific Computing.
+Every 30-minute block follows the same proven pedagogical loop:
+
+
+Who This Course Is For
+Complete beginners with no prior programming experience
+Analysts, scientists, or engineers who want to automate their work
+Anyone targeting a career in Data Science or ML Engineering
+Developers from other languages who need Python proficiency quickly
+
+Learning Outcomes
+By the end of this course, you will be able to:
+Write clean, idiomatic Python across all major standard library modules
+Manipulate and analyze datasets with NumPy and Pandas
+Visualize data with Matplotlib and Seaborn
+Build and evaluate ML models with scikit-learn
+Consume REST APIs and scrape websites responsibly
+Build web services with Flask and FastAPI
+Apply scientific computing (SciPy, SymPy) and statistics
+Work with NLP (NLTK, spaCy, Transformers) and Computer Vision (OpenCV)
+Design and maintain production data pipelines and databases
+Automate tasks, write tests, and package a complete Python project
+
+Technologies Covered
+Core &amp; Scientific
+Web, ML &amp; Engineering
+Python 3.11+
+SciPy
+NumPy
+SymPy
+Pandas
+NLTK
+Matplotlib
+spaCy
+Seaborn
+Transformers (HuggingFace)
+requests
+OpenCV
+BeautifulSoup
+SQLAlchemy
+Flask
+Dask
+FastAPI
+pytest
+scikit-learn
+Selenium
+
+How to Use This Book
+
+This book is both a course companion and a standalone reference. Each week is self-contained and follows a consistent structure.
+Chapter Structure
+Each week chapter contains:
+Week Overview – learning goals, prerequisites, and deliverables
+Day-by-Day Breakdown – two 30-minute blocks per day, Mon–Fri (10 blocks/week)
+Concept Sections – clear explanations with diagrams and tables
+Illustrated Code Examples – annotated, copy-ready snippets
+Sandboxed Exercises – hands-on challenges to complete in the live environment
+Homework Assignments – deeper tasks to complete between sessions
+Week Review &amp; Quick Quiz – consolidate your learning
+
+💻 Sandbox Icon
+Wherever you see this icon, open your sandboxed coding environment and type the code yourself. Reading code is not enough — you must run it.
+
+⚠️ Common Pitfalls
+Highlighted sections warn you of errors beginners frequently make, saving hours of debugging time.
+
+📌 Key Concept
+Blue boxes mark the single most important idea of each section. Memorise these.
+
+🔗 Real-World Connection
+Teal boxes connect the topic to real-world applications in industry.
+
+Conventions Used
+Code is shown in monospaced dark blocks
+File/folder names use inline code style
+Bold text highlights key terms on first use
+&gt;&gt;&gt; prompt indicates interactive Python shell; no prompt means a .py file
+
+Environment Setup
+All hands-on work is done in the provided online sandboxed environment. Nothing needs to be installed locally. The sandbox provides:
+A full JupyterLab interface accessible in any browser
+Python 3.11 with all course libraries pre-installed
+Persistent storage for your code across sessions
+Auto-graded exercise feedback
+Instructor-visible progress dashboard
+
+WEEK 1: PYTHON FOUNDATIONS &amp; STANDARD LIBRARY
+PART I — FOUNDATIONS | Environment setup, syntax, core data structures, functions
+
+Week Overview
+Learning Goals
+Prerequisites
+Understand Python&apos;s place in the ecosystem
+No prior programming knowledge
+Set up and navigate the sandbox
+A web browser
+Write expressions, variables, and control flow
+Curiosity!
+Define and call functions
+
+Use built-in types: list, dict, tuple, set
+
+Explore the standard library essentials
+
+
+🎯 Week Deliverable
+A working Python script that reads a data file, processes it with core data structures, and prints a formatted summary report.
+
+Day 1
+Block 1: What is Python &amp; Your First Program
+Python is a high-level, interpreted, dynamically-typed language known for its readable syntax. It is the #1 language in Data Science and ML. We start by understanding the Python execution model and writing our first lines of code.
+Example:
+# Your very first Python programprint(&quot;Hello, Python World!&quot;)# Python as a calculator&gt;&gt;&gt; 2 + 3 * 4      # 14  (PEMDAS applies)&gt;&gt;&gt; 10 / 3         # 3.333... (true division)&gt;&gt;&gt; 10 // 3        # 3   (floor division)&gt;&gt;&gt; 10 % 3         # 1   (modulo / remainder)&gt;&gt;&gt; 2 ** 8         # 256 (exponentiation)
+📌 Key Concept
+Python uses indentation (4 spaces) to define code blocks, not curly braces. Getting this right is non-negotiable.
+
+Block 2: Variables, Types &amp; String Formatting
+Variables are named references to values. Python infers the type automatically. The four primitive types are int, float, str, and bool. F-strings (Python 3.6+) are the modern way to embed values in strings.
+Example:
+# Variable assignmentname     = &apos;Alice&apos;          # strage      = 30               # intheight   = 5.7              # floatis_adult = True             # bool# Check the typeprint(type(age))            # &lt;class &apos;int&apos;&gt;# F-string formatting (modern, preferred)print(f&quot;{name} is {age} years old and {height:.1f} ft tall.&quot;)# Alice is 30 years old and 5.7 ft tall.# Type conversionage_str = str(age)          # &quot;30&quot;pi      = float(&apos;3.14159&apos;)  # 3.14159
+
+Day 2
+Block 3: Control Flow: if / elif / else
+Control flow lets your program make decisions. The if/elif/else chain evaluates conditions in order and executes the first matching block. Conditions use comparison operators (==, !=, &lt;, &gt;, &lt;=, &gt;=) and logical operators (and, or, not).
+Example:
+score = 82if score &gt;= 90:    grade = &quot;A&quot;elif score &gt;= 80:    grade = &quot;B&quot;elif score &gt;= 70:    grade = &quot;C&quot;else:    grade = &quot;F&quot;print(f&quot;Score: {score} → Grade: {grade}&quot;)  # Score: 82 → Grade: B# Ternary (one-liner)result = &quot;pass&quot; if score &gt;= 50 else &quot;fail&quot;
+
+Block 4: Loops: for &amp; while
+Iteration is fundamental in data processing. The for loop iterates over any iterable (list, range, string, dict…). The while loop repeats as long as a condition is True. Use break to exit, continue to skip.
+Example:
+# for loop with rangefor i in range(5):          # 0, 1, 2, 3, 4    print(i, end=&apos; &apos;)       # 0 1 2 3 4# iterating a listfruits = [&apos;apple&apos;, &apos;banana&apos;, &apos;cherry&apos;]for fruit in fruits:    print(f&quot;  - {fruit}&quot;)# enumerate gives index + valuefor idx, fruit in enumerate(fruits, start=1):    print(f&quot;{idx}. {fruit}&quot;)# while loopcount = 0while count &lt; 3:    print(count)    count += 1
+
+Day 3
+Block 5: Lists &amp; Tuples
+A list is an ordered, mutable sequence of items. A tuple is ordered but immutable. Lists are the workhorse data structure for sequential data. Master slicing and list comprehensions — they appear in every real Python codebase.
+Example:
+# List creation &amp; indexingnums = [10, 20, 30, 40, 50]print(nums[0])              # 10  (first)print(nums[-1])             # 50  (last)print(nums[1:4])            # [20, 30, 40]  (slice)print(nums[::2])            # [10, 30, 50]  (step)# Mutating a listnums.append(60)             # add to endnums.insert(0, 0)           # insert at indexnums.remove(30)             # remove by valuepopped = nums.pop()         # remove &amp; return last# List comprehension — the Pythonic waysquares = [x**2 for x in range(1, 6)]   # [1, 4, 9, 16, 25]evens   = [x for x in range(10) if x % 2 == 0]# Tuples (immutable)point = (3, 4)x, y  = point               # unpacking
+
+Block 6: Dictionaries &amp; Sets
+A dictionary stores key-value pairs; lookups are O(1). A set stores unique items with fast membership testing. Both are essential for data aggregation, counting, and deduplication.
+Example:
+# Dictionarystudent = {&apos;name&apos;: &apos;Alice&apos;, &apos;age&apos;: 20, &apos;grade&apos;: &apos;A&apos;}print(student[&apos;name&apos;])      # Alicestudent[&apos;age&apos;] = 21         # updatestudent[&apos;gpa&apos;] = 3.9        # add new key# Safe access with .get()print(student.get(&apos;score&apos;, 0))  # 0 (default if missing)# Iterating a dictfor key, value in student.items():    print(f&quot;  {key}: {value}&quot;)# Dict comprehensionsq_map = {x: x**2 for x in range(5)}# Setsa = {1, 2, 3, 4}b = {3, 4, 5, 6}print(a | b)  # union    {1,2,3,4,5,6}print(a &amp; b)  # intersect {3,4}print(a - b)  # diff     {1,2}
+
+Day 4
+Block 7: Functions: Definition, Arguments &amp; Scope
+Functions are reusable blocks of code. Python supports positional args, keyword args, default values, *args (variable positional), and **kwargs (variable keyword). Understanding scope (LEGB rule) prevents subtle bugs.
+Example:
+# Basic functiondef greet(name, greeting=&apos;Hello&apos;):    # default arg    return f&quot;{greeting}, {name}!&quot;print(greet(&quot;Alice&quot;))              # Hello, Alice!print(greet(&quot;Bob&quot;, greeting=&quot;Hi&quot;)) # Hi, Bob!# *args collects extra positional args as tupledef total(*nums):    return sum(nums)print(total(1, 2, 3, 4))           # 10# **kwargs collects extra keyword args as dictdef profile(**info):    for k, v in info.items():        print(f&quot;  {k}: {v}&quot;)profile(name=&quot;Alice&quot;, age=20, city=&quot;NYC&quot;)# Lambda (anonymous function)square = lambda x: x ** 2print(square(5))                   # 25
+
+Block 8: Standard Library: os, datetime, collections
+Python ships with a vast standard library — &apos;batteries included&apos;. Three of the most useful modules for data work are os/pathlib (file system), datetime (dates/times), and collections (specialized data structures).
+Example:
+import osfrom pathlib import Pathfrom datetime import datetime, timedeltafrom collections import Counter, defaultdict# File systemcwd = Path.cwd()                    # current directoryfiles = list(cwd.glob(&apos;*.py&apos;))       # list .py files# Datetimenow = datetime.now()print(now.strftime(&quot;%Y-%m-%d %H:%M&quot;))  # 2025-06-01 09:30deadline = now + timedelta(days=7)# Counter — instant frequency mapwords = [&apos;cat&apos;, &apos;dog&apos;, &apos;cat&apos;, &apos;bird&apos;, &apos;dog&apos;, &apos;cat&apos;]freq  = Counter(words)print(freq.most_common(2))          # [(&apos;cat&apos;,3),(&apos;dog&apos;,2)]# defaultdict — no KeyError on first accessgroups = defaultdict(list)groups[&apos;A&apos;].append(&apos;Alice&apos;)          # no key check needed
+🔗 Real-World Connection
+Counter is used daily in text analytics to count word frequencies. defaultdict simplifies grouping operations that would otherwise need if-key-exists checks.
+
+Day 5
+Block 9: File I/O &amp; Exception Handling
+Reading and writing files is fundamental. Always use context managers (with open(...) as f) to ensure files are closed. Exceptions are Python&apos;s error signalling mechanism; wrapping risky code in try/except prevents program crashes.
+Example:
+# Writing a filewith open(&apos;data.txt&apos;, &apos;w&apos;) as f:    f.write(&quot;Line 1\n&quot;)    f.write(&quot;Line 2\n&quot;)# Reading a filewith open(&apos;data.txt&apos;, &apos;r&apos;) as f:    lines = f.readlines()           # list of lines# Reading line by line (memory efficient)with open(&apos;data.txt&apos;) as f:    for line in f:        print(line.strip())# Exception handlingtry:    result = 10 / 0except ZeroDivisionError as e:    print(f&quot;Error: {e}&quot;)            # Error: division by zeroexcept (ValueError, TypeError) as e:    print(f&quot;Value/Type error: {e}&quot;)finally:    print(&quot;Always runs&quot;)
+
+Block 10: Week 1 Review &amp; Mini-Project
+We consolidate the week&apos;s learning with a complete mini-script. This script reads a CSV-like text file, aggregates data with a dictionary, and prints a sorted frequency report — combining everything from Week 1.
+Example:
+# Week 1 Mini-Project: Word Frequency Analyzerfrom collections import Counterfrom pathlib import Pathdef analyze_text(filepath):    &quot;&quot;&quot;Read a text file and return word frequency stats.&quot;&quot;&quot;    path = Path(filepath)    if not path.exists():        raise FileNotFoundError(f&quot;No such file: {filepath}&quot;)    with open(path) as f:        text = f.read().lower()    # Clean and split    words = [w.strip(&apos;.,!?;:&quot;&apos;) for w in text.split()]    words = [w for w in words if len(w) &gt; 2]  # skip short words    freq = Counter(words)    print(f&quot;Total words : {sum(freq.values())}&quot;)    print(f&quot;Unique words: {len(freq)}&quot;)    print(&quot;\nTop 10 words:&quot;)    for word, count in freq.most_common(10):        bar = &quot;#&quot; * count        print(f&quot;  {word:&lt;15} {count:&gt;4}  {bar}&quot;)analyze_text(&quot;sample.txt&quot;)
+
+Week 1 Quick Quiz
+What is the difference between // and / in Python?
+How do you iterate over both keys and values in a dictionary?
+What does enumerate() return?
+Write a list comprehension that produces the cubes of all odd numbers from 1 to 20.
+What is the LEGB rule in Python scope resolution?
+
+
+WEEK 2: NUMPY: ARRAYS &amp; VECTORIZED COMPUTING
+PART I — FOUNDATIONS | Numerical arrays, vectorization, broadcasting, linear algebra
+
+Week Overview
+Learning Goals
+Prerequisites
+Create and manipulate ndarray objects
+Week 1 complete
+Understand dtypes, shapes, and axes
+Comfortable with Python lists and functions
+Apply vectorized operations (no Python loops!)
+
+Use broadcasting for shape-mismatched arrays
+
+Perform linear algebra operations
+
+Generate random data for simulations
+
+
+🎯 Week Deliverable
+A NumPy-based simulation: generate 10,000 random stock price paths using vectorized operations and compute risk statistics.
+
+Why NumPy?
+Python lists are flexible but slow for numerical computation — they store object references, not contiguous numeric data. NumPy&apos;s ndarray stores typed numeric data in contiguous memory, enabling C-speed computation via vectorization (replacing slow Python loops with a single array operation).
+
+📌 Key Concept
+Vectorization: instead of looping over elements in Python, pass the entire array to a NumPy function. This is 10–100x faster and the code is shorter.
+
+Day 1
+Block 1: Creating Arrays &amp; Understanding Shape
+The fundamental NumPy object is the ndarray. You can create arrays from Python lists, from built-in generators, or by loading files. The shape, ndim, dtype, and size attributes describe the array&apos;s structure.
+Example:
+import numpy as np# From Python lista = np.array([1, 2, 3, 4, 5])print(a.shape)   # (5,)   — 1-D, 5 elementsprint(a.dtype)   # int64# 2-D array (matrix)m = np.array([[1, 2, 3],              [4, 5, 6]])print(m.shape)   # (2, 3)  — 2 rows, 3 colsprint(m.ndim)    # 2# Built-in constructorsnp.zeros((3, 4))          # 3x4 matrix of 0.0np.ones((2, 2))           # 2x2 matrix of 1.0np.eye(4)                 # 4x4 identity matrixnp.arange(0, 10, 2)       # [0, 2, 4, 6, 8]np.linspace(0, 1, 5)      # [0, .25, .5, .75, 1]np.full((2, 3), 7)        # 2x3 filled with 7
+
+Block 2: Indexing, Slicing &amp; Reshaping
+NumPy indexing mirrors Python list indexing but extends to multiple dimensions. Boolean indexing (fancy indexing) is especially powerful for filtering data without explicit loops.
+Example:
+a = np.array([10, 20, 30, 40, 50])# Basic indexingprint(a[0])      # 10print(a[-1])     # 50print(a[1:4])    # [20 30 40]# 2D indexing [row, col]m = np.arange(12).reshape(3, 4)   # [[0..3],[4..7],[8..11]]print(m[1, 2])   # 6   (row 1, col 2)print(m[:, 1])   # [1, 5, 9]  (all rows, col 1)print(m[0, :])   # [0, 1, 2, 3]  (row 0, all cols)# Boolean indexing — filter without a loopdata = np.array([3, -1, 4, -1, 5, -9, 2, 6])positives = data[data &gt; 0]   # [3, 4, 5, 2, 6]data[data &lt; 0] = 0           # replace negatives with 0# Reshapeflat = np.arange(24)cube = flat.reshape(2, 3, 4)   # 3-D: 2 layers, 3 rows, 4 cols
+
+Day 2
+Block 3: Vectorized Operations &amp; Universal Functions
+NumPy operations apply element-wise to entire arrays without Python loops. Universal Functions (ufuncs) are pre-compiled C functions that operate element-wise: np.sqrt, np.exp, np.log, np.sin, etc.
+Example:
+a = np.array([1.0, 4.0, 9.0, 16.0])b = np.array([2.0, 2.0, 3.0, 4.0])# Arithmetic — element-wiseprint(a + b)         # [ 3.  6. 12. 20.]print(a * b)         # [ 2.  8. 27. 64.]print(a / b)         # [0.5  2.  3.  4.]# Scalar broadcastprint(a * 2)         # [ 2.  8. 18. 32.]print(a &gt; 4)         # [F  F  T  T]# Universal functions (ufuncs)print(np.sqrt(a))    # [1. 2. 3. 4.]print(np.log(a))     # [0.   1.386 2.197 2.773]print(np.exp([0,1,2]))  # [1.    2.718  7.389]# Aggregation along axesm = np.arange(12).reshape(3, 4)print(m.sum())       # 66   (total)print(m.sum(axis=0)) # [12 15 18 21]  (column sums)print(m.sum(axis=1)) # [ 6 22 38]     (row sums)print(m.mean(), m.std(), m.max())
+
+Block 4: Broadcasting Rules
+Broadcasting allows NumPy to operate on arrays of different shapes by virtually expanding smaller arrays — without copying data. Master the 3 rules: (1) prepend 1s to shorter shape, (2) dimensions of size 1 stretch to match, (3) shapes must be compatible.
+Example:
+# Rule illustrationa = np.array([[1, 2, 3],    # shape (2, 3)              [4, 5, 6]])b = np.array([10, 20, 30])  # shape (3,) → broadcasts to (2,3)print(a + b)# [[11 22 33]#  [14 25 36]]# Column vector broadcastcol = np.array([[100],      # shape (2, 1)               [200]])print(a + col)# [[101 102 103]#  [204 205 206]]# Practical: center each feature columndata = np.random.randn(100, 5)  # 100 samples, 5 featuresmeans = data.mean(axis=0)        # shape (5,)stds  = data.std(axis=0)normalized = (data - means) / stds   # z-score normalization
+🔗 Real-World Connection
+Z-score normalization (subtracting mean, dividing by std) is a critical preprocessing step before training ML models. NumPy broadcasting makes it a one-liner.
+
+Day 3
+Block 5: Linear Algebra: np.linalg
+NumPy provides a full suite of linear algebra operations via np.linalg. These underpin virtually all ML algorithms — matrix multiplication (@), eigendecomposition, singular value decomposition, and solving linear systems.
+Example:
+A = np.array([[2, 1], [5, 3]])B = np.array([[1, 2], [3, 4]])# Matrix multiplicationC = A @ B                    # preferred over np.dotprint(C)  # [[5, 8], [14, 22]]# Transposeprint(A.T)   # [[2,5],[1,3]]# Determinantprint(np.linalg.det(A))      # 1.0# InverseA_inv = np.linalg.inv(A)print(A @ A_inv)             # identity matrix# Solve linear system  Ax = bb = np.array([3, 7])x = np.linalg.solve(A, b)   # [2, -1]# Eigenvalues &amp; eigenvectorsvals, vecs = np.linalg.eig(A)print(vals)   # eigenvalues
+
+Block 6: Random Number Generation: np.random
+NumPy&apos;s random module generates arrays of random numbers from many distributions. Always set a random seed for reproducible results.
+Example:
+rng = np.random.default_rng(seed=42)   # reproducible# Uniform [0, 1)u = rng.random(size=(3, 3))# Standard normal (mean=0, std=1)n = rng.standard_normal(size=1000)# Normal distributionprices = rng.normal(loc=100, scale=15, size=500)# Integersdice = rng.integers(1, 7, size=10)  # 10 dice rolls# Choice / samplingitems = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;, &apos;D&apos;]sample = rng.choice(items, size=5, replace=True)# Monte Carlo: estimate piN = 1_000_000x, y = rng.random(N), rng.random(N)inside = (x**2 + y**2) &lt; 1.0pi_est = 4 * inside.mean()print(f&quot;Pi ≈ {pi_est:.4f}&quot;)  # Pi ≈ 3.1416
+
+Day 4
+Block 7: Structured Arrays &amp; Record Arrays
+NumPy can store heterogeneous data (mixed dtypes) using structured arrays — a lightweight alternative to Pandas for simple cases. Each field is accessed by name.
+Example:
+# Structured array dtypedt = np.dtype([(&apos;name&apos;, &apos;U20&apos;), (&apos;age&apos;, &apos;i4&apos;), (&apos;score&apos;, &apos;f8&apos;)])records = np.array([    (&apos;Alice&apos;, 25, 92.5),    (&apos;Bob&apos;,   30, 87.0),    (&apos;Carol&apos;, 22, 95.3)], dtype=dt)print(records[&apos;name&apos;])       # [&apos;Alice&apos; &apos;Bob&apos; &apos;Carol&apos;]print(records[&apos;score&apos;].mean()) # 91.6# Sort by scoresorted_r = np.sort(records, order=&apos;score&apos;)[::-1]for r in sorted_r:    print(f&quot;{r[&apos;name&apos;]:&lt;8} age={r[&apos;age&apos;]}  score={r[&apos;score&apos;]}&quot;)
+
+Block 8: Performance: NumPy vs Pure Python
+One of the most important things to understand is HOW MUCH faster NumPy is. This block benchmarks equivalent operations to build intuition for when vectorization matters.
+Example:
+import timeN = 1_000_000data = list(range(N))arr  = np.arange(N, dtype=float)# Python loopt0 = time.perf_counter()result = [x**2 for x in data]t1 = time.perf_counter()print(f&quot;Python loop:  {(t1-t0)*1000:.1f} ms&quot;)# NumPy vectorizedt0 = time.perf_counter()result = arr ** 2t1 = time.perf_counter()print(f&quot;NumPy vector: {(t1-t0)*1000:.1f} ms&quot;)# Typical output:# Python loop:  320.4 ms# NumPy vector:   1.2 ms   ← 267x faster
+⚠️ Common Pitfall
+Never loop over NumPy arrays with Python for loops — this destroys performance. Always vectorize. If you cannot, consider numba or Cython.
+
+Day 5
+Block 9: Practical Patterns: Masking, Stacking &amp; Saving
+Real-world NumPy usage involves combining arrays (stack, concatenate, hstack, vstack), using masks to filter and replace data, and saving/loading arrays efficiently.
+Example:
+# Masking patternsensor_data = np.array([1.2, -999.0, 3.5, -999.0, 4.1])mask = sensor_data == -999.0          # flag missing valuesclean = sensor_data.copy()clean[mask] = np.nanmedian(sensor_data[~mask])  # impute# Stack arraysa = np.array([1, 2, 3])b = np.array([4, 5, 6])print(np.vstack([a, b]))   # [[1,2,3],[4,5,6]]print(np.hstack([a, b]))   # [1,2,3,4,5,6]# Save &amp; loadnp.save(&apos;array.npy&apos;, clean)loaded = np.load(&apos;array.npy&apos;)# Save multiple arraysnp.savez(&apos;arrays.npz&apos;, x=a, y=b)d = np.load(&apos;arrays.npz&apos;)print(d[&apos;x&apos;], d[&apos;y&apos;])# CSVnp.savetxt(&apos;data.csv&apos;, np.random.rand(5, 3),           delimiter=&quot;,&quot;, header=&quot;A,B,C&quot;, comments=&quot;&quot;)
+
+Block 10: Week 2 Review: Stock Simulation Project
+We build the week&apos;s capstone: a Monte Carlo stock price simulation using Geometric Brownian Motion — a model used in quantitative finance. All computation is vectorized.
+Example:
+# Monte Carlo Stock Price Simulation (GBM)import numpy as nprng = np.random.default_rng(42)S0    = 100.0    # initial pricemu    = 0.10     # annual return (10%)sigma = 0.20     # annual volatility (20%)T     = 1.0      # 1 yearN     = 252      # trading dayspaths = 10_000   # number of simulationsdt = T / N# Random shocks: shape (N, paths)Z = rng.standard_normal((N, paths))# Daily returns via GBM formuladaily_ret = np.exp((mu - 0.5*sigma**2)*dt + sigma*np.sqrt(dt)*Z)# Price paths (cumulative product, prepend S0)price_paths = S0 * np.cumprod(daily_ret, axis=0)price_paths = np.vstack([np.full(paths, S0), price_paths])# Statistics at maturityfinal_prices = price_paths[-1, :]print(f&quot;Mean final price : ${final_prices.mean():.2f}&quot;)print(f&quot;Prob(profit&gt;20%) : {(final_prices &gt; 120).mean():.2%}&quot;)print(f&quot;5th percentile   : ${np.percentile(final_prices, 5):.2f}&quot;)
+
+Week 2 Quick Quiz
+What is the difference between shape (5,) and shape (5,1)?
+Why is a @ b preferred over np.dot(a, b) for matrix multiplication?
+Explain the 3 broadcasting rules with an example.
+Write a one-line NumPy expression to compute the column-wise standard deviation of a 2D array.
+What does np.linalg.solve() do and why is it better than computing the inverse?
+
+
+WEEK 3: PANDAS: DATAFRAMES &amp; DATA HANDLING
+PART I — FOUNDATIONS | Series, DataFrame, loading, cleaning, grouping, merging
+
+Week Overview
+Learning Goals
+Prerequisites
+Create and navigate Series and DataFrame
+Week 1 complete
+Load data from CSV, Excel, JSON
+Basic NumPy familiarity
+Clean messy data (nulls, dtypes, duplicates)
+
+Filter, sort, and transform data
+
+Group and aggregate with groupby()
+
+Merge and join multiple datasets
+
+
+🎯 Week Deliverable
+A complete data-cleaning and analysis pipeline on a real-world dataset (e.g., NYC taxi rides or sales records) producing a grouped summary and exported report.
+
+Pandas in Context
+Pandas is built on top of NumPy and provides two core data structures: Series (1-D labeled array) and DataFrame (2-D labeled table). Think of a DataFrame as a programmable spreadsheet with SQL-like operations. It is the central tool for all tabular data work in Python.
+
+Day 1
+Block 1: Series &amp; DataFrame Basics
+A Series is a one-dimensional array with an index (labels). A DataFrame is a collection of Series sharing the same index. Understanding the index is fundamental — it is what makes Pandas different from NumPy.
+Example:
+import pandas as pdimport numpy as np# Seriess = pd.Series([10, 20, 30, 40], index=[&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;])print(s[&apos;b&apos;])   # 20    — label-based accessprint(s[1])     # 20    — positional accessprint(s[s &gt; 15]) # b:20, c:30, d:40# DataFrame from dictdf = pd.DataFrame({    &apos;name&apos;:   [&apos;Alice&apos;, &apos;Bob&apos;, &apos;Carol&apos;, &apos;Dave&apos;],    &apos;age&apos;:    [25, 30, 22, 35],    &apos;salary&apos;: [70000, 85000, 62000, 90000],    &apos;dept&apos;:   [&apos;Eng&apos;, &apos;Mkt&apos;, &apos;Eng&apos;, &apos;HR&apos;]})print(df.head(2))      # first 2 rowsprint(df.info())       # dtypes &amp; null countsprint(df.describe())   # statistical summaryprint(df.shape)        # (4, 4)
+
+Block 2: Selecting Data: loc, iloc, and Boolean Masks
+Pandas offers three main ways to select data: attribute access (df.col), loc (label-based), and iloc (integer-based). Boolean masks work exactly like NumPy — a boolean Series filters rows.
+Example:
+# Column selectiondf[&apos;name&apos;]              # Seriesdf[[&apos;name&apos;, &apos;salary&apos;]]  # DataFrame (list of cols)# .loc[rows, cols]  — label-baseddf.loc[0, &apos;name&apos;]       # &apos;Alice&apos;df.loc[0:2, [&apos;name&apos;, &apos;age&apos;]]  # rows 0,1,2 (inclusive!)# .iloc[rows, cols]  — integer-based (exclusive end)df.iloc[0, 0]           # &apos;Alice&apos;df.iloc[0:2, 0:2]       # rows 0,1  cols 0,1# Boolean maskingeng = df[df[&apos;dept&apos;] == &apos;Eng&apos;]       # filter rowssenior = df[(df[&apos;age&apos;] &gt; 25) &amp; (df[&apos;salary&apos;] &gt; 80000)]# isin — filter by listselected = df[df[&apos;dept&apos;].isin([&apos;Eng&apos;, &apos;HR&apos;])]# query() — SQL-like string syntaxresult = df.query(&apos;age &gt; 25 and salary &gt; 70000&apos;)
+
+Day 2
+Block 3: Loading Data from Files
+Pandas can load almost any file format. The most common are CSV, Excel, and JSON. Always inspect the loaded DataFrame with .head(), .info(), and .describe() immediately after loading.
+Example:
+# CSV — most commondf = pd.read_csv(&apos;data.csv&apos;)df = pd.read_csv(&apos;data.csv&apos;,     parse_dates=[&apos;order_date&apos;],  # auto-parse dates     index_col=&apos;id&apos;,              # use id as index     dtype={&apos;price&apos;: float},     na_values=[&apos;N/A&apos;, &apos;-&apos;, &apos;&apos;]   # custom null markers)# Exceldf = pd.read_excel(&apos;report.xlsx&apos;, sheet_name=&apos;Sheet1&apos;)# JSON (records format)df = pd.read_json(&apos;api_response.json&apos;)# From URLurl = &apos;https://example.com/data.csv&apos;df  = pd.read_csv(url)# Quick inspectionprint(df.shape)          # rows, colsprint(df.dtypes)         # column data typesprint(df.isnull().sum()) # nulls per columnprint(df.duplicated().sum())  # duplicate rows
+
+Block 4: Data Cleaning: Nulls, Dtypes &amp; Duplicates
+Real data is messy. Data cleaning is typically 60–80% of a data scientist&apos;s time. Core operations: handle missing values, fix incorrect data types, remove or resolve duplicate records.
+Example:
+# Inspect missing datamissing_pct = df.isnull().mean() * 100print(missing_pct[missing_pct &gt; 0])# Drop rows/columns with too many nullsdf.dropna(subset=[&apos;price&apos;, &apos;date&apos;], inplace=True)  # must have thesedf.dropna(axis=1, thresh=len(df)*0.5, inplace=True)  # drop cols &gt;50% null# Fill missing valuesdf[&apos;age&apos;].fillna(df[&apos;age&apos;].median(), inplace=True)df[&apos;category&apos;].fillna(&apos;Unknown&apos;, inplace=True)df[&apos;price&apos;].ffill(inplace=True)   # forward fill# Fix dtypesdf[&apos;price&apos;] = pd.to_numeric(df[&apos;price&apos;], errors=&apos;coerce&apos;)df[&apos;date&apos;]  = pd.to_datetime(df[&apos;date&apos;], errors=&apos;coerce&apos;)df[&apos;zip&apos;]   = df[&apos;zip&apos;].astype(str).str.zfill(5)# Remove duplicatesdf.drop_duplicates(subset=[&apos;customer_id&apos;, &apos;date&apos;], keep=&apos;first&apos;, inplace=True)# Rename columns (snake_case standard)df.columns = df.columns.str.lower().str.replace(&apos; &apos;, &apos;_&apos;)
+
+Day 3
+Block 5: Transforming Data: apply, map &amp; String Operations
+Pandas provides vectorized string methods (Series.str.*) and .apply()/.map() for custom transformations. Avoid explicit Python loops on DataFrames — use these instead.
+Example:
+# Vectorized string operations via .str accessordf[&apos;name&apos;] = df[&apos;name&apos;].str.strip().str.title()df[&apos;email&apos;] = df[&apos;email&apos;].str.lower()df[&apos;domain&apos;] = df[&apos;email&apos;].str.split(&apos;@&apos;).str[1]# Extract with regexdf[&apos;year&apos;] = df[&apos;date_str&apos;].str.extract(r&apos;(\d{4})&apos;)df[&apos;valid&apos;] = df[&apos;phone&apos;].str.match(r&apos;^\+?[0-9\-]{10,15}$&apos;)# .map() — element-wise dict or functiondept_code = {&apos;Eng&apos;: 1, &apos;Mkt&apos;: 2, &apos;HR&apos;: 3}df[&apos;dept_id&apos;] = df[&apos;dept&apos;].map(dept_code)# .apply() — row or column functiondf[&apos;bonus&apos;] = df[&apos;salary&apos;].apply(lambda s: s * 0.1 if s &gt; 80000 else s * 0.05)# Row-wise apply (axis=1)def categorize(row):    if row[&apos;age&apos;] &lt; 30 and row[&apos;salary&apos;] &gt; 75000:        return &apos;High-potential&apos;    return &apos;Standard&apos;df[&apos;category&apos;] = df.apply(categorize, axis=1)
+
+Block 6: Sorting &amp; Ranking
+Sorting in Pandas returns a new DataFrame by default. You can sort by one or multiple columns, ascending or descending, and rank values using a variety of methods.
+Example:
+# Sort by single columndf_sorted = df.sort_values(&apos;salary&apos;, ascending=False)# Sort by multiple columnsdf_sorted = df.sort_values([&apos;dept&apos;, &apos;salary&apos;],                           ascending=[True, False])# Rankdf[&apos;salary_rank&apos;] = df[&apos;salary&apos;].rank(ascending=False, method=&apos;dense&apos;)# nlargest / nsmallesttop5 = df.nlargest(5, &apos;salary&apos;)[[&apos;name&apos;, &apos;salary&apos;]]bottom5 = df.nsmallest(5, &apos;age&apos;)[[&apos;name&apos;, &apos;age&apos;]]# Reset index after filtering/sortingdf.reset_index(drop=True, inplace=True)
+
+Day 4
+Block 7: GroupBy: Split-Apply-Combine
+GroupBy is one of Pandas&apos; most powerful features. The pattern: split the DataFrame into groups based on a column, apply an aggregation or transformation to each group, then combine the results.
+Example:
+# Basic groupby + aggregationdept_stats = df.groupby(&apos;dept&apos;)[&apos;salary&apos;].agg([&apos;mean&apos;,&apos;min&apos;,&apos;max&apos;,&apos;count&apos;])print(dept_stats)# Multiple columnssummary = df.groupby([&apos;dept&apos;, &apos;year&apos;]).agg(    avg_salary=(&apos;salary&apos;, &apos;mean&apos;),    headcount=(&apos;name&apos;, &apos;count&apos;),    total_payroll=(&apos;salary&apos;, &apos;sum&apos;)).reset_index()# Transform — returns same-shape result (for feature engineering)df[&apos;dept_avg&apos;] = df.groupby(&apos;dept&apos;)[&apos;salary&apos;].transform(&apos;mean&apos;)df[&apos;above_avg&apos;] = df[&apos;salary&apos;] &gt; df[&apos;dept_avg&apos;]# Filter groups by sizelarge_depts = df.groupby(&apos;dept&apos;).filter(lambda g: len(g) &gt;= 3)# Apply custom function to each groupdef top2(group):    return group.nlargest(2, &apos;salary&apos;)top2_per_dept = df.groupby(&apos;dept&apos;).apply(top2).reset_index(drop=True)
+
+Block 8: Merging &amp; Joining DataFrames
+Real datasets usually come from multiple sources that need to be combined. pd.merge() implements all SQL join types. pd.concat() stacks DataFrames vertically or horizontally.
+Example:
+orders   = pd.DataFrame({&apos;order_id&apos;:[1,2,3], &apos;customer_id&apos;:[10,11,10], &apos;amount&apos;:[50,75,30]})customers= pd.DataFrame({&apos;customer_id&apos;:[10,11,12], &apos;name&apos;:[&apos;Alice&apos;,&apos;Bob&apos;,&apos;Carol&apos;], &apos;city&apos;:[&apos;NY&apos;,&apos;LA&apos;,&apos;NY&apos;]})# Inner join — only matching rowsresult = pd.merge(orders, customers, on=&apos;customer_id&apos;, how=&apos;inner&apos;)# Left join — all orders, customer info where availableresult = pd.merge(orders, customers, on=&apos;customer_id&apos;, how=&apos;left&apos;)# Right / outer joinresult = pd.merge(orders, customers, on=&apos;customer_id&apos;, how=&apos;outer&apos;)# Join on different column namesresult = pd.merge(orders, customers,                  left_on=&apos;customer_id&apos;, right_on=&apos;id&apos;)# Concat — stack DataFramescombined = pd.concat([df_2023, df_2024], ignore_index=True)side_by_side = pd.concat([df_features, df_labels], axis=1)
+
+Day 5
+Block 9: Pivot Tables &amp; Time Series Basics
+Pivot tables provide multi-dimensional aggregation in a single call — essentially a grouped table with column headers. Pandas has excellent time series support: resampling, rolling windows, and date-based filtering.
+Example:
+# Pivot tablepivot = df.pivot_table(    values=&apos;sales&apos;,    index=&apos;region&apos;,    columns=&apos;quarter&apos;,    aggfunc=&apos;sum&apos;,    fill_value=0)# Time series — set datetime indexts = df.set_index(&apos;date&apos;).sort_index()# Resample to monthlymonthly = ts[&apos;sales&apos;].resample(&apos;ME&apos;).sum()# Rolling 7-day windowts[&apos;rolling_avg&apos;] = ts[&apos;sales&apos;].rolling(window=7, min_periods=1).mean()# Shift (lag features)ts[&apos;sales_lag1&apos;] = ts[&apos;sales&apos;].shift(1)# Date-based slicingq1 = ts.loc[&apos;2024-01&apos;:&apos;2024-03&apos;]
+
+Block 10: Week 3 Capstone: Sales Analysis Pipeline
+We build a complete end-to-end analysis: load → clean → enrich → aggregate → export.
+Example:
+import pandas as pd# 1. Loaddf = pd.read_csv(&apos;sales.csv&apos;, parse_dates=[&apos;order_date&apos;])# 2. Cleandf.dropna(subset=[&apos;product&apos;, &apos;quantity&apos;, &apos;price&apos;], inplace=True)df[&apos;quantity&apos;] = pd.to_numeric(df[&apos;quantity&apos;], errors=&apos;coerce&apos;)df[&apos;price&apos;]    = pd.to_numeric(df[&apos;price&apos;],    errors=&apos;coerce&apos;)df.dropna(inplace=True)# 3. Enrichdf[&apos;revenue&apos;]  = df[&apos;quantity&apos;] * df[&apos;price&apos;]df[&apos;year&apos;]     = df[&apos;order_date&apos;].dt.yeardf[&apos;month&apos;]    = df[&apos;order_date&apos;].dt.month# 4. Aggregatemonthly = df.groupby([&apos;year&apos;,&apos;month&apos;,&apos;product&apos;]).agg(    units_sold=(&apos;quantity&apos;,&apos;sum&apos;),    total_revenue=(&apos;revenue&apos;,&apos;sum&apos;)).reset_index()monthly[&apos;cum_rev&apos;] = monthly.groupby(&apos;product&apos;)[&apos;total_revenue&apos;].cumsum()# 5. Exportmonthly.to_csv(&apos;monthly_summary.csv&apos;, index=False)print(monthly.head(10).to_string())
+
+Week 3 Quick Quiz
+What is the difference between .loc and .iloc?
+When would you use .apply(axis=1) vs a vectorized operation?
+Explain the Split-Apply-Combine pattern in your own words.
+What is the difference between pd.merge() and pd.concat()?
+How do you resample a time series from daily to weekly frequency?
+
+
+WEEK 4: VISUALIZATION: MATPLOTLIB &amp; SEABORN
+PART I — FOUNDATIONS | Line, bar, scatter, histogram, boxplot, subplots, visual EDA
+
+Week Overview
+Learning Goals
+Prerequisites
+Create publication-quality figures with Matplotlib
+Weeks 1–3 complete
+Use Seaborn for statistical visualization
+
+Choose the right chart for the data type
+
+Customize colors, fonts, labels, and layouts
+
+Build multi-panel dashboards with subplots
+
+Perform visual exploratory data analysis (EDA)
+
+
+🎯 Week Deliverable
+An EDA report: 6-panel visualization dashboard for a real dataset, covering distribution, correlation, trend, and comparison — exported as a PNG.
+
+Day 1
+Block 1: Matplotlib Architecture &amp; Basic Plots
+Matplotlib has two interfaces: pyplot (quick/procedural) and OO (Figure/Axes, recommended for control). A Figure is the canvas; Axes is a single plot panel. Always use the OO interface for anything beyond a quick sketch.
+Example:
+import matplotlib.pyplot as pltimport numpy as np# OO interface (recommended)fig, ax = plt.subplots(figsize=(8, 5))x = np.linspace(0, 2*np.pi, 300)ax.plot(x, np.sin(x), label=&apos;sin(x)&apos;, color=&apos;steelblue&apos;, linewidth=2)ax.plot(x, np.cos(x), label=&apos;cos(x)&apos;, color=&apos;coral&apos;,     linewidth=2, linestyle=&apos;--&apos;)ax.set_title(&apos;Trigonometric Functions&apos;, fontsize=14, fontweight=&apos;bold&apos;)ax.set_xlabel(&apos;x (radians)&apos;)ax.set_ylabel(&apos;Amplitude&apos;)ax.legend(framealpha=0.9)ax.grid(True, alpha=0.3)ax.set_xlim(0, 2*np.pi)plt.tight_layout()plt.savefig(&apos;trig.png&apos;, dpi=150, bbox_inches=&apos;tight&apos;)plt.show()
+
+Block 2: Bar Charts &amp; Histograms
+Bar charts compare discrete categories. Histograms show the distribution of a continuous variable. Both are among the most commonly used chart types in data analysis.
+Example:
+import pandas as pd# Bar chart — category comparisoncategories = [&apos;Q1&apos;, &apos;Q2&apos;, &apos;Q3&apos;, &apos;Q4&apos;]values      = [120, 150, 135, 180]fig, axes = plt.subplots(1, 2, figsize=(12, 5))axes[0].bar(categories, values,           color=[&apos;#3B82F6&apos;,&apos;#10B981&apos;,&apos;#F59E0B&apos;,&apos;#EF4444&apos;],           edgecolor=&apos;white&apos;, linewidth=0.8)axes[0].set_title(&apos;Quarterly Revenue&apos;)axes[0].set_ylabel(&apos;Revenue ($k)&apos;)for i, v in enumerate(values):    axes[0].text(i, v+2, str(v), ha=&apos;center&apos;, fontweight=&apos;bold&apos;)# Histogram — distributiondata = np.random.normal(100, 15, 1000)axes[1].hist(data, bins=30, color=&apos;steelblue&apos;, edgecolor=&apos;white&apos;,            alpha=0.85, density=True)axes[1].set_title(&apos;Score Distribution&apos;)axes[1].set_xlabel(&apos;Score&apos;)axes[1].set_ylabel(&apos;Density&apos;)plt.tight_layout()plt.show()
+
+Day 2
+Block 3: Scatter Plots &amp; Bubble Charts
+Scatter plots reveal relationships between two continuous variables. Adding a third variable as point size (bubble chart) or color encodes additional information in a single chart.
+Example:
+rng = np.random.default_rng(42)n = 100age    = rng.integers(22, 65, n)salary = 30000 + age * 1200 + rng.normal(0, 8000, n)exp    = age - 22 + rng.integers(0, 3, n)dept   = rng.choice([&apos;Eng&apos;,&apos;Mkt&apos;,&apos;HR&apos;,&apos;Sales&apos;], n)fig, ax = plt.subplots(figsize=(9, 6))colors = {&apos;Eng&apos;:&apos;#3B82F6&apos;,&apos;Mkt&apos;:&apos;#10B981&apos;,&apos;HR&apos;:&apos;#F59E0B&apos;,&apos;Sales&apos;:&apos;#EF4444&apos;}for d in [&apos;Eng&apos;,&apos;Mkt&apos;,&apos;HR&apos;,&apos;Sales&apos;]:    mask = dept == d    ax.scatter(age[mask], salary[mask],              s=exp[mask]*10,               # size = experience              c=colors[d], label=d,              alpha=0.7, edgecolors=&apos;white&apos;, linewidth=0.5)ax.set_xlabel(&apos;Age (years)&apos;)ax.set_ylabel(&apos;Salary ($)&apos;)ax.set_title(&apos;Salary vs Age by Department\n(bubble size = years experience)&apos;)ax.legend(title=&apos;Dept&apos;)ax.grid(True, alpha=0.3)plt.tight_layout()plt.show()
+
+Block 4: Seaborn: Statistical Visualization
+Seaborn is built on Matplotlib and adds statistical chart types with minimal code: heatmaps, violin plots, pair plots, and regression plots. It also integrates directly with Pandas DataFrames.
+Example:
+import seaborn as snssns.set_theme(style=&apos;whitegrid&apos;, palette=&apos;muted&apos;, font_scale=1.1)# Load built-in datasettips = sns.load_dataset(&apos;tips&apos;)fig, axes = plt.subplots(2, 2, figsize=(12, 10))# Distribution with KDEsns.histplot(data=tips, x=&apos;total_bill&apos;, hue=&apos;sex&apos;, kde=True,            ax=axes[0,0])axes[0,0].set_title(&apos;Bill Distribution by Sex&apos;)# Box + strip plotsns.boxplot(data=tips, x=&apos;day&apos;, y=&apos;total_bill&apos;, palette=&apos;Set2&apos;, ax=axes[0,1])axes[0,1].set_title(&apos;Bills by Day&apos;)# Violin plotsns.violinplot(data=tips, x=&apos;day&apos;, y=&apos;tip&apos;, hue=&apos;sex&apos;,              split=True, ax=axes[1,0])axes[1,0].set_title(&apos;Tip Distribution&apos;)# Scatter with regression linesns.regplot(data=tips, x=&apos;total_bill&apos;, y=&apos;tip&apos;, ax=axes[1,1],           scatter_kws={&apos;alpha&apos;:0.5}, line_kws={&apos;color&apos;:&apos;red&apos;})axes[1,1].set_title(&apos;Bill vs Tip (with regression)&apos;)plt.suptitle(&apos;Tips Dataset EDA&apos;, fontsize=16, fontweight=&apos;bold&apos;, y=1.02)plt.tight_layout()plt.show()
+
+Day 3
+Block 5: Correlation Heatmaps &amp; Pair Plots
+Heatmaps display a matrix of values using color, most commonly used for correlation matrices. Pair plots show every pairwise relationship in a dataset — essential for initial EDA on multidimensional data.
+Example:
+# Correlation heatmapiris = sns.load_dataset(&apos;iris&apos;)corr = iris.drop(&apos;species&apos;, axis=1).corr()fig, axes = plt.subplots(1, 2, figsize=(14, 5))sns.heatmap(corr, annot=True, fmt=&apos;.2f&apos;, cmap=&apos;RdBu_r&apos;,           center=0, vmin=-1, vmax=1, square=True,           ax=axes[0], cbar_kws={&apos;shrink&apos;:0.8})axes[0].set_title(&apos;Iris Feature Correlations&apos;)# Clustermap — reorders rows/cols by similarity# sns.clustermap(corr, annot=True, cmap=&apos;RdBu_r&apos;)# Pair plot (all pairwise scatter plots)pair_fig = sns.pairplot(iris, hue=&apos;species&apos;, diag_kind=&apos;kde&apos;,                       plot_kws={&apos;alpha&apos;:0.6})pair_fig.fig.suptitle(&apos;Iris Pair Plot&apos;, y=1.02)pair_fig.savefig(&apos;pairplot.png&apos;, dpi=120, bbox_inches=&apos;tight&apos;)plt.show()
+
+Block 6: Customization: Themes, Colors &amp; Annotations
+Professional charts require careful attention to color palettes, typography, and annotations. Matplotlib&apos;s rcParams and Seaborn&apos;s themes let you define a house style. Annotations draw attention to key data points.
+Example:
+# Set global styleplt.rcParams.update({    &apos;font.family&apos;:    &apos;sans-serif&apos;,    &apos;font.size&apos;:      11,    &apos;axes.titlesize&apos;: 13,    &apos;axes.titleweight&apos;:&apos;bold&apos;,    &apos;axes.spines.top&apos;:   False,    &apos;axes.spines.right&apos;: False,})x = np.array([2018, 2019, 2020, 2021, 2022, 2023, 2024])y = np.array([120, 145, 138, 170, 195, 220, 248])fig, ax = plt.subplots(figsize=(9, 5))ax.plot(x, y, marker=&apos;o&apos;, color=&apos;#2563EB&apos;, linewidth=2.5, markersize=8)ax.fill_between(x, y, alpha=0.1, color=&apos;#2563EB&apos;)# Annotate a specific pointax.annotate(&apos;COVID dip&apos;, xy=(2020, 138), xytext=(2020.3, 125),           arrowprops=dict(arrowstyle=&apos;-&gt;&apos;, color=&apos;gray&apos;),           color=&apos;gray&apos;, fontsize=10)ax.set_title(&apos;Annual Revenue Growth&apos;)ax.set_ylabel(&apos;Revenue ($M)&apos;)ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v,_: f&apos;${v:.0f}M&apos;))plt.tight_layout()
+
+Day 4
+Block 7: Subplots &amp; Multi-Panel Dashboards
+Real reports require multiple panels. plt.subplots() creates a grid; GridSpec enables irregular layouts. This skill is essential for building EDA dashboards.
+Example:
+from matplotlib.gridspec import GridSpecdata = np.random.normal(0, 1, 1000)fig = plt.figure(figsize=(14, 8))gs  = GridSpec(2, 3, figure=fig, hspace=0.4, wspace=0.35)ax1 = fig.add_subplot(gs[0, :2])  # top-left, 2 cols wideax2 = fig.add_subplot(gs[0, 2])   # top-rightax3 = fig.add_subplot(gs[1, 0])   # bottom-leftax4 = fig.add_subplot(gs[1, 1])   # bottom-middleax5 = fig.add_subplot(gs[1, 2])   # bottom-rightax1.plot(data[:200], color=&apos;steelblue&apos;, alpha=0.7)ax1.set_title(&apos;Time Series (first 200 pts)&apos;)ax2.hist(data, bins=30, color=&apos;coral&apos;, edgecolor=&apos;white&apos;)ax2.set_title(&apos;Distribution&apos;)ax3.boxplot(data, vert=False, patch_artist=True)ax3.set_title(&apos;Boxplot&apos;)ax4.scatter(range(len(data[:100])), data[:100], s=10, alpha=0.5)ax4.set_title(&apos;Scatter&apos;)ax5.bar([&apos;Min&apos;,&apos;Mean&apos;,&apos;Max&apos;], [data.min(), data.mean(), data.max()],       color=[&apos;#EF4444&apos;,&apos;#3B82F6&apos;,&apos;#10B981&apos;])ax5.set_title(&apos;Stats&apos;)fig.suptitle(&apos;EDA Dashboard&apos;, fontsize=16, fontweight=&apos;bold&apos;)plt.savefig(&apos;dashboard.png&apos;, dpi=150, bbox_inches=&apos;tight&apos;)
+
+Block 8: Choosing the Right Chart
+Visualization is communication. The wrong chart misleads even with correct data. This block covers the chart selection framework: distribution, comparison, relationship, composition, and change-over-time.
+Purpose
+Chart Types
+Question Answered
+Example
+Distribution
+Histogram, KDE, Violin, Boxplot
+How are values spread?
+np.random.normal() data
+Comparison
+Bar, Grouped Bar, Dot plot
+How do categories differ?
+Sales by department
+Relationship
+Scatter, Bubble, Heatmap
+How do variables co-vary?
+Age vs. salary
+Composition
+Pie, Stacked Bar, Treemap
+What are the parts of a whole?
+Market share
+Trend over Time
+Line, Area, Step
+How does a value change?
+Stock price series
+⚠️ Common Pitfall
+Never use pie charts for more than 5 categories or when values are similar in size — readers cannot accurately compare slice angles. Use a bar chart instead.
+
+Day 5
+Block 9: Interactive Plots with Plotly Express
+For exploratory work and web dashboards, interactive charts allow zoom, hover, and filter. Plotly Express creates interactive charts with one-liners and works seamlessly in Jupyter.
+Example:
+import plotly.express as px# Interactive scatterdf = px.data.gapminder().query(&apos;year == 2007&apos;)fig = px.scatter(df, x=&apos;gdpPercap&apos;, y=&apos;lifeExp&apos;,                size=&apos;pop&apos;, color=&apos;continent&apos;,                hover_name=&apos;country&apos;, log_x=True,                title=&apos;GDP vs Life Expectancy (2007)&apos;)fig.show()# Animated time seriesfig2 = px.scatter(px.data.gapminder(),                 x=&apos;gdpPercap&apos;, y=&apos;lifeExp&apos;,                 animation_frame=&apos;year&apos;,                 animation_group=&apos;country&apos;,                 size=&apos;pop&apos;, color=&apos;continent&apos;,                 hover_name=&apos;country&apos;, log_x=True)fig2.show()# Interactive barfig3 = px.bar(df.nlargest(10,&apos;pop&apos;), x=&apos;country&apos;, y=&apos;pop&apos;,             color=&apos;continent&apos;, title=&apos;Top 10 Countries by Population&apos;)fig3.show()
+
+Block 10: Week 4 Capstone: EDA Dashboard
+Produce a 6-panel EDA dashboard on the tips dataset using both Matplotlib and Seaborn, with annotations, a consistent color palette, and saved to high-resolution PNG.
+Example:
+import seaborn as sns, matplotlib.pyplot as plt, numpy as npsns.set_theme(style=&apos;whitegrid&apos;, palette=&apos;muted&apos;)tips = sns.load_dataset(&apos;tips&apos;)fig, axes = plt.subplots(2, 3, figsize=(15, 9))fig.suptitle(&apos;Tips Dataset — Exploratory Analysis&apos;,             fontsize=16, fontweight=&apos;bold&apos;, y=0.98)# 1. Distribution of total billsns.histplot(tips[&apos;total_bill&apos;], kde=True, ax=axes[0,0], color=&apos;steelblue&apos;)axes[0,0].set_title(&apos;Bill Distribution&apos;)# 2. Tip % by daytips[&apos;tip_pct&apos;] = tips[&apos;tip&apos;] / tips[&apos;total_bill&apos;] * 100sns.boxplot(data=tips, x=&apos;day&apos;, y=&apos;tip_pct&apos;, ax=axes[0,1], palette=&apos;Set2&apos;)axes[0,1].set_title(&apos;Tip % by Day&apos;)# 3. Heatmap: corrcorr = tips[[&apos;total_bill&apos;,&apos;tip&apos;,&apos;size&apos;]].corr()sns.heatmap(corr, annot=True, fmt=&apos;.2f&apos;, cmap=&apos;coolwarm&apos;,           ax=axes[0,2], square=True)axes[0,2].set_title(&apos;Correlation&apos;)# 4. Scatter bill vs tipsns.scatterplot(data=tips, x=&apos;total_bill&apos;, y=&apos;tip&apos;, hue=&apos;sex&apos;,               style=&apos;smoker&apos;, ax=axes[1,0])axes[1,0].set_title(&apos;Bill vs Tip&apos;)# 5. Count by day &amp; timect = tips.groupby([&apos;day&apos;,&apos;time&apos;])[&apos;tip&apos;].count().reset_index()ct = ct.pivot(index=&apos;day&apos;, columns=&apos;time&apos;, values=&apos;tip&apos;)ct.plot(kind=&apos;bar&apos;, ax=axes[1,1], colormap=&apos;tab10&apos;)axes[1,1].set_title(&apos;Visits by Day &amp; Time&apos;)# 6. Average tip by party sizetips.groupby(&apos;size&apos;)[&apos;tip&apos;].mean().plot(ax=axes[1,2],    marker=&apos;o&apos;, color=&apos;coral&apos;, linewidth=2)axes[1,2].set_title(&apos;Avg Tip by Party Size&apos;)plt.tight_layout()plt.savefig(&apos;eda_dashboard.png&apos;, dpi=150, bbox_inches=&apos;tight&apos;)plt.show()
+
+
+
+WEEK 5: FILE FORMATS &amp; DATA PIPELINES
+PART II — WORKING WITH DATA &amp; WEB | CSV, JSON, XML, Excel, text parsing, regex, cleaning pipelines
+
+Day 1: CSV &amp; TSV Deep Dive
+Beyond pd.read_csv: handle encoding issues, malformed rows, chunking large files, and custom delimiters using the csv module for more control.
+Key Example:
+import csv, pandas as pd# Read in chunks for large fileschunks = pd.read_csv(&apos;big.csv&apos;, chunksize=10_000)result = pd.concat([chunk[chunk[&apos;status&apos;]==&apos;active&apos;] for chunk in chunks])# Custom CSV with csv modulewith open(&apos;out.csv&apos;,&apos;w&apos;, newline=&apos;&apos;, encoding=&apos;utf-8&apos;) as f:    writer = csv.DictWriter(f, fieldnames=[&apos;id&apos;,&apos;name&apos;,&apos;score&apos;])    writer.writeheader()    writer.writerows([{&apos;id&apos;:1,&apos;name&apos;:&apos;Alice&apos;,&apos;score&apos;:95}])
+
+Day 2: JSON — Nested &amp; Semi-structured Data
+JSON APIs often return nested structures. Use json module for raw parsing, Pandas json_normalize() to flatten nested objects, and jmespath for deep queries.
+Key Example:
+import json, pandas as pdfrom pandas import json_normalizedata = json.load(open(&apos;api.json&apos;))# Flatten nested JSONdf = json_normalize(data[&apos;results&apos;],    record_path=[&apos;orders&apos;],    meta=[&apos;customer_id&apos;,&apos;customer_name&apos;],    errors=&apos;ignore&apos;)print(df.head())
+
+Day 3: XML &amp; HTML Parsing
+XML is still prevalent in legacy enterprise systems and government data. Use xml.etree.ElementTree for lightweight parsing, and lxml for XPath queries and large documents.
+Key Example:
+import xml.etree.ElementTree as ETtree = ET.parse(&apos;catalog.xml&apos;)root = tree.getroot()records = []for item in root.findall(&apos;book&apos;):    records.append({&apos;title&apos;: item.find(&apos;title&apos;).text,                    &apos;price&apos;: float(item.find(&apos;price&apos;).text)})import pandas as pd; df = pd.DataFrame(records)
+
+Day 4: Regular Expressions for Data Cleaning
+Regex is indispensable for pattern matching in text data. The re module provides compile, search, match, findall, sub, and split. Always compile patterns you reuse.
+Key Example:
+import re# Extract phone numberspattern = re.compile(r&apos;\b(\+?\d[\d\s\-\.]{8,14}\d)\b&apos;)phones = pattern.findall(raw_text)# Clean HTML tagsclean = re.sub(r&apos;&lt;[^&gt;]+&gt;&apos;, &apos;&apos;, html_str)# Validate emailis_valid = bool(re.match(r&apos;^[\w.+-]+@[\w-]+\.[\w.]+$&apos;, email))# Named groupsm = re.match(r&apos;(?P&lt;year&gt;\d{4})-(?P&lt;month&gt;\d{2})-(?P&lt;day&gt;\d{2})&apos;, &apos;2025-06-01&apos;)print(m.group(&apos;year&apos;), m.group(&apos;month&apos;))
+
+Day 5: Building a Cleaning Pipeline with Functions
+A cleaning pipeline chains transformation steps, making the process reproducible and testable. Use a list of functions applied in sequence — the functional pipeline pattern.
+Key Example:
+def clean_pipeline(df, steps):    for step in steps:        df = step(df)    return dfdef drop_nulls(df): return df.dropna(subset=[&apos;id&apos;,&apos;date&apos;])def fix_dtypes(df):    df[&apos;amount&apos;] = pd.to_numeric(df[&apos;amount&apos;], errors=&apos;coerce&apos;)    df[&apos;date&apos;]   = pd.to_datetime(df[&apos;date&apos;], errors=&apos;coerce&apos;)    return dfdef remove_dupes(df): return df.drop_duplicates(subset=[&apos;id&apos;])clean_df = clean_pipeline(raw_df, [drop_nulls, fix_dtypes, remove_dupes])
+
+Week Quick Quiz
+How do you read a 10 GB CSV file without running out of memory?
+What does json_normalize() do for deeply nested JSON?
+Write a regex that extracts all valid email addresses from a string.
+Explain the difference between re.search() and re.match().
+What is the functional pipeline pattern and why is it useful for data cleaning?
+
+WEEK 6: HTTP, APIS &amp; WEB SCRAPING
+PART II — WORKING WITH DATA &amp; WEB | requests, REST APIs, JSON handling, BeautifulSoup, ethics
+
+Day 1: HTTP Basics &amp; the requests Library
+Every web API uses HTTP. Understand GET, POST, PUT, DELETE methods, status codes (200, 201, 400, 401, 403, 404, 500), headers, and query parameters. The requests library is the de-facto Python HTTP client.
+Key Example:
+import requests# GET request with query paramsresp = requests.get(&apos;https://api.github.com/search/repositories&apos;,    params={&apos;q&apos;: &apos;python data science&apos;, &apos;sort&apos;: &apos;stars&apos;},    headers={&apos;Accept&apos;: &apos;application/vnd.github.v3+json&apos;},    timeout=10)resp.raise_for_status()  # raises HTTPError on 4xx/5xxdata = resp.json()for repo in data[&apos;items&apos;][:3]:    print(repo[&apos;full_name&apos;], repo[&apos;stargazers_count&apos;])
+
+Day 2: REST API Authentication
+Most production APIs require authentication. Common mechanisms: API keys in headers, Bearer tokens (OAuth2), and Basic Auth. Never hard-code secrets — use environment variables.
+Key Example:
+import os, requests# API key from environment variableAPI_KEY = os.environ[&apos;MY_API_KEY&apos;]headers = {&apos;Authorization&apos;: f&apos;Bearer {API_KEY}&apos;}resp = requests.get(&apos;https://api.example.com/data&apos;, headers=headers)# Session — reuse connection and headerswith requests.Session() as session:    session.headers.update({&apos;Authorization&apos;: f&apos;Bearer {API_KEY}&apos;})    for page in range(1, 5):        r = session.get(&apos;https://api.example.com/items&apos;, params={&apos;page&apos;: page})        items = r.json()[&apos;items&apos;]
+
+Day 3: Pagination &amp; Rate Limiting
+Real APIs paginate large datasets. Patterns: page/limit, cursor-based, and link headers. Always respect rate limits — add sleep intervals and handle 429 Too Many Requests errors.
+Key Example:
+import time, requestsdef fetch_all_pages(base_url, params, page_key=&apos;page&apos;, delay=0.5):    all_items, page = [], 1    while True:        resp = requests.get(base_url, params={**params, page_key: page})        data = resp.json()        items = data.get(&apos;results&apos;, [])        if not items: break        all_items.extend(items)        page += 1        time.sleep(delay)  # be polite    return all_items
+
+Day 4: Web Scraping with BeautifulSoup
+When no API is available, HTML scraping extracts data from web pages. BeautifulSoup parses HTML into a tree and provides find/find_all/select (CSS selector) methods. Always check robots.txt first.
+Key Example:
+import requestsfrom bs4 import BeautifulSoupurl  = &apos;https://books.toscrape.com&apos;resp = requests.get(url, timeout=10)soup = BeautifulSoup(resp.text, &apos;lxml&apos;)# CSS selectorbooks = []for article in soup.select(&apos;article.product_pod&apos;):    title = article.select_one(&apos;h3 a&apos;)[&apos;title&apos;]    price = float(article.select_one(&apos;.price_color&apos;).text[1:])    rating = article.select_one(&apos;p.star-rating&apos;)[&apos;class&apos;][1]    books.append({&apos;title&apos;:title,&apos;price&apos;:price,&apos;rating&apos;:rating})import pandas as pd; df = pd.DataFrame(books)
+
+Day 5: Ethical Scraping &amp; Caching
+Web scraping has legal and ethical dimensions. Always: read robots.txt, add delays, identify your bot in User-Agent, cache responses to avoid re-fetching, and never overwhelm a server.
+Key Example:
+# Cache responses to diskimport requests_cacherequests_cache.install_cache(&apos;scrape_cache&apos;, expire_after=3600)# Now all requests are cached for 1 hourresp = requests.get(&apos;https://example.com&apos;)print(resp.from_cache)   # True on 2nd call
+⚠️ Ethics &amp; Legality
+Check robots.txt, respect Crawl-delay directives, do not scrape personal data without permission, and review the site&apos;s Terms of Service. Some jurisdictions have explicit computer access laws.
+
+Week Quick Quiz
+What HTTP status codes indicate client errors vs server errors?
+How do you pass query parameters with requests.get()?
+Why should you never hard-code API keys in your source code?
+What is the difference between BeautifulSoup&apos;s .find() and .select()?
+List three ethical guidelines for web scraping.
+
+WEEK 7: WEB FRAMEWORKS: FLASK &amp; FASTAPI
+PART II — WORKING WITH DATA &amp; WEB | Routing, templates, REST APIs, Pydantic, async basics
+
+Day 1: Flask: Routes, Methods &amp; Templates
+Flask is a micro web framework: minimal, flexible, and approachable. Define routes with @app.route(), render HTML templates with Jinja2, and handle GET/POST requests.
+Key Example:
+from flask import Flask, request, render_template, jsonifyapp = Flask(__name__)@app.route(&apos;/&apos;)def home(): return &apos;&lt;h1&gt;Hello Flask!&lt;/h1&gt;&apos;@app.route(&apos;/greet/&lt;name&gt;&apos;)def greet(name): return f&apos;Hello, {name}!&apos;@app.route(&apos;/api/square&apos;, methods=[&apos;GET&apos;])def square():    n = int(request.args.get(&apos;n&apos;, 0))    return jsonify({&apos;input&apos;: n, &apos;result&apos;: n**2})if __name__ == &apos;__main__&apos;: app.run(debug=True)
+
+Day 2: Flask: Forms, Validation &amp; Blueprints
+Flask-WTF handles form validation. Blueprints split large applications into modules. This pattern is essential for any real Flask application beyond a toy example.
+Key Example:
+from flask import Blueprint# auth.pyauth_bp = Blueprint(&apos;auth&apos;, __name__, url_prefix=&apos;/auth&apos;)@auth_bp.route(&apos;/login&apos;, methods=[&apos;POST&apos;])def login(): ...# app.pyfrom auth import auth_bpapp.register_blueprint(auth_bp)
+
+Day 3: FastAPI: Typed APIs &amp; Pydantic
+FastAPI is modern, async-first, and auto-generates OpenAPI documentation. Pydantic models provide request/response validation with Python type hints — catching bugs at API boundary.
+Key Example:
+from fastapi import FastAPIfrom pydantic import BaseModel, Fieldapp = FastAPI()class Item(BaseModel):    name: str    price: float = Field(..., gt=0)    in_stock: bool = True@app.post(&apos;/items/&apos;, response_model=Item)async def create_item(item: Item):    return item@app.get(&apos;/items/{item_id}&apos;)async def get_item(item_id: int, q: str | None = None):    return {&apos;id&apos;: item_id, &apos;q&apos;: q}# Run: uvicorn main:app --reload
+
+Day 4: FastAPI: Dependencies, Auth &amp; Background Tasks
+FastAPI&apos;s dependency injection system (Depends) is a clean way to handle authentication, database sessions, and shared logic. Background tasks let you offload slow work after returning a response.
+Key Example:
+from fastapi import Depends, HTTPException, BackgroundTasksfrom fastapi.security import OAuth2PasswordBeareroauth2 = OAuth2PasswordBearer(tokenUrl=&apos;token&apos;)async def get_current_user(token: str = Depends(oauth2)):    if token != &apos;valid&apos;: raise HTTPException(401, &apos;Invalid token&apos;)    return {&apos;user&apos;: &apos;alice&apos;}@app.get(&apos;/protected&apos;)async def protected(user=Depends(get_current_user)):    return {&apos;message&apos;: f&apos;Hello {user[&quot;user&quot;]}&apos;  }def send_email(email: str): print(f&apos;Sending to {email}&apos;)@app.post(&apos;/register&apos;)async def register(bg: BackgroundTasks, email: str):    bg.add_task(send_email, email)    return {&apos;status&apos;: &apos;registered&apos;}
+
+Day 5: Deploying Flask &amp; FastAPI Apps
+Both frameworks can be deployed on cloud platforms. Containerization with Docker is the standard. Key concepts: WSGI vs ASGI, gunicorn/uvicorn workers, environment variables for config.
+Key Example:
+# Dockerfile for FastAPI# FROM python:3.11-slim# WORKDIR /app# COPY requirements.txt .# RUN pip install -r requirements.txt# COPY . .# CMD [&quot;uvicorn&quot;, &quot;main:app&quot;, &quot;--host&quot;, &quot;0.0.0.0&quot;, &quot;--port&quot;, &quot;80&quot;]# gunicorn for Flask production# gunicorn -w 4 -b 0.0.0.0:8000 app:app# Test your API with httpxfrom fastapi.testclient import TestClientclient = TestClient(app)resp = client.get(&apos;/items/1?q=test&apos;)assert resp.status_code == 200
+
+Week Quick Quiz
+What is the difference between Flask and FastAPI?
+What does Pydantic&apos;s Field(gt=0) constraint do?
+Explain FastAPI&apos;s dependency injection with an example.
+What is the difference between WSGI and ASGI?
+How do you auto-document a FastAPI app?
+
+WEEK 8: MACHINE LEARNING WITH SCIKIT-LEARN
+PART II — WORKING WITH DATA &amp; WEB | ML workflow, preprocessing, classification, regression, pipelines, evaluation
+
+Day 1: The ML Workflow
+Machine learning follows a repeatable workflow: problem framing → data collection → EDA → preprocessing → model selection → training → evaluation → iteration → deployment. scikit-learn provides a consistent API across all steps.
+Key Example:
+from sklearn.model_selection import train_test_splitfrom sklearn.preprocessing import StandardScalerimport pandas as pddf = pd.read_csv(&apos;dataset.csv&apos;)X = df.drop(&apos;target&apos;, axis=1)y = df[&apos;target&apos;]X_train, X_test, y_train, y_test = train_test_split(    X, y, test_size=0.2, random_state=42, stratify=y)scaler = StandardScaler()X_train_s = scaler.fit_transform(X_train)  # fit on train only!X_test_s  = scaler.transform(X_test)         # transform test
+⚠️ Data Leakage
+Always fit preprocessors (scalers, encoders) on training data ONLY. Applying fit_transform to the entire dataset leaks information about the test set into training — a fundamental error that inflates metrics.
+
+Day 2: Classification: Logistic Regression &amp; Decision Trees
+Classification predicts a discrete label. Logistic Regression is interpretable and fast. Decision Trees are non-linear and intuitive. Both follow sklearn&apos;s fit/predict/score interface.
+Key Example:
+from sklearn.linear_model import LogisticRegressionfrom sklearn.tree import DecisionTreeClassifierfrom sklearn.metrics import classification_report, confusion_matrix# Logistic Regressionlr = LogisticRegression(max_iter=1000, random_state=42)lr.fit(X_train_s, y_train)y_pred = lr.predict(X_test_s)print(classification_report(y_test, y_pred))# Decision Treedt = DecisionTreeClassifier(max_depth=5, random_state=42)dt.fit(X_train, y_train)print(dt.score(X_test, y_test))  # accuracy
+
+Day 3: Regression &amp; Evaluation Metrics
+Regression predicts a continuous value. Key metrics: MAE, MSE, RMSE, R². Ridge and Lasso add regularization to prevent overfitting.
+Key Example:
+from sklearn.linear_model import LinearRegression, Ridge, Lassofrom sklearn.metrics import mean_absolute_error, r2_score, mean_squared_errorimport numpy as nplr = LinearRegression()lr.fit(X_train, y_train)y_pred = lr.predict(X_test)mae  = mean_absolute_error(y_test, y_pred)rmse = np.sqrt(mean_squared_error(y_test, y_pred))r2   = r2_score(y_test, y_pred)print(f&apos;MAE: {mae:.2f}  RMSE: {rmse:.2f}  R²: {r2:.3f}&apos;)# Ridge (L2 regularization)ridge = Ridge(alpha=1.0).fit(X_train, y_train)print(&apos;Ridge R²:&apos;, ridge.score(X_test, y_test))
+
+Day 4: Pipelines &amp; Cross-Validation
+sklearn Pipelines chain preprocessing and modeling into a single object, preventing leakage and simplifying code. Cross-validation gives a robust estimate of model performance.
+Key Example:
+from sklearn.pipeline import Pipelinefrom sklearn.preprocessing import StandardScaler, OneHotEncoderfrom sklearn.compose import ColumnTransformerfrom sklearn.ensemble import RandomForestClassifierfrom sklearn.model_selection import cross_val_scorenum_pipe = Pipeline([(&apos;scaler&apos;, StandardScaler())])cat_pipe = Pipeline([(&apos;ohe&apos;, OneHotEncoder(handle_unknown=&apos;ignore&apos;))])preprocessor = ColumnTransformer([    (&apos;num&apos;, num_pipe, num_cols),    (&apos;cat&apos;, cat_pipe, cat_cols)])full_pipe = Pipeline([    (&apos;prep&apos;, preprocessor),    (&apos;model&apos;, RandomForestClassifier(n_estimators=100, random_state=42))])scores = cross_val_score(full_pipe, X, y, cv=5, scoring=&apos;accuracy&apos;)print(f&apos;CV Accuracy: {scores.mean():.3f} ± {scores.std():.3f}&apos;)
+
+Day 5: Hyperparameter Tuning &amp; Feature Importance
+Finding optimal model parameters is key to good performance. GridSearchCV and RandomizedSearchCV automate this. Feature importance reveals which variables drive predictions.
+Key Example:
+from sklearn.model_selection import RandomizedSearchCVfrom scipy.stats import randintparam_dist = {&apos;model__n_estimators&apos;: randint(50, 300),              &apos;model__max_depth&apos;: [None, 5, 10, 20]}search = RandomizedSearchCV(full_pipe, param_dist,    n_iter=20, cv=5, scoring=&apos;accuracy&apos;, n_jobs=-1, random_state=42)search.fit(X_train, y_train)print(&apos;Best params:&apos;, search.best_params_)print(&apos;Best CV score:&apos;, search.best_score_:.3f)best_model = search.best_estimator_# Feature importancesrf = best_model.named_steps[&apos;model&apos;]importances = pd.Series(rf.feature_importances_, index=feature_names)importances.nlargest(10).plot(kind=&apos;barh&apos;)
+
+Week Quick Quiz
+What is data leakage and how do sklearn Pipelines prevent it?
+Explain the difference between precision and recall.
+What is cross-validation and why is it more reliable than a single train/test split?
+When would you choose Ridge over Lasso regularization?
+What does a confusion matrix tell you that accuracy alone cannot?
+
+WEEK 9: SCIENTIFIC PYTHON: SCIPY &amp; SYMPY
+PART III — SCIENCE, NLP &amp; VISION | Optimization, integration, statistics, symbolic math, equation solving
+
+Day 1: SciPy Overview &amp; Optimization
+SciPy extends NumPy with scientific algorithms organized in submodules: scipy.optimize (minimization, root-finding), scipy.integrate (numerical integration), scipy.stats (distributions, tests), scipy.interpolate, scipy.signal, scipy.linalg.
+Key Example:
+from scipy.optimize import minimize, brentqimport numpy as np# Minimize a functiondef rosenbrock(x): return (1-x[0])**2 + 100*(x[1]-x[0]**2)**2result = minimize(rosenbrock, x0=[0,0], method=&apos;BFGS&apos;)print(result.x)   # [1.0, 1.0]  — true minimum# Find root of f(x)=0f = lambda x: x**3 - 2*x - 5root = brentq(f, 2, 3)         # bracket [2,3]print(f&apos;Root: {root:.6f}&apos;)     # 2.094551
+
+Day 2: Numerical Integration &amp; Interpolation
+scipy.integrate provides quad() for definite integrals and solve_ivp() for ordinary differential equations. scipy.interpolate creates smooth curves through sparse data points.
+Key Example:
+from scipy.integrate import quad, solve_ivpfrom scipy.interpolate import interp1d, CubicSplineimport numpy as np# Definite integral of sin(x) from 0 to piresult, error = quad(np.sin, 0, np.pi)print(f&apos;∫sin(x)dx = {result:.6f}&apos;)  # 2.0# ODE: dy/dt = -2y  (exponential decay)sol = solve_ivp(lambda t, y: -2*y, t_span=(0,5), y0=[1.0],               t_eval=np.linspace(0,5,100))# Cubic spline interpolationx_sparse = np.array([0, 1, 2, 3, 4])y_sparse = np.array([0, 1, 0.5, 2, 1.5])cs = CubicSpline(x_sparse, y_sparse)x_fine = np.linspace(0, 4, 100)y_fine = cs(x_fine)  # smooth curve
+
+Day 3: SymPy: Symbolic Mathematics
+SymPy performs exact symbolic algebra: differentiation, integration, simplification, solving equations, and matrix algebra — without floating-point rounding errors.
+Key Example:
+import sympy as spx, y, t = sp.symbols(&apos;x y t&apos;)# Symbolic differentiationf = sp.sin(x) * sp.exp(-x**2)df = sp.diff(f, x)print(sp.simplify(df))# Symbolic integrationintegral = sp.integrate(sp.exp(-x**2), (x, -sp.oo, sp.oo))print(integral)   # sqrt(pi)# Solve equationsolutions = sp.solve(x**3 - 6*x + 2, x)print(solutions)# System of equationseqs = [x + y - 5, 2*x - y - 4]print(sp.solve(eqs, [x, y]))  # {x:3, y:2}# Expand / factor / simplifyexpr = (x + 1)**6print(sp.expand(expr))
+
+Day 4: Signal Processing with scipy.signal
+scipy.signal provides filtering, Fourier analysis, and convolution. Essential for time-series preprocessing, audio processing, and sensor data analysis.
+Key Example:
+from scipy import signalimport numpy as npt = np.linspace(0, 1, 500)# Composite signal: 5 Hz + 50 Hz noisex = np.sin(2*np.pi*5*t) + 0.5*np.sin(2*np.pi*50*t)# Low-pass Butterworth filterb, a = signal.butter(4, Wn=0.1, btype=&apos;low&apos;)filtered = signal.filtfilt(b, a, x)# Power spectral density (Welch method)freqs, psd = signal.welch(x, fs=500)
+
+Day 5: Combining NumPy, SciPy &amp; SymPy: Physics Simulation
+We build a pendulum simulation combining: SymPy (derive equations of motion), SciPy (solve ODE), NumPy (vectorize), Matplotlib (visualize).
+Key Example:
+# Pendulum: d²θ/dt² + (g/L)sin(θ) = 0from scipy.integrate import solve_ivpimport numpy as npg, L = 9.81, 1.0def pendulum(t, y): return [y[1], -(g/L)*np.sin(y[0])]# Initial: 45 degrees, at resttheta0 = np.pi/4sol = solve_ivp(pendulum, t_span=(0,20),               y0=[theta0, 0],               t_eval=np.linspace(0, 20, 2000),               method=&apos;RK45&apos;)import matplotlib.pyplot as pltplt.plot(sol.t, np.degrees(sol.y[0]))plt.xlabel(&apos;Time (s)&apos;); plt.ylabel(&apos;Angle (°)&apos;)plt.title(&apos;Pendulum Motion&apos;); plt.grid(True); plt.show()
+
+Week Quick Quiz
+What is the difference between scipy.optimize.minimize and brentq?
+How does symbolic integration differ from numerical integration?
+Solve the equation x² - 5x + 6 = 0 using SymPy.
+What does a Butterworth filter do?
+What is the Runge-Kutta (RK45) method used for?
+
+WEEK 10: PRACTICAL STATISTICS FOR DATA SCIENCE
+PART III — SCIENCE, NLP &amp; VISION | Descriptive stats, distributions, correlation, hypothesis testing
+
+Day 1: Descriptive Statistics &amp; Distributions
+Descriptive statistics summarize data: measures of central tendency (mean, median, mode), dispersion (variance, std, IQR), and shape (skewness, kurtosis). Understanding distributions is foundational for choosing statistical tests.
+Key Example:
+import scipy.stats as stats, numpy as np, pandas as pddata = np.array([23,45,67,34,89,55,42,61,78,49])print(f&apos;Mean:  {data.mean():.2f}&apos;)print(f&apos;Median:{np.median(data):.2f}&apos;)print(f&apos;Std:   {data.std():.2f}&apos;)print(f&apos;IQR:   {stats.iqr(data):.2f}&apos;)print(f&apos;Skew:  {stats.skew(data):.3f}&apos;)# Fit a distributionmu, std = stats.norm.fit(data)print(f&apos;Best-fit Normal: μ={mu:.2f}  σ={std:.2f}&apos;)
+
+Day 2: Probability Distributions in scipy.stats
+scipy.stats provides over 100 continuous and discrete distributions. Key ones: normal, t, chi2, f, binomial, poisson. Each has pdf/pmf, cdf, ppf (inverse CDF), and rvs (random samples).
+Key Example:
+from scipy import stats# Normal distributionnorm = stats.norm(loc=170, scale=10)  # height in cmprint(norm.pdf(175))    # probability density at 175print(norm.cdf(180))    # P(X ≤ 180)print(norm.ppf(0.95))   # 95th percentilesamples = norm.rvs(size=1000)# Binomial: P(X=k) for n=20 trials, p=0.3binom = stats.binom(n=20, p=0.3)print(binom.pmf(6))     # P(exactly 6 successes)print(binom.cdf(8))     # P(at most 8 successes)
+
+Day 3: Hypothesis Testing: t-tests &amp; ANOVA
+Hypothesis testing formalizes the question &apos;is this difference real or due to chance?&apos; A t-test compares two means. ANOVA compares multiple means. Always check assumptions before applying a test.
+Key Example:
+from scipy import stats# One-sample t-test: is mean != 100?data = [102, 98, 107, 95, 110, 103]t_stat, p_val = stats.ttest_1samp(data, popmean=100)print(f&apos;t={t_stat:.3f}  p={p_val:.4f}&apos;,      &apos;→ reject H0&apos; if p_val &lt; 0.05 else &apos;→ fail to reject H0&apos;)# Two-sample t-testgroupA = [85, 90, 92, 88, 95]groupB = [78, 82, 80, 85, 88]t, p = stats.ttest_ind(groupA, groupB, equal_var=False)  # Welchprint(f&apos;Two-sample: t={t:.3f}  p={p:.4f}&apos;)# One-way ANOVAf, p = stats.f_oneway(groupA, groupB, [70,75,72,68,74])print(f&apos;ANOVA: F={f:.3f}  p={p:.4f}&apos;)
+
+Day 4: Correlation, Chi-Square &amp; Non-Parametric Tests
+Pearson correlation measures linear association. Chi-square tests association between categorical variables. Non-parametric tests (Mann-Whitney U, Kruskal-Wallis) work when normality cannot be assumed.
+Key Example:
+from scipy import statsimport numpy as npx = np.array([1,2,3,4,5])y = np.array([1.1,1.9,3.2,3.8,5.1])# Pearson correlationr, p = stats.pearsonr(x, y)print(f&apos;r={r:.3f}  p={p:.4f}&apos;)# Spearman (non-parametric)rho, p = stats.spearmanr(x, y)# Chi-square test of independencecontingency = [[25,15],[10,50]]chi2, p, dof, expected = stats.chi2_contingency(contingency)print(f&apos;chi2={chi2:.2f}  p={p:.4f}  dof={dof}&apos;)# Mann-Whitney U (non-parametric t-test)u, p = stats.mannwhitneyu([1,2,3,4,5], [3,4,5,6,7])
+
+Day 5: Confidence Intervals &amp; Bootstrap
+A confidence interval quantifies uncertainty in an estimate. The bootstrap method resamples the data to estimate any statistic&apos;s distribution without distributional assumptions.
+Key Example:
+import numpy as npfrom scipy import statsdata = np.array([52,58,63,49,71,55,60,48,67,54])# 95% CI for the mean (using t-distribution)n, se = len(data), stats.sem(data)ci = stats.t.interval(0.95, df=n-1, loc=data.mean(), scale=se)print(f&apos;Mean: {data.mean():.1f}  95% CI: ({ci[0]:.1f}, {ci[1]:.1f})&apos;)# Bootstrap CI (no distributional assumption)rng = np.random.default_rng(42)boot_means = [rng.choice(data, len(data)).mean() for _ in range(10000)]boot_ci = np.percentile(boot_means, [2.5, 97.5])print(f&apos;Bootstrap 95% CI: ({boot_ci[0]:.1f}, {boot_ci[1]:.1f})&apos;)
+
+Week Quick Quiz
+What is the null hypothesis in a t-test?
+When should you use a non-parametric test instead of a t-test?
+Explain the p-value in plain English.
+What does a chi-square test measure?
+What is the bootstrap method and why is it useful?
+
+WEEK 11: NLP: NLTK, SPACY &amp; TRANSFORMERS
+PART III — SCIENCE, NLP &amp; VISION | Tokenization, stemming, NER, POS tagging, text classification, Hugging Face
+
+Day 1: Text Preprocessing with NLTK
+Natural Language Processing converts raw text into structured features. NLTK provides tokenization, stop word removal, stemming, and lemmatization — the standard preprocessing pipeline.
+Key Example:
+import nltknltk.download(&apos;punkt&apos;); nltk.download(&apos;stopwords&apos;)from nltk.tokenize import word_tokenize, sent_tokenizefrom nltk.corpus import stopwordsfrom nltk.stem import PorterStemmer, WordNetLemmatizertext = &apos;Natural language processing transforms raw text into insights.&apos;# Tokenizewords = word_tokenize(text.lower())# Remove stop words and punctuationstops = set(stopwords.words(&apos;english&apos;))clean = [w for w in words if w.isalnum() and w not in stops]# Stemming vs Lemmatizationps = PorterStemmer(); lm = WordNetLemmatizer()print([ps.stem(w) for w in clean])       # aggressive, lossyprint([lm.lemmatize(w) for w in clean])   # dictionary form
+
+Day 2: spaCy: Industrial-Strength NLP
+spaCy processes text at scale with pre-trained models. In one pass it provides: tokenization, POS tagging, dependency parsing, Named Entity Recognition (NER), and sentence segmentation.
+Key Example:
+import spacynlp = spacy.load(&apos;en_core_web_sm&apos;)doc = nlp(&apos;Apple Inc. is looking to buy a UK startup for $1 billion.&apos;)# Named Entity Recognitionfor ent in doc.ents:    print(f&apos;{ent.text:&lt;20} {ent.label_:&lt;10} {spacy.explain(ent.label_)}&apos;)# POS taggingfor token in doc[:5]:    print(f&apos;{token.text:&lt;10} {token.pos_:&lt;8} {token.dep_}&apos;)# Noun chunksfor chunk in doc.noun_chunks:    print(chunk.text, &apos;-&gt;&apos;, chunk.root.head.text)# Similarity (requires larger model)# doc1.similarity(doc2)  → float 0-1
+
+Day 3: TF-IDF &amp; Text Classification
+TF-IDF converts text into numerical features by weighting words by their frequency in a document vs their rarity across documents. Combined with sklearn classifiers, it enables fast text classification.
+Key Example:
+from sklearn.feature_extraction.text import TfidfVectorizerfrom sklearn.naive_bayes import MultinomialNBfrom sklearn.pipeline import Pipelinefrom sklearn.datasets import fetch_20newsgroupsfrom sklearn.metrics import classification_reportcategories = [&apos;sci.space&apos;,&apos;rec.sport.baseball&apos;,&apos;talk.politics.guns&apos;]train = fetch_20newsgroups(subset=&apos;train&apos;, categories=categories)test  = fetch_20newsgroups(subset=&apos;test&apos;,  categories=categories)pipe = Pipeline([    (&apos;tfidf&apos;, TfidfVectorizer(max_features=10000, ngram_range=(1,2))),    (&apos;clf&apos;,   MultinomialNB())])pipe.fit(train.data, train.target)preds = pipe.predict(test.data)print(classification_report(test.target, preds, target_names=categories))
+
+Day 4: Hugging Face Transformers
+Transformer models (BERT, GPT, etc.) achieve state-of-the-art results on virtually all NLP tasks. Hugging Face&apos;s transformers library makes them accessible via a high-level pipeline() API.
+Key Example:
+from transformers import pipeline# Sentiment analysissentiment = pipeline(&apos;sentiment-analysis&apos;)results = sentiment([&apos;I love this product!&apos;, &apos;Terrible experience.&apos;])for r in results: print(r[&apos;label&apos;], f&quot;{r[&apos;score&apos;]:.3f}&quot;)# Named entity recognitionner = pipeline(&apos;ner&apos;, grouped_entities=True)print(ner(&apos;Elon Musk founded SpaceX in Hawthorne, California.&apos;))# Text generationgen = pipeline(&apos;text-generation&apos;, model=&apos;gpt2&apos;)out = gen(&apos;Once upon a time in&apos;, max_new_tokens=50, num_return_sequences=1)print(out[0][&apos;generated_text&apos;])# Question answeringqa = pipeline(&apos;question-answering&apos;)print(qa(question=&apos;Who founded SpaceX?&apos;,         context=&apos;Elon Musk founded SpaceX in 2002.&apos;))
+
+Day 5: Sentence Embeddings &amp; Semantic Search
+Modern NLP uses dense vector embeddings to capture semantic meaning. Sentence Transformers encode sentences into fixed-size vectors; cosine similarity finds semantically related texts.
+Key Example:
+from sentence_transformers import SentenceTransformerfrom sklearn.metrics.pairwise import cosine_similarityimport numpy as npmodel = SentenceTransformer(&apos;all-MiniLM-L6-v2&apos;)sentences = [    &apos;A dog is running in the park.&apos;,    &apos;The canine is jogging outdoors.&apos;,    &apos;Python is a programming language.&apos;,    &apos;Snakes are reptiles.&apos;]embeddings = model.encode(sentences)   # shape (4, 384)sim_matrix = cosine_similarity(embeddings)print(&apos;Similar pairs:&apos;)for i in range(len(sentences)):    for j in range(i+1, len(sentences)):        if sim_matrix[i,j] &gt; 0.5:            print(f&apos;  ({i},{j}): {sim_matrix[i,j]:.3f}&apos;)
+
+Week Quick Quiz
+What is the difference between stemming and lemmatization?
+What does TF-IDF stand for and how is it calculated?
+Name three types of Named Entities that spaCy recognizes.
+What is the attention mechanism in Transformer models?
+How do sentence embeddings enable semantic search?
+
+WEEK 12: COMPUTER VISION WITH OPENCV
+PART III — SCIENCE, NLP &amp; VISION | Image representation, transformations, filters, edge detection, contours
+
+Day 1: Image Basics &amp; OpenCV Fundamentals
+OpenCV reads images as NumPy arrays. A color image is a (H, W, 3) array in BGR format (not RGB!). Grayscale is (H, W). Understanding this is foundational — every CV operation is a NumPy operation.
+Key Example:
+import cv2, numpy as npimg = cv2.imread(&apos;photo.jpg&apos;)          # (H, W, 3) BGRprint(img.shape, img.dtype)            # (480,640,3) uint8gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # grayscalergb  = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)   # fix for matplotlib# Crop (just a NumPy slice)roi = img[100:200, 150:300]# Resizeresized = cv2.resize(img, (320, 240))# RotateM = cv2.getRotationMatrix2D((img.shape[1]//2, img.shape[0]//2), 45, 1.0)rotated = cv2.warpAffine(img, M, (img.shape[1], img.shape[0]))import matplotlib.pyplot as pltplt.imshow(rgb); plt.axis(&apos;off&apos;); plt.show()
+
+Day 2: Image Filtering &amp; Morphological Operations
+Filtering (convolution) modifies each pixel based on its neighborhood. Blurring removes noise; sharpening enhances detail. Morphological operations (erosion, dilation) work on binary images.
+Key Example:
+# Blur (reduce noise)gaussian = cv2.GaussianBlur(img, (7,7), sigmaX=0)median   = cv2.medianBlur(img, 5)    # good for salt-pepper noise# Sharpenkernel = np.array([[0,-1,0],[-1,5,-1],[0,-1,0]])sharp  = cv2.filter2D(img, -1, kernel)# Morphologicalgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)_, binary = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5,5))eroded  = cv2.erode(binary, kernel, iterations=1)dilated = cv2.dilate(binary, kernel, iterations=1)opened  = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel)
+
+Day 3: Edge Detection &amp; Contours
+Edge detection identifies boundaries in images. Canny is the industry standard. Contours are continuous curves of same intensity — used for shape analysis, object detection, and measurement.
+Key Example:
+# Canny edge detectiongray  = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)blurred = cv2.GaussianBlur(gray, (5,5), 0)edges = cv2.Canny(blurred, threshold1=50, threshold2=150)# Find contourscontours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL,                               cv2.CHAIN_APPROX_SIMPLE)print(f&apos;Found {len(contours)} contours&apos;)# Draw contoursoutput = img.copy()cv2.drawContours(output, contours, -1, (0,255,0), 2)# Bounding box of largest contourlargest = max(contours, key=cv2.contourArea)x, y, w, h = cv2.boundingRect(largest)cv2.rectangle(output, (x,y), (x+w,y+h), (255,0,0), 2)area = cv2.contourArea(largest)
+
+Day 4: Feature Detection &amp; Matching
+Feature detectors (ORB, SIFT) find distinctive keypoints that remain stable under rotation and scale changes. Feature matching enables image stitching, object recognition, and 3D reconstruction.
+Key Example:
+# ORB feature detection (free to use)orb = cv2.ORB_create(nfeatures=500)kp1, des1 = orb.detectAndCompute(gray1, None)kp2, des2 = orb.detectAndCompute(gray2, None)img_kp = cv2.drawKeypoints(gray1, kp1, None,    flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)# Brute-force matchingbf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)matches = bf.match(des1, des2)matches = sorted(matches, key=lambda x: x.distance)good_matches = matches[:50]result = cv2.drawMatches(img1, kp1, img2, kp2, good_matches, None,    flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
+
+Day 5: Face Detection &amp; Video Processing
+Haar cascades and DNN-based detectors detect faces and objects in real-time. Video processing reads frames in a loop — the same image operations apply frame-by-frame.
+Key Example:
+# Face detection with Haar cascadeface_cascade = cv2.CascadeClassifier(    cv2.data.haarcascades + &apos;haarcascade_frontalface_default.xml&apos;)gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)faces = face_cascade.detectMultiScale(gray, 1.3, 5)for (x,y,w,h) in faces:    cv2.rectangle(img, (x,y), (x+w,y+h), (255,0,0), 2)# Video capturecap = cv2.VideoCapture(0)   # webcamwhile cap.isOpened():    ret, frame = cap.read()    if not ret: break    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)    edges = cv2.Canny(gray, 50, 150)    cv2.imshow(&apos;Edges&apos;, edges)    if cv2.waitKey(1) &amp; 0xFF == ord(&apos;q&apos;): breakcap.release(); cv2.destroyAllWindows()
+
+Week Quick Quiz
+Why does OpenCV use BGR instead of RGB?
+What is the difference between cv2.THRESH_BINARY and cv2.THRESH_OTSU?
+Explain what Canny edge detection does in three steps.
+What are contours and how are they used in object detection?
+What is the difference between erosion and dilation in morphological operations?
+
+WEEK 13: DATABASES &amp; DATA ENGINEERING
+PART IV — ENGINEERING &amp; AUTOMATION | SQLite, SQLAlchemy ORM, ETL pipelines, Dask for large data
+
+Day 1: SQLite with sqlite3 &amp; SQL Fundamentals
+SQLite is an embedded database — no server required. sqlite3 is in the standard library. Master SQL fundamentals (SELECT, JOIN, GROUP BY, subqueries) as they transfer to PostgreSQL, MySQL, etc.
+Key Example:
+import sqlite3, pandas as pdconn = sqlite3.connect(&apos;school.db&apos;)   # creates filecursor = conn.cursor()cursor.execute(&apos;&apos;&apos;CREATE TABLE IF NOT EXISTS students    (id INTEGER PRIMARY KEY, name TEXT, grade REAL)&apos;&apos;&apos;)cursor.executemany(&apos;INSERT INTO students VALUES (?,?,?)&apos;,    [(1,&apos;Alice&apos;,3.9),(2,&apos;Bob&apos;,3.5),(3,&apos;Carol&apos;,3.7)])conn.commit()# Query → Pandasdf = pd.read_sql(&apos;SELECT * FROM students WHERE grade &gt; 3.6&apos;, conn)print(df)# Update / deletecursor.execute(&apos;UPDATE students SET grade=4.0 WHERE name=?&apos;,(&apos;Alice&apos;,))conn.commit(); conn.close()
+
+Day 2: SQLAlchemy ORM
+SQLAlchemy&apos;s ORM maps Python classes to database tables. Write Python instead of SQL strings — your code is database-agnostic, safer (no SQL injection), and more maintainable.
+Key Example:
+from sqlalchemy import create_engine, Column, Integer, String, Floatfrom sqlalchemy.orm import declarative_base, SessionBase = declarative_base()class Product(Base):    __tablename__ = &apos;products&apos;    id    = Column(Integer, primary_key=True)    name  = Column(String(100))    price = Column(Float)engine = create_engine(&apos;sqlite:///shop.db&apos;)Base.metadata.create_all(engine)with Session(engine) as session:    p = Product(name=&apos;Widget&apos;, price=9.99)    session.add(p)    session.commit()    products = session.query(Product).filter(Product.price &lt; 50).all()    for p in products: print(p.name, p.price)
+
+Day 3: Building ETL Pipelines
+ETL (Extract, Transform, Load) is the backbone of data engineering. Extract from source(s), transform (clean, join, aggregate), load to destination (DB, data warehouse, file). We build a modular ETL with logging.
+Key Example:
+import logging, pandas as pd, sqlite3logging.basicConfig(level=logging.INFO,    format=&apos;%(asctime)s %(levelname)s %(message)s&apos;)def extract(filepath):    logging.info(f&apos;Extracting {filepath}&apos;)    return pd.read_csv(filepath)def transform(df):    logging.info(&apos;Transforming...&apos;)    df.dropna(subset=[&apos;id&apos;,&apos;amount&apos;], inplace=True)    df[&apos;amount&apos;] = pd.to_numeric(df[&apos;amount&apos;], errors=&apos;coerce&apos;)    df[&apos;month&apos;]  = pd.to_datetime(df[&apos;date&apos;]).dt.to_period(&apos;M&apos;)    return df.groupby([&apos;month&apos;,&apos;product&apos;])[&apos;amount&apos;].sum().reset_index()def load(df, db_path, table):    conn = sqlite3.connect(db_path)    df.to_sql(table, conn, if_exists=&apos;replace&apos;, index=False)    conn.close()    logging.info(f&apos;Loaded {len(df)} rows → {table}&apos;)raw = extract(&apos;sales.csv&apos;)clean = transform(raw)load(clean, &apos;warehouse.db&apos;, &apos;monthly_sales&apos;)
+
+Day 4: Dask: Parallel Computing for Large Data
+Dask scales Pandas and NumPy to datasets larger than memory. It uses lazy evaluation — builds a task graph and executes only when .compute() is called. Works seamlessly on a laptop or a cluster.
+Key Example:
+import dask.dataframe as dd# Read a massive CSV (lazy — no data loaded yet)ddf = dd.read_csv(&apos;huge_dataset_*.csv&apos;)   # glob patternprint(ddf.dtypes)   # fast — reads only metadata# Operations (lazy)result = (ddf    .query(&apos;amount &gt; 0&apos;)    .groupby(&apos;category&apos;)[&apos;amount&apos;]    .sum()    .nlargest(10))# Execute (data flows now)answer = result.compute()print(answer)# Dask arrays (like NumPy but chunked)import dask.array as dax = da.random.random((100_000, 100_000), chunks=(1000, 1000))print(x.mean().compute())   # works even if array doesn&apos;t fit in RAM
+
+Day 5: Database Performance &amp; Indexing
+Slow queries are one of the most common production issues. Indexes dramatically speed up SELECT with WHERE. Explain plans reveal how the database executes queries.
+Key Example:
+import sqlite3conn = sqlite3.connect(&apos;analytics.db&apos;)cursor = conn.cursor()# Create index on frequently queried columncursor.execute(&apos;CREATE INDEX IF NOT EXISTS idx_date ON orders(order_date)&apos;)cursor.execute(&apos;CREATE INDEX IF NOT EXISTS idx_cust ON orders(customer_id)&apos;)# EXPLAIN QUERY PLANcursor.execute(&apos;EXPLAIN QUERY PLAN SELECT * FROM orders WHERE customer_id=?&apos;, (42,))for row in cursor.fetchall(): print(row)# Bulk insert with executemany (much faster than loop)data = [(i, f&apos;Item {i}&apos;, i*1.5) for i in range(100000)]cursor.executemany(&apos;INSERT INTO products VALUES (?,?,?)&apos;, data)conn.commit()# Use parameterized queries — NEVER string concatenation (SQL injection!)# CORRECT: cursor.execute(&apos;SELECT * FROM users WHERE id=?&apos;, (user_id,))# WRONG:   cursor.execute(f&apos;SELECT * FROM users WHERE id={user_id}&apos;)
+
+Week Quick Quiz
+What is the difference between SQL&apos;s LEFT JOIN and INNER JOIN?
+Why use SQLAlchemy ORM instead of raw SQL strings?
+What does ETL stand for and what does each step involve?
+Why does Dask use lazy evaluation?
+What is an index and when does it improve query performance?
+
+WEEK 14: AUTOMATION, SCRIPTING &amp; TESTING
+PART IV — ENGINEERING &amp; AUTOMATION | os/pathlib, subprocess, selenium, logging, pytest
+
+Day 1: File System Automation with os &amp; pathlib
+Automating file and directory operations — copying, moving, renaming, searching — saves hours of manual work. pathlib is the modern, object-oriented way; os.walk() handles recursive traversal.
+Key Example:
+from pathlib import Pathimport shutil# Iterate all Python files recursivelyfor f in Path(&apos;.&apos;).rglob(&apos;*.py&apos;):    print(f.stem, f.suffix, f.stat().st_size)# Create directory treePath(&apos;output/reports/2025&apos;).mkdir(parents=True, exist_ok=True)# Copy / move / renameshutil.copy(&apos;source.txt&apos;, &apos;backup/source.txt&apos;)shutil.move(&apos;old_name.csv&apos;, &apos;new_name.csv&apos;)Path(&apos;tmp.log&apos;).rename(&apos;archive/tmp.log&apos;)# Pattern matchingcsvs = list(Path(&apos;data&apos;).glob(&apos;sales_202?.csv&apos;))# DeletePath(&apos;tmp.txt&apos;).unlink(missing_ok=True)shutil.rmtree(&apos;tmp_dir&apos;, ignore_errors=True)
+
+Day 2: subprocess &amp; System Commands
+subprocess runs shell commands from Python — compiling code, calling CLI tools, running scripts. The subprocess.run() function is the modern interface; always use check=True to catch errors.
+Key Example:
+import subprocess# Run command, capture outputresult = subprocess.run([&apos;python&apos;, &apos;--version&apos;],    capture_output=True, text=True, check=True)print(result.stdout.strip())# Shell pipelineresult = subprocess.run(&apos;find . -name *.py | wc -l&apos;,    shell=True, capture_output=True, text=True)# Compile a C filesubprocess.run([&apos;gcc&apos;, &apos;-O2&apos;, &apos;program.c&apos;, &apos;-o&apos;, &apos;program&apos;], check=True)# Python subprocess with timeouttry:    subprocess.run([&apos;long_running_script.py&apos;], timeout=30, check=True)except subprocess.TimeoutExpired:    print(&apos;Script timed out!&apos;)
+
+Day 3: Browser Automation with Selenium
+Selenium controls a real web browser programmatically — filling forms, clicking buttons, scraping JavaScript-rendered pages. Use it for testing UIs and automating browser-based workflows.
+Key Example:
+from selenium import webdriverfrom selenium.webdriver.common.by import Byfrom selenium.webdriver.support.ui import WebDriverWaitfrom selenium.webdriver.support import expected_conditions as ECoptions = webdriver.ChromeOptions()options.add_argument(&apos;--headless&apos;)driver = webdriver.Chrome(options=options)try:    driver.get(&apos;https://example.com&apos;)    # Wait for element to appear    el = WebDriverWait(driver, 10).until(        EC.presence_of_element_located((By.ID, &apos;main&apos;)))    print(el.text[:100])    # Fill a form    driver.find_element(By.NAME, &apos;q&apos;).send_keys(&apos;Python&apos;)    driver.find_element(By.CSS_SELECTOR, &apos;button[type=submit]&apos;).click()finally:    driver.quit()
+
+Day 4: Logging &amp; Structured Observability
+Print statements do not scale. Python&apos;s logging module provides severity levels, formatters, handlers (file, stream, rotating), and contextual information. Good logging is the difference between debugging in 5 minutes vs 5 hours.
+Key Example:
+import loggingfrom logging.handlers import RotatingFileHandler# Configure root loggerlogger = logging.getLogger(&apos;myapp&apos;)logger.setLevel(logging.DEBUG)# Console handlerch = logging.StreamHandler()ch.setLevel(logging.INFO)# Rotating file (5 MB, keep 3 backups)fh = RotatingFileHandler(&apos;app.log&apos;, maxBytes=5*1024*1024, backupCount=3)fh.setLevel(logging.DEBUG)fmt = logging.Formatter(&apos;%(asctime)s %(name)s %(levelname)s %(message)s&apos;)ch.setFormatter(fmt); fh.setFormatter(fmt)logger.addHandler(ch); logger.addHandler(fh)logger.debug(&apos;Detailed debug info&apos;)logger.info(&apos;Pipeline started&apos;)logger.warning(&apos;Missing value in row 42&apos;)logger.error(&apos;Database connection failed&apos;)
+
+Day 5: Testing with pytest
+pytest is the standard Python testing framework. Tests are plain functions starting with test_. Fixtures provide reusable test dependencies. Parametrize runs one test with multiple inputs.
+Key Example:
+# test_math.pyimport pytestfrom myapp.math_utils import add, divide# Basic testdef test_add():    assert add(2, 3) == 5    assert add(-1, 1) == 0# Test exceptiondef test_divide_by_zero():    with pytest.raises(ZeroDivisionError):        divide(10, 0)# Parametrize — run same test with different inputs@pytest.mark.parametrize(&apos;a,b,expected&apos;, [    (2, 3, 5), (0, 0, 0), (-1, 1, 0), (100, -50, 50)])def test_add_parametrized(a, b, expected):    assert add(a, b) == expected# Fixture — shared setup@pytest.fixturedef sample_df():    import pandas as pd    return pd.DataFrame({&apos;a&apos;:[1,2,3],&apos;b&apos;:[4,5,6]})def test_dataframe_shape(sample_df):    assert sample_df.shape == (3, 2)# Run: pytest test_math.py -v --tb=short
+
+Week Quick Quiz
+What is the difference between Path.glob() and Path.rglob()?
+Why is shell=True in subprocess.run() potentially dangerous?
+What is the difference between logging.warning() and logging.error()?
+What is a pytest fixture?
+How does @pytest.mark.parametrize reduce code duplication in tests?
+
+WEEK 15: CAPSTONE PROJECT: DESIGN &amp; IMPLEMENTATION
+PART V — CAPSTONE | Project planning, data acquisition, preprocessing, modeling, integration
+
+Overview
+Weeks 15–16 are project-only. You will design, build, and present a complete Python data project that demonstrates mastery of at least 4 libraries from the course. This week covers planning through first working version.
+
+Capstone Project Options
+Track
+Focus
+Core Libraries
+Deliverable
+Track A
+Data Analysis
+Pandas + Seaborn + Statistics
+Interactive EDA report with hypothesis tests
+Track B
+ML Application
+sklearn + FastAPI + Pandas
+Train a model, expose it via REST API
+Track C
+NLP Pipeline
+spaCy + Transformers + Flask
+Named entity extractor web app
+Track D
+Computer Vision
+OpenCV + sklearn + Flask
+Image classifier web application
+Track E
+Data Engineering
+Dask + SQLAlchemy + Airflow
+Automated ETL pipeline with scheduling
+
+Day-by-Day Schedule
+Day
+Task
+Day 1: Problem Definition &amp; Data Sourcing
+Define problem clearly (one sentence)
+Day 2: EDA &amp; Data Cleaning
+Source dataset (API, Kaggle, scraping)
+Day 3: Core Feature Engineering
+Clean and validate all features
+Day 4: Model/Analysis Building &amp; Iteration
+Train/evaluate with cross-validation
+Day 5: API or Interface Integration
+Wire up Flask/FastAPI front-end or report
+
+🎯 Day 1 Deliverable
+A project brief (1 page): problem statement, dataset source, libraries to use, success metrics, and a rough timeline. Submit for instructor feedback before proceeding.
+
+Project Brief Template
+## Project Brief Template**Project Title:** [Your Title]**Track:** [A/B/C/D/E]**Problem Statement (one sentence):**We want to [action] on [data] in order to [benefit].**Dataset:**  - Source: [URL / API / uploaded file]  - Size: ~[N] rows × [M] columns  - Time period: [if applicable]**Core Libraries:** [list at least 4]**Success Metrics:**  - Primary: [e.g. F1 ≥ 0.85 on test set]  - Secondary: [e.g. API responds in &lt; 200ms]**Risk / Uncertainties:**  - [e.g. dataset may have significant missing values]
+
+WEEK 16: CAPSTONE PROJECT: POLISH, PACKAGE &amp; PRESENT
+PART V — CAPSTONE | Documentation, packaging, README, demo, retrospective
+
+Week 16 Goals
+Polish code: refactor, add docstrings, fix edge cases
+Write comprehensive README.md
+Package with pyproject.toml or setup.py
+Write at least 10 meaningful pytest tests
+Deploy or demo the project
+Retrospective: what would you do differently?
+
+Professional README Template
+# Project NameOne-paragraph description of what this project does and why it matters.## Features- Bullet of key feature 1- Bullet of key feature 2## Quick Start```bashpip install -r requirements.txtpython main.py --input data/sample.csv```## Project Structure```project/├── data/         # raw and processed data├── notebooks/    # exploratory notebooks├── src/          # production source code├── tests/        # pytest test suite├── README.md└── requirements.txt```## Results| Metric | Value ||--------|-------|| Accuracy | 0.923 || F1 Score | 0.908 |## LicenseMIT
+
+Presentation Structure (10 minutes)
+Slide
+Section
+Content
+Time
+1
+Problem &amp; Motivation
+Why does this matter?
+2 min
+2
+Data &amp; Approach
+What data, what method?
+2 min
+3
+Live Demo
+Show it working!
+3 min
+4
+Results &amp; Learnings
+What did you achieve?
+2 min
+5
+Q&amp;A
+Peer and instructor questions
+1 min
+
+PRICING &amp; DELIVERY STRUCTURE
+Online | Sandboxed Environment | Cohort-Based
+
+Market Positioning
+Pricing is benchmarked against comparable online Python/data science bootcamps and courses (DataCamp, Coursera, Udacity, Springboard, General Assembly, TripleTen, and instructor-led corporate training). This is a structured, cohort-based program with live instruction, sandboxed environment, and project mentorship — commanding a premium over self-paced video courses.
+
+Delivery Tiers
+
+Format
+Recorded videos + sandbox exercises
+Live online classes, 2×30min/day, Mon–Fri
+Private cohort, custom schedule
+Cohort Size
+Unlimited (async)
+12–20 learners
+4–15 (min 4 guaranteed)
+Instructor Access
+Forum only
+Live Q&amp;A + Slack channel
+Dedicated instructor + Slack
+Mentoring
+None
+Weekly 1:1 office hours (30 min/wk)
+Unlimited 1:1 sessions
+Sandbox Env.
+Included (JupyterLab)
+Included + auto-grading
+Included + custom datasets
+Certificate
+Completion only
+Completion + graded
+Completion + custom branding
+Duration
+16 weeks (self-paced 6 months)
+16 weeks fixed schedule
+Flexible (compressed available)
+Price (USD)
+$497 / $399 early bird
+$1,997 / $1,597 early bird
+From $4,500 per learner (min 4)
+Payment
+One-time or $49/mo×12
+Full or 3×$699
+Invoice net 30, volume discounts
+
+⭐ Recommended
+The Cohort Live tier ($1,997) is the recommended offering. It provides structure, peer accountability, live instruction, and mentorship — consistently producing the highest completion rates and learner satisfaction.
+
+Volume &amp; Early-Bird Discounts
+Discount Type
+Amount
+Early-bird (&gt;30 days before start)
+20% off list price
+Student / recent grad (&lt;2 years)
+25% off (with proof)
+Returning learner (completed another course)
+15% off
+Referral discount (per referred enrolment)
+$100 credit
+Non-profit / NGO
+40% off (approved orgs)
+
+Corporate Pricing
+Team Size
+Price/Learner
+Includes
+Duration
+4–6 learners
+$4,500 / learner
+Dedicated session
+16 weeks standard
+7–14 learners
+$3,800 / learner
+Dedicated session + custom projects
+16 or 8-week compressed
+15–24 learners
+$3,200 / learner
+Full program + LMS integration
+Flexible scheduling
+25+ learners
+Custom quote
+Enterprise SLA + custom content
+On-demand or cohort
+
+Add-On Services
+Service
+Price
+1:1 Coaching Session (60 min)
+$120 per session
+Resume &amp; Portfolio Review
+$149 one-time
+Code Review Sprint (3 files)
+$199 per sprint
+Custom Module Development
+From $2,500 per module
+Post-course Support (3 months)
+$297 one-time
+Recorded session archive (lifetime)
+$97 (Cohort Live learners)
+
+Cohort Schedule &amp; Batch Size Rationale
+The recommended cohort size of 12–20 learners is based on educational research and practitioner experience:
+Below 12: insufficient peer diversity for project feedback; cohort cancellation risk
+12–20: optimal for live Q&amp;A (everyone can speak), study groups, pair programming
+Above 20: instructor cannot give individual attention during exercises; breakout rooms required
+Cohorts run on a 6-week intake cycle: Jan, Mar, May, Jul, Sep, Nov. This gives 6 starts per year and enough lead time for marketing and enrolment.
+
+Technology Platform
+Component
+Platform
+Video Conferencing
+Sandboxed IDE
+Zoom / Google Meet with breakout rooms
+JupyterHub (cloud-hosted) or Google Colab Pro
+Component
+Platform
+Video Conferencing
+Zoom / Google Meet (with breakout rooms for pair exercises)
+Sandboxed IDE
+JupyterHub (cloud-hosted) — all libraries pre-installed, persistent storage
+Course LMS
+Teachable / Thinkific / Canvas for recordings, quizzes, assignments
+Messaging / Community
+Dedicated Slack workspace (channels per week, alumni channel)
+Code Repository
+GitHub Classroom — assignments auto-checked via GitHub Actions
+Progress Tracking
+Instructor dashboard: exercise completion, attendance, quiz scores
+Auto-grading
+nbgrader or custom pytest-based graders inside JupyterHub
+Live Coding
+VS Code Live Share for instructor screen-share and pair programming
+
+
+Appendix: Quick Reference &amp; Cheat Sheets
+
+
+Python Built-ins Quick Reference
+Function
+Description
+Function
+Description
+len(x)
+Length of sequence/dict
+range(n)
+Generate integers 0..n-1
+type(x)
+Type of object
+isinstance(x, T)
+Check if x is type T
+print(*args)
+Print to stdout
+input(prompt)
+Read from stdin
+int/float/str/bool(x)
+Type conversion
+list/tuple/set/dict(x)
+Container conversion
+sorted(x, key=f)
+Return sorted list
+reversed(x)
+Return reversed iterator
+enumerate(x)
+Index + value pairs
+zip(a, b)
+Pair up iterables
+map(f, x)
+Apply f to each element
+filter(f, x)
+Keep elements where f is True
+any(x)
+True if any element is True
+all(x)
+True if all elements are True
+
+NumPy Cheat Sheet
+import numpy as npnp.array([1,2,3])         # create from listnp.zeros((m,n))           # m×n zerosnp.arange(start,stop,step)# range as arraynp.linspace(a,b,n)        # n evenly spacedarr.reshape(m,n)          # reshape (total must match)arr.T                     # transposearr[arr &gt; 5]              # boolean indexnp.concatenate([a,b], axis=0) # stack verticallynp.vstack([a,b])          # vertical stacknp.hstack([a,b])          # horizontal stackarr.mean()/std()/sum()    # statistics (add axis=0/1)np.linalg.inv(A)          # matrix inverseA @ B                     # matrix multiplynp.linalg.solve(A,b)      # solve Ax=b
+
+Pandas Cheat Sheet
+import pandas as pdpd.read_csv(&apos;f.csv&apos;, parse_dates=[&apos;d&apos;], index_col=&apos;id&apos;)df.head(n) / .tail(n) / .info() / .describe()df[&apos;col&apos;] / df[[&apos;c1&apos;,&apos;c2&apos;]]       # column selectiondf.loc[rows, cols]                # label-baseddf.iloc[rows, cols]               # integer-baseddf[df[&apos;x&apos;] &gt; 0]                   # boolean filterdf.query(&apos;x &gt; 0 and y &lt; 10&apos;)      # SQL-like filterdf.dropna() / df.fillna(v)         # handle nullsdf.astype({&apos;col&apos;: float})          # change dtypedf.groupby(&apos;g&apos;)[&apos;v&apos;].agg([...])    # split-apply-combinepd.merge(df1, df2, on=&apos;key&apos;, how=&apos;left&apos;) # joinpd.concat([df1, df2], ignore_index=True) # stackdf.pivot_table(values,index,columns,aggfunc)df.to_csv(&apos;out.csv&apos;, index=False)
+
+sklearn Pipeline Template
+from sklearn.pipeline import Pipelinefrom sklearn.compose import ColumnTransformerfrom sklearn.preprocessing import StandardScaler, OneHotEncoderfrom sklearn.ensemble import RandomForestClassifierfrom sklearn.model_selection import cross_val_score, train_test_splitnum_features = [&apos;age&apos;, &apos;salary&apos;]cat_features = [&apos;department&apos;, &apos;level&apos;]preprocessor = ColumnTransformer([    (&apos;num&apos;, StandardScaler(), num_features),    (&apos;cat&apos;, OneHotEncoder(handle_unknown=&apos;ignore&apos;), cat_features)])model = Pipeline([    (&apos;prep&apos;, preprocessor),    (&apos;clf&apos;,  RandomForestClassifier(n_estimators=200, random_state=42))])X_train, X_test, y_train, y_test = train_test_split(    X, y, test_size=0.2, stratify=y, random_state=42)cv_scores = cross_val_score(model, X_train, y_train, cv=5)print(f&apos;CV: {cv_scores.mean():.3f} ± {cv_scores.std():.3f}&apos;)model.fit(X_train, y_train)print(&apos;Test score:&apos;, model.score(X_test, y_test))
+
+Git Workflow Cheat Sheet
+git init                          # initialise repogit clone &lt;url&gt;                   # clone remotegit add .                         # stage all changesgit commit -m &quot;message&quot;          # commitgit push origin main              # push to remotegit pull                          # fetch + mergegit checkout -b feature/name      # create branchgit merge feature/name            # merge branchgit log --oneline --graph         # pretty loggit stash / git stash pop         # save/restore uncommitted.gitignore: __pycache__/, *.pyc, .env, data/, models/
+
+Course Completion Checklist
+Before receiving your certificate, verify you have:
+Completed all 160 block exercises (auto-graded)
+Submitted all 16 weekly homework assignments
+Passed at least 12 of 16 weekly quizzes (score ≥ 70%)
+Completed and submitted the Capstone project
+Delivered the 10-minute Capstone presentation (live or recorded)
+Peer-reviewed at least 2 other learner projects
+
+
+Python Mastery — End of Course Book</pre>
+    </article>
+  </main>
+</body>
+</html>

@@ -214,6 +214,46 @@ function renderIndex() {
           </a>`).join('')}
       </div>
     </section>
+
+    <section>
+      <h2>Complete Course Book</h2>
+      <p>The full course book from <em>python_mastery_coursebook.docx</em> is available below.</p>
+      <a href="/coursebook.html" class="coursebook-link">📖 View Complete Course Book →</a>
+    </section>
+  </main>
+</body>
+</html>`;
+}
+
+function renderCoursebook() {
+  const coursebookPath = path.join(CONTENT, 'coursebook.txt');
+  let content = '';
+  if (fs.existsSync(coursebookPath)) {
+    content = fs.readFileSync(coursebookPath, 'utf8');
+    // Escape only < and > to prevent breaking HTML; preserve &amp; &lt; &gt; etc.
+    content = content.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Course Book | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Weeks</a>
+  </nav>
+  <main class="container coursebook-container">
+    <header class="coursebook-header">
+      <h1>Python Mastery — Complete Course Book</h1>
+      <p class="coursebook-subtitle">Full contents from python_mastery_coursebook.docx, exactly as in the original document.</p>
+    </header>
+    <article class="coursebook-content">
+      <pre class="coursebook-pre">${content}</pre>
+    </article>
   </main>
 </body>
 </html>`;
@@ -221,6 +261,7 @@ function renderIndex() {
 
 // Write files
 fs.writeFileSync(path.join(PUBLIC, 'index.html'), renderIndex());
+fs.writeFileSync(path.join(PUBLIC, 'coursebook.html'), renderCoursebook());
 course.weeks.forEach(w => {
   fs.writeFileSync(path.join(PUBLIC, 'week', `${w.id}.html`), renderWeek(w));
 });
@@ -398,6 +439,37 @@ details summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; }
 ul { padding-left: 1.5rem; }
 li { margin: 0.5rem 0; }
 .week-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+.coursebook-link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.coursebook-link:hover { background: rgba(88, 166, 255, 0.1); }
+
+.coursebook-container { max-width: 900px; }
+.coursebook-header { margin-bottom: 2rem; }
+.coursebook-subtitle { color: var(--muted); font-size: 0.95rem; }
+.coursebook-content { margin: 2rem 0; }
+.coursebook-pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
 @media (max-width: 600px) {
   .container { padding: 1rem; }
   .top-nav { padding: 1rem; }

@@ -164,6 +164,37 @@ details summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; }
 ul { padding-left: 1.5rem; }
 li { margin: 0.5rem 0; }
 .week-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+.coursebook-link {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.coursebook-link:hover { background: rgba(88, 166, 255, 0.1); }
+
+.coursebook-container { max-width: 900px; }
+.coursebook-header { margin-bottom: 2rem; }
+.coursebook-subtitle { color: var(--muted); font-size: 0.95rem; }
+.coursebook-content { margin: 2rem 0; }
+.coursebook-pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
 @media (max-width: 600px) {
   .container { padding: 1rem; }
   .top-nav { padding: 1rem; }
