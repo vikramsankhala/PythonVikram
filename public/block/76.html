@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 76: Pipelines: Preventing Data Leakage | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/8.html">Week 8</a>
+    <a href="/block/75.html">← Block 75</a>
+    <a href="/block/77.html">Block 77 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 8 • Wednesday</span>
+      <h1>Block 76: Pipelines: Preventing Data Leakage</h1>
+      <p class="objective">Build sklearn Pipelines to combine preprocessing and model training safely.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>Pipeline([('step_name', transformer), ..., ('model', estimator)])</li><li>Fit pipeline on train set only</li><li>pipeline.predict() handles all transformations automatically</li><li>make_pipeline() shortcut</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      <p>See exercise below.</p>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Build a Pipeline: StandardScaler + Logistic Regression. Fit on train, evaluate on test. Build a Pipeline for a dataset with both numeric and categorical features using ColumnTransformer.</p>
+    </section>
+
+    
+
+    
+    
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Explain why fitting a scaler on the entire dataset (before splitting) is a form of data leakage. Thursday</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/75.html">← Previous</a>
+      <a href="/block/77.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

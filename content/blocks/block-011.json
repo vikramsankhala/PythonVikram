@@ -1,0 +1,29 @@
+{
+  "id": 11,
+  "week": 2,
+  "day": "Monday",
+  "title": "NumPy Intro & Array Creation",
+  "objective": "Install NumPy and understand why it's faster than Python lists.",
+  "concepts": [
+    "import numpy as np",
+    "np.array() from lists",
+    "Comparing list operations vs vectorized NumPy",
+    "ndarray properties: shape, ndim, dtype, size"
+  ],
+  "exercise": {
+    "description": "Convert [1,2,3,4,5] to an array. Print shape, ndim, dtype. Compare speed: sum a list of 1 million numbers with Python vs NumPy (use time module).",
+    "solution": "```python\nimport numpy as np\nimport time\n\narr = np.array([1, 2, 3, 4, 5])\nprint('Shape:', arr.shape, 'ndim:', arr.ndim, 'dtype:', arr.dtype)\n\n# Speed comparison\nlst = list(range(1_000_000))\nnp_arr = np.arange(1_000_000)\n\nt0 = time.perf_counter()\nsum(lst)\nt1 = time.perf_counter()\nprint(f'List sum: {t1-t0:.4f}s')\n\nt0 = time.perf_counter()\nnp_arr.sum()\nt1 = time.perf_counter()\nprint(f'NumPy sum: {t1-t0:.4f}s')\n```"
+  },
+  "homework": "Explain broadcasting in your own words (even a rough first idea). We'll verify it later.",
+  "problems": [
+    {"q": "Create a 2D array from a nested list [[1,2],[3,4]]. What is its shape?", "hint": "np.array([[1,2],[3,4]])"},
+    {"q": "Convert a list of floats to an array. What dtype does it get?", "hint": "np.array([1.0, 2.0, 3.0])"}
+  ],
+  "code": {
+    "example1": {"title": "Array creation and properties", "code": "import numpy as np\narr = np.array([1, 2, 3, 4, 5])\nprint(arr.shape, arr.ndim, arr.dtype, arr.size)"},
+    "example2": {"title": "List vs NumPy", "code": "lst = [1, 2, 3]\narr = np.array(lst)\nprint(lst * 2)   # [1,2,3,1,2,3]\nprint(arr * 2)  # [2,4,6]"}
+  },
+  "application": "NumPy is the foundation of pandas, scikit-learn, and scientific Python. Almost all numeric data in data science flows through NumPy arrays.",
+  "caseStudy": "A financial model processes 1M price points. Using Python lists takes 30 seconds; vectorized NumPy completes in 0.3 seconds. The 100x speedup enables real-time dashboards.",
+  "visualization": "Create a bar chart comparing Python list sum vs NumPy sum execution time for array sizes 10^4, 10^5, 10^6. Use matplotlib to visualize the speedup."
+}

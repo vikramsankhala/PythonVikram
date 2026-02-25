@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 3: if/else and Conditionals | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/2.html">← Block 2</a>
+    <a href="/block/4.html">Block 4 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Tuesday</span>
+      <h1>Block 3: if/else and Conditionals</h1>
+      <p class="objective">Control program flow with if/elif/else.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>if/elif/else syntax and indentation</li><li>Comparison operators: ==, !=, &lt;, &gt;, &lt;=, &gt;=</li><li>Logical operators: and, or, not</li><li>Nested conditionals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Basic if/elif/else</h4>
+        <pre><code>score = 85
+if score &gt;= 90:
+    print('A')
+elif score &gt;= 80:
+    print('B')
+else:
+    print('C or below')</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Logical operators</h4>
+        <pre><code>age = 25
+has_ticket = True
+if age &gt;= 18 and has_ticket:
+    print('Entry allowed')
+if age &lt; 13 or age &gt; 65:
+    print('Eligible for discount')</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Write a BMI category classifier (underweight, normal, overweight, obese). Given a score (0–100), print the letter grade A/B/C/D/F.</p><details><summary>Solution</summary><pre><code>def bmi_category(bmi):
+    if bmi &lt; 18.5: return 'underweight'
+    elif bmi &lt; 25: return 'normal'
+    elif bmi &lt; 30: return 'overweight'
+    else: return 'obese'
+
+def letter_grade(score):
+    if score &gt;= 90: return 'A'
+    elif score &gt;= 80: return 'B'
+    elif score &gt;= 70: return 'C'
+    elif score &gt;= 60: return 'D'
+    else: return 'F'
+
+print(bmi_category(22))   # normal
+print(letter_grade(85))  # B</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Write a function that returns 'even' or 'odd' for any integer.
+        <p class="hint"><em>Hint:</em> Use % 2</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Given age, print 'minor' if &lt;18, 'adult' if 18-64, 'senior' otherwise.
+        <p class="hint"><em>Hint:</em> Use elif chain</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Conditionals are used everywhere: filtering data, validating inputs, branching in ML pipelines, and business logic.</p></section>
+    <section><h2>Case Study</h2><p>An e-commerce site uses conditionals: if cart_total &gt; 100 and is_member: apply 10% discount. Nested conditions handle complex rules.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Explain why indentation matters in Python. Write an example that would break without correct indentation.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/2.html">← Previous</a>
+      <a href="/block/4.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

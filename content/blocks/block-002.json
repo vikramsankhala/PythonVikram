@@ -1,0 +1,28 @@
+{
+  "id": 2,
+  "week": 1,
+  "day": "Monday",
+  "title": "Basic Types & Variables",
+  "objective": "Practice int, float, str, bool and variable assignment.",
+  "concepts": [
+    "Variable assignment: x = 5",
+    "Basic types: int, float, str, bool",
+    "type() to inspect a variable's type",
+    "Simple arithmetic and string concatenation"
+  ],
+  "exercise": {
+    "description": "Create variables for your age, height, name, and a boolean. Print them in a friendly sentence. Compute and print (100 + 50) * 2 / 3",
+    "solution": "```python\nage = 25\nheight = 1.75\nname = 'Alex'\nis_student = True\nprint(f'Hi, I\\'m {name}, {age} years old, {height}m tall. Student: {is_student}')\nresult = (100 + 50) * 2 / 3\nprint(f'Computation result: {result}')\nprint('Type of result:', type(result))\n```"
+  },
+  "homework": "Describe the difference between int and float in your own words with one example each.",
+  "problems": [
+    {"q": "Create variables for a product: name, price, and in_stock. Print a formatted string.", "hint": "Use f-strings: f'Product: {name}'"},
+    {"q": "What does type(7/2) return? What about type(7//2)?", "hint": "// is floor division"}
+  ],
+  "code": {
+    "example1": {"title": "Variable assignment and type()", "code": "x = 5\ny = 3.14\nname = 'Python'\nflag = True\nprint(type(x), type(y), type(name), type(flag))"},
+    "example2": {"title": "Arithmetic and string concatenation", "code": "a, b = 10, 3\nprint(a + b, a - b, a * b, a / b)\ngreeting = 'Hello' + ' ' + 'World'\nprint(greeting)"}
+  },
+  "application": "In data science, you constantly work with numeric types (int/float) for calculations and strings for labels, categories, and text data.",
+  "caseStudy": "A fitness app stores user data: age (int), weight (float), name (str), and premium_member (bool). Each variable type is chosen for the right kind of data."
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 6: Modules &amp; the math Library | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/5.html">← Block 5</a>
+    <a href="/block/7.html">Block 7 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Wednesday</span>
+      <h1>Block 6: Modules &amp; the math Library</h1>
+      <p class="objective">Import and use standard library modules, starting with math.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>import module and import module as alias</li><li>math.sqrt, math.pi, math.ceil, math.floor</li><li>math.log, math.pow</li><li>Using help() and dir() to explore modules</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>math module basics</h4>
+        <pre><code>import math
+print(math.pi)
+print(math.sqrt(16))
+print(math.pow(2, 10))</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Exploring with help() and dir()</h4>
+        <pre><code>import math
+print(dir(math)[:5])  # First 5 attributes
+# help(math.sqrt)  # Uncomment to see docs</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Write circle_area(r) and sphere_volume(r) using math.pi. Compute the hypotenuse of a right triangle with sides 3 and 4.</p><details><summary>Solution</summary><pre><code>import math
+
+def circle_area(r):
+    return math.pi * r ** 2
+
+def sphere_volume(r):
+    return (4/3) * math.pi * r ** 3
+
+a, b = 3, 4
+hyp = math.sqrt(a**2 + b**2)
+print(f'Circle area (r=5): {circle_area(5):.2f}')
+print(f'Sphere volume (r=2): {sphere_volume(2):.2f}')
+print(f'Hypotenuse: {hyp}')</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Use math.ceil and math.floor to round 3.7 up and down.
+        <p class="hint"><em>Hint:</em> math.ceil(3.7), math.floor(3.7)</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Compute log base 10 of 1000 using math.log
+        <p class="hint"><em>Hint:</em> math.log(1000, 10)</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Scientific computing relies heavily on math—logarithms for scaling, sqrt for distances, pi for geometry.</p></section>
+    <section><h2>Case Study</h2><p>A physics simulation uses math.sin, math.cos for projectile motion. math.sqrt appears in distance calculations for collision detection.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Explore the random module: generate 5 random integers between 1 and 10.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/5.html">← Previous</a>
+      <a href="/block/7.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "id": 31,
+  "week": 4,
+  "day": "Monday",
+  "title": "Matplotlib: Figures & Axes",
+  "objective": "Understand the Figure/Axes hierarchy and create basic line plots.",
+  "concepts": [
+    "import matplotlib.pyplot as plt",
+    "plt.figure() and plt.subplots()",
+    "ax.plot(), ax.set_xlabel(), ax.set_ylabel(), ax.set_title()",
+    "plt.show() and plt.savefig()"
+  ],
+  "exercise": {
+    "description": "Plot daily temperatures for 7 days as a line chart with labeled axes and title. Plot two overlapping lines on the same axes with a legend.",
+    "solution": "```python\nimport matplotlib.pyplot as plt\n\ndays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\ntemps = [22, 24, 21, 25, 23, 26, 24]\n\nfig, ax = plt.subplots(figsize=(8, 4))\nax.plot(days, temps, marker='o', label='Temperature')\nax.set_xlabel('Day')\nax.set_ylabel('Temperature (°C)')\nax.set_title('Weekly Temperatures')\nax.legend()\nax.grid(True, alpha=0.3)\nplt.tight_layout()\nplt.savefig('temps.png', dpi=150)\nplt.show()\n```"
+  },
+  "homework": "Explain the difference between plt.plot() and fig, ax = plt.subplots(); ax.plot().",
+  "problems": [
+    {"q": "Create a figure with 2 subplots (one above the other). Plot different data in each.", "hint": "fig, (ax1, ax2) = plt.subplots(2, 1)"},
+    {"q": "Save a plot as PDF. When would PDF be better than PNG?", "hint": "plt.savefig('plot.pdf')"}
+  ],
+  "code": {
+    "example1": {"title": "Basic line plot", "code": "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.plot([1, 2, 3], [4, 5, 6])\nax.set_xlabel('X')\nax.set_ylabel('Y')\nplt.show()"},
+    "example2": {"title": "Figure and Axes", "code": "fig = plt.figure(figsize=(6, 4))\nax = fig.add_subplot(111)\nax.plot([1, 2, 3], [1, 4, 9])\nplt.show()"}
+  },
+  "application": "Matplotlib is the workhorse of scientific visualization. Every publication-quality plot in Python starts with Figure and Axes.",
+  "caseStudy": "A data scientist explores sales trends. They use ax.plot() for time series, ax.bar() for category comparisons, and ax.scatter() for correlations. All share the same Figure/Axes model.",
+  "visualization": "Build an interactive visualization: plot sin(x) and cos(x) from 0 to 2π on the same axes with different colors and a legend. Add grid lines for readability."
+}

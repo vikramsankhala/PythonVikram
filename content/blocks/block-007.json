@@ -1,0 +1,28 @@
+{
+  "id": 7,
+  "week": 1,
+  "day": "Thursday",
+  "title": "Lists & Basic Operations",
+  "objective": "Create and manipulate Python lists for storing sequences of data.",
+  "concepts": [
+    "List creation, indexing (positive and negative)",
+    "Slicing: list[start:stop:step]",
+    "append(), remove(), pop(), insert()",
+    "len(), sum(), min(), max()"
+  ],
+  "exercise": {
+    "description": "Store daily step counts for 7 days. Compute total and average. Given a list of marks, remove the lowest mark and compute the new average.",
+    "solution": "```python\nsteps = [5000, 7200, 4500, 8000, 6000, 5500, 9000]\ntotal = sum(steps)\navg = total / len(steps)\nprint(f'Total: {total}, Average: {avg:.0f}')\n\nmarks = [85, 72, 90, 68, 88]\nmarks.remove(min(marks))\nnew_avg = sum(marks) / len(marks)\nprint(f'New average (lowest removed): {new_avg:.1f}')\n```"
+  },
+  "homework": "What is the difference between list.append(x) and list.insert(0, x)? Give examples.",
+  "problems": [
+    {"q": "Reverse a list using slicing (without reverse())", "hint": "lst[::-1]"},
+    {"q": "Get every second element from a list starting at index 0", "hint": "lst[::2]"}
+  ],
+  "code": {
+    "example1": {"title": "Indexing and slicing", "code": "nums = [10, 20, 30, 40, 50]\nprint(nums[0], nums[-1])\nprint(nums[1:4])\nprint(nums[::2])"},
+    "example2": {"title": "List methods", "code": "lst = [1, 2, 3]\nlst.append(4)\nlst.insert(0, 0)\nprint(lst)\nx = lst.pop()\nprint(x, lst)"}
+  },
+  "application": "Lists store sequences: time series data, feature vectors, batches of samples. Slicing extracts subsets for analysis.",
+  "caseStudy": "A sensor records temperatures every hour. The last 24 values are kept in a list. Slicing [-24:] gets yesterday's data."
+}

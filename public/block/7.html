@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 7: Lists &amp; Basic Operations | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/6.html">← Block 6</a>
+    <a href="/block/8.html">Block 8 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Thursday</span>
+      <h1>Block 7: Lists &amp; Basic Operations</h1>
+      <p class="objective">Create and manipulate Python lists for storing sequences of data.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>List creation, indexing (positive and negative)</li><li>Slicing: list[start:stop:step]</li><li>append(), remove(), pop(), insert()</li><li>len(), sum(), min(), max()</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Indexing and slicing</h4>
+        <pre><code>nums = [10, 20, 30, 40, 50]
+print(nums[0], nums[-1])
+print(nums[1:4])
+print(nums[::2])</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>List methods</h4>
+        <pre><code>lst = [1, 2, 3]
+lst.append(4)
+lst.insert(0, 0)
+print(lst)
+x = lst.pop()
+print(x, lst)</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Store daily step counts for 7 days. Compute total and average. Given a list of marks, remove the lowest mark and compute the new average.</p><details><summary>Solution</summary><pre><code>steps = [5000, 7200, 4500, 8000, 6000, 5500, 9000]
+total = sum(steps)
+avg = total / len(steps)
+print(f'Total: {total}, Average: {avg:.0f}')
+
+marks = [85, 72, 90, 68, 88]
+marks.remove(min(marks))
+new_avg = sum(marks) / len(marks)
+print(f'New average (lowest removed): {new_avg:.1f}')</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Reverse a list using slicing (without reverse())
+        <p class="hint"><em>Hint:</em> lst[::-1]</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Get every second element from a list starting at index 0
+        <p class="hint"><em>Hint:</em> lst[::2]</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Lists store sequences: time series data, feature vectors, batches of samples. Slicing extracts subsets for analysis.</p></section>
+    <section><h2>Case Study</h2><p>A sensor records temperatures every hour. The last 24 values are kept in a list. Slicing [-24:] gets yesterday's data.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>What is the difference between list.append(x) and list.insert(0, x)? Give examples.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/6.html">← Previous</a>
+      <a href="/block/8.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

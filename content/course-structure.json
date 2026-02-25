@@ -1,0 +1,91 @@
+{
+  "title": "Python Mastery",
+  "subtitle": "Major Libraries Training Course",
+  "description": "A Complete 16-Week Program for Data Science, Machine Learning & Scientific Computing",
+  "duration": "16 Weeks / 160 Blocks",
+  "schedule": "30 min × 2 blocks/day, Mon–Fri",
+  "level": "Absolute Beginners",
+  "focus": "Data Science, ML & Scientific Computing",
+  "weeks": [
+    {
+      "id": 1,
+      "title": "Python Foundations & Standard Library",
+      "theme": "Environment setup, syntax, core data structures, functions"
+    },
+    {
+      "id": 2,
+      "title": "NumPy: Arrays & Vectorized Computing",
+      "theme": "Numerical arrays, vectorization, broadcasting, linear algebra, random"
+    },
+    {
+      "id": 3,
+      "title": "Pandas: DataFrames & Data Handling",
+      "theme": "Series, DataFrame, loading data, cleaning, grouping, merging"
+    },
+    {
+      "id": 4,
+      "title": "Visualization: Matplotlib & Seaborn",
+      "theme": "Line, bar, scatter, histogram, boxplot, subplots, styling, visual EDA"
+    },
+    {
+      "id": 5,
+      "title": "File Formats & Data Pipelines",
+      "theme": "CSV, JSON, XML, Excel, text parsing, regex, cleaning pipelines"
+    },
+    {
+      "id": 6,
+      "title": "HTTP, APIs & Web Scraping",
+      "theme": "requests library, REST APIs, JSON handling, BeautifulSoup, ethics"
+    },
+    {
+      "id": 7,
+      "title": "Web Frameworks: Flask & FastAPI",
+      "theme": "Routing, templates, REST APIs, Pydantic, async basics, deployment concepts"
+    },
+    {
+      "id": 8,
+      "title": "Machine Learning with scikit-learn",
+      "theme": "ML workflow, preprocessing, classification, regression, pipelines, evaluation"
+    },
+    {
+      "id": 9,
+      "title": "Scientific Python: SciPy & SymPy",
+      "theme": "Optimization, integration, statistics, symbolic math, equation solving"
+    },
+    {
+      "id": 10,
+      "title": "Practical Statistics for Data Science",
+      "theme": "Descriptive stats, distributions, correlation, hypothesis testing, confidence intervals"
+    },
+    {
+      "id": 11,
+      "title": "NLP: NLTK, spaCy & Transformers",
+      "theme": "Tokenization, stemming, NER, POS tagging, text classification, Hugging Face"
+    },
+    {
+      "id": 12,
+      "title": "Computer Vision with OpenCV",
+      "theme": "Image representation, transformations, filters, edge detection, contours"
+    },
+    {
+      "id": 13,
+      "title": "Databases & Data Engineering",
+      "theme": "SQLite, SQLAlchemy ORM, ETL pipelines, Dask for large data"
+    },
+    {
+      "id": 14,
+      "title": "Automation, Scripting & Testing",
+      "theme": "os/pathlib, subprocess, selenium, logging, pytest, automation scripts"
+    },
+    {
+      "id": 15,
+      "title": "Capstone Project: Design & Implementation",
+      "theme": "Project planning, data acquisition, preprocessing, modeling/analysis, integration"
+    },
+    {
+      "id": 16,
+      "title": "Capstone Project: Polish, Package & Present",
+      "theme": "Packaging, documentation, README, demo, retrospective, deployment concepts"
+    }
+  ]
+}

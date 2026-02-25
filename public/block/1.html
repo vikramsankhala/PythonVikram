@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 1: Setup &amp; First Script | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    
+    <a href="/block/2.html">Block 2 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Monday</span>
+      <h1>Block 1: Setup &amp; First Script</h1>
+      <p class="objective">Install Python/Jupyter, run your first .py file and notebook cell.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>Python vs Jupyter notebook (.py vs .ipynb)</li><li>print() to display output</li><li>Running cells in JupyterLab or VS Code</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Basic print statements</h4>
+        <pre><code>print('Hello, World!')
+print(42)
+print(3.14)
+print(True)</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Using datetime</h4>
+        <pre><code>import datetime
+today = datetime.date.today()
+print(f'Today is {today}')
+print(f'Year: {today.year}, Month: {today.month}, Day: {today.day}')</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Write a script that prints a greeting, your name, and today's date using datetime.date.today()</p><details><summary>Solution</summary><pre><code>import datetime
+print('Hello! Welcome to Python Training!')
+print('My name is [Your Name]')
+print('Today\'s date:', datetime.date.today())</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Create a script that prints your name, favorite programming language, and a fun fact about yourself.
+        <p class="hint"><em>Hint:</em> Use multiple print() statements or one with newlines (\n)</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Print the current date in format: 'YYYY-MM-DD'
+        <p class="hint"><em>Hint:</em> datetime.date.today() returns a date object; use str() or format it</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Data scientists use Jupyter notebooks daily for exploratory analysis—each cell can be run independently, making it ideal for iterative experimentation.</p></section>
+    <section><h2>Case Study</h2><p>A data analyst at a retail company uses Jupyter to explore sales data. They run cells incrementally: first load data, then clean it, then visualize. The notebook becomes a shareable report with code and outputs together.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Write 5 bullet points on why Python is used in data/ML.</p>
+    </section>
+
+    <nav class="block-nav">
+      
+      <a href="/block/2.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

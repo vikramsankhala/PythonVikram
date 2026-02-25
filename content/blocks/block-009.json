@@ -1,0 +1,28 @@
+{
+  "id": 9,
+  "week": 1,
+  "day": "Friday",
+  "title": "Using help(), dir() & Reading Docs",
+  "objective": "Become confident exploring Python from the inside.",
+  "concepts": [
+    "help(obj) for full documentation",
+    "dir(obj) to list attributes/methods",
+    "Reading docs.python.org and docstrings",
+    "type() and isinstance() for type checking"
+  ],
+  "exercise": {
+    "description": "Use help() on len, list.sort, str.split. Write a 1-line note + example for each. Use dir([]) to find and test 3 list methods you haven't used yet.",
+    "solution": "```python\n# help(len) - returns length of object\nprint(len([1,2,3]))\n\n# help(list.sort) - sorts in place\nlst = [3,1,2]; lst.sort(); print(lst)\n\n# help(str.split) - splits by delimiter\nprint('a,b,c'.split(','))\n\n# dir([]) reveals: copy, count, extend, index, reverse...\nlst = [1,2,2,3]\nprint(lst.count(2))\nprint(lst.index(3))\n```"
+  },
+  "homework": "Find the signature and behavior of str.join() from the docs and write a practical example.",
+  "problems": [
+    {"q": "Use isinstance(x, int) to check if x is an integer. Test with x=5 and x=5.0", "hint": "isinstance(5, int) vs isinstance(5.0, int)"},
+    {"q": "What does dir(str) show? Pick one method and use help() on it.", "hint": "Try str.upper or str.strip"}
+  ],
+  "code": {
+    "example1": {"title": "help() and dir()", "code": "lst = [1, 2, 3]\nprint(dir(lst))\n# help(lst.append)"},
+    "example2": {"title": "type() and isinstance()", "code": "x = 42\ny = 'hello'\nprint(type(x), type(y))\nprint(isinstance(x, int))\nprint(isinstance(y, str))"}
+  },
+  "application": "You never need to memorize everything—help() and docs are your best friends when exploring new libraries.",
+  "caseStudy": "A developer encounters pd.merge() for the first time. They run help(pd.merge) and instantly see parameters: left, right, how, on."
+}

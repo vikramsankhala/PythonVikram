@@ -1,0 +1,2389 @@
+[
+  {
+    "id": 1,
+    "week": 1,
+    "day": "Monday",
+    "title": "Setup & First Script",
+    "objective": "Install Python/Jupyter, run your first .py file and notebook cell.",
+    "concepts": [
+      "Python vs Jupyter notebook (.py vs .ipynb)",
+      "print() to display output",
+      "Running cells in JupyterLab or VS Code"
+    ],
+    "exercise": "Write a script that prints a greeting, your name, and today's date using datetime.date.today()",
+    "homework": "Write 5 bullet points on why Python is used in data/ML."
+  },
+  {
+    "id": 2,
+    "week": 1,
+    "day": "Monday",
+    "title": "Basic Types & Variables",
+    "objective": "Practice int, float, str, bool and variable assignment.",
+    "concepts": [
+      "Variable assignment: x = 5",
+      "Basic types: int, float, str, bool",
+      "type() to inspect a variable's type",
+      "Simple arithmetic and string concatenation"
+    ],
+    "exercise": "Create variables for your age, height, name, and a boolean. Print them in a friendly sentence. Compute and print (100 + 50) * 2 / 3",
+    "homework": "Describe the difference between int and float in your own words with one example each. Tuesday"
+  },
+  {
+    "id": 3,
+    "week": 1,
+    "day": "Tuesday",
+    "title": "if/else and Conditionals",
+    "objective": "Control program flow with if/elif/else.",
+    "concepts": [
+      "if/elif/else syntax and indentation",
+      "Comparison operators: ==, !=, <, >, <=, >=",
+      "Logical operators: and, or, not",
+      "Nested conditionals"
+    ],
+    "exercise": "Write a BMI category classifier: underweight, normal, overweight, obese. Given a score (0–100), print the letter grade A/B/C/D/F.",
+    "homework": "Explain why indentation matters in Python. Write an example that would break without correct indentation."
+  },
+  {
+    "id": 4,
+    "week": 1,
+    "day": "Tuesday",
+    "title": "for Loops & range()",
+    "objective": "Repeat actions with for loops and range().",
+    "concepts": [
+      "for item in iterable: pattern",
+      "range(start, stop, step)",
+      "Loop over lists and strings",
+      "Accumulator pattern with a variable"
+    ],
+    "exercise": "Implement FizzBuzz from 1 to 50. Sum all even numbers from 1 to 100 using a loop.",
+    "homework": "What is the difference between range(5) and range(1,6)? Show with code. Wednesday"
+  },
+  {
+    "id": 5,
+    "week": 1,
+    "day": "Wednesday",
+    "title": "Defining Functions",
+    "objective": "Define and call reusable functions with parameters and return values.",
+    "concepts": [
+      "def function_name(params): syntax",
+      "return keyword vs print()",
+      "Default parameter values",
+      "Calling functions with positional vs keyword args"
+    ],
+    "exercise": "Define compute_bmi(weight_kg, height_m) and test on 3 people. Write a greet(name, greeting='Hello') function.",
+    "homework": "Write a function that takes a list of numbers and returns (min, max, average) as a tuple."
+  },
+  {
+    "id": 6,
+    "week": 1,
+    "day": "Wednesday",
+    "title": "Modules & the math Library",
+    "objective": "Import and use standard library modules, starting with math.",
+    "concepts": [
+      "import module and import module as alias",
+      "math.sqrt, math.pi, math.ceil, math.floor",
+      "math.log, math.pow",
+      "Using help() and dir() to explore modules"
+    ],
+    "exercise": "Write circle_area(r) and sphere_volume(r) using math.pi. Compute the hypotenuse of a right triangle with sides 3 and 4.",
+    "homework": "Explore the random module: generate 5 random integers between 1 and 10. Thursday"
+  },
+  {
+    "id": 7,
+    "week": 1,
+    "day": "Thursday",
+    "title": "Lists & Basic Operations",
+    "objective": "Create and manipulate Python lists for storing sequences of data.",
+    "concepts": [
+      "List creation, indexing (positive and negative)",
+      "Slicing: list[start:stop:step]",
+      "append(), remove(), pop(), insert()",
+      "len(), sum(), min(), max()"
+    ],
+    "exercise": "Store daily step counts for 7 days. Compute total and average. Given a list of marks, remove the lowest mark and compute the new average.",
+    "homework": "What is the difference between list.append(x) and list.insert(0, x)? Give examples."
+  },
+  {
+    "id": 8,
+    "week": 1,
+    "day": "Thursday",
+    "title": "Dictionaries for Structured Data",
+    "objective": "Use dicts to store labeled, key-value data.",
+    "concepts": [
+      "dict creation: {key: value}",
+      "Accessing: dict['key'], dict.get('key', default)",
+      "Adding/updating entries, del to remove",
+      "Looping with .keys(), .values(), .items()"
+    ],
+    "exercise": "Represent 3 students as dicts with name and marks. Compute class average. Build a word-frequency counter for a short sentence.",
+    "homework": "Describe a real-world situation where a dictionary is more useful than a list. Friday"
+  },
+  {
+    "id": 9,
+    "week": 1,
+    "day": "Friday",
+    "title": "Using help(), dir() & Reading Docs",
+    "objective": "Become confident exploring Python from the inside.",
+    "concepts": [
+      "help(obj) for full documentation",
+      "dir(obj) to list attributes/methods",
+      "Reading docs.python.org and docstrings",
+      "type() and isinstance() for type checking"
+    ],
+    "exercise": "Use help() on len, list.sort, str.split. Write a 1-line note + example for each. Use dir([]) to find and test 3 list methods you haven't used yet.",
+    "homework": "Find the signature and behavior of str.join() from the docs and write a practical example."
+  },
+  {
+    "id": 10,
+    "week": 1,
+    "day": "Friday",
+    "title": "Mini-Project: Personal Stats Summary",
+    "objective": "Integrate variables, lists, loops, and functions into one script.",
+    "concepts": [
+      "Combining building blocks into a real program",
+      "Printing formatted output with f-strings",
+      "Organising code into small functions",
+      "Testing your script end-to-end"
+    ],
+    "exercise": "Build a script: input 7 days of (steps, study_hours, water_liters), compute totals and averages, print a clear formatted report. Add a function highlight(value, goal) that prints 'Great!' or 'Try harder!' depending on whether the goal was met.",
+    "homework": "Reflection: list 3 things you learned, 2 things that confused you, 1 thing you want to explore further."
+  },
+  {
+    "id": 11,
+    "week": 2,
+    "day": "Monday",
+    "title": "NumPy Intro & Array Creation",
+    "objective": "Install NumPy and understand why it's faster than Python lists.",
+    "concepts": [
+      "import numpy as np",
+      "np.array() from lists",
+      "Comparing list operations vs vectorized NumPy",
+      "ndarray properties: shape, ndim, dtype, size"
+    ],
+    "exercise": "Convert [1,2,3,4,5] to an array. Print shape, ndim, dtype. Compare speed: sum a list of 1 million numbers with Python vs NumPy (use time module).",
+    "homework": "Explain broadcasting in your own words (even a rough first idea). We'll verify it later."
+  },
+  {
+    "id": 12,
+    "week": 2,
+    "day": "Monday",
+    "title": "Array Creation Helpers & Shapes",
+    "objective": "Use factory functions to create arrays of any shape quickly.",
+    "concepts": [
+      "np.arange(start, stop, step)",
+      "np.linspace(start, stop, num)",
+      "np.zeros(), np.ones(), np.full(), np.eye()",
+      "reshape(), transpose (.T), flatten()"
+    ],
+    "exercise": "Create a 3×4 matrix of zeros, print shape, then reshape to 2×6. Create an array of 10 evenly spaced values between 0 and 1 using linspace.",
+    "homework": "Write a 'multiplication table' as a 10×10 NumPy array using np.arange and reshape. Tuesday"
+  },
+  {
+    "id": 13,
+    "week": 2,
+    "day": "Tuesday",
+    "title": "Indexing & Slicing (1D)",
+    "objective": "Select individual elements and sub-arrays from 1D arrays.",
+    "concepts": [
+      "Zero-based positive indexing",
+      "Negative indexing from the end",
+      "Slicing: arr[start:stop:step]",
+      "Slice assignment"
+    ],
+    "exercise": "From np.arange(100), extract: first 10 elements, last 5, every other element. Reverse an array using slicing.",
+    "homework": "Write a function first_n_evens(arr, n) that returns the first n even-indexed elements."
+  },
+  {
+    "id": 14,
+    "week": 2,
+    "day": "Tuesday",
+    "title": "Indexing & Slicing (2D)",
+    "objective": "Select rows, columns, and submatrices from 2D arrays.",
+    "concepts": [
+      "arr[row, col] for single element",
+      "arr[row, :] for full row; arr[:, col] for full column",
+      "Sub-matrix slicing: arr[r1:r2, c1:c2]",
+      "Difference between arr[0] and arr[0:1]"
+    ],
+    "exercise": "From a 5×5 matrix (1–25), extract: row 2, column 3, top-left 3×3 block. Replace the entire diagonal of a 4×4 matrix with zeros.",
+    "homework": "Create a checkerboard 4×4 0/1 pattern without explicit loops. Wednesday"
+  },
+  {
+    "id": 15,
+    "week": 2,
+    "day": "Wednesday",
+    "title": "Boolean Masks & Fancy Indexing",
+    "objective": "Filter arrays using conditions; use index arrays.",
+    "concepts": [
+      "Boolean condition produces a mask: arr > 5",
+      "arr[mask] to filter",
+      "Combining conditions with & and |",
+      "np.where() for conditional selection"
+    ],
+    "exercise": "From 0–99, extract: values between 20–50, values NOT divisible by 3. Replace all values below 10 with 0 in a random array.",
+    "homework": "Use np.where to create a new array where positive values stay, negative become -1."
+  },
+  {
+    "id": 16,
+    "week": 2,
+    "day": "Wednesday",
+    "title": "Vectorized Operations & Broadcasting",
+    "objective": "Apply operations to entire arrays without loops.",
+    "concepts": [
+      "Element-wise arithmetic: +, -, *, /, **",
+      "Broadcasting: scalar to array, (1,n) to (m,n)",
+      "Universal functions (ufuncs): np.sqrt, np.log, np.exp",
+      "Understanding shape compatibility rules"
+    ],
+    "exercise": "Convert an array of Celsius temps to Fahrenheit vectorized. Given a 3×4 matrix of exam scores, subtract each student's mean (row-wise) using broadcasting.",
+    "homework": "Draw (or write) the shape diagram for adding a (3,1) array to a (1,4) array. What shape results? Thursday"
+  },
+  {
+    "id": 17,
+    "week": 2,
+    "day": "Thursday",
+    "title": "Aggregations & Statistics",
+    "objective": "Summarize arrays with aggregate functions along any axis.",
+    "concepts": [
+      "sum(), mean(), std(), var(), min(), max()",
+      "axis=0 (column-wise), axis=1 (row-wise)",
+      "np.median(), np.percentile()",
+      "np.cumsum(), np.diff()"
+    ],
+    "exercise": "For a 4×5 random matrix: compute max per row, min per column, overall std. Given daily temperatures for 4 weeks (4×7), compute weekly averages.",
+    "homework": "Explain the difference between axis=0 and axis=1 with a diagram or example."
+  },
+  {
+    "id": 18,
+    "week": 2,
+    "day": "Thursday",
+    "title": "Linear Algebra Basics",
+    "objective": "Perform matrix operations used frequently in ML.",
+    "concepts": [
+      "Matrix multiplication: A @ B or np.dot(A, B)",
+      "Transpose: A.T",
+      "np.linalg.norm(), np.linalg.det(), np.linalg.inv()",
+      "Solving a linear system: np.linalg.solve(A, b)"
+    ],
+    "exercise": "Create A (2×3) and B (3×2), compute A @ B, verify shape. Solve the system 2x + y = 5, x - y = 1 using np.linalg.solve.",
+    "homework": "Verify that A @ np.linalg.inv(A) ≈ identity matrix for a 3×3 matrix. Friday"
+  },
+  {
+    "id": 19,
+    "week": 2,
+    "day": "Friday",
+    "title": "Random Numbers & Simulation",
+    "objective": "Generate reproducible random data for simulations and ML.",
+    "concepts": [
+      "np.random.seed() for reproducibility",
+      "np.random.randint(), np.random.rand(), np.random.randn()",
+      "Shuffling and sampling: np.random.shuffle, np.random.choice",
+      "Generating from distributions: normal, uniform, Poisson"
+    ],
+    "exercise": "Simulate 10,000 dice rolls; count and print frequency of each face. Generate 1000 samples from N(0,1); verify mean ≈ 0 and std ≈ 1.",
+    "homework": "Write a Monte Carlo estimate of π using random points in a unit square."
+  },
+  {
+    "id": 20,
+    "week": 2,
+    "day": "Friday",
+    "title": "Mini-Project: NumPy Numeric Simulation",
+    "objective": "Combine arrays, broadcasting, and aggregations in one project.",
+    "concepts": [
+      "End-to-end NumPy workflow",
+      "Text-based histogram output",
+      "Combining indexing, stats, and random data"
+    ],
+    "exercise": "Simulate 10,000 coin flips using np.random.randint(0,2). Count heads and tails. Compute running proportion of heads and find when it first settles within 1% of 0.5. Bonus: Print a text bar chart of the frequency of each outcome.",
+    "homework": "Reflection: Write your personal NumPy cheat sheet — the 10 most useful operations you learned."
+  },
+  {
+    "id": 21,
+    "week": 3,
+    "day": "Monday",
+    "title": "Series & DataFrame Basics",
+    "objective": "Create Series and DataFrames from scratch and understand their structure.",
+    "concepts": [
+      "pd.Series from list/dict",
+      "pd.DataFrame from dict of lists or list of dicts",
+      "Index, columns, values",
+      ".shape, .dtypes, .info(), .describe()"
+    ],
+    "exercise": "Create a DataFrame of 5 cities with population, area, and country columns. Print the dtype of each column and describe() the numeric ones.",
+    "homework": "Compare a pandas Series to a NumPy array — what are 2 differences and 1 similarity?"
+  },
+  {
+    "id": 22,
+    "week": 3,
+    "day": "Monday",
+    "title": "Loading & Inspecting Data",
+    "objective": "Read real datasets from CSV and other formats.",
+    "concepts": [
+      "pd.read_csv(), pd.read_excel(), pd.read_json()",
+      "head(), tail(), sample()",
+      "columns, index, shape",
+      "Basic info and describe"
+    ],
+    "exercise": "Load the Iris CSV dataset, print head(5), shape, and column dtypes. Check how many rows have a sepal_length > 5.0.",
+    "homework": "Find one open dataset on Kaggle or GitHub, load it, and write 3 observations from describe(). Tuesday"
+  },
+  {
+    "id": 23,
+    "week": 3,
+    "day": "Tuesday",
+    "title": "Selecting Rows & Columns",
+    "objective": "Access subsets of a DataFrame with loc, iloc, and column selection.",
+    "concepts": [
+      "df['col'] and df[['col1','col2']] for columns",
+      "df.loc[row_label, col_label] — label-based",
+      "df.iloc[row_num, col_num] — position-based",
+      "Boolean indexing: df[df['col'] > value]"
+    ],
+    "exercise": "Select only numeric columns from the Iris dataset. Use loc to get rows where species == 'setosa' and only the petal columns.",
+    "homework": "What is the key difference between loc and iloc? When would each be confusing?"
+  },
+  {
+    "id": 24,
+    "week": 3,
+    "day": "Tuesday",
+    "title": "Filtering, Sorting & Value Counts",
+    "objective": "Slice and sort DataFrames to answer real questions.",
+    "concepts": [
+      "Boolean filtering with & and | operators",
+      "sort_values(by, ascending)",
+      "value_counts() and unique()",
+      "nlargest() and nsmallest()"
+    ],
+    "exercise": "Filter rows where sepal_length > 5 AND petal_width < 2. Sort by sepal_length descending. Find the 5 most common species in a dataset using value_counts.",
+    "homework": "Create a 'filtered_data.csv' of the top 20 rows by sepal_length. Wednesday"
+  },
+  {
+    "id": 25,
+    "week": 3,
+    "day": "Wednesday",
+    "title": "Handling Missing Data",
+    "objective": "Detect and handle NaN values appropriately.",
+    "concepts": [
+      "isnull(), isna(), notna()",
+      "dropna() — axis, thresh options",
+      "fillna() with value, method ('ffill', 'bfill')",
+      "Percentage of missing values per column"
+    ],
+    "exercise": "Create a DataFrame with deliberate NaNs. Compare dropna() vs fillna(0) vs fillna(mean). Write a function missing_report(df) that prints % missing per column.",
+    "homework": "When would you prefer fillna(mean) vs dropna()? Give a real scenario for each."
+  },
+  {
+    "id": 26,
+    "week": 3,
+    "day": "Wednesday",
+    "title": "Type Conversion & New Columns",
+    "objective": "Fix dtypes and engineer new features from existing columns.",
+    "concepts": [
+      "astype() for type casting",
+      "Creating new columns via arithmetic",
+      "apply() with lambda for row/column transforms",
+      "pd.to_datetime() for date handling"
+    ],
+    "exercise": "Add a BMI column to a health dataset using weight and height columns. Convert a 'date' string column to datetime and extract year, month, day.",
+    "homework": "Write an apply() function that categorizes a numeric column into 'low', 'medium', 'high' bins. Thursday"
+  },
+  {
+    "id": 27,
+    "week": 3,
+    "day": "Thursday",
+    "title": "GroupBy & Aggregations",
+    "objective": "Summarize data by category using groupby.",
+    "concepts": [
+      "df.groupby('col').agg()",
+      "Multiple aggregation functions: mean, sum, count, std",
+      "groupby with multiple columns",
+      "reset_index() after groupby"
+    ],
+    "exercise": "Using the tips dataset (seaborn), compute average tip by day and by smoker status. Find the top 3 days by total bill amount.",
+    "homework": "Compare groupby().mean() with a manual loop approach — what are the advantages?"
+  },
+  {
+    "id": 28,
+    "week": 3,
+    "day": "Thursday",
+    "title": "Merge, Join & Concat",
+    "objective": "Combine multiple DataFrames together.",
+    "concepts": [
+      "pd.concat() for stacking rows/columns",
+      "pd.merge() with how: inner, left, right, outer",
+      "merge on: single key, multiple keys",
+      "Handling duplicate column names after merge"
+    ],
+    "exercise": "Create two small DataFrames (students and their scores) and merge them on 'student_id'. Stack three DataFrames of monthly sales data using pd.concat.",
+    "homework": "Describe the difference between inner and left join with a 5-row example. Friday"
+  },
+  {
+    "id": 29,
+    "week": 3,
+    "day": "Friday",
+    "title": "Exporting & I/O Operations",
+    "objective": "Save processed DataFrames to various file formats.",
+    "concepts": [
+      "to_csv(), to_excel(), to_json()",
+      "index=False to avoid extra index column",
+      "Reading back saved files",
+      "Chunking for large files"
+    ],
+    "exercise": "Load a CSV, clean it (drop nulls, fix types), and export cleaned version with a new filename. Export a summary groupby result to Excel with a named sheet.",
+    "homework": "What's the risk of saving index=True when re-loading a CSV later? Test it."
+  },
+  {
+    "id": 30,
+    "week": 3,
+    "day": "Friday",
+    "title": "Mini-Project: Exploratory Data Analysis (EDA)",
+    "objective": "Perform a full EDA on a real dataset using pandas only.",
+    "concepts": [
+      "Combining load, clean, filter, groupby, export",
+      "Writing markdown insight notes in a notebook",
+      "Summarising findings clearly"
+    ],
+    "exercise": "Choose a dataset (tips, flights, or titanic from seaborn). Load → clean → 5 groupby insights → export cleaned CSV → write 5 markdown bullet 'findings'. Identify the single most interesting pattern in your data and explain why.",
+    "homework": "Reflection: Write a 'pandas cheat sheet' with the 12 operations you used most this week."
+  },
+  {
+    "id": 31,
+    "week": 4,
+    "day": "Monday",
+    "title": "Matplotlib: Figures & Axes",
+    "objective": "Understand the Figure/Axes hierarchy and create basic line plots.",
+    "concepts": [
+      "import matplotlib.pyplot as plt",
+      "plt.figure() and plt.subplots()",
+      "ax.plot(), ax.set_xlabel(), ax.set_ylabel(), ax.set_title()",
+      "plt.show() and plt.savefig()"
+    ],
+    "exercise": "Plot daily temperatures for 7 days as a line chart with labeled axes and title. Plot two overlapping lines on the same axes with a legend.",
+    "homework": "Explain the difference between plt.plot() and fig, ax = plt.subplots(); ax.plot()."
+  },
+  {
+    "id": 32,
+    "week": 4,
+    "day": "Monday",
+    "title": "Common Plot Types",
+    "objective": "Create bar, scatter, and histogram charts.",
+    "concepts": [
+      "ax.bar() and ax.barh() for bar charts",
+      "ax.scatter() for relationships",
+      "ax.hist() with bins parameter",
+      "Color, alpha, and edge color options"
+    ],
+    "exercise": "Bar chart of average tip by day (from tips dataset). Histogram of sepal_length with 20 bins.",
+    "homework": "When would you choose a histogram over a scatter plot? Give a real scenario. Tuesday"
+  },
+  {
+    "id": 33,
+    "week": 4,
+    "day": "Tuesday",
+    "title": "Plot Customization & Styling",
+    "objective": "Make plots professional and readable.",
+    "concepts": [
+      "Figure size: figsize=(w,h)",
+      "Fonts, tick labels, rotation",
+      "Grid lines: ax.grid()",
+      "Color maps and custom colors",
+      "plt.style.use()"
+    ],
+    "exercise": "Recreate yesterday's bar chart with improved styling: custom colors, rotated x labels, grid lines. Save your best plot as a PNG at 150 DPI.",
+    "homework": "Find the 3 matplotlib styles you like best by running plt.style.available and comparing them."
+  },
+  {
+    "id": 34,
+    "week": 4,
+    "day": "Tuesday",
+    "title": "Subplots & Layout",
+    "objective": "Display multiple plots in a single figure.",
+    "concepts": [
+      "plt.subplots(nrows, ncols)",
+      "Sharing axes: sharex, sharey",
+      "plt.tight_layout() to prevent overlap",
+      "ax.twinx() for dual y-axes"
+    ],
+    "exercise": "Create a 1×2 subplot: histogram on left, scatter on right for the same dataset. Create a 2×2 grid of 4 different chart types for the Iris dataset.",
+    "homework": "Explain when to use subplots vs creating separate figures. Wednesday"
+  },
+  {
+    "id": 35,
+    "week": 4,
+    "day": "Wednesday",
+    "title": "Seaborn: Introduction & Distribution Plots",
+    "objective": "Use Seaborn for statistically-informed, beautiful visualizations.",
+    "concepts": [
+      "import seaborn as sns",
+      "sns.set_theme() for consistent styling",
+      "sns.histplot() and sns.kdeplot()",
+      "hue parameter for color grouping"
+    ],
+    "exercise": "sns.histplot of sepal_length colored by species. Overlay a KDE on the histogram.",
+    "homework": "What does KDE (Kernel Density Estimate) represent? Explain in plain language."
+  },
+  {
+    "id": 36,
+    "week": 4,
+    "day": "Wednesday",
+    "title": "Seaborn: Scatter, Regression & Pair Plots",
+    "objective": "Visualize relationships between variables.",
+    "concepts": [
+      "sns.scatterplot() with hue and size",
+      "sns.regplot() for regression line",
+      "sns.pairplot() for all-vs-all relationships",
+      "sns.lmplot() for faceted regression"
+    ],
+    "exercise": "Scatter plot of sepal_length vs petal_length, colored by species. sns.pairplot on the full Iris dataset.",
+    "homework": "From pairplot, identify the two variables with the strongest visual correlation. Why? Thursday"
+  },
+  {
+    "id": 37,
+    "week": 4,
+    "day": "Thursday",
+    "title": "Seaborn: Categorical & Statistical Plots",
+    "objective": "Visualize distributions and comparisons across groups.",
+    "concepts": [
+      "sns.boxplot() and sns.violinplot()",
+      "sns.countplot() for frequencies",
+      "sns.barplot() with confidence intervals",
+      "sns.stripplot() and sns.swarmplot()"
+    ],
+    "exercise": "Boxplot of tip amount grouped by day of week. Violinplot comparing petal_length by species.",
+    "homework": "Describe what a violin plot shows that a boxplot doesn't. When is each more useful?"
+  },
+  {
+    "id": 38,
+    "week": 4,
+    "day": "Thursday",
+    "title": "Heatmaps & Correlation Matrices",
+    "objective": "Visualize multi-variable relationships in a grid.",
+    "concepts": [
+      "Computing correlation: df.corr()",
+      "sns.heatmap() with annot=True, cmap",
+      "Masking the upper triangle",
+      "Interpreting positive vs negative correlations"
+    ],
+    "exercise": "Create an annotated heatmap of the Iris correlation matrix. Mask the upper triangle of the heatmap for a cleaner look.",
+    "homework": "From the heatmap, which 2 features are most positively correlated? Does it make physical sense? Friday"
+  },
+  {
+    "id": 39,
+    "week": 4,
+    "day": "Friday",
+    "title": "Interactive Visualizations with Plotly (Intro)",
+    "objective": "Create interactive charts that users can zoom and hover.",
+    "concepts": [
+      "import plotly.express as px",
+      "px.scatter(), px.bar(), px.histogram()",
+      "hover_data and color parameters",
+      "fig.show() and saving to HTML"
+    ],
+    "exercise": "Recreate the Iris scatter plot as an interactive Plotly chart with species hover info. Export it as an HTML file you can open in a browser.",
+    "homework": "Compare Matplotlib, Seaborn, and Plotly: when would you choose each?"
+  },
+  {
+    "id": 40,
+    "week": 4,
+    "day": "Friday",
+    "title": "Mini-Project: Visual Data Story",
+    "objective": "Build a complete EDA notebook with 4+ plots telling a story.",
+    "concepts": [
+      "Selecting the right chart type for the question",
+      "Combining pandas + Seaborn/Matplotlib",
+      "Writing markdown narrative between charts"
+    ],
+    "exercise": "Using the tips or titanic dataset: create (1) a distribution plot, (2) a relationship plot, (3) a category comparison, and (4) a correlation heatmap. Add a 1-sentence insight below each. Write a 'headline finding' as the first cell in your notebook.",
+    "homework": "Reflection: List the 5 most powerful visualization techniques you learned this week and when to use each."
+  },
+  {
+    "id": 41,
+    "week": 5,
+    "day": "Monday",
+    "title": "CSV & JSON with Standard Library",
+    "objective": "Read/write CSV and JSON using Python's built-in modules.",
+    "concepts": [
+      "csv.reader and csv.DictReader",
+      "csv.writer and csv.DictWriter",
+      "json.load(), json.dump(), json.loads(), json.dumps()",
+      "Handling encoding and special characters"
+    ],
+    "exercise": "Write a list of student dicts to CSV and read it back with csv.DictReader. Save a dict as pretty-printed JSON and reload it.",
+    "homework": "When would you use the csv module vs pandas read_csv? Give 2 scenarios for each."
+  },
+  {
+    "id": 42,
+    "week": 5,
+    "day": "Monday",
+    "title": "Excel with pandas & openpyxl",
+    "objective": "Read and write Excel files with multiple sheets.",
+    "concepts": [
+      "pd.read_excel() with sheet_name parameter",
+      "pd.to_excel() with ExcelWriter",
+      "Multiple sheets in one file",
+      "Cell formatting basics with openpyxl"
+    ],
+    "exercise": "Load an Excel file with 2 sheets; combine them into one DataFrame. Export a cleaned DataFrame to Excel with a custom sheet name.",
+    "homework": "What are the practical differences between CSV and Excel for data storage? Tuesday"
+  },
+  {
+    "id": 43,
+    "week": 5,
+    "day": "Tuesday",
+    "title": "XML Parsing",
+    "objective": "Parse structured XML data using Python's xml.etree module.",
+    "concepts": [
+      "xml.etree.ElementTree basics",
+      "tree.getroot(), root.findall(), element.get()",
+      "Iterating over child elements",
+      "Extracting attributes and text"
+    ],
+    "exercise": "Parse a small XML file (e.g., RSS feed or sample data) and extract all title and link elements. Convert extracted XML data to a pandas DataFrame.",
+    "homework": "Compare XML and JSON as data formats: pros and cons of each."
+  },
+  {
+    "id": 44,
+    "week": 5,
+    "day": "Tuesday",
+    "title": "Text & Log File Parsing",
+    "objective": "Extract structured data from plain text and log files.",
+    "concepts": [
+      "Reading text files line-by-line",
+      "str.split(), str.strip(), str.startswith()",
+      "Detecting patterns with 'in' operator",
+      "Building a list of parsed records"
+    ],
+    "exercise": "Read a log file; count ERROR, WARNING, and INFO lines separately. Extract timestamps and messages from each line into a DataFrame.",
+    "homework": "Write a function parse_log(filepath) → DataFrame that generalizes this pattern. Wednesday"
+  },
+  {
+    "id": 45,
+    "week": 5,
+    "day": "Wednesday",
+    "title": "Regex for Data Cleaning",
+    "objective": "Use regular expressions to find and transform patterns in text.",
+    "concepts": [
+      "re.search(), re.findall(), re.sub()",
+      "Basic patterns: \\d, \\w, \\s, ., *, +, ?",
+      "Groups with parentheses: ()",
+      "Compiled patterns: re.compile()"
+    ],
+    "exercise": "Extract all email addresses from a text string. Normalize phone numbers to (XXX) XXX-XXXX format from messy input.",
+    "homework": "Write a regex that extracts dates in MM/DD/YYYY format from a paragraph."
+  },
+  {
+    "id": 46,
+    "week": 5,
+    "day": "Wednesday",
+    "title": "PDF Reading with pdfplumber",
+    "objective": "Extract text and tables from PDF files programmatically.",
+    "concepts": [
+      "pip install pdfplumber",
+      "pdfplumber.open() context manager",
+      "page.extract_text() and page.extract_tables()",
+      "Handling multi-page PDFs"
+    ],
+    "exercise": "Open a PDF, extract text from page 1, and print the first 500 characters. Extract a table from a PDF and convert it to a pandas DataFrame.",
+    "homework": "What are the challenges of PDF parsing? Why do tables in PDFs cause problems? Thursday"
+  },
+  {
+    "id": 47,
+    "week": 5,
+    "day": "Thursday",
+    "title": "Image Basics with Pillow",
+    "objective": "Open, inspect, and transform images programmatically.",
+    "concepts": [
+      "from PIL import Image",
+      "Image.open(), img.size, img.mode",
+      "img.resize(), img.rotate(), img.crop()",
+      "img.save() to various formats"
+    ],
+    "exercise": "Open an image, print its size and mode, create a thumbnail, save as PNG. Convert an RGB image to grayscale.",
+    "homework": "What does img.mode tell you? What is the difference between 'RGB', 'L', and 'RGBA'?"
+  },
+  {
+    "id": 48,
+    "week": 5,
+    "day": "Thursday",
+    "title": "Building a Data Cleaning Pipeline",
+    "objective": "Combine file I/O, regex, and pandas into a reusable pipeline.",
+    "concepts": [
+      "Pipeline pattern: load → validate → clean → export",
+      "Using functions to modularize each step",
+      "Logging intermediate results with print or logging module",
+      "Writing cleaned output files"
+    ],
+    "exercise": "Build a pipeline: read messy CSV → strip whitespace and fix casing → fill missing values → export cleaned CSV with a timestamp in the filename. Add a function that generates a short cleaning report (rows before/after, nulls removed).",
+    "homework": "Sketch the pipeline as a flowchart (even on paper). Identify where errors are most likely to occur. Friday"
+  },
+  {
+    "id": 49,
+    "week": 5,
+    "day": "Friday",
+    "title": "Data Merging from Multiple Sources",
+    "objective": "Combine data from CSV, JSON, and Excel into one unified DataFrame.",
+    "concepts": [
+      "Loading from different formats into DataFrames",
+      "Aligning column names before concatenation",
+      "Deduplication with drop_duplicates()",
+      "Validating merged results"
+    ],
+    "exercise": "Load the same dataset stored as CSV, JSON, and Excel. Merge all three and verify no duplicates. Write a function load_and_merge(file_list) that handles CSV, JSON, and Excel automatically.",
+    "homework": "What real-world problems arise when merging data from multiple sources? List 3 and how to handle them."
+  },
+  {
+    "id": 50,
+    "week": 5,
+    "day": "Friday",
+    "title": "Mini-Project: Data Cleaning Notebook",
+    "objective": "Create a professional data cleaning notebook from raw to clean data.",
+    "concepts": [
+      "End-to-end cleaning workflow",
+      "Markdown documentation within the notebook",
+      "Outputting a clean CSV and a cleaning report"
+    ],
+    "exercise": "Take a messy dataset (missing values, wrong types, duplicate rows, inconsistent casing). Clean it step by step with explanations. Produce cleaned_data.csv and a markdown 'cleaning log' that describes each step. Bonus: visualize before/after statistics for 2 columns.",
+    "homework": "Reflection: Write your 'data cleaning checklist' — the 8 steps you'll follow every time."
+  },
+  {
+    "id": 51,
+    "week": 6,
+    "day": "Monday",
+    "title": "HTTP Basics & GET Requests",
+    "objective": "Understand HTTP and make your first API call with requests.",
+    "concepts": [
+      "HTTP concepts: URL, method, status codes, headers",
+      "requests.get(url) and response object",
+      "response.status_code, response.text, response.json()",
+      "Using try/except for network errors"
+    ],
+    "exercise": "Call a public API (e.g., Open-Notify ISS location or Random User). Print the JSON response. Print the status code and confirm it's 200 before using the data.",
+    "homework": "What is the difference between a 200, 404, and 500 status code? Give a real-world analogy."
+  },
+  {
+    "id": 52,
+    "week": 6,
+    "day": "Monday",
+    "title": "Query Parameters & Headers",
+    "objective": "Pass data to APIs using query parameters and request headers.",
+    "concepts": [
+      "params dict for query strings",
+      "headers dict for Auth, Content-Type, User-Agent",
+      "Pagination: fetching multiple pages",
+      "requests.Session() for reuse"
+    ],
+    "exercise": "Call a search API (e.g., Open Library or REST Countries) with a query parameter. Print number of results. Write a loop that fetches 3 pages of paginated results and collects all records.",
+    "homework": "Why might an API return different results for the same URL without vs with a User-Agent header? Tuesday"
+  },
+  {
+    "id": 53,
+    "week": 6,
+    "day": "Tuesday",
+    "title": "Parsing JSON into pandas",
+    "objective": "Convert API JSON responses into DataFrames for analysis.",
+    "concepts": [
+      "response.json() to Python dict/list",
+      "pd.DataFrame() from list of dicts",
+      "Normalizing nested JSON: pd.json_normalize()",
+      "Selecting relevant fields"
+    ],
+    "exercise": "Fetch 50 random user records from randomuser.me. Convert to a DataFrame with name, email, country. Normalize a nested JSON field (e.g., coordinates) into separate columns.",
+    "homework": "What challenges arise with deeply nested JSON? How does json_normalize help?"
+  },
+  {
+    "id": 54,
+    "week": 6,
+    "day": "Tuesday",
+    "title": "Rate Limiting & Robustness",
+    "objective": "Write production-quality API fetchers that handle errors and limits.",
+    "concepts": [
+      "time.sleep() between requests",
+      "Retry logic with a simple loop",
+      "Checking status codes before processing",
+      "Saving raw JSON to file as backup"
+    ],
+    "exercise": "Write a function fetch_with_retry(url, retries=3) that retries on 5xx errors. Fetch 10 pages of data with a 1-second sleep between each; collect all results.",
+    "homework": "Why is it important to save raw API data before processing it? Describe a scenario where this matters. Wednesday"
+  },
+  {
+    "id": 55,
+    "week": 6,
+    "day": "Wednesday",
+    "title": "BeautifulSoup: HTML Parsing Basics",
+    "objective": "Parse and navigate HTML documents to extract data.",
+    "concepts": [
+      "from bs4 import BeautifulSoup",
+      "BeautifulSoup(html, 'html.parser')",
+      "find() and find_all() by tag and attribute",
+      "Extracting text and attributes: .text, .get('href')"
+    ],
+    "exercise": "Fetch a static web page and print all <h2> headings. Extract all hyperlinks from a page and store in a list.",
+    "homework": "What is the difference between find() and find_all()? When does each return None?"
+  },
+  {
+    "id": 56,
+    "week": 6,
+    "day": "Wednesday",
+    "title": "Scraping Tables & Building DataFrames",
+    "objective": "Turn HTML tables into pandas DataFrames.",
+    "concepts": [
+      "Locating <table> tags in HTML",
+      "pd.read_html() for quick extraction",
+      "Manual row/cell extraction for complex tables",
+      "Cleaning scraped data: strip, replace, convert types"
+    ],
+    "exercise": "Use pd.read_html() to extract a table from a Wikipedia page. Manually parse a table row-by-row with BeautifulSoup and build a DataFrame.",
+    "homework": "pd.read_html() is convenient but sometimes wrong. When would you prefer manual parsing? Thursday"
+  },
+  {
+    "id": 57,
+    "week": 6,
+    "day": "Thursday",
+    "title": "Ethical Scraping & robots.txt",
+    "objective": "Understand the legal and ethical boundaries of web scraping.",
+    "concepts": [
+      "Reading robots.txt to understand allowed/disallowed paths",
+      "Respecting crawl delay",
+      "Terms of Service and public vs private data",
+      "Avoiding server overload"
+    ],
+    "exercise": "Fetch and print the robots.txt for 3 websites you use. Identify which paths are disallowed and which are allowed for scrapers.",
+    "homework": "Write a 150-word reflection: When is web scraping ethical? What lines should never be crossed?"
+  },
+  {
+    "id": 58,
+    "week": 6,
+    "day": "Thursday",
+    "title": "Saving & Processing Scraped Data",
+    "objective": "Clean and store scraped data for downstream analysis.",
+    "concepts": [
+      "Stripping whitespace and special characters from scraped text",
+      "Handling missing cells in scraped tables",
+      "Converting text numbers to numeric types",
+      "Saving to CSV and back-dating raw HTML"
+    ],
+    "exercise": "Scrape a simple sports or financial table. Clean it and compute one meaningful stat (e.g., average). Save both the raw HTML and the cleaned CSV with timestamps.",
+    "homework": "What encoding issues can arise in scraped text? How does .encode('utf-8', errors='ignore') help? Friday"
+  },
+  {
+    "id": 59,
+    "week": 6,
+    "day": "Friday",
+    "title": "API + pandas Mini-Dashboard",
+    "objective": "Build a small pipeline from API → DataFrame → charts.",
+    "concepts": [
+      "Combining requests + pandas + matplotlib/seaborn",
+      "Creating a summary table and 2 plots from live data",
+      "Saving to CSV and PNG"
+    ],
+    "exercise": "Fetch weather data or COVID stats from a public API. Build a DataFrame. Plot daily trend and a bar chart of top 5 values. Export the report as a CSV + two PNG charts.",
+    "homework": "What improvements would make this pipeline 'production-ready'? List 3 enhancements."
+  },
+  {
+    "id": 60,
+    "week": 6,
+    "day": "Friday",
+    "title": "Mini-Project: API-Based Mini Dataset",
+    "objective": "Complete end-to-end project: fetch → clean → analyze → visualize.",
+    "concepts": [
+      "Designing a project with a clear question",
+      "Multi-step data pipeline",
+      "Presenting findings clearly"
+    ],
+    "exercise": "Choose one public API (e.g., OpenWeatherMap, REST Countries, NASA APOD). Fetch at least 50 records. Clean, store to CSV, compute 3 statistics, and produce 2 charts. Write a 3-sentence 'finding' section in your notebook. Bonus: wrap your entire pipeline into one function run_pipeline() that can be re-run.",
+    "homework": "Reflection: List 3 real-world datasets you could analyze with APIs + pandas that would be personally meaningful to you."
+  },
+  {
+    "id": 61,
+    "week": 7,
+    "day": "Monday",
+    "title": "Flask: Getting Started",
+    "objective": "Build and run your first Flask web application.",
+    "concepts": [
+      "pip install flask",
+      "Flask app structure: app.py",
+      "app.route() decorator",
+      "debug=True for development",
+      "Returning strings and HTML"
+    ],
+    "exercise": "Create a Flask app with routes: /, /hello/<name>, /about. Test in browser. Return a JSON response from a /data route.",
+    "homework": "What does debug=True do? Why should it NEVER be used in production?"
+  },
+  {
+    "id": 62,
+    "week": 7,
+    "day": "Monday",
+    "title": "Flask: Templates & Jinja2",
+    "objective": "Render dynamic HTML pages using Jinja2 templates.",
+    "concepts": [
+      "templates/ folder structure",
+      "render_template('page.html', var=value)",
+      "Jinja2 syntax: {{ var }}, {% if %}, {% for %}",
+      "Template inheritance: {% extends %} and {% block %}"
+    ],
+    "exercise": "Create a template that displays a list of items passed from Flask. Add a base.html template with a navbar and extend it in 2 other pages.",
+    "homework": "How does Jinja2 template inheritance reduce code duplication? Give a concrete example. Tuesday"
+  },
+  {
+    "id": 63,
+    "week": 7,
+    "day": "Tuesday",
+    "title": "Flask: Forms & POST Requests",
+    "objective": "Handle user input from HTML forms.",
+    "concepts": [
+      "HTML form with method='POST'",
+      "request.form dictionary",
+      "GET vs POST distinction",
+      "Redirecting after form submission: redirect()"
+    ],
+    "exercise": "Build a BMI calculator: HTML form takes weight and height, Flask computes and displays BMI. Add basic validation: check that values are numeric before computing.",
+    "homework": "What is the POST/Redirect/GET pattern and why does it prevent form resubmission?"
+  },
+  {
+    "id": 64,
+    "week": 7,
+    "day": "Tuesday",
+    "title": "Flask: REST API Endpoints",
+    "objective": "Build a JSON REST API with Flask.",
+    "concepts": [
+      "jsonify() to return JSON",
+      "HTTP methods: GET, POST, DELETE on same route with methods=['GET','POST']",
+      "request.get_json() to receive JSON body",
+      "Status codes: 200, 201, 400, 404"
+    ],
+    "exercise": "Build a simple in-memory 'todo list' API: GET /todos, POST /todos, DELETE /todos/<id>. Test your API using the requests library or a browser.",
+    "homework": "What is REST? List its 5 key constraints in your own words. Wednesday"
+  },
+  {
+    "id": 65,
+    "week": 7,
+    "day": "Wednesday",
+    "title": "Flask: Serving Data from pandas",
+    "objective": "Connect Flask to a pandas dataset and serve computed results.",
+    "concepts": [
+      "Loading a CSV once at startup with global variable",
+      "Passing DataFrame data to templates",
+      "Returning filtered data as JSON from API endpoint",
+      "Basic query string parameters: request.args"
+    ],
+    "exercise": "Build a Flask app that loads the Iris dataset and serves: /data (JSON all), /stats (JSON describe), /species/<name> (filtered rows). Render a simple HTML table of the first 10 rows via a template.",
+    "homework": "What is the risk of using a global DataFrame in Flask? How could you improve this?"
+  },
+  {
+    "id": 66,
+    "week": 7,
+    "day": "Wednesday",
+    "title": "FastAPI: Modern API Design",
+    "objective": "Build a type-safe, auto-documented API with FastAPI.",
+    "concepts": [
+      "pip install fastapi uvicorn",
+      "@app.get(), @app.post() decorators",
+      "Path parameters and query parameters with type hints",
+      "Automatic docs at /docs (Swagger UI)"
+    ],
+    "exercise": "Create a FastAPI app with 3 routes: /, /items/{item_id}, /search?q=term. Test in /docs. Add a query parameter with a default value and an optional description.",
+    "homework": "Compare Flask and FastAPI: what are the 3 biggest differences for a beginner building an API? Thursday"
+  },
+  {
+    "id": 67,
+    "week": 7,
+    "day": "Thursday",
+    "title": "FastAPI: Pydantic Models & Validation",
+    "objective": "Use Pydantic models to validate request and response data automatically.",
+    "concepts": [
+      "from pydantic import BaseModel",
+      "Defining request body models with type annotations",
+      "Automatic validation and error messages",
+      "Response models: response_model parameter"
+    ],
+    "exercise": "Define a Student model with name (str), age (int, min 0), grade (float, 0–100). POST endpoint that returns the validated student. Test with invalid data and observe FastAPI's automatic error responses.",
+    "homework": "What is the advantage of Pydantic validation over manually checking request data in Flask?"
+  },
+  {
+    "id": 68,
+    "week": 7,
+    "day": "Thursday",
+    "title": "FastAPI: Async Support & Background Tasks",
+    "objective": "Understand async endpoints and simple background tasks.",
+    "concepts": [
+      "async def vs def in FastAPI",
+      "When async improves performance (I/O bound tasks)",
+      "BackgroundTasks for fire-and-forget jobs",
+      "Simple rate limiting concept"
+    ],
+    "exercise": "Convert a FastAPI endpoint to async and add a 'log to file' background task. Compare response time with and without async for a simulated I/O operation.",
+    "homework": "Explain the event loop concept in 3 sentences suitable for a beginner. Friday"
+  },
+  {
+    "id": 69,
+    "week": 7,
+    "day": "Friday",
+    "title": "Wrapping ML Models as APIs",
+    "objective": "Serve a pre-trained ML model as an API endpoint.",
+    "concepts": [
+      "Loading a saved model (joblib or pickle)",
+      "Accepting input data via Pydantic model",
+      "Running prediction and returning result",
+      "Input validation for ML features"
+    ],
+    "exercise": "Train a simple Iris classifier with scikit-learn, save it, and serve predictions via a FastAPI endpoint that accepts sepal/petal measurements. Test it with valid and invalid inputs.",
+    "homework": "What additional concerns arise when deploying an ML model as an API vs a static data API?"
+  },
+  {
+    "id": 70,
+    "week": 7,
+    "day": "Friday",
+    "title": "Mini-Project: Data API with Flask or FastAPI",
+    "objective": "Build a complete small API that exposes a dataset with filtering and stats.",
+    "concepts": [
+      "Multi-endpoint API design",
+      "Input validation, error handling",
+      "Serving a real dataset"
+    ],
+    "exercise": "Build a /population API (use rest countries or similar): GET all countries, GET /country/<name> (details), GET /stats (global averages), GET /filter?region=Europe. Document all endpoints. Bonus: add a /predict endpoint if you already have a trained model.",
+    "homework": "Reflection: Sketch on paper the architecture of a real-world data application using Flask/FastAPI + pandas + a database. Label each component."
+  },
+  {
+    "id": 71,
+    "week": 8,
+    "day": "Monday",
+    "title": "ML Workflow & train-test split",
+    "objective": "Understand the end-to-end supervised learning workflow.",
+    "concepts": [
+      "Features (X) and labels (y)",
+      "train_test_split with test_size and random_state",
+      "Avoiding data leakage",
+      "Scikit-learn estimator API: fit(), predict(), score()"
+    ],
+    "exercise": "Load Iris, split 80/20, confirm shapes. Fit a KNN classifier. Print test accuracy. Try 3 different random_state values and observe how accuracy changes.",
+    "homework": "What is data leakage? Give a concrete example of how it happens and why it's catastrophic."
+  },
+  {
+    "id": 72,
+    "week": 8,
+    "day": "Monday",
+    "title": "Classification: KNN & Logistic Regression",
+    "objective": "Train and evaluate two classification algorithms.",
+    "concepts": [
+      "KNeighborsClassifier with n_neighbors",
+      "LogisticRegression with max_iter",
+      "predict() vs predict_proba()",
+      "Comparing accuracy of two models"
+    ],
+    "exercise": "Compare KNN and Logistic Regression on the Iris dataset. Which is more accurate? Try k=1, 5, 15 for KNN. Plot accuracy vs k.",
+    "homework": "What is the bias-variance trade-off? How does k in KNN relate to it? Tuesday"
+  },
+  {
+    "id": 73,
+    "week": 8,
+    "day": "Tuesday",
+    "title": "Classification: Decision Trees & Random Forests",
+    "objective": "Use tree-based models for classification.",
+    "concepts": [
+      "DecisionTreeClassifier with max_depth",
+      "Feature importance: .feature_importances_",
+      "RandomForestClassifier as ensemble",
+      "Overfitting in trees and how depth controls it"
+    ],
+    "exercise": "Train a Decision Tree (depth=3) and a Random Forest (100 trees) on a dataset. Compare accuracy. Plot feature importances from the Random Forest as a bar chart.",
+    "homework": "Why does a single deep decision tree overfit but a Random Forest doesn't?"
+  },
+  {
+    "id": 74,
+    "week": 8,
+    "day": "Tuesday",
+    "title": "Regression: Linear & Polynomial",
+    "objective": "Predict continuous outcomes with regression models.",
+    "concepts": [
+      "LinearRegression from sklearn.linear_model",
+      "Mean Squared Error (MSE) and R² score",
+      "PolynomialFeatures for non-linear relationships",
+      "Visualizing the fit line vs data points"
+    ],
+    "exercise": "Train a Linear Regression on a housing price dataset (or Boston/diabetes). Compute RMSE and R². Add PolynomialFeatures (degree=2) and compare R² before/after.",
+    "homework": "When does a high R² indicate a good model? When can it be misleading? Wednesday"
+  },
+  {
+    "id": 75,
+    "week": 8,
+    "day": "Wednesday",
+    "title": "Preprocessing: Scaling & Encoding",
+    "objective": "Prepare raw features for machine learning models.",
+    "concepts": [
+      "StandardScaler and MinMaxScaler",
+      "OneHotEncoder for categorical features",
+      "LabelEncoder for ordinal categories",
+      "Why scaling matters for KNN, SVM but not trees"
+    ],
+    "exercise": "Apply StandardScaler to features and compare KNN accuracy before/after scaling. One-hot encode a categorical column and verify no information leak into test set.",
+    "homework": "Name 3 algorithms that require feature scaling and 3 that do not. Explain why."
+  },
+  {
+    "id": 76,
+    "week": 8,
+    "day": "Wednesday",
+    "title": "Pipelines: Preventing Data Leakage",
+    "objective": "Build sklearn Pipelines to combine preprocessing and model training safely.",
+    "concepts": [
+      "Pipeline([('step_name', transformer), ..., ('model', estimator)])",
+      "Fit pipeline on train set only",
+      "pipeline.predict() handles all transformations automatically",
+      "make_pipeline() shortcut"
+    ],
+    "exercise": "Build a Pipeline: StandardScaler + Logistic Regression. Fit on train, evaluate on test. Build a Pipeline for a dataset with both numeric and categorical features using ColumnTransformer.",
+    "homework": "Explain why fitting a scaler on the entire dataset (before splitting) is a form of data leakage. Thursday"
+  },
+  {
+    "id": 77,
+    "week": 8,
+    "day": "Thursday",
+    "title": "Evaluation Metrics (Classification)",
+    "objective": "Go beyond accuracy to fully evaluate classification models.",
+    "concepts": [
+      "Confusion matrix: TP, TN, FP, FN",
+      "Precision, Recall, F1-score",
+      "classification_report()",
+      "ROC curve and AUC for binary classification"
+    ],
+    "exercise": "Evaluate a classifier with classification_report and a confusion matrix heatmap. Plot the ROC curve for a binary classification problem.",
+    "homework": "Explain precision vs recall in plain English using a spam detection or cancer detection example."
+  },
+  {
+    "id": 78,
+    "week": 8,
+    "day": "Thursday",
+    "title": "Cross-Validation & Hyperparameter Tuning",
+    "objective": "Use cross-validation for reliable estimates and grid search to tune models.",
+    "concepts": [
+      "cross_val_score() with cv=5",
+      "Why single train/test split can be misleading",
+      "GridSearchCV and RandomizedSearchCV",
+      "Best params and best score"
+    ],
+    "exercise": "Use 5-fold cross-validation on 3 models. Compare mean and std of scores. Run GridSearchCV on KNN over n_neighbors=[1,3,5,7,9]. Print best k and accuracy.",
+    "homework": "When would you prefer RandomizedSearchCV over GridSearchCV? Give a practical example. Friday"
+  },
+  {
+    "id": 79,
+    "week": 8,
+    "day": "Friday",
+    "title": "Saving & Loading Models",
+    "objective": "Persist trained models for later use without retraining.",
+    "concepts": [
+      "joblib.dump() and joblib.load()",
+      "pickle module as alternative",
+      "Saving entire Pipeline objects",
+      "Versioning models with filenames"
+    ],
+    "exercise": "Train a model, save it with joblib. Load it in a new script and make predictions. Verify results match. Save and load a full Pipeline (scaler + model) and verify predictions are identical.",
+    "homework": "What information besides the model file do you need to save to reproduce a deployment? List 5 things."
+  },
+  {
+    "id": 80,
+    "week": 8,
+    "day": "Friday",
+    "title": "Mini-Project: Complete ML Notebook",
+    "objective": "Build a full supervised learning project notebook.",
+    "concepts": [
+      "Problem definition → data → preprocessing → modeling → evaluation → insights",
+      "Comparing multiple models",
+      "Communicating results clearly"
+    ],
+    "exercise": "Choose a dataset (Titanic, diabetes, or similar). Perform: EDA (3 plots) → preprocessing (Pipeline) → train 3 models → evaluate with cross-validation → report best model with all metrics. Write a 'model card' cell: describe what the model does, its limitations, and how it should be used.",
+    "homework": "Reflection: Write your ML project checklist — the 10 steps you'll always follow."
+  },
+  {
+    "id": 81,
+    "week": 9,
+    "day": "Monday",
+    "title": "SciPy Overview & Statistics",
+    "objective": "Use scipy.stats for distributions and hypothesis testing.",
+    "concepts": [
+      "from scipy import stats",
+      "stats.norm, stats.t, stats.chi2 distributions",
+      "pdf(), cdf(), ppf(), rvs()",
+      "Descriptive stats: stats.describe()"
+    ],
+    "exercise": "Sample 1000 values from N(5,2). Compute mean, std, and plot histogram vs PDF. Compute the CDF probability of x < 6 for N(5,2).",
+    "homework": "Explain the difference between PDF and CDF. Draw a rough sketch of each."
+  },
+  {
+    "id": 82,
+    "week": 9,
+    "day": "Monday",
+    "title": "SciPy: Hypothesis Testing",
+    "objective": "Perform t-tests and chi-square tests from Python.",
+    "concepts": [
+      "stats.ttest_1samp(), stats.ttest_ind()",
+      "p-value interpretation (0.05 threshold)",
+      "stats.chi2_contingency() for categorical data",
+      "Effect size concept"
+    ],
+    "exercise": "Test if the mean of a sample is significantly different from a hypothesized value. Compare means of two groups with an independent t-test. Interpret the p-value.",
+    "homework": "What does a p-value of 0.03 actually mean? Write the explanation you would give to a non-statistician. Tuesday"
+  },
+  {
+    "id": 83,
+    "week": 9,
+    "day": "Tuesday",
+    "title": "SciPy: Optimization",
+    "objective": "Find minima, maxima, and roots of functions numerically.",
+    "concepts": [
+      "scipy.optimize.minimize_scalar()",
+      "scipy.optimize.minimize() for multivariate",
+      "scipy.optimize.root_scalar() for roots",
+      "Bounds and constraints"
+    ],
+    "exercise": "Find the minimum of f(x) = x^2 - 4x + 3. Verify analytically. Find the root of x^3 - 2x - 5 = 0 numerically.",
+    "homework": "Give 3 examples of real-world optimization problems that could be solved with scipy.optimize."
+  },
+  {
+    "id": 84,
+    "week": 9,
+    "day": "Tuesday",
+    "title": "SciPy: Integration & Interpolation",
+    "objective": "Numerically integrate functions and interpolate between data points.",
+    "concepts": [
+      "scipy.integrate.quad() for definite integrals",
+      "Error estimation from quad()",
+      "scipy.interpolate.interp1d() for data interpolation",
+      "Linear vs cubic interpolation"
+    ],
+    "exercise": "Numerically integrate sin(x) from 0 to π. Compare with exact answer of 2. Interpolate between 10 sparse data points and plot both original and interpolated curve.",
+    "homework": "When would you use numerical integration instead of symbolic integration? Wednesday"
+  },
+  {
+    "id": 85,
+    "week": 9,
+    "day": "Wednesday",
+    "title": "SymPy: Symbolic Mathematics",
+    "objective": "Define and manipulate mathematical symbols and expressions.",
+    "concepts": [
+      "from sympy import symbols, expand, factor, simplify",
+      "Symbolic expression creation",
+      "expand(), factor(), simplify()",
+      "subs() for substitution"
+    ],
+    "exercise": "Define x and y as symbols. Expand (x+y)^3. Factor x^2 - 5x + 6. Substitute x=2 into an expression and compare with numeric calculation.",
+    "homework": "What is the difference between symbolic computation and numerical computation? Give 2 examples of when each is preferred."
+  },
+  {
+    "id": 86,
+    "week": 9,
+    "day": "Wednesday",
+    "title": "SymPy: Calculus",
+    "objective": "Perform differentiation and integration symbolically.",
+    "concepts": [
+      "diff(expr, var) for derivatives",
+      "integrate(expr, var) and definite integrals",
+      "Higher-order derivatives",
+      "Limits: limit(expr, var, point)"
+    ],
+    "exercise": "Compute the derivative of x^3 + 2x^2 - 5x + 1. Find critical points. Compute the definite integral of x^2 from 0 to 3 symbolically. Verify with scipy.",
+    "homework": "Find the symbolic second derivative of sin(x) * exp(x). Simplify the result. Thursday"
+  },
+  {
+    "id": 87,
+    "week": 9,
+    "day": "Thursday",
+    "title": "SymPy: Equation Solving",
+    "objective": "Solve algebraic equations and systems symbolically.",
+    "concepts": [
+      "solve(equation, variable)",
+      "Solving systems with multiple equations",
+      "Non-linear equations",
+      "Checking solutions by substitution"
+    ],
+    "exercise": "Solve x^2 - 4 = 0 and x^2 + x - 6 = 0 symbolically. Solve the system: 2x + y = 5, x - y = 1 symbolically. Compare with numpy.linalg.solve.",
+    "homework": "When would symbolic solving fail or be impractical? What do you do then?"
+  },
+  {
+    "id": 88,
+    "week": 9,
+    "day": "Thursday",
+    "title": "Plotting Mathematical Functions",
+    "objective": "Visualize symbolic and numeric functions together.",
+    "concepts": [
+      "sympy.plotting.plot() for quick symbolic plots",
+      "Converting symbolic expression to numpy function with lambdify()",
+      "Plotting function and its derivative together",
+      "Finding and marking critical points on plots"
+    ],
+    "exercise": "Plot f(x) = x^3 - 3x and its derivative f'(x) on the same axes. Mark local min/max. Use lambdify to convert a SymPy expression to a NumPy function for fast evaluation.",
+    "homework": "How does lambdify bridge the gap between symbolic math and numerical computation? Friday"
+  },
+  {
+    "id": 89,
+    "week": 9,
+    "day": "Friday",
+    "title": "Scientific Computing in Practice",
+    "objective": "Apply SciPy + SymPy together to a realistic scientific problem.",
+    "concepts": [
+      "Choosing symbolic vs numerical approach",
+      "Exponential decay and growth models",
+      "Fitting curves to data: scipy.optimize.curve_fit()",
+      "Reporting results with uncertainty"
+    ],
+    "exercise": "Fit an exponential decay model y = A * exp(-k*t) to noisy data using curve_fit. Plot fit vs data. Report A and k with error estimates. Verify the fit result symbolically with SymPy.",
+    "homework": "What is residual analysis and why is it important when fitting models to data?"
+  },
+  {
+    "id": 90,
+    "week": 9,
+    "day": "Friday",
+    "title": "Mini-Project: Scientific Mini-Report",
+    "objective": "Produce a complete scientific analysis combining SciPy and SymPy.",
+    "concepts": [
+      "Combining symbolic derivation + numerical solution + visualization",
+      "Writing results in a notebook with markdown",
+      "Interpreting and communicating scientific results"
+    ],
+    "exercise": "Choose one: (a) model pendulum motion (ODE solve + plot), (b) analyze a real dataset with t-tests + curve fitting, (c) solve and visualize an optimization problem. Include: symbolic derivation, numerical solution, 2 plots, and interpretation. Bonus: derive the analytical solution symbolically and compare with numerical result.",
+    "homework": "Reflection: Write a 'scientific computing cheat sheet' covering the 10 most useful SciPy/SymPy functions you learned."
+  },
+  {
+    "id": 91,
+    "week": 10,
+    "day": "Monday",
+    "title": "Descriptive Statistics Deep Dive",
+    "objective": "Compute and interpret full descriptive statistics with pandas and NumPy.",
+    "concepts": [
+      "Mean, median, mode: when to use each",
+      "Variance and standard deviation",
+      "Skewness and kurtosis",
+      "Quantiles and IQR"
+    ],
+    "exercise": "For a real dataset, compute mean/median/mode for 3 numeric columns. Where do they diverge? Identify outliers using the IQR rule (1.5*IQR above Q3 or below Q1).",
+    "homework": "When is the median a better measure of central tendency than the mean? Give 3 examples."
+  },
+  {
+    "id": 92,
+    "week": 10,
+    "day": "Monday",
+    "title": "Distributions in Practice",
+    "objective": "Recognize and simulate common probability distributions.",
+    "concepts": [
+      "Normal, uniform, exponential, Bernoulli distributions",
+      "Generating samples with scipy.stats",
+      "Comparing histograms to theoretical PDFs",
+      "Central Limit Theorem: means of samples approach normal"
+    ],
+    "exercise": "Simulate samples from 3 distributions. Plot histogram vs theoretical PDF for each. Demonstrate CLT: take means of n=5, 30, 100 samples from a uniform distribution. Show the distribution of means becomes normal.",
+    "homework": "Explain the Central Limit Theorem in plain language. Why does it matter for data science? Tuesday"
+  },
+  {
+    "id": 93,
+    "week": 10,
+    "day": "Tuesday",
+    "title": "Correlation & Covariance",
+    "objective": "Measure and visualize relationships between numeric variables.",
+    "concepts": [
+      "Pearson vs Spearman correlation",
+      "df.corr() and np.corrcoef()",
+      "Interpreting correlation coefficients: strength and direction",
+      "Correlation ≠ causation examples"
+    ],
+    "exercise": "Compute correlation matrix for a dataset. Identify 3 strongest and 3 weakest correlations. Create a heatmap. Pick one pair and discuss whether correlation implies causation.",
+    "homework": "Find a famous example of 'correlation ≠ causation'. Write a 100-word explanation."
+  },
+  {
+    "id": 94,
+    "week": 10,
+    "day": "Tuesday",
+    "title": "Hypothesis Testing: t-tests",
+    "objective": "Test statistical hypotheses using t-tests in Python.",
+    "concepts": [
+      "Null and alternative hypotheses",
+      "One-sample, two-sample, and paired t-tests",
+      "p-value, alpha level, Type I and II errors",
+      "scipy.stats.ttest_1samp, ttest_ind, ttest_rel"
+    ],
+    "exercise": "One-sample test: is mean height of a sample significantly different from 170cm? Two-sample test: do male and female passengers on Titanic have different mean fares? Interpret p-value.",
+    "homework": "Explain Type I and Type II errors using a medical testing analogy. Which is worse for a cancer screening test? Wednesday"
+  },
+  {
+    "id": 95,
+    "week": 10,
+    "day": "Wednesday",
+    "title": "ANOVA & Chi-Square Tests",
+    "objective": "Compare multiple groups and test categorical relationships.",
+    "concepts": [
+      "scipy.stats.f_oneway() for one-way ANOVA",
+      "When to use ANOVA vs t-test",
+      "scipy.stats.chi2_contingency() for independence",
+      "Reading a contingency table"
+    ],
+    "exercise": "Test if Iris petal_length differs significantly across all 3 species using ANOVA. Chi-square test: is passenger class independent of survival in Titanic?",
+    "homework": "When is ANOVA more appropriate than running multiple t-tests? What is the multiple comparisons problem?"
+  },
+  {
+    "id": 96,
+    "week": 10,
+    "day": "Wednesday",
+    "title": "Confidence Intervals",
+    "objective": "Estimate population parameters with confidence intervals.",
+    "concepts": [
+      "Confidence interval formula: x̄ ± z*(σ/√n)",
+      "scipy.stats.t.interval() for t-based CIs",
+      "Interpreting CIs: what 95% really means",
+      "Bootstrapping for non-parametric CIs"
+    ],
+    "exercise": "Compute 95% CI for the mean of a column in a real dataset. Bootstrap: resample 1000 times, compute mean each time. Plot distribution. Extract 2.5th and 97.5th percentiles.",
+    "homework": "What does '95% confidence interval' actually mean? Write the statistically correct interpretation. Thursday"
+  },
+  {
+    "id": 97,
+    "week": 10,
+    "day": "Thursday",
+    "title": "Effect Sizes & Practical Significance",
+    "objective": "Move beyond p-values to measure the magnitude of effects.",
+    "concepts": [
+      "Cohen's d for mean differences",
+      "Correlation r as effect size",
+      "Practical vs statistical significance",
+      "Sample size and statistical power"
+    ],
+    "exercise": "Compute Cohen's d for a two-group comparison. Interpret: small/medium/large effect. Compare two scenarios: large sample, small effect vs small sample, large effect. Discuss which is more meaningful.",
+    "homework": "Why can a tiny p-value accompany a practically unimportant effect? Illustrate with numbers."
+  },
+  {
+    "id": 98,
+    "week": 10,
+    "day": "Thursday",
+    "title": "A/B Testing Fundamentals",
+    "objective": "Apply statistics to real-world A/B testing scenarios.",
+    "concepts": [
+      "Setting up a controlled experiment",
+      "Determining minimum sample size",
+      "Two-proportion z-test with statsmodels",
+      "Multiple testing correction (Bonferroni)"
+    ],
+    "exercise": "Simulate an A/B test: variant A converts at 10%, B at 12%. How large a sample do you need to detect this at α=0.05? Run the test with simulated data and report whether the result is significant.",
+    "homework": "What is p-hacking? How can you design an experiment to avoid it? Friday"
+  },
+  {
+    "id": 99,
+    "week": 10,
+    "day": "Friday",
+    "title": "Statistical Reporting & Visualization",
+    "objective": "Communicate statistical results clearly and accurately.",
+    "concepts": [
+      "Error bars on plots (mean ± SE or CI)",
+      "Annotating significance on plots",
+      "Tables of results vs figures",
+      "Avoiding misleading visualizations"
+    ],
+    "exercise": "Recreate a publication-style bar chart with error bars (95% CI) for group means. Identify 3 misleading statistical visualizations online and explain what makes them misleading.",
+    "homework": "What are the 5 most common ways statistics are misused or misrepresented? Write a brief guide."
+  },
+  {
+    "id": 100,
+    "week": 10,
+    "day": "Friday",
+    "title": "Mini-Project: Stats Story on a Dataset",
+    "objective": "Answer a real question using end-to-end statistical analysis.",
+    "concepts": [
+      "Question formulation → data selection → EDA → testing → reporting",
+      "Combining descriptive stats, plots, hypothesis tests, and effect sizes"
+    ],
+    "exercise": "Choose a question: e.g., 'Do weekends have higher restaurant tips?', 'Does class affect Titanic survival odds?'. Perform: EDA (3 plots), hypothesis test with p-value and effect size, confidence interval, written conclusion. Write a 200-word 'findings' section as if presenting to a non-technical stakeholder.",
+    "homework": "Reflection: Write your 'statistical analysis checklist' — 8 steps you'll always follow when answering a data question."
+  },
+  {
+    "id": 101,
+    "week": 11,
+    "day": "Monday",
+    "title": "Text Preprocessing & Tokenization",
+    "objective": "Clean and tokenize raw text for NLP tasks.",
+    "concepts": [
+      "Lowercasing, removing punctuation and numbers",
+      "word_tokenize() and sent_tokenize() from NLTK",
+      "Token frequency distribution: FreqDist",
+      "Stopwords removal"
+    ],
+    "exercise": "Tokenize a paragraph. Print top 20 word frequencies before and after stopword removal. Write a function clean_text(text) that lowercases, removes punctuation, and strips stopwords.",
+    "homework": "Why do stopwords matter? Are there cases where you should NOT remove them?"
+  },
+  {
+    "id": 102,
+    "week": 11,
+    "day": "Monday",
+    "title": "Stemming & Lemmatization",
+    "objective": "Reduce words to their base forms.",
+    "concepts": [
+      "PorterStemmer and SnowballStemmer from NLTK",
+      "WordNetLemmatizer from NLTK",
+      "Difference: stemming (rules) vs lemmatization (vocabulary)",
+      "POS-aware lemmatization"
+    ],
+    "exercise": "Compare stemming vs lemmatization for: running, flies, better, geese, studies. Write a function that lemmatizes a sentence using POS tags.",
+    "homework": "Describe a scenario where stemming would produce incorrect results but lemmatization would not. Tuesday"
+  },
+  {
+    "id": 103,
+    "week": 11,
+    "day": "Tuesday",
+    "title": "Bag-of-Words & TF-IDF",
+    "objective": "Convert text into numeric features for machine learning.",
+    "concepts": [
+      "CountVectorizer: bag-of-words matrix",
+      "TfidfVectorizer: term frequency-inverse document frequency",
+      "Interpreting the feature matrix",
+      "Sparse matrices and memory efficiency"
+    ],
+    "exercise": "Vectorize 5 example sentences with CountVectorizer. Print feature names and matrix. Compare top TF-IDF words for 2 short documents about different topics.",
+    "homework": "Why does TF-IDF often work better than raw word counts for classification? Explain intuitively."
+  },
+  {
+    "id": 104,
+    "week": 11,
+    "day": "Tuesday",
+    "title": "Text Classification with scikit-learn",
+    "objective": "Build a supervised text classifier.",
+    "concepts": [
+      "Pipeline: TfidfVectorizer + classifier",
+      "Naive Bayes, Logistic Regression for text",
+      "Train/test split on text data",
+      "classification_report and confusion matrix"
+    ],
+    "exercise": "Build a spam vs ham classifier on a small labelled dataset (e.g., SMS spam corpus). Compare Naive Bayes vs Logistic Regression accuracy.",
+    "homework": "Why is Naive Bayes surprisingly effective for text classification despite its naive assumption? Wednesday"
+  },
+  {
+    "id": 105,
+    "week": 11,
+    "day": "Wednesday",
+    "title": "spaCy: Pipelines & POS Tagging",
+    "objective": "Use spaCy for industrial-strength NLP.",
+    "concepts": [
+      "pip install spacy + python -m spacy download en_core_web_sm",
+      "nlp(text) creates a Doc object",
+      "Token attributes: .text, .pos_, .dep_, .is_stop",
+      "Sentence segmentation: doc.sents"
+    ],
+    "exercise": "Parse a paragraph with spaCy. List all nouns, all verbs, and all proper nouns. Compare spaCy's tokenization with NLTK's for the same sentence.",
+    "homework": "What is a dependency tree? Draw the dependency tree for 'The cat sat on the mat'."
+  },
+  {
+    "id": 106,
+    "week": 11,
+    "day": "Wednesday",
+    "title": "spaCy: Named Entity Recognition",
+    "objective": "Identify and classify named entities in text.",
+    "concepts": [
+      "doc.ents for named entities",
+      "Entity labels: PERSON, ORG, GPE, DATE, MONEY",
+      "Visualizing NER with displacy",
+      "Custom NER: adding rules with EntityRuler"
+    ],
+    "exercise": "Run NER on a news paragraph. List all PERSON and ORG entities. Visualize the entities in a sentence using displacy.render().",
+    "homework": "List 5 practical applications where named entity recognition is essential. Thursday"
+  },
+  {
+    "id": 107,
+    "week": 11,
+    "day": "Thursday",
+    "title": "Word Embeddings: Word2Vec & GloVe Concepts",
+    "objective": "Understand dense vector representations of words.",
+    "concepts": [
+      "Limitations of bag-of-words (no semantics)",
+      "Word embeddings: similar words → close vectors",
+      "Using pre-trained embeddings via gensim or spaCy",
+      "Cosine similarity between word vectors"
+    ],
+    "exercise": "Use spaCy's medium model to find 5 most similar words to 'king', 'doctor', 'python'. Compute cosine similarity between 'cat'/'dog' and 'cat'/'car' vectors.",
+    "homework": "Explain the famous word2vec analogy: king - man + woman ≈ queen. What does this reveal about embeddings?"
+  },
+  {
+    "id": 108,
+    "week": 11,
+    "day": "Thursday",
+    "title": "Hugging Face Transformers: Intro",
+    "objective": "Load and use pre-trained transformer models for NLP tasks.",
+    "concepts": [
+      "pip install transformers",
+      "pipeline() API for common tasks",
+      "Sentiment analysis, text classification, NER with transformers",
+      "Tokenizers: how BERT tokenizes text"
+    ],
+    "exercise": "Use pipeline('sentiment-analysis') to classify 5 sentences. Examine confidence scores. Use pipeline('ner') to extract entities from a news headline.",
+    "homework": "What is the difference between BERT and GPT in terms of pre-training objective? Explain in simple terms. Friday"
+  },
+  {
+    "id": 109,
+    "week": 11,
+    "day": "Friday",
+    "title": "Fine-tuning Concepts & Zero-Shot Classification",
+    "objective": "Understand fine-tuning and use zero-shot classification.",
+    "concepts": [
+      "What fine-tuning means: adjusting pre-trained weights on new data",
+      "Zero-shot classification: no training examples needed",
+      "pipeline('zero-shot-classification')",
+      "Candidate labels and multi-label support"
+    ],
+    "exercise": "Use zero-shot classification to categorize 10 news headlines into: politics, sports, technology, entertainment. Compare zero-shot results to a simple keyword-based classifier you write manually.",
+    "homework": "When would zero-shot classification be preferred over training a classifier? When is it not enough?"
+  },
+  {
+    "id": 110,
+    "week": 11,
+    "day": "Friday",
+    "title": "Mini-Project: Sentiment Analysis Tool",
+    "objective": "Build a complete NLP pipeline from raw text to predictions.",
+    "concepts": [
+      "Combining preprocessing + feature extraction + model + evaluation",
+      "Comparing traditional ML vs transformer approach",
+      "Presenting NLP results"
+    ],
+    "exercise": "Build a sentiment analysis pipeline: (a) with TF-IDF + Logistic Regression, (b) with Hugging Face pipeline. Compare accuracy on a labelled dataset (IMDb or similar). Report which is better and why. Wrap the better model into a simple function analyze_sentiment(text) → {'label': ..., 'confidence': ...}.",
+    "homework": "Reflection: Write a 'NLP workflow cheat sheet' — the 8 steps from raw text to a working model."
+  },
+  {
+    "id": 111,
+    "week": 12,
+    "day": "Monday",
+    "title": "Images as Arrays",
+    "objective": "Understand how images are represented as NumPy arrays.",
+    "concepts": [
+      "pip install opencv-python",
+      "cv2.imread(), cv2.imshow(), cv2.waitKey()",
+      "Image shape: (height, width, channels)",
+      "BGR vs RGB color ordering in OpenCV",
+      "Displaying inline in Jupyter with plt.imshow(cv2.cvtColor)"
+    ],
+    "exercise": "Load an image, print shape, dtype. Display it in Jupyter correctly (BGR→RGB). Access pixel value at position (100,100). Change it to red.",
+    "homework": "Why does OpenCV use BGR instead of RGB? What common mistake does this cause?"
+  },
+  {
+    "id": 112,
+    "week": 12,
+    "day": "Monday",
+    "title": "Color Spaces & Grayscale",
+    "objective": "Convert between color spaces and understand their use.",
+    "concepts": [
+      "cv2.cvtColor() with COLOR_BGR2GRAY, COLOR_BGR2HSV",
+      "Single-channel (grayscale) vs 3-channel images",
+      "Histograms of color channels",
+      "Color segmentation concept with HSV"
+    ],
+    "exercise": "Convert an image to grayscale and HSV. Display all 3 versions side by side. Plot the histogram of the red, green, and blue channels separately.",
+    "homework": "Why is HSV (Hue, Saturation, Value) useful for color-based object detection compared to BGR? Tuesday"
+  },
+  {
+    "id": 113,
+    "week": 12,
+    "day": "Tuesday",
+    "title": "Geometric Transformations",
+    "objective": "Resize, crop, rotate, and flip images.",
+    "concepts": [
+      "cv2.resize() with interpolation methods",
+      "Cropping via array slicing: img[y1:y2, x1:x2]",
+      "cv2.rotate() and cv2.warpAffine()",
+      "cv2.flip()"
+    ],
+    "exercise": "Resize an image to 50% and 200% of original. Display both. Rotate an image 45° around its center without cropping (use warpAffine with full canvas).",
+    "homework": "What is interpolation in image resizing? Compare INTER_NEAREST vs INTER_CUBIC visually."
+  },
+  {
+    "id": 114,
+    "week": 12,
+    "day": "Tuesday",
+    "title": "Drawing & Annotation",
+    "objective": "Add shapes and text to images programmatically.",
+    "concepts": [
+      "cv2.line(), cv2.rectangle(), cv2.circle(), cv2.ellipse()",
+      "cv2.putText() with font, scale, color",
+      "Copying images before annotation to preserve original",
+      "Use cases: bounding boxes, labels"
+    ],
+    "exercise": "Draw a labeled bounding box (rectangle + text) around a specific region of an image. Create a 'blank canvas' 400×400 image and draw 5 different shapes on it.",
+    "homework": "What are the 3 parameters you must get right for cv2.putText() to display clearly? Wednesday"
+  },
+  {
+    "id": 115,
+    "week": 12,
+    "day": "Wednesday",
+    "title": "Blurring & Filtering",
+    "objective": "Apply smoothing and sharpening filters.",
+    "concepts": [
+      "cv2.GaussianBlur() with kernel size and sigma",
+      "cv2.medianBlur() for noise reduction",
+      "cv2.filter2D() with custom kernels",
+      "Sharpening with a kernel"
+    ],
+    "exercise": "Apply Gaussian blur with 3 different kernel sizes. Show side by side. Write a sharpening filter kernel and apply it to an image.",
+    "homework": "Why is Gaussian blur used before edge detection? What happens if you skip it?"
+  },
+  {
+    "id": 116,
+    "week": 12,
+    "day": "Wednesday",
+    "title": "Edge Detection & Thresholding",
+    "objective": "Detect edges and separate foreground from background.",
+    "concepts": [
+      "cv2.Canny() edge detection with thresholds",
+      "cv2.threshold() — binary, Otsu's method",
+      "cv2.adaptiveThreshold() for varying lighting",
+      "Morphological operations: dilate, erode"
+    ],
+    "exercise": "Apply Canny edge detection with low/mid/high thresholds. Compare results. Apply Otsu's thresholding to separate object from background.",
+    "homework": "What do the two threshold parameters in cv2.Canny() control? How would you tune them? Thursday"
+  },
+  {
+    "id": 117,
+    "week": 12,
+    "day": "Thursday",
+    "title": "Contours & Object Detection",
+    "objective": "Find and draw contours for shape analysis.",
+    "concepts": [
+      "cv2.findContours() on binary image",
+      "cv2.drawContours()",
+      "Contour properties: area, perimeter, bounding box",
+      "cv2.contourArea(), cv2.arcLength(), cv2.boundingRect()"
+    ],
+    "exercise": "Find all contours in a binary image. Draw the 3 largest ones. Draw bounding boxes around all detected contours with area > 500.",
+    "homework": "What preprocessing steps (threshold, blur, morph) give the best contour detection results? Experiment."
+  },
+  {
+    "id": 118,
+    "week": 12,
+    "day": "Thursday",
+    "title": "Template Matching",
+    "objective": "Find a pattern or sub-image within a larger image.",
+    "concepts": [
+      "cv2.matchTemplate() methods: TM_CCOEFF_NORMED",
+      "cv2.minMaxLoc() to find match location",
+      "Drawing bounding box on the match",
+      "Limitations of template matching"
+    ],
+    "exercise": "Create a small patch from an image and find it using template matching. Draw a rectangle around all matches above a threshold (multi-match).",
+    "homework": "What are the main limitations of template matching? When would you need a more powerful approach? Friday"
+  },
+  {
+    "id": 119,
+    "week": 12,
+    "day": "Friday",
+    "title": "Video Processing Basics",
+    "objective": "Read and process video frames with OpenCV.",
+    "concepts": [
+      "cv2.VideoCapture() from file or webcam",
+      "cap.read() to get frames",
+      "Processing frame-by-frame with a while loop",
+      "cv2.VideoWriter() to save output video"
+    ],
+    "exercise": "Read a short video file and print its FPS, frame count, and resolution. Apply grayscale conversion to each frame and save as a new video.",
+    "homework": "What is the practical difference between working with images vs video streams in real-time processing?"
+  },
+  {
+    "id": 120,
+    "week": 12,
+    "day": "Friday",
+    "title": "Mini-Project: Image Processing Notebook",
+    "objective": "Build a complete image processing pipeline notebook.",
+    "concepts": [
+      "Chaining multiple processing steps",
+      "Comparing before/after for each step",
+      "Annotating results clearly"
+    ],
+    "exercise": "Choose an image. Apply: (1) grayscale, (2) Gaussian blur, (3) Canny edges, (4) contour detection with bounding boxes, (5) annotation with text labels. Show each step with a subplot. Write a brief description under each image. Bonus: extend to work on a short video clip.",
+    "homework": "Reflection: Write your 'OpenCV quick reference card' — the 15 most useful functions with one-line descriptions."
+  },
+  {
+    "id": 121,
+    "week": 13,
+    "day": "Monday",
+    "title": "SQLite Basics with Python",
+    "objective": "Create databases and tables from Python.",
+    "concepts": [
+      "import sqlite3",
+      "conn = sqlite3.connect('mydb.db')",
+      "cursor.execute() with CREATE TABLE, INSERT, SELECT",
+      "conn.commit() and conn.close()",
+      "Context managers with 'with' statement"
+    ],
+    "exercise": "Create a database with a 'students' table (id, name, grade). Insert 5 rows. Query all rows and print them.",
+    "homework": "What is the difference between conn.commit() and conn.close()? What happens if you forget commit()?"
+  },
+  {
+    "id": 122,
+    "week": 13,
+    "day": "Monday",
+    "title": "CRUD Operations with SQLite",
+    "objective": "Implement full Create-Read-Update-Delete operations.",
+    "concepts": [
+      "Parameterized queries: ? placeholder",
+      "UPDATE and DELETE with WHERE",
+      "fetchone(), fetchall(), fetchmany()",
+      "Avoiding SQL injection with parameterization"
+    ],
+    "exercise": "Write functions: insert_student(), get_student(id), update_grade(id, grade), delete_student(id). Test all 4 functions.",
+    "homework": "Why is string formatting SQL queries dangerous (SQL injection)? Show an example attack. Tuesday"
+  },
+  {
+    "id": 123,
+    "week": 13,
+    "day": "Tuesday",
+    "title": "pandas ↔ SQLite Integration",
+    "objective": "Move data between pandas DataFrames and SQLite.",
+    "concepts": [
+      "pd.read_sql_query(sql, conn)",
+      "df.to_sql('table_name', conn, if_exists='replace')",
+      "Filtering and aggregating from SQL via pandas",
+      "Comparing SQL GROUP BY vs pandas groupby"
+    ],
+    "exercise": "Load a CSV into a SQLite table via pandas. Query with pd.read_sql. Write a SQL query with GROUP BY and compare the result to a pandas groupby.",
+    "homework": "When would you choose SQL aggregations over pandas groupby? Give 2 scenarios for each."
+  },
+  {
+    "id": 124,
+    "week": 13,
+    "day": "Tuesday",
+    "title": "SQLAlchemy ORM Basics",
+    "objective": "Use SQLAlchemy ORM to interact with databases via Python objects.",
+    "concepts": [
+      "from sqlalchemy import create_engine, Column, String, Integer",
+      "Declarative base and model classes",
+      "Session: add, commit, query",
+      "Filtering: session.query(Model).filter()"
+    ],
+    "exercise": "Define a Student model with SQLAlchemy. Create the table. Insert 3 records via ORM. Query all students with grade > 80 using ORM filter.",
+    "homework": "What are the advantages of using an ORM vs raw SQL? What are the disadvantages? Wednesday"
+  },
+  {
+    "id": 125,
+    "week": 13,
+    "day": "Wednesday",
+    "title": "Building an ETL Pipeline",
+    "objective": "Extract, Transform, Load data from files into a database.",
+    "concepts": [
+      "ETL pattern: Extract (read file) → Transform (pandas) → Load (to DB)",
+      "Error handling in ETL with try/except",
+      "Logging each step",
+      "Idempotent loading: replace vs append"
+    ],
+    "exercise": "Build a pipeline: read CSV → clean with pandas (drop nulls, fix types) → write to SQLite → query and verify. Add a log entry for each step to a 'etl_log.txt' file.",
+    "homework": "What is idempotency in ETL? Why does it matter for scheduled pipelines?"
+  },
+  {
+    "id": 126,
+    "week": 13,
+    "day": "Wednesday",
+    "title": "Dask DataFrames for Large Data",
+    "objective": "Process larger-than-memory datasets with Dask.",
+    "concepts": [
+      "pip install dask[dataframe]",
+      "dask.dataframe.read_csv() returns lazy DataFrame",
+      "Operations are same as pandas but lazy",
+      ".compute() to trigger execution",
+      "dask.visualize() to see task graph"
+    ],
+    "exercise": "Load a large CSV with Dask. Compute groupby mean — compare speed/behavior vs pandas. Use dask to filter and compute statistics on a file too large to fit in memory (simulate with a large file).",
+    "homework": "When should you use Dask instead of pandas? List 3 scenarios. Thursday"
+  },
+  {
+    "id": 127,
+    "week": 13,
+    "day": "Thursday",
+    "title": "Database Design Basics",
+    "objective": "Design normalized relational database schemas.",
+    "concepts": [
+      "Primary and foreign keys",
+      "One-to-many and many-to-many relationships",
+      "Normalization: 1NF, 2NF, 3NF concepts",
+      "ERD diagrams: sketching table relationships"
+    ],
+    "exercise": "Design a schema for: students, courses, and enrollments. Write the CREATE TABLE SQL for all 3. Insert sample data and write a JOIN query to list students with their courses.",
+    "homework": "What is the N+1 query problem in databases? How do JOINs solve it?"
+  },
+  {
+    "id": 128,
+    "week": 13,
+    "day": "Thursday",
+    "title": "SQL Aggregations & Window Functions",
+    "objective": "Write advanced SQL queries for analytics.",
+    "concepts": [
+      "GROUP BY with HAVING clause",
+      "Aggregate functions: COUNT, SUM, AVG, MIN, MAX",
+      "Window functions: ROW_NUMBER, RANK, LAG, LEAD",
+      "Subqueries and CTEs (WITH clause)"
+    ],
+    "exercise": "Write a query using GROUP BY + HAVING to find courses with more than 2 enrolled students. Use a window function to rank students by grade within each course.",
+    "homework": "Explain the difference between WHERE and HAVING. When can each be used? Friday"
+  },
+  {
+    "id": 129,
+    "week": 13,
+    "day": "Friday",
+    "title": "Scheduling & Automation Concepts",
+    "objective": "Understand how ETL pipelines are scheduled in practice.",
+    "concepts": [
+      "Python schedule library for simple scheduling",
+      "Cron job concept",
+      "Running a script repeatedly with time.sleep()",
+      "Idempotency and checkpointing"
+    ],
+    "exercise": "Use the schedule library to run a data update function every 60 seconds for a demo. Add a 'last_run.txt' checkpoint so the script skips records already processed.",
+    "homework": "Research one real-world pipeline orchestration tool (Airflow, Prefect, or Dagster). Write a 100-word summary of what it does."
+  },
+  {
+    "id": 130,
+    "week": 13,
+    "day": "Friday",
+    "title": "Mini-Project: Mini Analytics Database",
+    "objective": "Build a complete ETL + analytics pipeline.",
+    "concepts": [
+      "Combining file I/O, pandas, SQLite, and visualization",
+      "Full data lifecycle in one project"
+    ],
+    "exercise": "Pipeline: load a CSV → clean with pandas → store in SQLite → run 3 analysis queries (groupby, filter, aggregate) → visualize one result as a bar chart → write findings to a markdown summary. Bonus: schedule the pipeline to re-run on new data files.",
+    "homework": "Reflection: Sketch the architecture of a real production data pipeline you could build with skills from this week. Label each component."
+  },
+  {
+    "id": 131,
+    "week": 14,
+    "day": "Monday",
+    "title": "Filesystem Automation: os & pathlib",
+    "objective": "Automate file and directory operations from Python.",
+    "concepts": [
+      "from pathlib import Path",
+      "Path().glob() and Path().rglob()",
+      "shutil.copy(), shutil.move(), shutil.rmtree()",
+      "os.makedirs(), os.listdir(), os.path.exists()"
+    ],
+    "exercise": "Write a script that organizes files in a folder into subfolders by extension (.pdf/, .csv/, .jpg/ etc.). List all .csv files in a directory tree recursively with pathlib.",
+    "homework": "Why is pathlib preferred over os.path for new code? List 3 practical advantages."
+  },
+  {
+    "id": 132,
+    "week": 14,
+    "day": "Monday",
+    "title": "subprocess: Running System Commands",
+    "objective": "Execute shell commands and capture output from Python.",
+    "concepts": [
+      "subprocess.run() with capture_output=True",
+      "Checking returncode for success/failure",
+      "subprocess.Popen() for long-running processes",
+      "Security: never pass user input to shell=True"
+    ],
+    "exercise": "Run 'ls' or 'dir' from Python and print the output. Run 'ping' or 'nslookup' and capture stdout to a file.",
+    "homework": "What is the security risk of subprocess.run('command ' + user_input, shell=True)? How do you avoid it? Tuesday"
+  },
+  {
+    "id": 133,
+    "week": 14,
+    "day": "Tuesday",
+    "title": "Logging Best Practices",
+    "objective": "Use Python's logging module for professional script output.",
+    "concepts": [
+      "import logging, basicConfig",
+      "Log levels: DEBUG, INFO, WARNING, ERROR, CRITICAL",
+      "Logging to file and console simultaneously",
+      "Log formatting with timestamps and filenames"
+    ],
+    "exercise": "Add logging to yesterday's file organizer script. Log every file operation at INFO level and every error at ERROR level. Set up a logger that writes to both console and 'app.log' file.",
+    "homework": "Why is print() inadequate for production scripts? List 4 advantages of logging."
+  },
+  {
+    "id": 134,
+    "week": 14,
+    "day": "Tuesday",
+    "title": "Exception Handling in Scripts",
+    "objective": "Write robust scripts that handle errors gracefully.",
+    "concepts": [
+      "try/except/finally/else patterns",
+      "Catching specific exception types",
+      "Custom exception classes",
+      "Raising exceptions with raise"
+    ],
+    "exercise": "Wrap a file reading function with try/except to handle FileNotFoundError and PermissionError separately. Write a custom InvalidDataError exception and raise it in a data validation function.",
+    "homework": "Describe the difference between finally and else blocks in a try statement. Wednesday"
+  },
+  {
+    "id": 135,
+    "week": 14,
+    "day": "Wednesday",
+    "title": "Selenium: Browser Automation",
+    "objective": "Automate browser interactions with Selenium.",
+    "concepts": [
+      "pip install selenium + webdriver setup",
+      "driver.get(), driver.find_element(), driver.click()",
+      "By.ID, By.CLASS_NAME, By.CSS_SELECTOR, By.XPATH",
+      "Handling waits: WebDriverWait and expected_conditions"
+    ],
+    "exercise": "Open a browser with Selenium, navigate to a URL, and take a screenshot. Find and click a button on a webpage programmatically.",
+    "homework": "What are 3 legitimate use cases for Selenium and 3 uses that would be unethical or against ToS?"
+  },
+  {
+    "id": 136,
+    "week": 14,
+    "day": "Wednesday",
+    "title": "Selenium: Form Filling & Data Extraction",
+    "objective": "Use Selenium to interact with forms and dynamic content.",
+    "concepts": [
+      "send_keys() to type in fields",
+      "select element handling with Select class",
+      "Extracting text from elements after JavaScript renders",
+      "Switching between windows and frames"
+    ],
+    "exercise": "Automate filling in a search form, submitting, and extracting the first 5 results. Loop through multiple pages of results and collect all titles.",
+    "homework": "When is Selenium necessary vs BeautifulSoup? What does 'dynamic content' mean in this context? Thursday"
+  },
+  {
+    "id": 137,
+    "week": 14,
+    "day": "Thursday",
+    "title": "Testing with pytest",
+    "objective": "Write and run automated tests for your Python functions.",
+    "concepts": [
+      "pip install pytest",
+      "Writing test functions: def test_*",
+      "assert statements in tests",
+      "Running tests: pytest from command line",
+      "Fixtures for setup and teardown"
+    ],
+    "exercise": "Write 5 tests for your compute_bmi() function (normal cases, edge cases, invalid input). Create a conftest.py fixture that provides a sample DataFrame for multiple tests.",
+    "homework": "Why should you write tests BEFORE you think your code is working? What is TDD?"
+  },
+  {
+    "id": 138,
+    "week": 14,
+    "day": "Thursday",
+    "title": "Building a Reusable Automation Script",
+    "objective": "Create a complete, well-structured, reusable automation script.",
+    "concepts": [
+      "argparse for command-line arguments",
+      "if __name__ == '__main__' guard",
+      "Modular function structure",
+      "requirements.txt and README documentation"
+    ],
+    "exercise": "Build a script that: scans a folder for CSVs, merges them into one, cleans nulls, exports merged CSV. Accept folder and output paths as CLI arguments. Add logging, error handling, and test 3 edge cases.",
+    "homework": "Run your script from the command line with --help and verify the documentation is clear. Friday"
+  },
+  {
+    "id": 139,
+    "week": 14,
+    "day": "Friday",
+    "title": "Scheduling & Daily Report Script",
+    "objective": "Combine automation skills into a scheduled reporting script.",
+    "concepts": [
+      "schedule library for simple task scheduling",
+      "Combining pandas + report generation + file output",
+      "Email sending with smtplib (conceptual)",
+      "Packaging scripts for daily use"
+    ],
+    "exercise": "Create a 'daily_report.py' that reads a CSV, computes summary stats, writes a markdown report to 'reports/report_YYYY-MM-DD.md', and can be scheduled with schedule or cron. Add a test: verify the report file is created with correct content.",
+    "homework": "Describe the full architecture of a daily automated reporting system for a business. What components would it need?"
+  },
+  {
+    "id": 140,
+    "week": 14,
+    "day": "Friday",
+    "title": "Mini-Project: Full Automation Script",
+    "objective": "Build and test a complete automation script from scratch.",
+    "concepts": [
+      "Combining filesystem, subprocess, pandas, logging, testing",
+      "Clean CLI interface with argparse"
+    ],
+    "exercise": "Build a complete tool of your choice: e.g., a 'CSV merger and summarizer', a 'file organizer with logging', or a 'website monitor that checks status and logs results'. Includes: CLI args, logging to file, error handling, and at least 5 pytest tests. Write a README.md explaining what it does and how to run it.",
+    "homework": "Reflection: List the 8 best practices for writing production-quality Python scripts that you learned this week."
+  },
+  {
+    "id": 141,
+    "week": 15,
+    "day": "Monday",
+    "title": "Capstone: Project Selection & Scoping",
+    "objective": "Choose a meaningful project and write a clear project plan.",
+    "concepts": [
+      "Project archetypes: data explorer, ML predictor, NLP analyzer, automation tool",
+      "Defining a specific, answerable question",
+      "Identifying data sources: API, CSV, scraping, open datasets",
+      "Selecting libraries: 3–5 complementary tools"
+    ],
+    "exercise": "Choose your project from 3 options: (a) Weather Data Explorer (API + pandas + plots), (b) House Price Predictor (CSV + pandas + scikit-learn + Flask API), (c) News Sentiment Monitor (API + NLP + visualization). Write a 1-page plan: problem, data source, processing steps, libraries, expected output. Review your plan against this checklist: Is it achievable in 2 weeks? Is the data accessible? Does it use 3+ libraries?",
+    "homework": "Read your plan aloud. Find 3 potential risks or blockers and write mitigation plans for each."
+  },
+  {
+    "id": 142,
+    "week": 15,
+    "day": "Monday",
+    "title": "Capstone: Data Acquisition",
+    "objective": "Collect and store the raw data for your project.",
+    "concepts": [
+      "Fetching data from API or loading from file",
+      "Saving raw data as a baseline (never overwrite raw)",
+      "Validating data quality immediately after loading",
+      "Documenting data source and access date"
+    ],
+    "exercise": "Implement data acquisition for your project. Save raw data to 'data/raw/'. Print: shape, dtypes, head(3), missing value counts. Write a data_description.md noting source, date retrieved, rows/columns, known limitations.",
+    "homework": "What assumptions are you making about the data? List 5 and note which ones you'll need to verify. Tuesday"
+  },
+  {
+    "id": 143,
+    "week": 15,
+    "day": "Tuesday",
+    "title": "Capstone: Data Cleaning & EDA",
+    "objective": "Clean raw data and explore key patterns.",
+    "concepts": [
+      "Applying cleaning pipeline from Week 5",
+      "EDA with pandas + Seaborn: 3–5 key plots",
+      "Identifying outliers, distributions, correlations",
+      "Documenting every cleaning decision"
+    ],
+    "exercise": "Clean your raw data: fix types, handle missing values, remove duplicates, normalize text if needed. Save cleaned CSV. Create 4 EDA plots that reveal key patterns. Write 1-sentence insight under each.",
+    "homework": "Write a 'cleaning log' that lists every decision made: what was removed/changed and why."
+  },
+  {
+    "id": 144,
+    "week": 15,
+    "day": "Tuesday",
+    "title": "Capstone: Feature Engineering",
+    "objective": "Create meaningful features from raw data for analysis or modeling.",
+    "concepts": [
+      "Deriving new columns from existing ones",
+      "Encoding categorical variables",
+      "Scaling numeric features",
+      "Creating time-based features from datetime columns"
+    ],
+    "exercise": "Engineer at least 3 new features for your project. Justify each feature: why should it help? Run a quick correlation analysis: do your new features correlate with the target variable?",
+    "homework": "Feature engineering is often more impactful than model selection. Describe 2 domain-specific features that could improve your project significantly. Wednesday"
+  },
+  {
+    "id": 145,
+    "week": 15,
+    "day": "Wednesday",
+    "title": "Capstone: Core Analysis or Model",
+    "objective": "Implement the central analytical or predictive component.",
+    "concepts": [
+      "For ML projects: Pipeline + cross-validation + metric reporting",
+      "For stats projects: hypothesis tests + effect sizes + CIs",
+      "For NLP projects: vectorization + classifier or transformer",
+      "For data explorer: aggregations + interactive visualization"
+    ],
+    "exercise": "Implement your project's core functionality. For ML: train 2 models, report metrics. For analysis: answer your main question with stats. For NLP: build and evaluate classifier. Write 3 'interim findings' cells in your notebook.",
+    "homework": "What would invalidate your results? List 3 threats to validity and how you're addressing them."
+  },
+  {
+    "id": 146,
+    "week": 15,
+    "day": "Wednesday",
+    "title": "Capstone: Visualization & Insights",
+    "objective": "Create a compelling visual narrative from your results.",
+    "concepts": [
+      "Choosing the right charts for your findings",
+      "Publication-quality plot styling",
+      "Building a dashboard concept (optional: Plotly Dash or Flask)",
+      "Narrative flow: data → analysis → insight → recommendation"
+    ],
+    "exercise": "Create 5 final-quality visualizations for your project. Each should directly support a finding. Write a 'findings summary' section: 3–5 bullet points with supporting numbers.",
+    "homework": "Show your visualizations to someone unfamiliar with the project. What questions did they ask? What confused them? Update accordingly. Thursday"
+  },
+  {
+    "id": 147,
+    "week": 15,
+    "day": "Thursday",
+    "title": "Capstone: API or Interface (Optional)",
+    "objective": "Expose your project as an API or simple web interface.",
+    "concepts": [
+      "FastAPI endpoint for model predictions",
+      "Flask data dashboard with live queries",
+      "Streamlit for quick data apps (optional)",
+      "Input validation and error handling at the interface layer"
+    ],
+    "exercise": "If ML project: wrap your best model as a FastAPI /predict endpoint with Pydantic validation. If data project: add a Flask /summary route that returns key stats as JSON. Test every endpoint with both valid and invalid inputs.",
+    "homework": "What additional features would make your API or interface production-ready? List 5."
+  },
+  {
+    "id": 148,
+    "week": 15,
+    "day": "Thursday",
+    "title": "Capstone: Refactoring & Modularization",
+    "objective": "Restructure your code into clean, reusable modules.",
+    "concepts": [
+      "Splitting notebook into .py modules: data_loader.py, model.py, viz.py",
+      "Using functions for every repeated operation",
+      "Adding docstrings to all functions",
+      "Creating a main.py or app.py entry point"
+    ],
+    "exercise": "Refactor your project: move all functions to at least 2 separate .py files. Ensure your notebook can import and use them. Add docstrings to every function (what it does, args, returns).",
+    "homework": "Why is modular code better than a single long notebook? List 4 specific benefits. Friday"
+  },
+  {
+    "id": 149,
+    "week": 15,
+    "day": "Friday",
+    "title": "Capstone: Testing & Validation",
+    "objective": "Write tests for your project's critical components.",
+    "concepts": [
+      "Unit tests for data cleaning functions",
+      "Testing API endpoints",
+      "Validating model predictions on known inputs",
+      "Edge case testing"
+    ],
+    "exercise": "Write at least 5 pytest tests for your project. Test: data loading, a cleaning function, a feature engineering function, and at least one model prediction. Run pytest and fix any failures.",
+    "homework": "What would happen if your data source changes format? How would tests catch this? Write a test that would fail on a schema change."
+  },
+  {
+    "id": 150,
+    "week": 15,
+    "day": "Friday",
+    "title": "Capstone: End-of-Week Review",
+    "objective": "Review progress against project plan and prepare for final week.",
+    "concepts": [
+      "Self-assessment against original plan",
+      "Identifying what's done, what's missing, what changed",
+      "Planning final polish tasks for Week 16"
+    ],
+    "exercise": "Complete a project status checklist: data ✓/✗, cleaning ✓/✗, analysis ✓/✗, visualization ✓/✗, API ✓/✗, tests ✓/✗, documentation ✓/✗. Write a 'Week 15 retrospective': what went well, what was harder than expected, what you'd do differently.",
+    "homework": "Prioritize your Week 16 tasks. Rank them by impact and write your Week 16 action plan."
+  },
+  {
+    "id": 151,
+    "week": 16,
+    "day": "Monday",
+    "title": "Project Structure & Packaging",
+    "objective": "Organize your project as a professional Python package.",
+    "concepts": [
+      "Recommended project layout: src/, tests/, data/, notebooks/, docs/",
+      "requirements.txt and pip freeze",
+      "setup.py / pyproject.toml basics",
+      "__init__.py for package imports"
+    ],
+    "exercise": "Reorganize your project into the standard structure. Verify all imports still work. Generate requirements.txt and test that the project runs in a fresh virtual environment.",
+    "homework": "What is the difference between requirements.txt and Pipfile? When would you use each?"
+  },
+  {
+    "id": 152,
+    "week": 16,
+    "day": "Monday",
+    "title": "Virtual Environments & Reproducibility",
+    "objective": "Ensure your project runs identically on any machine.",
+    "concepts": [
+      "venv: python -m venv env, activate, deactivate",
+      "conda environments as alternative",
+      "Pinning dependency versions in requirements.txt",
+      "Testing reproducibility: clone to new folder, install, run"
+    ],
+    "exercise": "Create a fresh virtual environment from your requirements.txt. Run the project end-to-end and verify correct output. Identify any version conflicts or missing dependencies and fix them.",
+    "homework": "What problems arise if you don't pin versions in requirements.txt? Give a real scenario. Tuesday"
+  },
+  {
+    "id": 153,
+    "week": 16,
+    "day": "Tuesday",
+    "title": "Writing a Professional README",
+    "objective": "Document your project so others can understand and run it.",
+    "concepts": [
+      "README.md sections: title, description, demo, installation, usage, examples, limitations",
+      "Markdown formatting: headers, code blocks, tables, badges",
+      "Screenshots and sample output",
+      "Contributing section and license"
+    ],
+    "exercise": "Write a complete README.md for your project with all sections. Include at least one code example and one screenshot/output sample. Review someone else's GitHub README and identify what makes it good or bad.",
+    "homework": "Ask a friend or colleague to follow your README from scratch. Note every point where they got confused."
+  },
+  {
+    "id": 154,
+    "week": 16,
+    "day": "Tuesday",
+    "title": "Code Documentation & Docstrings",
+    "objective": "Add comprehensive docstrings and inline comments.",
+    "concepts": [
+      "Google-style and NumPy-style docstrings",
+      "sphinx autodoc concept",
+      "Inline comments: when they help vs when they clutter",
+      "Type hints: def func(x: float) -> str:"
+    ],
+    "exercise": "Add complete docstrings to every function in your project (what it does, parameters, returns, raises). Add type hints to at least 5 functions.",
+    "homework": "What is the difference between a docstring and an inline comment? Give an example of each used correctly. Wednesday"
+  },
+  {
+    "id": 155,
+    "week": 16,
+    "day": "Wednesday",
+    "title": "Final Testing & Code Review",
+    "objective": "Ensure tests pass, code is clean, and edge cases are handled.",
+    "concepts": [
+      "Running full test suite with pytest -v",
+      "Code coverage with pytest-cov",
+      "Addressing test failures and edge cases",
+      "Peer code review checklist"
+    ],
+    "exercise": "Run pytest with coverage report. Aim for >70% coverage on core modules. Fix any test failures. Add 2 more tests for edge cases you hadn't considered.",
+    "homework": "Review your own code using this checklist: functions < 20 lines? Descriptive names? No magic numbers? Every function has a test?"
+  },
+  {
+    "id": 156,
+    "week": 16,
+    "day": "Wednesday",
+    "title": "Error Handling & Graceful Degradation",
+    "objective": "Make your project robust against bad inputs and missing data.",
+    "concepts": [
+      "Catching all expected errors at entry points",
+      "Informative error messages vs cryptic tracebacks",
+      "Fallback behavior when data is missing",
+      "Logging errors vs crashing"
+    ],
+    "exercise": "Deliberately pass bad input to your API or functions. Verify every error is caught and returns a clear message. Add a 'health check' endpoint or function that verifies all dependencies are available.",
+    "homework": "List 5 ways your project could fail in production. For each, describe what happens now and what should happen. Thursday"
+  },
+  {
+    "id": 157,
+    "week": 16,
+    "day": "Thursday",
+    "title": "Deployment Concepts (Intro)",
+    "objective": "Understand how Python projects are deployed in practice.",
+    "concepts": [
+      "Flask/FastAPI with gunicorn/uvicorn for production",
+      "Docker concept: containerizing your app",
+      "Environment variables for configuration (python-dotenv)",
+      "CI/CD concept: GitHub Actions basics"
+    ],
+    "exercise": "Run your Flask/FastAPI app with uvicorn instead of the dev server. Test that it works. Add a .env file for configuration (API keys, database path). Load with python-dotenv.",
+    "homework": "Research Docker and write a 150-word summary of: what it is, why it's useful for Python projects, and one limitation."
+  },
+  {
+    "id": 158,
+    "week": 16,
+    "day": "Thursday",
+    "title": "Demo Preparation",
+    "objective": "Prepare a clear, confident demonstration of your project.",
+    "concepts": [
+      "Demo structure: problem → data → solution → results → demo",
+      "Live demo vs recorded demo trade-offs",
+      "Handling demo failures gracefully",
+      "Telling a data story: data → insight → action"
+    ],
+    "exercise": "Write a demo script: 5-minute walkthrough covering problem, approach, 3 key findings, and live demo or output. Rehearse once and note where you stumble or where explanations were unclear.",
+    "homework": "Write down the 3 questions you most expect from your audience and prepare clear, concise answers. Friday"
+  },
+  {
+    "id": 159,
+    "week": 16,
+    "day": "Friday",
+    "title": "Final Demo & Presentation",
+    "objective": "Present your completed project confidently.",
+    "concepts": [
+      "Communicating technical work to a mixed audience",
+      "Showing results, not just code",
+      "Acknowledging limitations honestly",
+      "Connecting your work to real-world impact"
+    ],
+    "exercise": "Deliver your 5-minute demo (live or recorded). Focus on: what question you answered, how you answered it, what you found, what someone could do with this. After the demo: list 5 things you would add or improve if you had 2 more weeks.",
+    "homework": "Write a 'project one-pager': problem, approach, key finding, and next steps — as if sending it to a manager or client."
+  },
+  {
+    "id": 160,
+    "week": 16,
+    "day": "Friday",
+    "title": "Course Retrospective & Next Steps",
+    "objective": "Reflect on 16 weeks of learning and plan your continued growth.",
+    "concepts": [
+      "Self-assessment across all 14 library topics",
+      "Identifying strongest and weakest areas",
+      "Planning a learning path forward",
+      "Portfolio building and open-source contribution"
+    ],
+    "exercise": "Complete a self-assessment matrix: rate yourself (1–5) on every library covered. Identify your top 3 strengths and top 3 gaps. Write a 'Learning Roadmap': the 3 most important things you'll learn next, with specific resources and a timeline. Bonus: Push your capstone project to GitHub with a complete README. This is your portfolio piece.",
+    "homework": "Final reflection: Write 5 'letters to your Week 1 self' — advice you wish you'd had at the beginning. Share them with future students. Appendix: Reusable Jupyter Notebook Template Copy this template for every 30-minute block. Replace the bracketed placeholders with the specific week, day, block number, and topic. Notebook Cell Layout # [WkX-DayY-BlockZ] Topic: <Short title here> ## 1. Objective - What will I learn or practice in this 30-minute block? - Link to weekly theme: e.g., Week 3 – Pandas basics ## 2. Setup ```python import numpy as np        # if needed import pandas as pd       # if needed import matplotlib.pyplot as plt  # if needed # %matplotlib inline ``` ## 3. Warm-up / Recap (5 minutes) Briefly restate one concept from the previous block. ## 4. Main Concept / Example (10–15 minutes) ### 4.1 Concept Summary - Key concept in 1–3 bullet points - Key methods/functions: method1, method2, method3 ### 4.2 Code Examples ```python # Example 1: <short description> # TODO: Write code here # Example 2: <short description> # TODO: Write code here ``` ## 5. Exercise(s) (10–15 minutes) **Exercise 1** Description: <What to implement> TODOs: - [ ] Step 1: ... - [ ] Step 2: ... - [ ] Step 3: ... ```python # Your solution here ``` ## 6. Quick Check / Self-Evaluation - [ ] I can explain what <concept> does in my own words - [ ] I can use <method1> and <method2> without looking at docs - [ ] I ran all cells and got expected outputs ## 7. Notes and Questions New things I learned: ... Things I found confusing: ... Questions to revisit next block: ..."
+  }
+]

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 9: Using help(), dir() &amp; Reading Docs | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/8.html">← Block 8</a>
+    <a href="/block/10.html">Block 10 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Friday</span>
+      <h1>Block 9: Using help(), dir() &amp; Reading Docs</h1>
+      <p class="objective">Become confident exploring Python from the inside.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>help(obj) for full documentation</li><li>dir(obj) to list attributes/methods</li><li>Reading docs.python.org and docstrings</li><li>type() and isinstance() for type checking</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>help() and dir()</h4>
+        <pre><code>lst = [1, 2, 3]
+print(dir(lst))
+# help(lst.append)</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>type() and isinstance()</h4>
+        <pre><code>x = 42
+y = 'hello'
+print(type(x), type(y))
+print(isinstance(x, int))
+print(isinstance(y, str))</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Use help() on len, list.sort, str.split. Write a 1-line note + example for each. Use dir([]) to find and test 3 list methods you haven't used yet.</p><details><summary>Solution</summary><pre><code># help(len) - returns length of object
+print(len([1,2,3]))
+
+# help(list.sort) - sorts in place
+lst = [3,1,2]; lst.sort(); print(lst)
+
+# help(str.split) - splits by delimiter
+print('a,b,c'.split(','))
+
+# dir([]) reveals: copy, count, extend, index, reverse...
+lst = [1,2,2,3]
+print(lst.count(2))
+print(lst.index(3))</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Use isinstance(x, int) to check if x is an integer. Test with x=5 and x=5.0
+        <p class="hint"><em>Hint:</em> isinstance(5, int) vs isinstance(5.0, int)</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> What does dir(str) show? Pick one method and use help() on it.
+        <p class="hint"><em>Hint:</em> Try str.upper or str.strip</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>You never need to memorize everything—help() and docs are your best friends when exploring new libraries.</p></section>
+    <section><h2>Case Study</h2><p>A developer encounters pd.merge() for the first time. They run help(pd.merge) and instantly see parameters: left, right, how, on.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Find the signature and behavior of str.join() from the docs and write a practical example.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/8.html">← Previous</a>
+      <a href="/block/10.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

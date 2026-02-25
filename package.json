@@ -1,0 +1,13 @@
+{
+  "name": "python-training-course",
+  "version": "1.0.0",
+  "description": "Python Mastery - 16-Week Training Program for Data Science, ML & Scientific Computing",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "npx serve public",
+    "start": "npx serve public"
+  },
+  "keywords": ["python", "training", "data-science", "machine-learning"],
+  "author": "",
+  "license": "MIT"
+}

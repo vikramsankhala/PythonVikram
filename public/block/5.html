@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 5: Defining Functions | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/4.html">← Block 4</a>
+    <a href="/block/6.html">Block 6 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Wednesday</span>
+      <h1>Block 5: Defining Functions</h1>
+      <p class="objective">Define and call reusable functions with parameters and return values.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>def function_name(params): syntax</li><li>return keyword vs print()</li><li>Default parameter values</li><li>Calling functions with positional vs keyword args</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Basic function</h4>
+        <pre><code>def add(a, b):
+    return a + b
+print(add(3, 5))  # 8</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Default parameters</h4>
+        <pre><code>def greet(name, greeting='Hello'):
+    return f'{greeting}, {name}'
+print(greet('Alice'))      # Hello, Alice
+print(greet('Bob', 'Hi'))  # Hi, Bob</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Define compute_bmi(weight_kg, height_m) and test on 3 people. Write a greet(name, greeting='Hello') function.</p><details><summary>Solution</summary><pre><code>def compute_bmi(weight_kg, height_m):
+    return weight_kg / (height_m ** 2)
+
+def greet(name, greeting='Hello'):
+    return f'{greeting}, {name}!'
+
+# Test
+people = [(70, 1.75), (60, 1.65), (90, 1.80)]
+for w, h in people:
+    print(f'BMI: {compute_bmi(w, h):.1f}')
+print(greet('Alice'))
+print(greet('Bob', 'Hi'))</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Write a function celsius_to_fahrenheit(c) that converts and returns the value.
+        <p class="hint"><em>Hint:</em> F = C * 9/5 + 32</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Write a function with a default argument that can be overridden.
+        <p class="hint"><em>Hint:</em> def f(x, multiplier=2): return x * multiplier</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Functions modularize code—data cleaning, feature engineering, and model evaluation are typically separate functions.</p></section>
+    <section><h2>Case Study</h2><p>A ML pipeline has functions: load_data(), preprocess(), train_model(), evaluate(). Each is tested independently and composed in main().</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Write a function that takes a list of numbers and returns (min, max, average) as a tuple.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/4.html">← Previous</a>
+      <a href="/block/6.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

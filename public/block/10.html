@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 10: Mini-Project: Personal Stats Summary | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/9.html">← Block 9</a>
+    <a href="/block/11.html">Block 11 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Friday</span>
+      <h1>Block 10: Mini-Project: Personal Stats Summary</h1>
+      <p class="objective">Integrate variables, lists, loops, and functions into one script.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>Combining building blocks into a real program</li><li>Printing formatted output with f-strings</li><li>Organising code into small functions</li><li>Testing your script end-to-end</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Full project structure</h4>
+        <pre><code>def load_data():
+    return [(8000,2,2.5), (7200,1.5,2), ...]
+
+def compute_stats(data):
+    ...
+
+def print_report(stats):
+    ...
+
+if __name__ == '__main__':
+    data = load_data()
+    stats = compute_stats(data)
+    print_report(stats)</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>f-string formatting</h4>
+        <pre><code>name = 'Alex'
+score = 87.5
+print(f'{name} scored {score:.1f}%')
+print(f'Progress: {5/10*100:.0f}%')</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Build a script: input 7 days of (steps, study_hours, water_liters), compute totals and averages, print a clear formatted report. Add a function highlight(value, goal) that prints 'Great!' or 'Try harder!' depending on whether the goal was met.</p><details><summary>Solution</summary><pre><code>def highlight(value, goal):
+    return 'Great!' if value &gt;= goal else 'Try harder!'
+
+data = [
+    (8000, 2, 2.5), (7200, 1.5, 2), (9000, 3, 3),
+    (6500, 2, 2), (8500, 2.5, 2.5), (7000, 1, 2),
+    (9500, 3, 3)
+]
+
+steps = [d[0] for d in data]
+study = [d[1] for d in data]
+water = [d[2] for d in data]
+
+total_steps = sum(steps)
+avg_study = sum(study) / len(study)
+avg_water = sum(water) / len(water)
+
+print('=== Weekly Personal Stats ===')
+print(f'Total steps: {total_steps}')
+print(f'Avg study hours: {avg_study:.1f}')
+print(f'Avg water (L): {avg_water:.1f}')
+print(f'Steps goal: {highlight(total_steps, 50000)}')
+print(f'Study goal: {highlight(avg_study, 2)}')</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Extend the script to accept user input for each day instead of hardcoded data.
+        <p class="hint"><em>Hint:</em> Use input() in a loop</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Add a function that returns a letter grade (A-F) based on average study hours.
+        <p class="hint"><em>Hint:</em> Reuse conditionals from Block 3</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Real projects combine many small pieces. This mini-project mirrors the structure of larger data pipelines.</p></section>
+    <section><h2>Case Study</h2><p>A fitness app aggregates daily metrics (steps, sleep, calories) into weekly reports. The same pattern: collect → compute → format → display.</p></section>
+    
+    <section><h2>Project</h2><p>Build a complete personal dashboard script that tracks 3 metrics over 7 days and produces a formatted report with goal highlights.</p></section>
+
+    <section>
+      <h2>Homework</h2>
+      <p>Reflection: list 3 things you learned, 2 things that confused you, 1 thing you want to explore further.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/9.html">← Previous</a>
+      <a href="/block/11.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

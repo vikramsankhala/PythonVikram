@@ -1,0 +1,28 @@
+{
+  "id": 8,
+  "week": 1,
+  "day": "Thursday",
+  "title": "Dictionaries for Structured Data",
+  "objective": "Use dicts to store labeled, key-value data.",
+  "concepts": [
+    "dict creation: {key: value}",
+    "Accessing: dict['key'], dict.get('key', default)",
+    "Adding/updating entries, del to remove",
+    "Looping with .keys(), .values(), .items()"
+  ],
+  "exercise": {
+    "description": "Represent 3 students as dicts with name and marks. Compute class average. Build a word-frequency counter for a short sentence.",
+    "solution": "```python\nstudents = [\n    {'name': 'Alice', 'marks': 85},\n    {'name': 'Bob', 'marks': 72},\n    {'name': 'Carol', 'marks': 90}\n]\nclass_avg = sum(s['marks'] for s in students) / len(students)\nprint(f'Class average: {class_avg:.1f}')\n\nsentence = 'the cat sat on the mat'\nwords = sentence.split()\nfreq = {}\nfor w in words:\n    freq[w] = freq.get(w, 0) + 1\nprint(freq)\n```"
+  },
+  "homework": "Describe a real-world situation where a dictionary is more useful than a list.",
+  "problems": [
+    {"q": "Merge two dicts: d1 and d2. If same key, keep d2's value.", "hint": "d1.update(d2) or {**d1, **d2}"},
+    {"q": "Get all keys from a dict as a sorted list", "hint": "sorted(d.keys())"}
+  ],
+  "code": {
+    "example1": {"title": "Dict basics", "code": "person = {'name': 'Alice', 'age': 25}\nprint(person['name'])\nprint(person.get('city', 'Unknown'))\nperson['city'] = 'NYC'"},
+    "example2": {"title": "Looping over dict", "code": "scores = {'a': 1, 'b': 2, 'c': 3}\nfor k, v in scores.items():\n    print(f'{k}: {v}')"}
+  },
+  "application": "Dicts map IDs to records, config keys to values, and category names to counts—essential for structured data.",
+  "caseStudy": "A config file is loaded as a dict: {'batch_size': 32, 'epochs': 10}. The training script reads config['batch_size'] instead of hardcoding."
+}

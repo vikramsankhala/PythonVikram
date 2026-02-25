@@ -1,0 +1,29 @@
+{
+  "id": 21,
+  "week": 3,
+  "day": "Monday",
+  "title": "Series & DataFrame Basics",
+  "objective": "Create Series and DataFrames from scratch and understand their structure.",
+  "concepts": [
+    "pd.Series from list/dict",
+    "pd.DataFrame from dict of lists or list of dicts",
+    "Index, columns, values",
+    ".shape, .dtypes, .info(), .describe()"
+  ],
+  "exercise": {
+    "description": "Create a DataFrame of 5 cities with population, area, and country columns. Print the dtype of each column and describe() the numeric ones.",
+    "solution": "```python\nimport pandas as pd\n\ndf = pd.DataFrame({\n    'city': ['Tokyo', 'Delhi', 'Shanghai', 'São Paulo', 'Mumbai'],\n    'population': [37.4, 31.0, 27.1, 22.4, 20.7],\n    'area_km2': [2194, 1484, 6341, 1521, 603],\n    'country': ['Japan', 'India', 'China', 'Brazil', 'India']\n})\nprint(df.dtypes)\nprint(df.describe())\n```"
+  },
+  "homework": "Compare a pandas Series to a NumPy array — what are 2 differences and 1 similarity?",
+  "problems": [
+    {"q": "Create a Series from a dict. What happens to the dict keys?", "hint": "pd.Series({'a':1, 'b':2})"},
+    {"q": "Create a DataFrame from a list of dicts. When is this useful?", "hint": "pd.DataFrame([{'x':1}, {'x':2}])"}
+  ],
+  "code": {
+    "example1": {"title": "Series basics", "code": "import pandas as pd\ns = pd.Series([10, 20, 30], index=['a', 'b', 'c'])\nprint(s)\nprint(s.values, type(s.values))"},
+    "example2": {"title": "DataFrame from dict", "code": "df = pd.DataFrame({'A': [1,2,3], 'B': [4,5,6]})\nprint(df.shape, df.columns.tolist())\ndf.info()"}
+  },
+  "application": "DataFrames are the primary data structure for tabular data in Python. Every CSV, Excel file, or database query becomes a DataFrame.",
+  "caseStudy": "A marketing team exports campaign data to CSV. Loading with pd.read_csv() gives a DataFrame. .describe() instantly shows spend, clicks, and conversion stats.",
+  "visualization": "After creating the cities DataFrame, plot population vs area as a scatter plot using df.plot(kind='scatter', x='area_km2', y='population')."
+}

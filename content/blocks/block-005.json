@@ -1,0 +1,28 @@
+{
+  "id": 5,
+  "week": 1,
+  "day": "Wednesday",
+  "title": "Defining Functions",
+  "objective": "Define and call reusable functions with parameters and return values.",
+  "concepts": [
+    "def function_name(params): syntax",
+    "return keyword vs print()",
+    "Default parameter values",
+    "Calling functions with positional vs keyword args"
+  ],
+  "exercise": {
+    "description": "Define compute_bmi(weight_kg, height_m) and test on 3 people. Write a greet(name, greeting='Hello') function.",
+    "solution": "```python\ndef compute_bmi(weight_kg, height_m):\n    return weight_kg / (height_m ** 2)\n\ndef greet(name, greeting='Hello'):\n    return f'{greeting}, {name}!'\n\n# Test\npeople = [(70, 1.75), (60, 1.65), (90, 1.80)]\nfor w, h in people:\n    print(f'BMI: {compute_bmi(w, h):.1f}')\nprint(greet('Alice'))\nprint(greet('Bob', 'Hi'))\n```"
+  },
+  "homework": "Write a function that takes a list of numbers and returns (min, max, average) as a tuple.",
+  "problems": [
+    {"q": "Write a function celsius_to_fahrenheit(c) that converts and returns the value.", "hint": "F = C * 9/5 + 32"},
+    {"q": "Write a function with a default argument that can be overridden.", "hint": "def f(x, multiplier=2): return x * multiplier"}
+  ],
+  "code": {
+    "example1": {"title": "Basic function", "code": "def add(a, b):\n    return a + b\nprint(add(3, 5))  # 8"},
+    "example2": {"title": "Default parameters", "code": "def greet(name, greeting='Hello'):\n    return f'{greeting}, {name}'\nprint(greet('Alice'))      # Hello, Alice\nprint(greet('Bob', 'Hi'))  # Hi, Bob"}
+  },
+  "application": "Functions modularize code—data cleaning, feature engineering, and model evaluation are typically separate functions.",
+  "caseStudy": "A ML pipeline has functions: load_data(), preprocess(), train_model(), evaluate(). Each is tested independently and composed in main()."
+}

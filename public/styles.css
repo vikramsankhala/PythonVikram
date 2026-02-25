@@ -1,0 +1,170 @@
+/* Python Mastery - Course Styles */
+:root {
+  --bg: #0f1419;
+  --surface: #1a2332;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent2: #3fb950;
+  --border: #30363d;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.top-nav {
+  background: var(--surface);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.top-nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.top-nav a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  margin-bottom: 3rem;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.subtitle { font-size: 1.25rem; color: var(--muted); }
+.description { margin: 1rem 0; }
+.meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+section { margin: 2rem 0; }
+section h2 {
+  color: var(--accent);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.phases, .week-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.phase-card, .week-card {
+  background: var(--surface);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.week-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.2s;
+}
+.week-card:hover { border-color: var(--accent); }
+.week-card h3 { margin: 0.5rem 0; }
+.week-card p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+.week-num { color: var(--accent); font-size: 0.85rem; }
+
+.block-header { margin-bottom: 2rem; }
+.badge {
+  display: inline-block;
+  background: var(--surface);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.block-header h1 { font-size: 1.75rem; margin: 0.5rem 0; }
+.objective { color: var(--muted); font-size: 1rem; }
+
+.block-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.block-card {
+  background: var(--surface);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s;
+}
+.block-card:hover { border-color: var(--accent); }
+.block-num { color: var(--accent); font-size: 0.8rem; }
+.block-day { color: var(--muted); font-size: 0.8rem; margin-left: 0.5rem; }
+.block-card h3 { margin: 0.5rem 0; font-size: 1rem; }
+
+.code-block {
+  margin: 1rem 0;
+  background: #0d1117;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.code-block h4 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+.code-block pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.code-block code { color: var(--accent2); }
+
+.problem {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--surface);
+  border-radius: 6px;
+  border-left: 4px solid var(--accent);
+}
+.hint { margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem; }
+
+details { margin-top: 0.5rem; }
+details summary { cursor: pointer; color: var(--accent); font-size: 0.9rem; }
+.block-nav {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 1rem;
+}
+.block-nav a { color: var(--accent); text-decoration: none; }
+.block-nav a:hover { text-decoration: underline; }
+
+ul { padding-left: 1.5rem; }
+li { margin: 0.5rem 0; }
+.week-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  .top-nav { padding: 1rem; }
+}

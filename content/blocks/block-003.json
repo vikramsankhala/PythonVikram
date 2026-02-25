@@ -1,0 +1,28 @@
+{
+  "id": 3,
+  "week": 1,
+  "day": "Tuesday",
+  "title": "if/else and Conditionals",
+  "objective": "Control program flow with if/elif/else.",
+  "concepts": [
+    "if/elif/else syntax and indentation",
+    "Comparison operators: ==, !=, <, >, <=, >=",
+    "Logical operators: and, or, not",
+    "Nested conditionals"
+  ],
+  "exercise": {
+    "description": "Write a BMI category classifier (underweight, normal, overweight, obese). Given a score (0–100), print the letter grade A/B/C/D/F.",
+    "solution": "```python\ndef bmi_category(bmi):\n    if bmi < 18.5: return 'underweight'\n    elif bmi < 25: return 'normal'\n    elif bmi < 30: return 'overweight'\n    else: return 'obese'\n\ndef letter_grade(score):\n    if score >= 90: return 'A'\n    elif score >= 80: return 'B'\n    elif score >= 70: return 'C'\n    elif score >= 60: return 'D'\n    else: return 'F'\n\nprint(bmi_category(22))   # normal\nprint(letter_grade(85))  # B\n```"
+  },
+  "homework": "Explain why indentation matters in Python. Write an example that would break without correct indentation.",
+  "problems": [
+    {"q": "Write a function that returns 'even' or 'odd' for any integer.", "hint": "Use % 2"},
+    {"q": "Given age, print 'minor' if <18, 'adult' if 18-64, 'senior' otherwise.", "hint": "Use elif chain"}
+  ],
+  "code": {
+    "example1": {"title": "Basic if/elif/else", "code": "score = 85\nif score >= 90:\n    print('A')\nelif score >= 80:\n    print('B')\nelse:\n    print('C or below')"},
+    "example2": {"title": "Logical operators", "code": "age = 25\nhas_ticket = True\nif age >= 18 and has_ticket:\n    print('Entry allowed')\nif age < 13 or age > 65:\n    print('Eligible for discount')"}
+  },
+  "application": "Conditionals are used everywhere: filtering data, validating inputs, branching in ML pipelines, and business logic.",
+  "caseStudy": "An e-commerce site uses conditionals: if cart_total > 100 and is_member: apply 10% discount. Nested conditions handle complex rules."
+}

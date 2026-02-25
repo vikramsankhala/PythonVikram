@@ -1,0 +1,29 @@
+{
+  "id": 10,
+  "week": 1,
+  "day": "Friday",
+  "title": "Mini-Project: Personal Stats Summary",
+  "objective": "Integrate variables, lists, loops, and functions into one script.",
+  "concepts": [
+    "Combining building blocks into a real program",
+    "Printing formatted output with f-strings",
+    "Organising code into small functions",
+    "Testing your script end-to-end"
+  ],
+  "exercise": {
+    "description": "Build a script: input 7 days of (steps, study_hours, water_liters), compute totals and averages, print a clear formatted report. Add a function highlight(value, goal) that prints 'Great!' or 'Try harder!' depending on whether the goal was met.",
+    "solution": "```python\ndef highlight(value, goal):\n    return 'Great!' if value >= goal else 'Try harder!'\n\ndata = [\n    (8000, 2, 2.5), (7200, 1.5, 2), (9000, 3, 3),\n    (6500, 2, 2), (8500, 2.5, 2.5), (7000, 1, 2),\n    (9500, 3, 3)\n]\n\nsteps = [d[0] for d in data]\nstudy = [d[1] for d in data]\nwater = [d[2] for d in data]\n\ntotal_steps = sum(steps)\navg_study = sum(study) / len(study)\navg_water = sum(water) / len(water)\n\nprint('=== Weekly Personal Stats ===')\nprint(f'Total steps: {total_steps}')\nprint(f'Avg study hours: {avg_study:.1f}')\nprint(f'Avg water (L): {avg_water:.1f}')\nprint(f'Steps goal: {highlight(total_steps, 50000)}')\nprint(f'Study goal: {highlight(avg_study, 2)}')\n```"
+  },
+  "homework": "Reflection: list 3 things you learned, 2 things that confused you, 1 thing you want to explore further.",
+  "problems": [
+    {"q": "Extend the script to accept user input for each day instead of hardcoded data.", "hint": "Use input() in a loop"},
+    {"q": "Add a function that returns a letter grade (A-F) based on average study hours.", "hint": "Reuse conditionals from Block 3"}
+  ],
+  "code": {
+    "example1": {"title": "Full project structure", "code": "def load_data():\n    return [(8000,2,2.5), (7200,1.5,2), ...]\n\ndef compute_stats(data):\n    ...\n\ndef print_report(stats):\n    ...\n\nif __name__ == '__main__':\n    data = load_data()\n    stats = compute_stats(data)\n    print_report(stats)"},
+    "example2": {"title": "f-string formatting", "code": "name = 'Alex'\nscore = 87.5\nprint(f'{name} scored {score:.1f}%')\nprint(f'Progress: {5/10*100:.0f}%')"}
+  },
+  "application": "Real projects combine many small pieces. This mini-project mirrors the structure of larger data pipelines.",
+  "caseStudy": "A fitness app aggregates daily metrics (steps, sleep, calories) into weekly reports. The same pattern: collect → compute → format → display.",
+  "project": "Build a complete personal dashboard script that tracks 3 metrics over 7 days and produces a formatted report with goal highlights."
+}

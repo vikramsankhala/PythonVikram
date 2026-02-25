@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 4: for Loops &amp; range() | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/3.html">← Block 3</a>
+    <a href="/block/5.html">Block 5 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Tuesday</span>
+      <h1>Block 4: for Loops &amp; range()</h1>
+      <p class="objective">Repeat actions with for loops and range().</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>for item in iterable: pattern</li><li>range(start, stop, step)</li><li>Loop over lists and strings</li><li>Accumulator pattern with a variable</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>range() and for loop</h4>
+        <pre><code>for i in range(5):
+    print(i)  # 0,1,2,3,4
+for i in range(2, 10, 2):
+    print(i)  # 2,4,6,8</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Accumulator pattern</h4>
+        <pre><code>numbers = [1, 2, 3, 4, 5]
+total = 0
+for n in numbers:
+    total += n
+print(total)  # 15</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Implement FizzBuzz from 1 to 50. Sum all even numbers from 1 to 100 using a loop.</p><details><summary>Solution</summary><pre><code># FizzBuzz
+for i in range(1, 51):
+    if i % 15 == 0: print('FizzBuzz')
+    elif i % 3 == 0: print('Fizz')
+    elif i % 5 == 0: print('Buzz')
+    else: print(i)
+
+# Sum evens 1-100
+total = 0
+for n in range(2, 101, 2):
+    total += n
+print('Sum of evens:', total)  # 2550</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Print the first 10 square numbers (1, 4, 9, 16, ...)
+        <p class="hint"><em>Hint:</em> for i in range(1, 11): print(i**2)</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Count how many vowels are in the string 'hello world'
+        <p class="hint"><em>Hint:</em> Loop over chars, check if in 'aeiou'</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Loops are fundamental for iterating over datasets, processing batches, and running simulations.</p></section>
+    <section><h2>Case Study</h2><p>A data pipeline loops over 1000 CSV files, reads each, cleans it, and appends to a master DataFrame. The accumulator pattern builds the final dataset.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>What is the difference between range(5) and range(1,6)? Show with code.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/3.html">← Previous</a>
+      <a href="/block/5.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "id": 1,
+  "week": 1,
+  "day": "Monday",
+  "title": "Setup & First Script",
+  "objective": "Install Python/Jupyter, run your first .py file and notebook cell.",
+  "concepts": [
+    "Python vs Jupyter notebook (.py vs .ipynb)",
+    "print() to display output",
+    "Running cells in JupyterLab or VS Code"
+  ],
+  "exercise": {
+    "description": "Write a script that prints a greeting, your name, and today's date using datetime.date.today()",
+    "solution": "```python\nimport datetime\nprint('Hello! Welcome to Python Training!')\nprint('My name is [Your Name]')\nprint('Today\\'s date:', datetime.date.today())\n```"
+  },
+  "homework": "Write 5 bullet points on why Python is used in data/ML.",
+  "problems": [
+    {
+      "q": "Create a script that prints your name, favorite programming language, and a fun fact about yourself.",
+      "hint": "Use multiple print() statements or one with newlines (\\n)"
+    },
+    {
+      "q": "Print the current date in format: 'YYYY-MM-DD'",
+      "hint": "datetime.date.today() returns a date object; use str() or format it"
+    }
+  ],
+  "code": {
+    "example1": {
+      "title": "Basic print statements",
+      "code": "print('Hello, World!')\nprint(42)\nprint(3.14)\nprint(True)"
+    },
+    "example2": {
+      "title": "Using datetime",
+      "code": "import datetime\ntoday = datetime.date.today()\nprint(f'Today is {today}')\nprint(f'Year: {today.year}, Month: {today.month}, Day: {today.day}')"
+    }
+  },
+  "application": "Data scientists use Jupyter notebooks daily for exploratory analysis—each cell can be run independently, making it ideal for iterative experimentation.",
+  "caseStudy": "A data analyst at a retail company uses Jupyter to explore sales data. They run cells incrementally: first load data, then clean it, then visualize. The notebook becomes a shareable report with code and outputs together."
+}

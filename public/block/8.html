@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 8: Dictionaries for Structured Data | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/7.html">← Block 7</a>
+    <a href="/block/9.html">Block 9 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Thursday</span>
+      <h1>Block 8: Dictionaries for Structured Data</h1>
+      <p class="objective">Use dicts to store labeled, key-value data.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>dict creation: {key: value}</li><li>Accessing: dict['key'], dict.get('key', default)</li><li>Adding/updating entries, del to remove</li><li>Looping with .keys(), .values(), .items()</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Dict basics</h4>
+        <pre><code>person = {'name': 'Alice', 'age': 25}
+print(person['name'])
+print(person.get('city', 'Unknown'))
+person['city'] = 'NYC'</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Looping over dict</h4>
+        <pre><code>scores = {'a': 1, 'b': 2, 'c': 3}
+for k, v in scores.items():
+    print(f'{k}: {v}')</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Represent 3 students as dicts with name and marks. Compute class average. Build a word-frequency counter for a short sentence.</p><details><summary>Solution</summary><pre><code>students = [
+    {'name': 'Alice', 'marks': 85},
+    {'name': 'Bob', 'marks': 72},
+    {'name': 'Carol', 'marks': 90}
+]
+class_avg = sum(s['marks'] for s in students) / len(students)
+print(f'Class average: {class_avg:.1f}')
+
+sentence = 'the cat sat on the mat'
+words = sentence.split()
+freq = {}
+for w in words:
+    freq[w] = freq.get(w, 0) + 1
+print(freq)</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Merge two dicts: d1 and d2. If same key, keep d2's value.
+        <p class="hint"><em>Hint:</em> d1.update(d2) or {**d1, **d2}</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> Get all keys from a dict as a sorted list
+        <p class="hint"><em>Hint:</em> sorted(d.keys())</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>Dicts map IDs to records, config keys to values, and category names to counts—essential for structured data.</p></section>
+    <section><h2>Case Study</h2><p>A config file is loaded as a dict: {'batch_size': 32, 'epochs': 10}. The training script reads config['batch_size'] instead of hardcoding.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Describe a real-world situation where a dictionary is more useful than a list.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/7.html">← Previous</a>
+      <a href="/block/9.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>

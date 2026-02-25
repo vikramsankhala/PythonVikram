@@ -1,0 +1,28 @@
+{
+  "id": 6,
+  "week": 1,
+  "day": "Wednesday",
+  "title": "Modules & the math Library",
+  "objective": "Import and use standard library modules, starting with math.",
+  "concepts": [
+    "import module and import module as alias",
+    "math.sqrt, math.pi, math.ceil, math.floor",
+    "math.log, math.pow",
+    "Using help() and dir() to explore modules"
+  ],
+  "exercise": {
+    "description": "Write circle_area(r) and sphere_volume(r) using math.pi. Compute the hypotenuse of a right triangle with sides 3 and 4.",
+    "solution": "```python\nimport math\n\ndef circle_area(r):\n    return math.pi * r ** 2\n\ndef sphere_volume(r):\n    return (4/3) * math.pi * r ** 3\n\na, b = 3, 4\nhyp = math.sqrt(a**2 + b**2)\nprint(f'Circle area (r=5): {circle_area(5):.2f}')\nprint(f'Sphere volume (r=2): {sphere_volume(2):.2f}')\nprint(f'Hypotenuse: {hyp}')\n```"
+  },
+  "homework": "Explore the random module: generate 5 random integers between 1 and 10.",
+  "problems": [
+    {"q": "Use math.ceil and math.floor to round 3.7 up and down.", "hint": "math.ceil(3.7), math.floor(3.7)"},
+    {"q": "Compute log base 10 of 1000 using math.log", "hint": "math.log(1000, 10)"}
+  ],
+  "code": {
+    "example1": {"title": "math module basics", "code": "import math\nprint(math.pi)\nprint(math.sqrt(16))\nprint(math.pow(2, 10))"},
+    "example2": {"title": "Exploring with help() and dir()", "code": "import math\nprint(dir(math)[:5])  # First 5 attributes\n# help(math.sqrt)  # Uncomment to see docs"}
+  },
+  "application": "Scientific computing relies heavily on math—logarithms for scaling, sqrt for distances, pi for geometry.",
+  "caseStudy": "A physics simulation uses math.sin, math.cos for projectile motion. math.sqrt appears in distance calculations for collision detection."
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 2: Basic Types &amp; Variables | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+    <a href="/block/1.html">← Block 1</a>
+    <a href="/block/3.html">Block 3 →</a>
+  </nav>
+  <main class="container">
+    <header class="block-header">
+      <span class="badge">Week 1 • Monday</span>
+      <h1>Block 2: Basic Types &amp; Variables</h1>
+      <p class="objective">Practice int, float, str, bool and variable assignment.</p>
+    </header>
+
+    <section>
+      <h2>Concepts</h2>
+      <ul>
+        <li>Variable assignment: x = 5</li><li>Basic types: int, float, str, bool</li><li>type() to inspect a variable's type</li><li>Simple arithmetic and string concatenation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Code Examples</h2>
+      
+      <div class="code-block">
+        <h4>Variable assignment and type()</h4>
+        <pre><code>x = 5
+y = 3.14
+name = 'Python'
+flag = True
+print(type(x), type(y), type(name), type(flag))</code></pre>
+      </div>
+      <div class="code-block">
+        <h4>Arithmetic and string concatenation</h4>
+        <pre><code>a, b = 10, 3
+print(a + b, a - b, a * b, a / b)
+greeting = 'Hello' + ' ' + 'World'
+print(greeting)</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Create variables for your age, height, name, and a boolean. Print them in a friendly sentence. Compute and print (100 + 50) * 2 / 3</p><details><summary>Solution</summary><pre><code>age = 25
+height = 1.75
+name = 'Alex'
+is_student = True
+print(f'Hi, I\'m {name}, {age} years old, {height}m tall. Student: {is_student}')
+result = (100 + 50) * 2 / 3
+print(f'Computation result: {result}')
+print('Type of result:', type(result))</code></pre></details>
+    </section>
+
+    <section><h2>Practice Problems</h2>
+      <div class="problem">
+        <strong>Problem 1:</strong> Create variables for a product: name, price, and in_stock. Print a formatted string.
+        <p class="hint"><em>Hint:</em> Use f-strings: f'Product: {name}'</p>
+      </div>
+      <div class="problem">
+        <strong>Problem 2:</strong> What does type(7/2) return? What about type(7//2)?
+        <p class="hint"><em>Hint:</em> // is floor division</p>
+      </div></section>
+
+    <section><h2>Application</h2><p>In data science, you constantly work with numeric types (int/float) for calculations and strings for labels, categories, and text data.</p></section>
+    <section><h2>Case Study</h2><p>A fitness app stores user data: age (int), weight (float), name (str), and premium_member (bool). Each variable type is chosen for the right kind of data.</p></section>
+    
+    
+
+    <section>
+      <h2>Homework</h2>
+      <p>Describe the difference between int and float in your own words with one example each.</p>
+    </section>
+
+    <nav class="block-nav">
+      <a href="/block/1.html">← Previous</a>
+      <a href="/block/3.html">Next →</a>
+    </nav>
+  </main>
+</body>
+</html>
