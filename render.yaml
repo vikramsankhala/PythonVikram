@@ -4,7 +4,7 @@
 services:
   - type: web
     name: python-mastery-course
-    buildCommand: npm run build && npm install
+    buildCommand: npm install && npm run build
     startCommand: npm start
     envVars:
       - key: ANTHROPIC_API_KEY
