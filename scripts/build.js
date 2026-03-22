@@ -39,6 +39,10 @@ let phdResearchData = { title: '', description: '', researchTopics: [] };
 try {
   phdResearchData = JSON.parse(fs.readFileSync(path.join(CONTENT, 'phd-research.json'), 'utf8'));
 } catch (e) { console.warn('phd-research.json not found'); }
+let turingAwardData = { title: '', description: '', winners: [] };
+try {
+  turingAwardData = JSON.parse(fs.readFileSync(path.join(CONTENT, 'turing-award-winners.json'), 'utf8'));
+} catch (e) { console.warn('turing-award-winners.json not found'); }
 
 const getWeekResources = (weekId) => weekResources.weeks.find(r => r.week === weekId) || {};
 
@@ -356,6 +360,7 @@ function renderIndex() {
         <a href="/careers.html" class="coursebook-link">💼 Python Careers &amp; Job Paths</a>
         <a href="/pricing.html" class="coursebook-link">💰 Pricing &amp; Course Comparison</a>
         <a href="/phd-research.html" class="coursebook-link">🎓 PhD Research &amp; Theses</a>
+        <a href="/turing-award.html" class="coursebook-link">🏆 Turing Award Winners</a>
         <a href="/ai-assistant.html" class="coursebook-link">🤖 AI Assistant (Claude)</a>
       </div>
     </section>
@@ -405,6 +410,55 @@ function renderPhdResearch() {
       <h3>Research Paper &amp; Thesis Topics</h3>
       <ul>${papers || '<li>—</li>'}</ul>
       <h3>📺 10 Curated YouTube Videos</h3>
+      ${videosHtml}
+    </section>`;
+    }).join('')}
+  </main>
+</body>
+</html>`;
+}
+
+function renderTuringAward() {
+  const data = turingAwardData;
+  const winners = data.winners || [];
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escape(data.title || 'Turing Award Winners')} | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/phd-research.html">PhD Research</a>
+    <a href="/careers.html">Careers</a>
+  </nav>
+  <main class="container">
+    <header class="hero">
+      <span style="font-size:2.5rem;">🏆</span>
+      <h1>${escape(data.title || 'Turing Award Winners (21st Century)')}</h1>
+      <p class="description">${escape(data.description || '')}</p>
+    </header>
+    ${winners.map(w => {
+      const yt = (w.youtube || []).slice(0, 10);
+      const videosHtml = yt.length >= 7 ? `
+        <h4>📺 YouTube Resources (${yt.length} videos)</h4>
+        <div class="youtube-grid" style="margin-top:1rem;">
+          ${yt.map(v => `
+            <a href="https://www.youtube.com/watch?v=${escape(v.id || '')}" target="_blank" rel="noopener" class="yt-card">
+              <span class="yt-thumb">▶ ${escape(v.title || v.channel)}</span>
+              <span class="yt-channel">${escape(v.channel || '')}</span>
+            </a>`).join('')}
+        </div>` : '';
+      return `
+    <section class="turing-winner" style="margin-bottom:2.5rem; padding-bottom:2rem; border-bottom:1px solid var(--border);">
+      <h2><span style="color:var(--accent);">${escape(String(w.year))}</span> — ${escape(w.names)}</h2>
+      <h3>Biography</h3>
+      <p>${escape(w.bio || '')}</p>
+      <h3>Contributions</h3>
+      <p>${escape(w.contributions || '')}</p>
       ${videosHtml}
     </section>`;
     }).join('')}
@@ -1017,6 +1071,7 @@ if (trailerHtml) {
 // Write files
 fs.writeFileSync(path.join(PUBLIC, 'index.html'), renderIndex());
 fs.writeFileSync(path.join(PUBLIC, 'phd-research.html'), renderPhdResearch());
+fs.writeFileSync(path.join(PUBLIC, 'turing-award.html'), renderTuringAward());
 fs.writeFileSync(path.join(PUBLIC, 'coursebook.html'), renderCoursebook());
 fs.writeFileSync(path.join(PUBLIC, 'careers.html'), renderCareers());
 fs.writeFileSync(path.join(PUBLIC, 'pricing.html'), renderPricing());

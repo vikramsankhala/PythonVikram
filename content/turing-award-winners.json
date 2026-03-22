@@ -1,0 +1,397 @@
+{
+  "title": "Turing Award Winners (21st Century)",
+  "description": "Biographies and contributions of ACM A.M. Turing Award recipients from 2000 onward, with curated YouTube resources.",
+  "winners": [
+    {
+      "year": 2025,
+      "names": "Charles Bennett & Gilles Brassard",
+      "bio": "Charles Bennett (IBM) and Gilles Brassard (Université de Montréal) pioneered quantum cryptography. Bennett invented reversible computation and quantum teleportation; Brassard contributed to quantum key distribution and quantum information theory.",
+      "contributions": "Quantum cryptography, BB84 protocol, quantum key distribution, foundational work enabling secure communication in the quantum era.",
+      "youtube": [
+        {"id": "21EYKqUsPfg", "title": "Richard Sutton (RL) Interview", "channel": "Dwarkesh Patel"},
+        {"id": "hDKCxebp88A", "title": "ML Foundations", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "ML Concepts", "channel": "StatQuest"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "ngLyX54e1LU", "title": "ML from Scratch", "channel": "Patrick Loeber"},
+        {"id": "_ZLXKt4L-AA", "title": "Research Papers", "channel": "Two Minute Papers"},
+        {"id": "0sOvCWFmrtA", "title": "Modern AI", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2024,
+      "names": "Andrew Barto & Richard Sutton",
+      "bio": "Andrew Barto (UMass Amherst, emeritus) and Richard Sutton (University of Alberta) developed the conceptual and algorithmic foundations of reinforcement learning. Their collaboration began in the 1980s at UMass.",
+      "contributions": "Temporal difference (TD) learning, policy-gradient methods, neural networks as function approximators. Their work led to TD-Gammon, Q-learning, AlphaGo, and modern RL in ChatGPT.",
+      "youtube": [
+        {"id": "21EYKqUsPfg", "title": "Richard Sutton - Father of RL", "channel": "Dwarkesh Patel"},
+        {"id": "hDKCxebp88A", "title": "ML with Scikit-learn", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "Gentle Intro to ML", "channel": "StatQuest"},
+        {"id": "ngLyX54e1LU", "title": "KNN Reinforcement", "channel": "Patrick Loeber"},
+        {"id": "_L39rN6gz7Y", "title": "Decision Trees", "channel": "StatQuest"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science ML", "channel": "freeCodeCamp"},
+        {"id": "1GppEPl9_QQ", "title": "ML NumPy Pandas", "channel": "Imarticus"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP & AI", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2023,
+      "names": "Avi Wigderson",
+      "bio": "Avi Wigderson (Institute for Advanced Study) is a theoretical computer scientist. He has made fundamental contributions to complexity theory, randomness in computation, and the mathematical foundations of cryptography.",
+      "contributions": "Randomness and computation, zero-knowledge proofs, circuit complexity, hardness of approximation. His work connects mathematics, physics, and computer science.",
+      "youtube": [
+        {"id": "0oBLMwHdZ2Y", "title": "Type Hints", "channel": "ArjanCodes"},
+        {"id": "S_shhw4VV68", "title": "Python 3.14", "channel": "ArjanCodes"},
+        {"id": "RIVcqT2OGPA", "title": "Asyncio", "channel": "ArjanCodes"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "eWRfhZUzrAc", "title": "Python Foundations", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "Research Papers", "channel": "Two Minute Papers"},
+        {"id": "pKpZ7GOc5GY", "title": "AI & CS", "channel": "Training Scientists"}
+      ]
+    },
+    {
+      "year": 2022,
+      "names": "Robert Metcalfe",
+      "bio": "Robert Metcalfe (MIT, Harvard, UT Austin) co-invented Ethernet at Xerox PARC in 1973. He co-founded 3Com, formulated Metcalfe's law, and has been a professor of innovation and entrepreneurship.",
+      "contributions": "Ethernet (co-inventor), 3Com, Metcalfe's law on network effects. Ethernet became the dominant local area networking technology.",
+      "youtube": [
+        {"id": "JLAfLWE76fE", "title": "Internet Pioneers", "channel": "ACM"},
+        {"id": "78w61I62N_0", "title": "Web & Networks", "channel": "Decoder"},
+        {"id": "x7f9x30W_dI", "title": "Networking Docker", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "CI/CD Infrastructure", "channel": "Dmitriy Zhiganov"},
+        {"id": "0sOvCWFmrtA", "title": "APIs & Web", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Pipelines", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Database Systems", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2021,
+      "names": "Jack Dongarra",
+      "bio": "Jack Dongarra (UT Knoxville, Oak Ridge National Laboratory, Manchester) has pioneered numerical algorithms and libraries for high-performance computing for over four decades.",
+      "contributions": "LINPACK, BLAS, LAPACK, ScaLAPACK, PLASMA, MAGMA, SLATE. Linear algebra software used from laptops to supercomputers. Autotuning, mixed-precision methods.",
+      "youtube": [
+        {"id": "lsnRP9akCDk", "title": "ACM Turing Award Lecture", "channel": "SC Conference"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy SciPy 2024", "channel": "SciPy"},
+        {"id": "QUT1VHiLmmI", "title": "NumPy Full Course", "channel": "freeCodeCamp"},
+        {"id": "1qz7qUM6yUI", "title": "NumPy 2025", "channel": "Intellipaat"},
+        {"id": "b7Ze4Xe49Ic", "title": "SymPy Math", "channel": "SPAC"},
+        {"id": "D7uaN-Id2t8", "title": "Scientific Python", "channel": "SciPy"},
+        {"id": "uCLlshkTBM0", "title": "Scientific Computing", "channel": "SciPy"}
+      ]
+    },
+    {
+      "year": 2020,
+      "names": "Alfred Aho & Jeffrey Ullman",
+      "bio": "Alfred Aho (Columbia) and Jeffrey Ullman (Stanford) are pioneers in compilers and programming language theory. They co-authored the seminal \"Dragon Book\" and \"Compilers: Principles, Techniques, and Tools.\"",
+      "contributions": "Compiler design, algorithms, formal languages, automata theory. Aho-Corasick algorithm, LR parsing, attribute grammars. Foundations of modern compilers.",
+      "youtube": [
+        {"id": "S_shhw4VV68", "title": "Python 3.14", "channel": "ArjanCodes"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Systems", "channel": "ArjanCodes"},
+        {"id": "YYXdXT2l-Gg", "title": "Programming", "channel": "Corey Schafer"},
+        {"id": "9Os0o3wzS_I", "title": "Functions", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Python Foundations", "channel": "freeCodeCamp"},
+        {"id": "K8L6KVGG-7o", "title": "Regex", "channel": "Corey Schafer"},
+        {"id": "W8KRzm-HUcc", "title": "Data Structures", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2019,
+      "names": "Ed Catmull & Pat Hanrahan",
+      "bio": "Ed Catmull (Pixar, Disney) and Pat Hanrahan (Stanford) pioneered 3D computer graphics. Catmull co-founded Pixar; Hanrahan led RenderMan and contributed to GPU computing.",
+      "contributions": "RenderMan, Pixar's rendering pipeline, z-buffer, subdivision surfaces. Hanrahan: RenderMan Shading Language, GPU languages. Revolutionized CGI in film.",
+      "youtube": [
+        {"id": "MdPXBnJWai8", "title": "Turing Award Lectures", "channel": "ACM"},
+        {"id": "N7pahjY17Tc", "title": "SIGGRAPH Turing Conversation", "channel": "ACMSIGGRAPH"},
+        {"id": "oXlwWbU8l2o", "title": "OpenCV Graphics", "channel": "freeCodeCamp"},
+        {"id": "7yAw1nPareM", "title": "Visualization", "channel": "Programming Is Fun"},
+        {"id": "r-uOLxNrNk8", "title": "Data Viz", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Matplotlib", "channel": "Corey Schafer"},
+        {"id": "1GppEPl9_QQ", "title": "ML Visualization", "channel": "Imarticus"}
+      ]
+    },
+    {
+      "year": 2018,
+      "names": "Yoshua Bengio, Geoffrey Hinton & Yann LeCun",
+      "bio": "Bengio (Mila), Hinton (Toronto, Google), and LeCun (NYU, Meta) are the \"godfathers of AI.\" They developed deep learning through decades of persistence during AI winters.",
+      "contributions": "Backpropagation, convolutional neural networks, word embeddings, Boltzmann machines. Revolutionized computer vision, speech, NLP, robotics. Foundation for AlphaGo, ChatGPT.",
+      "youtube": [
+        {"id": "HzilDIhWhrE", "title": "ACM Turing 2018", "channel": "ACM"},
+        {"id": "G5c4CqmlEWs", "title": "CIFAR: Bengio, Hinton, LeCun", "channel": "CIFAR"},
+        {"id": "hDKCxebp88A", "title": "Deep Learning Course", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP Deep Learning", "channel": "freeCodeCamp"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "AI Research", "channel": "Two Minute Papers"}
+      ]
+    },
+    {
+      "year": 2017,
+      "names": "John Hennessy & David Patterson",
+      "bio": "John Hennessy (Stanford president emeritus) and David Patterson (UC Berkeley) created the systematic, quantitative approach to computer architecture. Authors of the definitive textbook.",
+      "contributions": "RISC processors, quantitative design methodology. 99% of microprocessors are RISC. Computer Architecture: A Quantitative Approach textbook. MIPS, SPARC, RISC-V.",
+      "youtube": [
+        {"id": "lsnRP9akCDk", "title": "Turing Lecture HPC", "channel": "SC Conference"},
+        {"id": "NoPY4aUJxwA", "title": "Scientific Computing", "channel": "SciPy"},
+        {"id": "QUT1VHiLmmI", "title": "NumPy Performance", "channel": "freeCodeCamp"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing", "channel": "Tech With Tim"},
+        {"id": "x7f9x30W_dI", "title": "Docker Build", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "Infrastructure", "channel": "Dmitriy Zhiganov"},
+        {"id": "r-uOLxNrNk8", "title": "Data Engineering", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2016,
+      "names": "Tim Berners-Lee",
+      "bio": "Tim Berners-Lee (CERN, MIT, W3C) invented the World Wide Web in 1989. He created HTML, HTTP, and the first web browser. Knighted in 2004. Now works on decentralization at Inrupt.",
+      "contributions": "World Wide Web, HTML, HTTP, URLs, first web browser and server. Semantic Web. Advocate for open, decentralized web.",
+      "youtube": [
+        {"id": "78w61I62N_0", "title": "Berners-Lee on AI & Web", "channel": "Decoder"},
+        {"id": "0sOvCWFmrtA", "title": "Web APIs", "channel": "freeCodeCamp"},
+        {"id": "DcI_AZqfZVc", "title": "Web Scraping", "channel": "Keith Galli"},
+        {"id": "JLAfLWE76fE", "title": "Internet Evolution", "channel": "ACM"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Web", "channel": "Corey Schafer"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science Web", "channel": "freeCodeCamp"},
+        {"id": "K8L6KVGG-7o", "title": "Text Processing", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2015,
+      "names": "Whitfield Diffie & Martin Hellman",
+      "bio": "Whitfield Diffie and Martin Hellman (Stanford) invented public-key cryptography in 1976. Their work enabled secure communications over insecure channels.",
+      "contributions": "Public-key cryptography, Diffie-Hellman key exchange. Foundation for RSA, SSL/TLS, secure email, digital signatures.",
+      "youtube": [
+        {"id": "JLAfLWE76fE", "title": "Internet Security", "channel": "ACM"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Safety", "channel": "ArjanCodes"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Security", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Web Development", "channel": "Corey Schafer"},
+        {"id": "pd-0G0MigUA", "title": "Data Security", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Deployment", "channel": "Rishab in Cloud"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing", "channel": "Tech With Tim"}
+      ]
+    },
+    {
+      "year": 2014,
+      "names": "Michael Stonebraker",
+      "bio": "Michael Stonebraker (MIT, Berkeley, MIT) revolutionized database systems. He created Ingres, Postgres, and founded multiple database companies.",
+      "contributions": "Ingres, Postgres, column stores, C-Store, VoltDB, SciDB. Pioneer in relational and object-relational databases.",
+      "youtube": [
+        {"id": "pd-0G0MigUA", "title": "SQL Database", "channel": "Corey Schafer"},
+        {"id": "r-uOLxNrNk8", "title": "Data Pipelines", "channel": "freeCodeCamp"},
+        {"id": "vmEHCJofslg", "title": "Pandas DataFrames", "channel": "Keith Galli"},
+        {"id": "r0Lo_XCsEuw", "title": "Data Analysis", "channel": "Coding News"},
+        {"id": "hDKCxebp88A", "title": "ML Data", "channel": "freeCodeCamp"},
+        {"id": "1GppEPl9_QQ", "title": "Data Science", "channel": "Imarticus"},
+        {"id": "r-uOLxNrNk8", "title": "Data Engineering", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2013,
+      "names": "Leslie Lamport",
+      "bio": "Leslie Lamport (Microsoft Research) is known for fundamental work in distributed systems. He created LaTeX and invented logical clocks.",
+      "contributions": "Time, Clocks, and Ordering of Events; Byzantine Generals Problem; Paxos; TLA+; LaTeX. Foundational distributed systems theory.",
+      "youtube": [
+        {"id": "U719vQz-WFs", "title": "Lamport: Paxos, Raft, Dijkstra", "channel": "Ryan Peterman"},
+        {"id": "RIVcqT2OGPA", "title": "Asyncio Concurrency", "channel": "ArjanCodes"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Async", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "CI/CD Pipelines", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "Distributed Systems", "channel": "Dmitriy Zhiganov"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing Systems", "channel": "Tech With Tim"},
+        {"id": "Z1RJmh_OqeA", "title": "Backend Design", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2012,
+      "names": "Shafi Goldwasser & Silvio Micali",
+      "bio": "Shafi Goldwasser (MIT, Weizmann) and Silvio Micali (MIT) pioneered the theory of probabilistic encryption and zero-knowledge proofs. Their work laid the foundation for modern cryptography.",
+      "contributions": "Probabilistic encryption, zero-knowledge proofs, interactive proof systems. Fundamental to secure protocols, blockchain, and privacy-preserving computation.",
+      "youtube": [
+        {"id": "JLAfLWE76fE", "title": "Internet Security", "channel": "ACM"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Systems", "channel": "ArjanCodes"},
+        {"id": "0sOvCWFmrtA", "title": "API Security", "channel": "freeCodeCamp"},
+        {"id": "S_shhw4VV68", "title": "Python Security", "channel": "ArjanCodes"},
+        {"id": "eWRfhZUzrAc", "title": "Programming", "channel": "freeCodeCamp"},
+        {"id": "K8L6KVGG-7o", "title": "Patterns", "channel": "Corey Schafer"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2011,
+      "names": "Judea Pearl",
+      "bio": "Judea Pearl (UCLA) pioneered probabilistic graphical models and causal inference. His work on Bayesian networks and causality revolutionized artificial intelligence and statistics.",
+      "contributions": "Bayesian networks, causal reasoning, probabilistic inference. The Book of Why. Foundation for explainable AI and causal machine learning.",
+      "youtube": [
+        {"id": "Gv9_4yMHFhI", "title": "ML Concepts", "channel": "StatQuest"},
+        {"id": "hDKCxebp88A", "title": "ML Course", "channel": "freeCodeCamp"},
+        {"id": "_L39rN6gz7Y", "title": "Decision Trees", "channel": "StatQuest"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Statistics", "channel": "freeCodeCamp"},
+        {"id": "1GppEPl9_QQ", "title": "ML Stats", "channel": "Imarticus"},
+        {"id": "ngLyX54e1LU", "title": "ML from Scratch", "channel": "Patrick Loeber"}
+      ]
+    },
+    {
+      "year": 2010,
+      "names": "Leslie Valiant",
+      "bio": "Leslie Valiant (Harvard) has made fundamental contributions to theoretical computer science: computational learning theory, algebraic computation, and parallel computing.",
+      "contributions": "Probably Approximately Correct (PAC) learning, circuit complexity, parallel algorithms. Mathematical foundations of machine learning.",
+      "youtube": [
+        {"id": "hDKCxebp88A", "title": "ML Foundations", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "ML Theory", "channel": "StatQuest"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "0oBLMwHdZ2Y", "title": "Algorithms", "channel": "ArjanCodes"},
+        {"id": "eWRfhZUzrAc", "title": "Computation", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "Research", "channel": "Two Minute Papers"},
+        {"id": "ngLyX54e1LU", "title": "Learning", "channel": "Patrick Loeber"}
+      ]
+    },
+    {
+      "year": 2009,
+      "names": "Chuck Thacker",
+      "bio": "Charles Thacker (Xerox PARC, Microsoft Research) designed the Xerox Alto, the first modern personal computer with bitmap display and GUI. He co-invented the Ethernet and later contributed to Microsoft's Tablet PC.",
+      "contributions": "Xerox Alto, Ethernet co-invention, bitmap displays, WYSIWYG editing. Pioneer of personal computing and networked workstations.",
+      "youtube": [
+        {"id": "78w61I62N_0", "title": "Computing History", "channel": "Decoder"},
+        {"id": "JLAfLWE76fE", "title": "Internet Pioneers", "channel": "ACM"},
+        {"id": "eWRfhZUzrAc", "title": "Programming", "channel": "freeCodeCamp"},
+        {"id": "7yAw1nPareM", "title": "Interfaces", "channel": "Programming Is Fun"},
+        {"id": "Z1RJmh_OqeA", "title": "Web", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "APIs", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2008,
+      "names": "Barbara Liskov",
+      "bio": "Barbara Liskov (MIT) pioneered programming methodology and distributed computing. She invented the Liskov Substitution Principle and led the design of the CLU language.",
+      "contributions": "Liskov Substitution Principle, abstract data types, CLU language, Byzantine fault tolerance. Foundation for object-oriented design and distributed systems.",
+      "youtube": [
+        {"id": "U719vQz-WFs", "title": "Distributed Systems", "channel": "Ryan Peterman"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Systems", "channel": "ArjanCodes"},
+        {"id": "RIVcqT2OGPA", "title": "Concurrency", "channel": "ArjanCodes"},
+        {"id": "Z1RJmh_OqeA", "title": "OOP Flask", "channel": "Corey Schafer"},
+        {"id": "9Os0o3wzS_I", "title": "Functions", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Python OOP", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "Systems", "channel": "Rishab in Cloud"}
+      ]
+    },
+    {
+      "year": 2007,
+      "names": "Edmund Clarke, Allen Emerson & Joseph Sifakis",
+      "bio": "Clarke (CMU), Emerson (Texas), and Sifakis (Verimag) pioneered model checking—automated verification that a system satisfies temporal logic specifications. Their work prevents bugs in hardware and software.",
+      "contributions": "Model checking, temporal logic, formal verification, symbolic model checking. Used in chip design, avionics, and critical systems.",
+      "youtube": [
+        {"id": "EgpLj86ZHFQ", "title": "Testing", "channel": "Tech With Tim"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Safety", "channel": "ArjanCodes"},
+        {"id": "U719vQz-WFs", "title": "TLA+ Lamport", "channel": "Ryan Peterman"},
+        {"id": "RIVcqT2OGPA", "title": "Concurrency", "channel": "ArjanCodes"},
+        {"id": "Z1RJmh_OqeA", "title": "Best Practices", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Programming", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "CI/CD", "channel": "Rishab in Cloud"}
+      ]
+    },
+    {
+      "year": 2006,
+      "names": "Frances (Fran) Allen",
+      "bio": "Frances Allen (IBM) pioneered compiler optimization. She was the first woman to win the Turing Award. Her work on parallelization and optimization transformed how compilers generate efficient code.",
+      "contributions": "Compiler optimization, parallelization, automatic program optimization, FORTRAN. Enabling high-performance computing through intelligent compilation.",
+      "youtube": [
+        {"id": "S_shhw4VV68", "title": "Python Compilation", "channel": "ArjanCodes"},
+        {"id": "0oBLMwHdZ2Y", "title": "Code Optimization", "channel": "ArjanCodes"},
+        {"id": "YYXdXT2l-Gg", "title": "Programming", "channel": "Corey Schafer"},
+        {"id": "9Os0o3wzS_I", "title": "Functions", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy Performance", "channel": "SciPy"},
+        {"id": "QUT1VHiLmmI", "title": "Vectorization", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "year": 2005,
+      "names": "Peter Naur",
+      "bio": "Peter Naur (Denmark) contributed to the design of Algol 60 and the development of Backus-Naur Form (BNF) for describing programming language syntax. He influenced compiler design and formal language theory.",
+      "contributions": "Algol 60, BNF, formal language definition, compiler design. Foundation for parsing and programming language specification.",
+      "youtube": [
+        {"id": "S_shhw4VV68", "title": "Python Syntax", "channel": "ArjanCodes"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Systems", "channel": "ArjanCodes"},
+        {"id": "K8L6KVGG-7o", "title": "Regex Parsing", "channel": "Corey Schafer"},
+        {"id": "YYXdXT2l-Gg", "title": "Programming", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "9Os0o3wzS_I", "title": "Functions", "channel": "Corey Schafer"},
+        {"id": "W8KRzm-HUcc", "title": "Data Structures", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2004,
+      "names": "Vint Cerf & Bob Kahn",
+      "bio": "Vint Cerf and Bob Kahn are \"fathers of the Internet.\" They designed TCP/IP and the architecture of the internet while at DARPA.",
+      "contributions": "TCP/IP, packet switching, internetworking. Protocols that power the global internet.",
+      "youtube": [
+        {"id": "JLAfLWE76fE", "title": "Cerf & Kahn Turing Lecture", "channel": "ACM"},
+        {"id": "78w61I62N_0", "title": "Web Future", "channel": "Decoder"},
+        {"id": "0sOvCWFmrtA", "title": "Web APIs", "channel": "freeCodeCamp"},
+        {"id": "DcI_AZqfZVc", "title": "Web Data", "channel": "Keith Galli"},
+        {"id": "r-uOLxNrNk8", "title": "Data on Web", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Containers", "channel": "Rishab in Cloud"}
+      ]
+    },
+    {
+      "year": 2003,
+      "names": "Alan Kay",
+      "bio": "Alan Kay (Xerox PARC, Apple, Viewpoints Research) pioneered object-oriented programming and personal computing. He conceived the laptop, overlapping windows, and the Dynabook.",
+      "contributions": "Smalltalk, object-oriented programming, graphical user interfaces, Dynabook vision. \"The best way to predict the future is to invent it.\"",
+      "youtube": [
+        {"id": "9Os0o3wzS_I", "title": "OOP Functions", "channel": "Corey Schafer"},
+        {"id": "W8KRzm-HUcc", "title": "Data Structures", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Programming", "channel": "freeCodeCamp"},
+        {"id": "qwAFL1597eM", "title": "Python OOP", "channel": "freeCodeCamp"},
+        {"id": "7yAw1nPareM", "title": "Interfaces", "channel": "Programming Is Fun"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Design", "channel": "ArjanCodes"},
+        {"id": "YYXdXT2l-Gg", "title": "Setup", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2002,
+      "names": "Ron Rivest, Adi Shamir & Len Adleman",
+      "bio": "Ron Rivest (MIT), Adi Shamir (Weizmann), and Len Adleman (USC) invented the RSA public-key cryptosystem in 1977. RSA became the foundation for secure communications.",
+      "contributions": "RSA algorithm, public-key cryptography, digital signatures, SSL/TLS. Enables e-commerce, secure email, encrypted messaging.",
+      "youtube": [
+        {"id": "JLAfLWE76fE", "title": "Internet Security", "channel": "ACM"},
+        {"id": "0sOvCWFmrtA", "title": "API Security", "channel": "freeCodeCamp"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Safety", "channel": "ArjanCodes"},
+        {"id": "Z1RJmh_OqeA", "title": "Web Security", "channel": "Corey Schafer"},
+        {"id": "K8L6KVGG-7o", "title": "Data Parsing", "channel": "Corey Schafer"},
+        {"id": "r-uOLxNrNk8", "title": "Data", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Databases", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2001,
+      "names": "Ole-Johan Dahl & Kristen Nygaard",
+      "bio": "Ole-Johan Dahl and Kristen Nygaard (Norway) created Simula, the first object-oriented programming language. They pioneered classes, objects, inheritance, and discrete event simulation.",
+      "contributions": "Simula, OOP, classes, objects, inheritance, simulation. Direct inspiration for Smalltalk, C++, Java, and all OOP languages.",
+      "youtube": [
+        {"id": "9Os0o3wzS_I", "title": "OOP", "channel": "Corey Schafer"},
+        {"id": "W8KRzm-HUcc", "title": "Classes", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "qwAFL1597eM", "title": "OOP Projects", "channel": "freeCodeCamp"},
+        {"id": "0oBLMwHdZ2Y", "title": "Design", "channel": "ArjanCodes"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask OOP", "channel": "Corey Schafer"},
+        {"id": "YYXdXT2l-Gg", "title": "Programming", "channel": "Corey Schafer"}
+      ]
+    },
+    {
+      "year": 2000,
+      "names": "Andrew Yao",
+      "bio": "Andrew Yao (Princeton, Tsinghua) pioneered the theory of computation. His work established foundations for pseudorandomness, cryptography, and communication complexity.",
+      "contributions": "Yao's minimax principle, communication complexity, pseudorandom generators, quantum complexity. Foundations of theoretical computer science.",
+      "youtube": [
+        {"id": "0oBLMwHdZ2Y", "title": "Computation", "channel": "ArjanCodes"},
+        {"id": "S_shhw4VV68", "title": "Algorithms", "channel": "ArjanCodes"},
+        {"id": "eWRfhZUzrAc", "title": "Programming", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML Theory", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "Research", "channel": "Two Minute Papers"},
+        {"id": "pKpZ7GOc5GY", "title": "CS", "channel": "Training Scientists"}
+      ]
+    }
+  ]
+}
