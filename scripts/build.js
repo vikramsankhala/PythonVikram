@@ -301,6 +301,189 @@ function renderIndex() {
     <a href="#course-structure" class="skip-trailer">Skip to course &rarr;</a>
     <iframe src="/trailer.html" title="Python Mastery Course Trailer" class="course-trailer-iframe" id="course-trailer-iframe"></iframe>
   </div>
+
+  <section id="why-python-mastery" class="benefits-section">
+    <div class="container">
+      <h2 class="benefits-headline">6 months. 160 blocks. 21 libraries. Zero fluff.</h2>
+      <p class="benefits-tagline">Everything I know about Python for data science, structured into one place.</p>
+      
+      <div class="benefits-differentiator">
+        <p>Most courses teach you <strong>syntax</strong>. Python Mastery teaches you how to <strong>build things</strong>—data pipelines, ML APIs, NLP apps, computer vision systems, and automated ETL workflows.</p>
+      </div>
+
+      <div class="benefits-flow">
+        <p class="benefits-flow-label">Every 30-minute block:</p>
+        <div class="benefits-flow-steps">
+          <span>Concept</span><span>→</span><span>Worked Examples</span><span>→</span><span>Sandboxed Exercise</span><span>→</span><span>Homework</span>
+        </div>
+        <p class="benefits-flow-note">You code every single day across 16 structured weeks.</p>
+      </div>
+
+      <h3 class="benefits-curriculum-title">5-part curriculum</h3>
+      <div class="benefits-curriculum">
+        <div class="benefits-curriculum-part">
+          <span class="part-badge">Part I</span>
+          <span class="part-weeks">Wk 1–4</span>
+          <p>Python core, NumPy, Pandas, Matplotlib &amp; Seaborn</p>
+        </div>
+        <div class="benefits-curriculum-part">
+          <span class="part-badge">Part II</span>
+          <span class="part-weeks">Wk 5–8</span>
+          <p>File pipelines, REST APIs, Flask, FastAPI, scikit-learn ML</p>
+        </div>
+        <div class="benefits-curriculum-part">
+          <span class="part-badge">Part III</span>
+          <span class="part-weeks">Wk 9–12</span>
+          <p>SciPy, Statistics, NLP with spaCy &amp; Transformers, OpenCV</p>
+        </div>
+        <div class="benefits-curriculum-part">
+          <span class="part-badge">Part IV</span>
+          <span class="part-weeks">Wk 13–14</span>
+          <p>SQLAlchemy, Dask, ETL, pytest, Selenium</p>
+        </div>
+        <div class="benefits-curriculum-part">
+          <span class="part-badge">Part V</span>
+          <span class="part-weeks">Wk 15–16</span>
+          <p>Capstone project — build, package, present</p>
+        </div>
+      </div>
+
+      <h3 class="benefits-pricing-title">Three ways to join</h3>
+      <div class="benefits-pricing-grid">
+        <div class="benefits-pricing-card">
+          <h4>Self-paced</h4>
+          <p class="price"><span class="price-main">$497</span> <span class="price-early">early bird $399</span></p>
+          <p class="price-desc">Perfect for self-motivated learners with flexible schedules.</p>
+          <ul>
+            <li>All 160 blocks &amp; materials</li>
+            <li>JupyterLab sandboxed environment</li>
+            <li>6-month access window</li>
+            <li>Completion certificate</li>
+          </ul>
+        </div>
+        <div class="benefits-pricing-card benefits-pricing-featured">
+          <span class="featured-badge">Recommended</span>
+          <h4>Cohort Live</h4>
+          <p class="price"><span class="price-main">$1,997</span> <span class="price-early">early bird $1,597</span></p>
+          <p class="price-desc">Ideal for career-changers and anyone who learns better with structure and accountability.</p>
+          <ul>
+            <li>Everything in self-paced</li>
+            <li>2×30 min live instruction daily (Mon–Fri)</li>
+            <li>Weekly 1:1 office hours (30 min/week)</li>
+            <li>Slack community &amp; peer cohort (12–20 learners)</li>
+            <li>Auto-graded exercises with instructor dashboard</li>
+            <li>Graded certificate</li>
+          </ul>
+        </div>
+        <div class="benefits-pricing-card">
+          <h4>Corporate</h4>
+          <p class="price"><span class="price-main">from $3,200/learner</span> <span class="price-early">min 4 people</span></p>
+          <p class="price-desc">Built for teams upskilling in data science and ML.</p>
+          <ul>
+            <li>Everything in Cohort Live</li>
+            <li>Dedicated instructor &amp; unlimited 1:1 sessions</li>
+            <li>Custom datasets and real company projects</li>
+            <li>Custom-branded certificate</li>
+            <li>Invoice net 30, volume discounts</li>
+            <li>Compressed 8-week option available</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="benefits-extras">
+        <div class="benefits-discounts">
+          <strong>Discounts:</strong> 20% early bird · 25% students · 40% non-profits · $100 referral credit
+        </div>
+        <div class="benefits-capstone">
+          <strong>5 capstone tracks:</strong> EDA report, ML API, NLP web app, computer vision classifier, or data engineering pipeline.
+        </div>
+        <div class="benefits-cohort">
+          Next cohort starts <strong>January 2026</strong>. Six starts per year.
+        </div>
+      </div>
+
+      <div class="benefits-audience">
+        <p>Data analyst ready to level up? Scientist who needs to automate? Team lead building ML capability? <strong>There is a tier built for your situation.</strong></p>
+      </div>
+
+      <div class="benefits-cta">
+        <a href="/ai-assistant.html" class="benefits-cta-primary">Talk through your path →</a>
+        <a href="/pricing.html" class="benefits-cta-secondary">View full pricing</a>
+      </div>
+
+      <p class="benefits-link"><a href="https://pythonvikram.onrender.com">pythonvikram.onrender.com</a></p>
+    </div>
+  </section>
+
+  <section id="explore-below-trailer" class="explore-section">
+    <div class="container">
+      <h2 class="explore-title">Explore &amp; Learn</h2>
+      <p class="explore-subtitle">Your structured path through Python Mastery—course materials, research resources, and AI support.</p>
+      
+      <div class="explore-grid">
+        <a href="/ai-assistant.html" class="explore-card explore-card-ai">
+          <span class="explore-icon">🤖</span>
+          <h3>AI Assistant</h3>
+          <p>Get help with code, study advice, career guidance, and assessment analysis. Powered by Claude.</p>
+          <span class="explore-cta">Chat now →</span>
+        </a>
+        <a href="/coursebook.html" class="explore-card">
+          <span class="explore-icon">📖</span>
+          <h3>Course Book</h3>
+          <p>Complete 16-week curriculum with concepts, examples, and exercises for every block.</p>
+          <span class="explore-cta">Read →</span>
+        </a>
+        <a href="/progress.html" class="explore-card">
+          <span class="explore-icon">📊</span>
+          <h3>Progress Monitor</h3>
+          <p>Track your study calendar, block completion, and get strategy guidance to stay on track.</p>
+          <span class="explore-cta">Track →</span>
+        </a>
+        <a href="/phd-research.html" class="explore-card">
+          <span class="explore-icon">🎓</span>
+          <h3>PhD Research</h3>
+          <p>Topics for research papers and theses, with 10 curated YouTube videos per area.</p>
+          <span class="explore-cta">Explore →</span>
+        </a>
+        <a href="/turing-award.html" class="explore-card">
+          <span class="explore-icon">🏆</span>
+          <h3>Turing Award Winners</h3>
+          <p>21st-century laureates—biographies, contributions, and 7+ videos each.</p>
+          <span class="explore-cta">Discover →</span>
+        </a>
+        <a href="/#extended-topics" class="explore-card">
+          <span class="explore-icon">📚</span>
+          <h3>Extended Topics</h3>
+          <p>Visualization, Vibe Coding, SaaS, DevOps, and State of the Art 2026.</p>
+          <span class="explore-cta">Dive in →</span>
+        </a>
+        <a href="/careers.html" class="explore-card">
+          <span class="explore-icon">💼</span>
+          <h3>Python Careers</h3>
+          <p>Job paths, skills, salary ranges, and assessments for 9 Python roles.</p>
+          <span class="explore-cta">Explore →</span>
+        </a>
+        <a href="/pricing.html" class="explore-card">
+          <span class="explore-icon">💰</span>
+          <h3>Pricing</h3>
+          <p>Course value and comparison with Coursera, DataCamp, Udemy, and more.</p>
+          <span class="explore-cta">Compare →</span>
+        </a>
+      </div>
+
+      <div class="explore-ai-banner">
+        <div class="explore-ai-banner-inner">
+          <span class="explore-ai-banner-icon">🤖</span>
+          <div>
+            <h4>Need help? Ask the AI Assistant</h4>
+            <p>Get code help, study tips, career advice, or analyze your assessment answers. Available 24/7.</p>
+          </div>
+          <a href="/ai-assistant.html" class="explore-ai-banner-btn">Open AI Assistant</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main class="container" id="course-structure">
     <header class="hero">
       <h1>${escape(course.title)}</h1>
@@ -1346,6 +1529,293 @@ li { margin: 0.5rem 0; }
 .ai-feedback { line-height: 1.6; }
 .ai-advice-section, .ai-career-section { margin: 2rem 0; }
 .ai-advice-result, .ai-career-result { margin-top: 1rem; }
+.benefits-section {
+  background: var(--surface);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+}
+.benefits-headline {
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+.benefits-tagline {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+.benefits-differentiator {
+  background: rgba(88, 166, 255, 0.08);
+  border-left: 4px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 2rem;
+}
+.benefits-differentiator p { margin: 0; }
+.benefits-flow {
+  margin-bottom: 2rem;
+}
+.benefits-flow-label {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.benefits-flow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+.benefits-flow-steps span:nth-child(odd) { color: var(--accent); }
+.benefits-flow-note {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.benefits-curriculum-title,
+.benefits-pricing-title {
+  font-size: 1.25rem;
+  margin: 2rem 0 1rem 0;
+  color: var(--text);
+}
+.benefits-curriculum {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.benefits-curriculum-part {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.part-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.part-weeks {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+.benefits-curriculum-part p { margin: 0; font-size: 0.9rem; }
+.benefits-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.benefits-pricing-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+}
+.benefits-pricing-featured {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(88, 166, 255, 0.3);
+}
+.featured-badge {
+  position: absolute;
+  top: -10px;
+  right: 1rem;
+  background: linear-gradient(135deg, var(--accent), #a78bfa);
+  color: var(--bg);
+  font-size: 0.7rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.benefits-pricing-card h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.15rem;
+}
+.benefits-pricing-card .price {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+.price-main { color: var(--accent2); }
+.price-early { color: var(--muted); font-size: 0.9rem; margin-left: 0.5rem; }
+.price-desc {
+  margin: 0 0 1rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.benefits-pricing-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.benefits-pricing-card li { margin: 0.35rem 0; }
+.benefits-extras {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: rgba(88, 166, 255, 0.05);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.benefits-audience {
+  margin-bottom: 1.5rem;
+}
+.benefits-audience p { margin: 0; }
+.benefits-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.benefits-cta-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: var(--bg) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.benefits-cta-primary:hover { background: #79b8ff; }
+.benefits-cta-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.benefits-cta-secondary:hover { background: rgba(88, 166, 255, 0.1); }
+.benefits-link {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.benefits-link a { color: var(--accent); }
+
+.explore-section {
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+}
+.explore-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--accent), #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.explore-subtitle {
+  color: var(--muted);
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.explore-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.explore-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.explore-card-ai {
+  border-color: rgba(88, 166, 255, 0.4);
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(167, 139, 250, 0.06));
+}
+.explore-card-ai:hover {
+  border-color: var(--accent);
+}
+.explore-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+.explore-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+}
+.explore-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+.explore-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+.explore-card:hover .explore-cta { text-decoration: underline; }
+.explore-ai-banner {
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.15), rgba(167, 139, 250, 0.1));
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+.explore-ai-banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.explore-ai-banner-icon {
+  font-size: 2.5rem;
+}
+.explore-ai-banner-inner h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+.explore-ai-banner-inner p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.explore-ai-banner-btn {
+  margin-left: auto;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: var(--bg) !important;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.explore-ai-banner-btn:hover {
+  background: #79b8ff;
+}
+
 .trailer-wrapper { position: relative; width: 100%; }
 .skip-trailer {
   position: absolute; top: 12px; right: 16px; z-index: 10;
