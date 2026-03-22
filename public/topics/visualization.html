@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualization with Python | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/#extended-topics">Extended Topics</a>
+  </nav>
+  <main class="container">
+    <header class="topic-header">
+      <span class="topic-icon">📊</span>
+      <h1>Visualization with Python</h1>
+      <p class="description">Comprehensive guide to data visualization in Python—from static charts to interactive dashboards.</p>
+    </header>
+    
+    <section>
+      <h2>Key Concepts</h2>
+      <ul><li>Line, bar, scatter, histogram, box, violin plots</li><li>Subplots and figure layout</li><li>Color palettes and theming</li><li>Interactive tooltips and zoom</li><li>Dashboard frameworks: Dash, Streamlit</li><li>Export to SVG, PNG, PDF</li></ul>
+    </section>
+    
+    <section>
+      <h2>Libraries &amp; Tools</h2>
+      <ul class="topic-list">
+        <li><strong>Matplotlib</strong>: Static plots, publications, fine-grained control</li><li><strong>Seaborn</strong>: Statistical plots, heatmaps, distribution visualizations</li><li><strong>Plotly</strong>: Interactive charts, dashboards, web embeds</li><li><strong>Altair</strong>: Declarative Vega-Lite, clean grammar of graphics</li><li><strong>Bokeh</strong>: Interactive web visualizations, streaming data</li><li><strong>Folium</strong>: Leaflet maps, geospatial data</li>
+      </ul>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section>
+      <h2>Code Example</h2>
+      <div class="code-block">
+        <pre><code>import plotly.express as px
+df = px.data.iris()
+fig = px.scatter(df, x='sepal_width', y='sepal_length', color='species')
+fig.show()</code></pre>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://plotly.com/python/plotly-express/" target="_blank" rel="noopener">Plotly Express</a></li><li><a href="https://seaborn.pydata.org/examples/" target="_blank" rel="noopener">Seaborn Gallery</a></li><li><a href="https://docs.streamlit.io/" target="_blank" rel="noopener">Streamlit Docs</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

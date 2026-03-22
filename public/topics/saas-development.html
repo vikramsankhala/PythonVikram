@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Development with Python | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/#extended-topics">Extended Topics</a>
+  </nav>
+  <main class="container">
+    <header class="topic-header">
+      <span class="topic-icon">☁️</span>
+      <h1>SaaS Development with Python</h1>
+      <p class="description">Build and ship Software-as-a-Service products: architecture, billing, multi-tenancy, and deployment.</p>
+    </header>
+    
+    <section>
+      <h2>Key Concepts</h2>
+      <ul><li>SaaS vs. traditional software</li><li>Multi-tenancy: shared DB vs. schema-per-tenant</li><li>Authentication: OAuth, JWT, session management</li><li>Subscription billing: Stripe, Paddle</li><li>User management and RBAC</li><li>APIs and webhooks for integrations</li></ul>
+    </section>
+    
+    
+    <section>
+      <h2>Stack</h2>
+      <ul class="topic-list">
+        <li><strong>Backend</strong>: FastAPI, Django, Flask + SQLAlchemy</li><li><strong>Frontend</strong>: React, Vue, or server-rendered (Jinja)</li><li><strong>Database</strong>: PostgreSQL, Redis</li><li><strong>Payments</strong>: Stripe, Paddle</li><li><strong>Hosting</strong>: Render, Railway, AWS, Vercel</li>
+      </ul>
+    </section>
+    
+    
+    
+    
+    
+    <section>
+      <h2>Code Example</h2>
+      <div class="code-block">
+        <pre><code># Stripe subscription example
+import stripe
+stripe.Subscription.create(customer=customer_id, items=[{'price': price_id}])</code></pre>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener">FastAPI Full-Stack</a></li><li><a href="https://stripe.com/docs/api" target="_blank" rel="noopener">Stripe Python</a></li><li><a href="https://www.djangoproject.com/" target="_blank" rel="noopener">Django SaaS</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

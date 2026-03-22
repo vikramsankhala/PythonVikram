@@ -1,0 +1,121 @@
+{
+  "topics": [
+    {
+      "id": "visualization",
+      "title": "Visualization with Python",
+      "icon": "📊",
+      "description": "Comprehensive guide to data visualization in Python—from static charts to interactive dashboards.",
+      "libraries": [
+        {"name": "Matplotlib", "use": "Static plots, publications, fine-grained control"},
+        {"name": "Seaborn", "use": "Statistical plots, heatmaps, distribution visualizations"},
+        {"name": "Plotly", "use": "Interactive charts, dashboards, web embeds"},
+        {"name": "Altair", "use": "Declarative Vega-Lite, clean grammar of graphics"},
+        {"name": "Bokeh", "use": "Interactive web visualizations, streaming data"},
+        {"name": "Folium", "use": "Leaflet maps, geospatial data"}
+      ],
+      "concepts": [
+        "Line, bar, scatter, histogram, box, violin plots",
+        "Subplots and figure layout",
+        "Color palettes and theming",
+        "Interactive tooltips and zoom",
+        "Dashboard frameworks: Dash, Streamlit",
+        "Export to SVG, PNG, PDF"
+      ],
+      "codeSnippet": "import plotly.express as px\ndf = px.data.iris()\nfig = px.scatter(df, x='sepal_width', y='sepal_length', color='species')\nfig.show()",
+      "resources": [
+        {"title": "Plotly Express", "url": "https://plotly.com/python/plotly-express/"},
+        {"title": "Seaborn Gallery", "url": "https://seaborn.pydata.org/examples/"},
+        {"title": "Streamlit Docs", "url": "https://docs.streamlit.io/"}
+      ]
+    },
+    {
+      "id": "vibe-coding",
+      "title": "Vibe Coding",
+      "icon": "✨",
+      "description": "AI-augmented development—build faster with Copilot, Claude, Cursor, and prompt-driven workflows.",
+      "concepts": [
+        "What is vibe coding: rapid prototyping with AI pair programming",
+        "Effective prompting for code generation",
+        "GitHub Copilot, Cursor, Windsurf, Codeium",
+        "Claude/ChatGPT for architecture and debugging",
+        "Iterative refinement: describe → generate → review → refine",
+        "When to trust AI output vs. when to verify"
+      ],
+      "workflow": [
+        "Describe intent in natural language",
+        "Let AI generate initial code",
+        "Review and test output",
+        "Ask for fixes or optimizations",
+        "Integrate into your project"
+      ],
+      "bestPractices": [
+        "Be specific: include context, constraints, tech stack",
+        "Break tasks into smaller prompts",
+        "Always run and test generated code",
+        "Use AI for boilerplate; write critical logic yourself"
+      ],
+      "codeSnippet": "# Prompt: 'Write a FastAPI endpoint that accepts JSON, validates with Pydantic, and returns formatted response'\n# AI generates endpoint + model + validation",
+      "resources": [
+        {"title": "GitHub Copilot", "url": "https://github.com/features/copilot"},
+        {"title": "Cursor", "url": "https://cursor.com/"},
+        {"title": "Claude Code", "url": "https://claude.ai"}
+      ]
+    },
+    {
+      "id": "saas-development",
+      "title": "SaaS Development with Python",
+      "icon": "☁️",
+      "description": "Build and ship Software-as-a-Service products: architecture, billing, multi-tenancy, and deployment.",
+      "concepts": [
+        "SaaS vs. traditional software",
+        "Multi-tenancy: shared DB vs. schema-per-tenant",
+        "Authentication: OAuth, JWT, session management",
+        "Subscription billing: Stripe, Paddle",
+        "User management and RBAC",
+        "APIs and webhooks for integrations"
+      ],
+      "stack": [
+        {"layer": "Backend", "tools": "FastAPI, Django, Flask + SQLAlchemy"},
+        {"layer": "Frontend", "tools": "React, Vue, or server-rendered (Jinja)"},
+        {"layer": "Database", "tools": "PostgreSQL, Redis"},
+        {"layer": "Payments", "tools": "Stripe, Paddle"},
+        {"layer": "Hosting", "tools": "Render, Railway, AWS, Vercel"}
+      ],
+      "codeSnippet": "# Stripe subscription example\nimport stripe\nstripe.Subscription.create(customer=customer_id, items=[{'price': price_id}])",
+      "resources": [
+        {"title": "FastAPI Full-Stack", "url": "https://fastapi.tiangolo.com/"},
+        {"title": "Stripe Python", "url": "https://stripe.com/docs/api"},
+        {"title": "Django SaaS", "url": "https://www.djangoproject.com/"}
+      ]
+    },
+    {
+      "id": "devops",
+      "title": "DevOps with Python",
+      "icon": "🔄",
+      "description": "CI/CD, containerization, infrastructure as code, and deployment automation with Python.",
+      "concepts": [
+        "CI/CD: GitHub Actions, GitLab CI, Jenkins",
+        "Docker: images, containers, Dockerfile, docker-compose",
+        "Kubernetes basics: pods, services, deployments",
+        "Infrastructure as Code: Terraform, Pulumi (Python)",
+        "Monitoring: Prometheus, Grafana, logging",
+        "Secrets management and env config"
+      ],
+      "tools": [
+        {"name": "Docker", "use": "Containerize Python apps"},
+        {"name": "GitHub Actions", "use": "Test, build, deploy on push"},
+        {"name": "Pulumi", "use": "Infra in Python"},
+        {"name": "Ansible", "use": "Config management (YAML, Python modules)"}
+      ],
+      "codeSnippet": "# GitHub Actions: run pytest on push\n# .github/workflows/test.yml\n# jobs: test -> runs: pip install pytest && pytest",
+      "pipeline": [
+        "Commit → Lint (ruff, black) → Test (pytest) → Build (Docker) → Deploy"
+      ],
+      "resources": [
+        {"title": "Docker Python", "url": "https://docs.docker.com/language/python/"},
+        {"title": "GitHub Actions", "url": "https://docs.github.com/actions"},
+        {"title": "Pulumi Python", "url": "https://www.pulumi.com/docs/languages-sdks/python/"}
+      ]
+    }
+  ]
+}

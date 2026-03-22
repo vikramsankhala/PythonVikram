@@ -10,6 +10,7 @@ if (!fs.existsSync(PUBLIC)) fs.mkdirSync(PUBLIC, { recursive: true });
 if (!fs.existsSync(path.join(PUBLIC, 'block'))) fs.mkdirSync(path.join(PUBLIC, 'block'), { recursive: true });
 if (!fs.existsSync(path.join(PUBLIC, 'week'))) fs.mkdirSync(path.join(PUBLIC, 'week'), { recursive: true });
 if (!fs.existsSync(path.join(PUBLIC, 'assessment'))) fs.mkdirSync(path.join(PUBLIC, 'assessment'), { recursive: true });
+if (!fs.existsSync(path.join(PUBLIC, 'topics'))) fs.mkdirSync(path.join(PUBLIC, 'topics'), { recursive: true });
 
 // Load data
 const course = JSON.parse(fs.readFileSync(path.join(CONTENT, 'course-structure.json'), 'utf8'));
@@ -30,6 +31,10 @@ try {
 try {
   weekAssessments = JSON.parse(fs.readFileSync(path.join(CONTENT, 'week-assessments.json'), 'utf8'));
 } catch (e) { console.warn('week-assessments.json not found'); }
+let topicsData = { topics: [] };
+try {
+  topicsData = JSON.parse(fs.readFileSync(path.join(CONTENT, 'topics.json'), 'utf8'));
+} catch (e) { console.warn('topics.json not found'); }
 
 const getWeekResources = (weekId) => weekResources.weeks.find(r => r.week === weekId) || {};
 
@@ -278,6 +283,7 @@ function renderIndex() {
 <body>
   <nav class="top-nav">
     <a href="/">Python Mastery</a>
+    <a href="/#extended-topics">📚 Topics</a>
     <a href="/progress.html">📊 Progress</a>
     <a href="/careers.html">💼 Careers</a>
     <a href="/pricing.html">💰 Pricing</a>
@@ -317,6 +323,19 @@ function renderIndex() {
             <span class="week-num">Week ${w.id}</span>
             <h3>${escape(w.title)}</h3>
             <p>${escape(w.theme)}</p>
+          </a>`).join('')}
+      </div>
+    </section>
+
+    <section id="extended-topics">
+      <h2>Extended Topics</h2>
+      <p>Dive deeper into visualization, vibe coding, SaaS, and DevOps.</p>
+      <div class="topic-grid">
+        ${(topicsData.topics || []).map(t => `
+          <a href="/topics/${t.id}.html" class="topic-card">
+            <span class="topic-icon">${t.icon || '📌'}</span>
+            <h3>${escape(t.title)}</h3>
+            <p>${escape(t.description)}</p>
           </a>`).join('')}
       </div>
     </section>
@@ -538,6 +557,105 @@ function renderAIAssistant() {
 </html>`;
 }
 
+function renderTopic(topic) {
+  let librariesHtml = '';
+  if (topic.libraries && topic.libraries.length) {
+    librariesHtml = `
+    <section>
+      <h2>Libraries &amp; Tools</h2>
+      <ul class="topic-list">
+        ${topic.libraries.map(l => `<li><strong>${escape(l.name)}</strong>: ${escape(l.use)}</li>`).join('')}
+      </ul>
+    </section>`;
+  }
+  let stackHtml = '';
+  if (topic.stack && topic.stack.length) {
+    stackHtml = `
+    <section>
+      <h2>Stack</h2>
+      <ul class="topic-list">
+        ${topic.stack.map(s => `<li><strong>${escape(s.layer)}</strong>: ${escape(Array.isArray(s.tools) ? s.tools.join(', ') : (s.tools || ''))}</li>`).join('')}
+      </ul>
+    </section>`;
+  }
+  let toolsHtml = '';
+  if (topic.tools && topic.tools.length) {
+    toolsHtml = `
+    <section>
+      <h2>Tools</h2>
+      <ul class="topic-list">
+        ${topic.tools.map(t => `<li><strong>${escape(t.name)}</strong>: ${escape(t.use)}</li>`).join('')}
+      </ul>
+    </section>`;
+  }
+  const conceptsHtml = (topic.concepts || []).length ? `
+    <section>
+      <h2>Key Concepts</h2>
+      <ul>${topic.concepts.map(c => `<li>${escape(c)}</li>`).join('')}</ul>
+    </section>` : '';
+  const workflowHtml = (topic.workflow || []).length ? `
+    <section>
+      <h2>Workflow</h2>
+      <ol>${topic.workflow.map(w => `<li>${escape(w)}</li>`).join('')}</ol>
+    </section>` : '';
+  const bestPracticesHtml = (topic.bestPractices || []).length ? `
+    <section>
+      <h2>Best Practices</h2>
+      <ul>${topic.bestPractices.map(b => `<li>${escape(b)}</li>`).join('')}</ul>
+    </section>` : '';
+  const pipelineHtml = (topic.pipeline || []).length ? `
+    <section>
+      <h2>Pipeline</h2>
+      <ul>${topic.pipeline.map(p => `<li>${escape(p)}</li>`).join('')}</ul>
+    </section>` : '';
+  const codeHtml = topic.codeSnippet ? `
+    <section>
+      <h2>Code Example</h2>
+      <div class="code-block">
+        <pre><code>${escape(topic.codeSnippet)}</code></pre>
+      </div>
+    </section>` : '';
+  const resourcesHtml = (topic.resources || []).length ? `
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        ${topic.resources.map(r => `<li><a href="${escape(r.url)}" target="_blank" rel="noopener">${escape(r.title)}</a></li>`).join('')}
+      </ul>
+    </section>` : '';
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escape(topic.title)} | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/#extended-topics">Extended Topics</a>
+  </nav>
+  <main class="container">
+    <header class="topic-header">
+      <span class="topic-icon">${topic.icon || '📌'}</span>
+      <h1>${escape(topic.title)}</h1>
+      <p class="description">${escape(topic.description)}</p>
+    </header>
+    ${conceptsHtml}
+    ${librariesHtml}
+    ${stackHtml}
+    ${toolsHtml}
+    ${workflowHtml}
+    ${bestPracticesHtml}
+    ${pipelineHtml}
+    ${codeHtml}
+    ${resourcesHtml}
+  </main>
+</body>
+</html>`;
+}
+
 function renderWeekAssessment(assessment) {
   const qHtml = (assessment.questions || []).map((q, i) => {
     if (q.type === 'mcq') {
@@ -651,6 +769,9 @@ course.weeks.forEach(w => {
 });
 (weekAssessments.assessments || []).forEach(a => {
   fs.writeFileSync(path.join(PUBLIC, 'assessment', `${a.week}.html`), renderWeekAssessment(a));
+});
+(topicsData.topics || []).forEach(t => {
+  fs.writeFileSync(path.join(PUBLIC, 'topics', `${t.id}.html`), renderTopic(t));
 });
 for (let i = 1; i <= 160; i++) {
   const block = blocks[i] || blocksMeta.find(b => b.id === i);
@@ -857,6 +978,13 @@ li { margin: 0.5rem 0; }
   overflow-x: auto;
 }
 
+.topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.topic-card { background: var(--surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border); text-decoration: none; color: inherit; transition: border-color 0.2s; }
+.topic-card:hover { border-color: var(--accent); }
+.topic-icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+.topic-header { margin-bottom: 2rem; }
+.topic-header .topic-icon { font-size: 2.5rem; }
+.topic-list { padding-left: 1.5rem; }
 .resource-links { display: flex; flex-direction: column; gap: 0.75rem; }
 .resource-links .coursebook-link { display: inline-block; }
 .youtube-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
