@@ -60,24 +60,55 @@
       <h2>Results</h2>
       <p id="score"></p>
       <p id="ai-analysis"></p>
+      <button type="button" id="get-ai-analysis" class="ai-analysis-btn">Get AI Feedback (Claude)</button>
+      <div id="ai-analysis-result" class="ai-analysis-result hidden"></div>
     </section>
     <script>
+      var assessmentData = {"week":1,"questions":[{"id":1,"type":"mcq","q":"What is the output of print(type([1,2,3]))?","options":["<class 'list'>","<class 'tuple'>","<class 'array'>","list"],"answer":0},{"id":2,"type":"mcq","q":"Which keyword is used to define a function?","options":["func","def","function","define"],"answer":1},{"id":3,"type":"mcq","q":"What does range(5) produce?","options":["[0,1,2,3,4,5]","0 to 4","[1,2,3,4,5]","0 to 5"],"answer":1},{"id":4,"type":"code","q":"Write a function that returns the sum of a list of numbers.","solution":"def sum_list(lst): return sum(lst)"},{"id":5,"type":"code","q":"Write a loop that prints even numbers from 0 to 10.","solution":"for i in range(0, 11, 2): print(i)"}]};
       document.getElementById('assessment-form').onsubmit=function(e){
         e.preventDefault();
         var ans=[{"id":1,"type":"mcq","answer":0},{"id":2,"type":"mcq","answer":1},{"id":3,"type":"mcq","answer":1},{"id":4,"type":"code","solution":"def sum_list(lst): return sum(lst)"},{"id":5,"type":"code","solution":"for i in range(0, 11, 2): print(i)"}];
         var correct=0;
+        var answers={};
         ans.forEach(function(a,i){
           var el=document.querySelector('[name="q'+a.id+'"]');
           if(!el)return;
-          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          var v=el.type==='radio'?(document.querySelector('[name="q'+a.id+']:checked')?parseInt(document.querySelector('[name="q'+a.id+']:checked').value):-1):el.value.trim();
+          answers['q'+a.id]=v;
           if(a.type==='mcq'&&v===a.answer)correct++;
           if(a.type==='code'&&v&&v.length>0)correct++;
         });
         var total=ans.length;
         var pct=Math.round(correct/total*100);
         document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
-        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+"Analyze the learner's responses. Identify strengths and gaps. Suggest 2-3 focused review blocks."+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('ai-analysis').innerHTML='<strong>Tip:</strong> Click "Get AI Feedback" for personalized analysis.';
         document.getElementById('results').classList.remove('hidden');
+        window._lastAnswers = answers;
+        window._lastScore = correct+'/'+total+' ('+pct+'%)';
+      };
+      document.getElementById('get-ai-analysis').onclick=function(){
+        var btn=this;
+        var out=document.getElementById('ai-analysis-result');
+        if(!window._lastAnswers){ out.textContent='Submit the assessment first.'; out.classList.remove('hidden'); return; }
+        btn.disabled=true;
+        out.innerHTML='<em>Analyzing...</em>';
+        out.classList.remove('hidden');
+        fetch(window.location.origin+'/api/analyze-assessment',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({
+            week:assessmentData.week,
+            answers:window._lastAnswers,
+            score:window._lastScore,
+            questions:assessmentData.questions
+          })
+        })
+        .then(function(r){ if(!r.ok) throw new Error('Request failed'); return r.json(); })
+        .then(function(d){
+          out.innerHTML='<div class="ai-feedback">'+d.analysis.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')+'</div>';
+        })
+        .catch(function(e){ out.innerHTML='<p class="error">'+e.message+' (Is ANTHROPIC_API_KEY set?)</p>'; })
+        .finally(function(){ btn.disabled=false; });
       };
     </script>
   </main>

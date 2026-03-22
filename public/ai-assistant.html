@@ -13,13 +13,28 @@
   <main class="container">
     <h1>🤖 Anthropic AI Assistant (Claude)</h1>
     <p>Ask questions about the Python Mastery course. Get help with concepts, code, and exercises.</p>
+
+    <section class="ai-chat-section">
+      <div id="chat-messages" class="chat-messages"></div>
+      <form id="chat-form" class="chat-form">
+        <textarea id="chat-input" rows="2" placeholder="Ask about NumPy, Pandas, Flask, ML, etc..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="chat-status" class="chat-status"></p>
+    </section>
+
     <section class="ai-box">
-      <h2>How to Use</h2>
-      <ol>
-        <li>Visit <a href="https://claude.ai" target="_blank">claude.ai</a> for free access to Claude.</li>
-        <li>Copy this context and paste it into your first message: <em>"I am taking the Python Mastery 16-week course (Data Science, ML, Scientific Computing). Help me with..."</em></li>
-        <li>Ask specific questions about blocks, weeks, or concepts.</li>
-      </ol>
+      <h2>Code Help</h2>
+      <p>Paste your code and ask for an explanation or fix:</p>
+      <form id="code-help-form" class="code-help-form">
+        <textarea id="code-input" rows="6" placeholder="# Your Python code here"></textarea>
+        <input type="text" id="code-question" placeholder="What do you need? (e.g. Fix this error, explain this)" />
+        <button type="submit">Get AI Help</button>
+      </form>
+      <div id="code-help-reply" class="code-help-reply"></div>
+    </section>
+
+    <section class="ai-box">
       <h2>Example Questions</h2>
       <ul>
         <li>Explain NumPy broadcasting with an example.</li>
@@ -27,9 +42,80 @@
         <li>What's the difference between Flask and FastAPI?</li>
         <li>Help me debug this scikit-learn pipeline.</li>
       </ul>
-      <h2>Integration (Premium)</h2>
-      <p>For embedded Claude chat, you need an <a href="https://console.anthropic.com" target="_blank">Anthropic API key</a>. Use services like Embeddable or Social Intents to add a chatbot to this site. See <a href="/pricing.html">Pricing</a> for premium options.</p>
+      <p class="ai-note">Requires <code>ANTHROPIC_API_KEY</code> in Render Environment. Key stays server-side, never exposed.</p>
     </section>
   </main>
+  <script>
+    (function(){
+      var api = window.location.origin + '/api';
+      var messages = [];
+
+      function addMsg(role, text) {
+        var div = document.getElementById('chat-messages');
+        var el = document.createElement('div');
+        el.className = 'chat-msg chat-' + role;
+        el.innerHTML = '<strong>' + (role === 'user' ? 'You' : 'Claude') + ':</strong> ' + text.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+        div.appendChild(el);
+        div.scrollTop = div.scrollHeight;
+      }
+
+      function setStatus(s, isErr) {
+        var el = document.getElementById('chat-status');
+        el.textContent = s;
+        el.className = 'chat-status' + (isErr ? ' error' : '');
+      }
+
+      document.getElementById('chat-form').onsubmit = function(e) {
+        e.preventDefault();
+        var inp = document.getElementById('chat-input');
+        var msg = inp.value.trim();
+        if (!msg) return;
+        addMsg('user', msg);
+        messages.push({ role: 'user', content: msg });
+        inp.value = '';
+        setStatus('Thinking...');
+        fetch(api + '/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: msg, history: messages.slice(0, -1) })
+        })
+        .then(function(r) {
+          if (!r.ok) return r.json().then(function(d) { throw new Error(d.message || d.error || 'Request failed'); });
+          return r.json();
+        })
+        .then(function(d) {
+          addMsg('assistant', d.reply);
+          messages.push({ role: 'assistant', content: d.reply });
+          setStatus('');
+        })
+        .catch(function(err) {
+          setStatus(err.message || 'Failed', true);
+        });
+      };
+
+      document.getElementById('code-help-form').onsubmit = function(e) {
+        e.preventDefault();
+        var code = document.getElementById('code-input').value;
+        var question = document.getElementById('code-question').value || 'Explain or fix this code';
+        var out = document.getElementById('code-help-reply');
+        out.innerHTML = '<em>Getting AI help...</em>';
+        fetch(api + '/code-help', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ code: code, question: question })
+        })
+        .then(function(r) {
+          if (!r.ok) return r.json().then(function(d) { throw new Error(d.message || d.error || 'Request failed'); });
+          return r.json();
+        })
+        .then(function(d) {
+          out.innerHTML = '<pre>' + d.reply.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</pre>';
+        })
+        .catch(function(err) {
+          out.innerHTML = '<p class="error">' + err.message + '</p>';
+        });
+      };
+    })();
+  </script>
 </body>
 </html>

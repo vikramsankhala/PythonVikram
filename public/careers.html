@@ -14,6 +14,19 @@
   <main class="container">
     <h1>Python Careers &amp; Opportunities</h1>
     <p class="description">Explore job roles, skill requirements, and assessment paths for Python professionals.</p>
+    <section class="ai-career-section">
+      <h2>🤖 Get AI Career Guidance</h2>
+      <form id="career-guidance-form">
+        <select id="career-role">
+          <option value="">Select a role...</option>
+          <option value="Data Analyst">Data Analyst</option><option value="Data Scientist">Data Scientist</option><option value="Machine Learning Engineer">Machine Learning Engineer</option><option value="Backend Developer (Python)">Backend Developer (Python)</option><option value="NLP Engineer">NLP Engineer</option><option value="Computer Vision Engineer">Computer Vision Engineer</option><option value="Data Engineer">Data Engineer</option><option value="Automation / DevOps Engineer">Automation / DevOps Engineer</option><option value="Research Scientist (Python)">Research Scientist (Python)</option>
+        </select>
+        <input type="text" id="career-skills" placeholder="Your current skills" />
+        <input type="text" id="career-experience" placeholder="Experience level" />
+        <button type="submit">Get Guidance</button>
+      </form>
+      <div id="career-guidance-result" class="ai-career-result"></div>
+    </section>
     <div class="jobs-grid">
       
         <div class="job-card">
@@ -117,5 +130,23 @@
         </div>
     </div>
   </main>
+  <script>
+    document.getElementById('career-guidance-form').onsubmit=function(e){
+      e.preventDefault();
+      var role=document.getElementById('career-role').value;
+      var skills=document.getElementById('career-skills').value||'beginner';
+      var exp=document.getElementById('career-experience').value||'learning';
+      var out=document.getElementById('career-guidance-result');
+      if(!role){out.innerHTML='<p class="error">Select a role first.</p>';return;}
+      out.innerHTML='<em>Loading...</em>';
+      fetch(window.location.origin+'/api/career-guidance',{
+        method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({role:role,skills:skills,experience:exp})
+      })
+      .then(function(r){if(!r.ok)throw new Error('Request failed');return r.json();})
+      .then(function(d){out.innerHTML='<div class="ai-feedback">'+d.guidance.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')+'</div>';})
+      .catch(function(e){out.innerHTML='<p class="error">'+e.message+'</p>';});
+    };
+  </script>
 </body>
 </html>

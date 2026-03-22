@@ -36,24 +36,55 @@
       <h2>Results</h2>
       <p id="score"></p>
       <p id="ai-analysis"></p>
+      <button type="button" id="get-ai-analysis" class="ai-analysis-btn">Get AI Feedback (Claude)</button>
+      <div id="ai-analysis-result" class="ai-analysis-result hidden"></div>
     </section>
     <script>
+      var assessmentData = {"week":4,"questions":[{"id":1,"type":"mcq","q":"Which library provides high-level statistical plots?","options":["Matplotlib","Seaborn","Pandas","NumPy"],"answer":1},{"id":2,"type":"code","q":"Create a simple line plot of [1,2,3,4,5] vs [10,15,13,17,20].","solution":"import matplotlib.pyplot as plt; plt.plot([1,2,3,4,5],[10,15,13,17,20]); plt.show()"}]};
       document.getElementById('assessment-form').onsubmit=function(e){
         e.preventDefault();
         var ans=[{"id":1,"type":"mcq","answer":1},{"id":2,"type":"code","solution":"import matplotlib.pyplot as plt; plt.plot([1,2,3,4,5],[10,15,13,17,20]); plt.show()"}];
         var correct=0;
+        var answers={};
         ans.forEach(function(a,i){
           var el=document.querySelector('[name="q'+a.id+'"]');
           if(!el)return;
-          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          var v=el.type==='radio'?(document.querySelector('[name="q'+a.id+']:checked')?parseInt(document.querySelector('[name="q'+a.id+']:checked').value):-1):el.value.trim();
+          answers['q'+a.id]=v;
           if(a.type==='mcq'&&v===a.answer)correct++;
           if(a.type==='code'&&v&&v.length>0)correct++;
         });
         var total=ans.length;
         var pct=Math.round(correct/total*100);
         document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
-        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+"Assess visualization understanding. Suggest Matplotlib/Seaborn practice if needed."+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('ai-analysis').innerHTML='<strong>Tip:</strong> Click "Get AI Feedback" for personalized analysis.';
         document.getElementById('results').classList.remove('hidden');
+        window._lastAnswers = answers;
+        window._lastScore = correct+'/'+total+' ('+pct+'%)';
+      };
+      document.getElementById('get-ai-analysis').onclick=function(){
+        var btn=this;
+        var out=document.getElementById('ai-analysis-result');
+        if(!window._lastAnswers){ out.textContent='Submit the assessment first.'; out.classList.remove('hidden'); return; }
+        btn.disabled=true;
+        out.innerHTML='<em>Analyzing...</em>';
+        out.classList.remove('hidden');
+        fetch(window.location.origin+'/api/analyze-assessment',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({
+            week:assessmentData.week,
+            answers:window._lastAnswers,
+            score:window._lastScore,
+            questions:assessmentData.questions
+          })
+        })
+        .then(function(r){ if(!r.ok) throw new Error('Request failed'); return r.json(); })
+        .then(function(d){
+          out.innerHTML='<div class="ai-feedback">'+d.analysis.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')+'</div>';
+        })
+        .catch(function(e){ out.innerHTML='<p class="error">'+e.message+' (Is ANTHROPIC_API_KEY set?)</p>'; })
+        .finally(function(){ btn.disabled=false; });
       };
     </script>
   </main>

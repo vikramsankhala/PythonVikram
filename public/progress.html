@@ -299,6 +299,16 @@
       </div>
       <p id="progress-text">0 / 160 blocks completed</p>
     </section>
+    <section class="ai-advice-section">
+      <h2>🤖 Get AI Study Advice</h2>
+      <p>Based on your progress, Claude will suggest a study plan.</p>
+      <form id="study-advice-form">
+        <input type="number" id="advice-week" placeholder="Current week (1-16)" min="1" max="16" />
+        <input type="text" id="advice-goal" placeholder="Goal (e.g. catch up, stay ahead)" />
+        <button type="submit">Get Advice</button>
+      </form>
+      <div id="study-advice-result" class="ai-advice-result"></div>
+    </section>
     <section>
       <h2>Study Strategy by Week</h2>
       <div class="strategy-list">
@@ -392,6 +402,21 @@
           if(txt){txt.textContent=done.length+' / 160 blocks completed ('+pct+'%)';}
         }
         update();
+        document.getElementById('study-advice-form').onsubmit=function(e){
+          e.preventDefault();
+          var done=JSON.parse(localStorage.getItem('python-mastery-progress')||'[]');
+          var week=document.getElementById('advice-week').value||Math.ceil(done.length/10);
+          var goal=document.getElementById('advice-goal').value||'general progress';
+          var out=document.getElementById('study-advice-result');
+          out.innerHTML='<em>Loading...</em>';
+          fetch(window.location.origin+'/api/study-advice',{
+            method:'POST',headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({completedBlocks:done.length,currentWeek:week,goal:goal})
+          })
+          .then(function(r){if(!r.ok)throw new Error('Request failed');return r.json();})
+          .then(function(d){out.innerHTML='<div class="ai-feedback">'+d.advice.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')+'</div>';})
+          .catch(function(e){out.innerHTML='<p class="error">'+e.message+'</p>';});
+        };
       })();
     </script>
   </main>

@@ -4,8 +4,12 @@
   "description": "Python Mastery - 16-Week Training Program for Data Science, ML & Scientific Computing",
   "scripts": {
     "build": "node scripts/build.js",
-    "dev": "npx serve public",
-    "start": "npx serve public"
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "express": "^4.21.0"
   },
   "keywords": ["python", "training", "data-science", "machine-learning"],
   "author": "",

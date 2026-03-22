@@ -1,9 +1,11 @@
-# Render.com Static Site Configuration
-# Deploy: Connect GitHub repo, Render auto-detects. Or use render.yaml
-# https://render.com/docs/static-sites
+# Render.com Web Service Configuration
+# Uses Express server for static files + Anthropic API proxy
+# Set ANTHROPIC_API_KEY in Render Environment for AI features
 services:
   - type: web
     name: python-mastery-course
-    env: static
-    buildCommand: npm run build
-    staticPublishPath: public
+    buildCommand: npm run build && npm install
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false

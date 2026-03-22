@@ -50,12 +50,18 @@ Your course will be live at `https://your-site-name.netlify.app`
 ## Local Development
 
 ```bash
-npm install   # Optional: no deps required
+npm install
 npm run build
-npx serve public
+npm start     # or: node server.js
 ```
 
 Then open http://localhost:3000
+
+For AI features (chat, assessment analysis, study advice, career guidance), set:
+```bash
+set ANTHROPIC_API_KEY=your_key   # Windows
+export ANTHROPIC_API_KEY=your_key  # Mac/Linux
+```
 
 ## Structure
 

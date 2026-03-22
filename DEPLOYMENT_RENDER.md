@@ -1,32 +1,22 @@
 # Deploy Python Mastery to Render
 
-## Steps
+## Setup (Web Service)
 
 1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Add YouTube links, assessments, careers, progress tracker"
-   git push origin main
-   ```
-
 2. **Create Render account** at [render.com](https://render.com)
+3. **New → Web Service** (not Static Site)
+4. Connect your GitHub repository
+5. Build Command: `npm run build && npm install`
+6. Start Command: `npm start`
 
-3. **New Static Site**
-   - Dashboard → New → Static Site
-   - Connect your GitHub repository
-   - Build Command: `npm run build`
-   - Publish Directory: `public`
+## AI Features (Anthropic Claude)
 
-4. **Deploy**
-   - Click Create Static Site
-   - Render builds and deploys. Your site will be at `https://your-service-name.onrender.com`
+Add `ANTHROPIC_API_KEY` in Render:
+- Dashboard → Your Service → Environment
+- Add variable: `ANTHROPIC_API_KEY` = your key from [console.anthropic.com](https://console.anthropic.com)
 
-## Using render.yaml (Blueprint)
-
-If `render.yaml` is in your repo root, Render can auto-detect settings:
-- `buildCommand`: npm run build
-- `staticPublishPath`: public
+Without the key, AI features return a friendly error.
 
 ## Custom Domain
 
-In Render dashboard: Settings → Custom Domains → Add your domain.
+Settings → Custom Domains → Add your domain.

@@ -373,6 +373,19 @@ function renderCareers() {
   <main class="container">
     <h1>${escape(careers.title || 'Python Careers')}</h1>
     <p class="description">${escape(careers.description || '')}</p>
+    <section class="ai-career-section">
+      <h2>🤖 Get AI Career Guidance</h2>
+      <form id="career-guidance-form">
+        <select id="career-role">
+          <option value="">Select a role...</option>
+          ${(careers.jobs || []).map(j => `<option value="${escape(j.title)}">${escape(j.title)}</option>`).join('')}
+        </select>
+        <input type="text" id="career-skills" placeholder="Your current skills" />
+        <input type="text" id="career-experience" placeholder="Experience level" />
+        <button type="submit">Get Guidance</button>
+      </form>
+      <div id="career-guidance-result" class="ai-career-result"></div>
+    </section>
     <div class="jobs-grid">
       ${jobs.map(j => `
         <div class="job-card">
@@ -388,6 +401,24 @@ function renderCareers() {
         </div>`).join('')}
     </div>
   </main>
+  <script>
+    document.getElementById('career-guidance-form').onsubmit=function(e){
+      e.preventDefault();
+      var role=document.getElementById('career-role').value;
+      var skills=document.getElementById('career-skills').value||'beginner';
+      var exp=document.getElementById('career-experience').value||'learning';
+      var out=document.getElementById('career-guidance-result');
+      if(!role){out.innerHTML='<p class="error">Select a role first.</p>';return;}
+      out.innerHTML='<em>Loading...</em>';
+      fetch(window.location.origin+'/api/career-guidance',{
+        method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({role:role,skills:skills,experience:exp})
+      })
+      .then(function(r){if(!r.ok)throw new Error('Request failed');return r.json();})
+      .then(function(d){out.innerHTML='<div class="ai-feedback">'+d.guidance.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\\n/g,'<br>')+'</div>';})
+      .catch(function(e){out.innerHTML='<p class="error">'+e.message+'</p>';});
+    };
+  </script>
 </body>
 </html>`;
 }
@@ -479,6 +510,16 @@ function renderProgress() {
       </div>
       <p id="progress-text">0 / ${totalBlocks} blocks completed</p>
     </section>
+    <section class="ai-advice-section">
+      <h2>🤖 Get AI Study Advice</h2>
+      <p>Based on your progress, Claude will suggest a study plan.</p>
+      <form id="study-advice-form">
+        <input type="number" id="advice-week" placeholder="Current week (1-16)" min="1" max="16" />
+        <input type="text" id="advice-goal" placeholder="Goal (e.g. catch up, stay ahead)" />
+        <button type="submit">Get Advice</button>
+      </form>
+      <div id="study-advice-result" class="ai-advice-result"></div>
+    </section>
     <section>
       <h2>Study Strategy by Week</h2>
       <div class="strategy-list">
@@ -512,6 +553,21 @@ function renderProgress() {
           if(txt){txt.textContent=done.length+' / 160 blocks completed ('+pct+'%)';}
         }
         update();
+        document.getElementById('study-advice-form').onsubmit=function(e){
+          e.preventDefault();
+          var done=JSON.parse(localStorage.getItem('python-mastery-progress')||'[]');
+          var week=document.getElementById('advice-week').value||Math.ceil(done.length/10);
+          var goal=document.getElementById('advice-goal').value||'general progress';
+          var out=document.getElementById('study-advice-result');
+          out.innerHTML='<em>Loading...</em>';
+          fetch(window.location.origin+'/api/study-advice',{
+            method:'POST',headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({completedBlocks:done.length,currentWeek:week,goal:goal})
+          })
+          .then(function(r){if(!r.ok)throw new Error('Request failed');return r.json();})
+          .then(function(d){out.innerHTML='<div class="ai-feedback">'+d.advice.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\\n/g,'<br>')+'</div>';})
+          .catch(function(e){out.innerHTML='<p class="error">'+e.message+'</p>';});
+        };
       })();
     </script>
   </main>
@@ -535,13 +591,28 @@ function renderAIAssistant() {
   <main class="container">
     <h1>🤖 Anthropic AI Assistant (Claude)</h1>
     <p>Ask questions about the Python Mastery course. Get help with concepts, code, and exercises.</p>
+
+    <section class="ai-chat-section">
+      <div id="chat-messages" class="chat-messages"></div>
+      <form id="chat-form" class="chat-form">
+        <textarea id="chat-input" rows="2" placeholder="Ask about NumPy, Pandas, Flask, ML, etc..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="chat-status" class="chat-status"></p>
+    </section>
+
     <section class="ai-box">
-      <h2>How to Use</h2>
-      <ol>
-        <li>Visit <a href="https://claude.ai" target="_blank">claude.ai</a> for free access to Claude.</li>
-        <li>Copy this context and paste it into your first message: <em>"I am taking the Python Mastery 16-week course (Data Science, ML, Scientific Computing). Help me with..."</em></li>
-        <li>Ask specific questions about blocks, weeks, or concepts.</li>
-      </ol>
+      <h2>Code Help</h2>
+      <p>Paste your code and ask for an explanation or fix:</p>
+      <form id="code-help-form" class="code-help-form">
+        <textarea id="code-input" rows="6" placeholder="# Your Python code here"></textarea>
+        <input type="text" id="code-question" placeholder="What do you need? (e.g. Fix this error, explain this)" />
+        <button type="submit">Get AI Help</button>
+      </form>
+      <div id="code-help-reply" class="code-help-reply"></div>
+    </section>
+
+    <section class="ai-box">
       <h2>Example Questions</h2>
       <ul>
         <li>Explain NumPy broadcasting with an example.</li>
@@ -549,10 +620,81 @@ function renderAIAssistant() {
         <li>What's the difference between Flask and FastAPI?</li>
         <li>Help me debug this scikit-learn pipeline.</li>
       </ul>
-      <h2>Integration (Premium)</h2>
-      <p>For embedded Claude chat, you need an <a href="https://console.anthropic.com" target="_blank">Anthropic API key</a>. Use services like Embeddable or Social Intents to add a chatbot to this site. See <a href="/pricing.html">Pricing</a> for premium options.</p>
+      <p class="ai-note">Requires <code>ANTHROPIC_API_KEY</code> in Render Environment. Key stays server-side, never exposed.</p>
     </section>
   </main>
+  <script>
+    (function(){
+      var api = window.location.origin + '/api';
+      var messages = [];
+
+      function addMsg(role, text) {
+        var div = document.getElementById('chat-messages');
+        var el = document.createElement('div');
+        el.className = 'chat-msg chat-' + role;
+        el.innerHTML = '<strong>' + (role === 'user' ? 'You' : 'Claude') + ':</strong> ' + text.replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\\n/g, '<br>');
+        div.appendChild(el);
+        div.scrollTop = div.scrollHeight;
+      }
+
+      function setStatus(s, isErr) {
+        var el = document.getElementById('chat-status');
+        el.textContent = s;
+        el.className = 'chat-status' + (isErr ? ' error' : '');
+      }
+
+      document.getElementById('chat-form').onsubmit = function(e) {
+        e.preventDefault();
+        var inp = document.getElementById('chat-input');
+        var msg = inp.value.trim();
+        if (!msg) return;
+        addMsg('user', msg);
+        messages.push({ role: 'user', content: msg });
+        inp.value = '';
+        setStatus('Thinking...');
+        fetch(api + '/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: msg, history: messages.slice(0, -1) })
+        })
+        .then(function(r) {
+          if (!r.ok) return r.json().then(function(d) { throw new Error(d.message || d.error || 'Request failed'); });
+          return r.json();
+        })
+        .then(function(d) {
+          addMsg('assistant', d.reply);
+          messages.push({ role: 'assistant', content: d.reply });
+          setStatus('');
+        })
+        .catch(function(err) {
+          setStatus(err.message || 'Failed', true);
+        });
+      };
+
+      document.getElementById('code-help-form').onsubmit = function(e) {
+        e.preventDefault();
+        var code = document.getElementById('code-input').value;
+        var question = document.getElementById('code-question').value || 'Explain or fix this code';
+        var out = document.getElementById('code-help-reply');
+        out.innerHTML = '<em>Getting AI help...</em>';
+        fetch(api + '/code-help', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ code: code, question: question })
+        })
+        .then(function(r) {
+          if (!r.ok) return r.json().then(function(d) { throw new Error(d.message || d.error || 'Request failed'); });
+          return r.json();
+        })
+        .then(function(d) {
+          out.innerHTML = '<pre>' + d.reply.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</pre>';
+        })
+        .catch(function(err) {
+          out.innerHTML = '<p class="error">' + err.message + '</p>';
+        });
+      };
+    })();
+  </script>
 </body>
 </html>`;
 }
@@ -698,24 +840,55 @@ function renderWeekAssessment(assessment) {
       <h2>Results</h2>
       <p id="score"></p>
       <p id="ai-analysis"></p>
+      <button type="button" id="get-ai-analysis" class="ai-analysis-btn">Get AI Feedback (Claude)</button>
+      <div id="ai-analysis-result" class="ai-analysis-result hidden"></div>
     </section>
     <script>
+      var assessmentData = ${JSON.stringify({ week: assessment.week, questions: assessment.questions || [] })};
       document.getElementById('assessment-form').onsubmit=function(e){
         e.preventDefault();
         var ans=${JSON.stringify((assessment.questions || []).map(q => ({ id: q.id, type: q.type, answer: q.answer, solution: q.solution })))};
         var correct=0;
+        var answers={};
         ans.forEach(function(a,i){
           var el=document.querySelector('[name="q'+a.id+'"]');
           if(!el)return;
-          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          var v=el.type==='radio'?(document.querySelector('[name="q'+a.id+']:checked')?parseInt(document.querySelector('[name="q'+a.id+']:checked').value):-1):el.value.trim();
+          answers['q'+a.id]=v;
           if(a.type==='mcq'&&v===a.answer)correct++;
           if(a.type==='code'&&v&&v.length>0)correct++;
         });
         var total=ans.length;
         var pct=Math.round(correct/total*100);
         document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
-        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+${JSON.stringify(assessment.aiAnalysisPrompt || '')}+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('ai-analysis').innerHTML='<strong>Tip:</strong> Click "Get AI Feedback" for personalized analysis.';
         document.getElementById('results').classList.remove('hidden');
+        window._lastAnswers = answers;
+        window._lastScore = correct+'/'+total+' ('+pct+'%)';
+      };
+      document.getElementById('get-ai-analysis').onclick=function(){
+        var btn=this;
+        var out=document.getElementById('ai-analysis-result');
+        if(!window._lastAnswers){ out.textContent='Submit the assessment first.'; out.classList.remove('hidden'); return; }
+        btn.disabled=true;
+        out.innerHTML='<em>Analyzing...</em>';
+        out.classList.remove('hidden');
+        fetch(window.location.origin+'/api/analyze-assessment',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({
+            week:assessmentData.week,
+            answers:window._lastAnswers,
+            score:window._lastScore,
+            questions:assessmentData.questions
+          })
+        })
+        .then(function(r){ if(!r.ok) throw new Error('Request failed'); return r.json(); })
+        .then(function(d){
+          out.innerHTML='<div class="ai-feedback">'+d.analysis.replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\\n/g,'<br>')+'</div>';
+        })
+        .catch(function(e){ out.innerHTML='<p class="error">'+e.message+' (Is ANTHROPIC_API_KEY set?)</p>'; })
+        .finally(function(){ btn.disabled=false; });
       };
     </script>
   </main>
@@ -1014,6 +1187,25 @@ li { margin: 0.5rem 0; }
 .strategy-list { display: flex; flex-direction: column; gap: 1rem; }
 .strategy-item { background: var(--surface); padding: 1rem; border-radius: 6px; }
 .ai-box { background: var(--surface); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); }
+.ai-chat-section { margin: 2rem 0; }
+.chat-messages { max-height: 320px; overflow-y: auto; background: var(--surface); padding: 1rem; border-radius: 6px; margin-bottom: 1rem; border: 1px solid var(--border); }
+.chat-msg { margin: 0.5rem 0; }
+.chat-user { color: var(--accent); }
+.chat-form { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.chat-form textarea { flex: 1; font-family: inherit; padding: 0.5rem; border-radius: 4px; background: var(--surface); border: 1px solid var(--border); color: var(--text); }
+.chat-form button { padding: 0.5rem 1rem; background: var(--accent); color: var(--bg); border: none; border-radius: 4px; cursor: pointer; }
+.chat-status { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+.chat-status.error { color: #f85149; }
+.code-help-form { display: flex; flex-direction: column; gap: 0.5rem; }
+.code-help-form textarea, .code-help-form input { font-family: monospace; padding: 0.5rem; background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 4px; }
+.code-help-reply { margin-top: 1rem; }
+.code-help-reply pre { white-space: pre-wrap; }
+.ai-note { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; }
+.ai-analysis-btn { padding: 0.5rem 1rem; background: var(--accent); color: var(--bg); border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; }
+.ai-analysis-result { margin-top: 1rem; padding: 1rem; background: var(--surface); border-radius: 6px; }
+.ai-feedback { line-height: 1.6; }
+.ai-advice-section, .ai-career-section { margin: 2rem 0; }
+.ai-advice-result, .ai-career-result { margin-top: 1rem; }
 .aq-question { margin: 1.5rem 0; }
 .aq-options label { display: block; margin: 0.5rem 0; }
 .aq-question textarea { width: 100%; font-family: monospace; }

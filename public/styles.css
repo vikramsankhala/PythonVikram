@@ -231,6 +231,25 @@ li { margin: 0.5rem 0; }
 .strategy-list { display: flex; flex-direction: column; gap: 1rem; }
 .strategy-item { background: var(--surface); padding: 1rem; border-radius: 6px; }
 .ai-box { background: var(--surface); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); }
+.ai-chat-section { margin: 2rem 0; }
+.chat-messages { max-height: 320px; overflow-y: auto; background: var(--surface); padding: 1rem; border-radius: 6px; margin-bottom: 1rem; border: 1px solid var(--border); }
+.chat-msg { margin: 0.5rem 0; }
+.chat-user { color: var(--accent); }
+.chat-form { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.chat-form textarea { flex: 1; font-family: inherit; padding: 0.5rem; border-radius: 4px; background: var(--surface); border: 1px solid var(--border); color: var(--text); }
+.chat-form button { padding: 0.5rem 1rem; background: var(--accent); color: var(--bg); border: none; border-radius: 4px; cursor: pointer; }
+.chat-status { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
+.chat-status.error { color: #f85149; }
+.code-help-form { display: flex; flex-direction: column; gap: 0.5rem; }
+.code-help-form textarea, .code-help-form input { font-family: monospace; padding: 0.5rem; background: var(--surface); border: 1px solid var(--border); color: var(--text); border-radius: 4px; }
+.code-help-reply { margin-top: 1rem; }
+.code-help-reply pre { white-space: pre-wrap; }
+.ai-note { font-size: 0.85rem; color: var(--muted); margin-top: 1rem; }
+.ai-analysis-btn { padding: 0.5rem 1rem; background: var(--accent); color: var(--bg); border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; }
+.ai-analysis-result { margin-top: 1rem; padding: 1rem; background: var(--surface); border-radius: 6px; }
+.ai-feedback { line-height: 1.6; }
+.ai-advice-section, .ai-career-section { margin: 2rem 0; }
+.ai-advice-result, .ai-career-result { margin-top: 1rem; }
 .aq-question { margin: 1.5rem 0; }
 .aq-options label { display: block; margin: 0.5rem 0; }
 .aq-question textarea { width: 100%; font-family: monospace; }
