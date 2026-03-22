@@ -6,40 +6,22 @@
       "title": "Python Foundations & Standard Library",
       "youtube": [
         {
-          "id": "kB7FDsX8en4",
+          "id": "eWRfhZUzrAc",
           "title": "Python for Beginners - Full Course",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=kB7FDsX8en4"
+          "url": "https://www.youtube.com/watch?v=eWRfhZUzrAc"
+        },
+        {
+          "id": "qwAFL1597eM",
+          "title": "Python Tutorial (mini-projects)",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=qwAFL1597eM"
         },
         {
           "id": "YYXdXT2l-Gg",
-          "title": "Python Tutorial for Absolute Beginners",
-          "channel": "Mosh",
+          "title": "Python Install and Setup",
+          "channel": "Corey Schafer",
           "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
-        },
-        {
-          "id": "rfscYS0zFEI",
-          "title": "Learn Python - Full Course",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
-        },
-        {
-          "id": "k9TUpCWMN9M",
-          "title": "Python 3 Variables",
-          "channel": "Sentdex",
-          "url": "https://www.youtube.com/watch?v=k9TUpCWMN9M"
-        },
-        {
-          "id": "AWek49wXGZI",
-          "title": "Python Conditionals",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=AWek49wXGZI"
-        },
-        {
-          "id": "0lWY2QaRPoI",
-          "title": "Python Loops",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=0lWY2QaRPoI"
         },
         {
           "id": "9Os0o3wzS_I",
@@ -54,76 +36,94 @@
           "url": "https://www.youtube.com/watch?v=W8KRzm-HUcc"
         },
         {
-          "id": "LHBE6Q9XlzI",
-          "title": "Python for Data Science",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=LHBE6Q9XlzI"
-        },
-        {
-          "id": "khKv-8q7YmY",
-          "title": "Variables and Data Types",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=khKv-8q7YmY"
-        },
-        {
-          "id": "nsbIQmYdR34",
-          "title": "Functions Explained",
-          "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=nsbIQmYdR34"
-        },
-        {
-          "id": "3dtbkdEwtOc",
-          "title": "Standard Library",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=3dtbkdEwtOc"
-        },
-        {
-          "id": "pTT7HMqdkjo",
-          "title": "Data Structures",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=pTT7HMqdkjo"
-        },
-        {
           "id": "r-uOLxNrNk8",
           "title": "Data Analysis Full Course",
           "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "2yryVkAe8z8",
-          "title": "Python Beginner to Pro",
-          "channel": "TechWorld",
-          "url": "https://www.youtube.com/watch?v=2yryVkAe8z8"
-        },
-        {
-          "id": "cQT33yu9pY8",
-          "title": "Python Variables",
+          "id": "LHBE6Q9XlzI",
+          "title": "Python for Data Science",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=cQT33yu9pY8"
+          "url": "https://www.youtube.com/watch?v=LHBE6Q9XlzI"
         },
         {
-          "id": "JkQ0FegQr4o",
-          "title": "Loops Tutorial",
-          "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=JkQ0FegQr4o"
-        },
-        {
-          "id": "5V_nJRkqdO8",
-          "title": "Functions Complete Guide",
+          "id": "W8KRzm-HUcc",
+          "title": "Data Structures",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=5V_nJRkqdO8"
+          "url": "https://www.youtube.com/watch?v=W8KRzm-HUcc"
         },
         {
-          "id": "7wn2f8lqpnE",
-          "title": "Python Basics 2024",
-          "channel": "NetworkChuck",
-          "url": "https://www.youtube.com/watch?v=7wn2f8lqpnE"
+          "id": "9Os0o3wzS_I",
+          "title": "Functions Explained",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=9Os0o3wzS_I"
         },
         {
-          "id": "u2vQONCs1L4",
+          "id": "eWRfhZUzrAc",
+          "title": "Standard Library",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=eWRfhZUzrAc"
+        },
+        {
+          "id": "eWRfhZUzrAc",
+          "title": "Python Fundamentals",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=eWRfhZUzrAc"
+        },
+        {
+          "id": "qwAFL1597eM",
           "title": "Python Crash Course",
-          "channel": "Traversy Media",
-          "url": "https://www.youtube.com/watch?v=u2vQONCs1L4"
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=qwAFL1597eM"
+        },
+        {
+          "id": "YYXdXT2l-Gg",
+          "title": "Environment Setup",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
+        },
+        {
+          "id": "9Os0o3wzS_I",
+          "title": "Functions Deep Dive",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=9Os0o3wzS_I"
+        },
+        {
+          "id": "W8KRzm-HUcc",
+          "title": "Core Data Structures",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=W8KRzm-HUcc"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Python Data Science",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "LHBE6Q9XlzI",
+          "title": "Python Syntax Basics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=LHBE6Q9XlzI"
+        },
+        {
+          "id": "W8KRzm-HUcc",
+          "title": "Collections Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=W8KRzm-HUcc"
+        },
+        {
+          "id": "9Os0o3wzS_I",
+          "title": "Python Loops",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=9Os0o3wzS_I"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Python Best Practices",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         }
       ],
       "cheatSheets": [
@@ -180,118 +180,118 @@
           "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
         },
         {
-          "id": "8mAFf3wYv4M",
-          "title": "NumPy Arrays Tutorial",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=8mAFf3wYv4M"
+          "id": "NoPY4aUJxwA",
+          "title": "NumPy Practical Intro",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
         },
         {
-          "id": "8Mpc9ikopWQ",
-          "title": "NumPy for Data Science",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=8Mpc9ikopWQ"
+          "id": "1qz7qUM6yUI",
+          "title": "NumPy Tutorial for Beginners",
+          "channel": "Intellipaat",
+          "url": "https://www.youtube.com/watch?v=1qz7qUM6yUI"
         },
         {
-          "id": "Yrr-u_4D6Oc",
-          "title": "NumPy Broadcasting",
-          "channel": "NumPy",
-          "url": "https://www.youtube.com/watch?v=Yrr-u_4D6Oc"
-        },
-        {
-          "id": "DcfVsR6p6wU",
-          "title": "NumPy Linear Algebra",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=DcfVsR6p6wU"
-        },
-        {
-          "id": "EE9TmW1N3oA",
-          "title": "Vectorization in NumPy",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=EE9TmW1N3oA"
+          "id": "1GppEPl9_QQ",
+          "title": "NumPy for ML",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
         },
         {
           "id": "ngLyX54e1LU",
-          "title": "NumPy Random",
-          "channel": "Corey Schafer",
+          "title": "NumPy Arrays",
+          "channel": "Patrick Loeber",
           "url": "https://www.youtube.com/watch?v=ngLyX54e1LU"
         },
         {
-          "id": "7evF3Ot65A8",
-          "title": "NumPy Indexing",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=7evF3Ot65A8"
-        },
-        {
-          "id": "9OWmnPPgMfc",
-          "title": "NumPy vs Lists",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=9OWmnPPgMfc"
-        },
-        {
-          "id": "rBAS2z4fV9w",
-          "title": "NumPy Advanced",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rBAS2z4fV9w"
-        },
-        {
-          "id": "1td1dHfLwl8",
-          "title": "NumPy Math Functions",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=1td1dHfLwl8"
-        },
-        {
-          "id": "tqX5Fod7qFs",
-          "title": "Reshape and Transpose",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=tqX5Fod7qFs"
-        },
-        {
-          "id": "nGOPonoDx2Q",
-          "title": "Stack and Concatenate",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=nGOPonoDx2Q"
-        },
-        {
-          "id": "hV0WFoNqBpQ",
-          "title": "NumPy Complete Guide",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=hV0WFoNqBpQ"
-        },
-        {
-          "id": "8Mpc9ikopWQ",
-          "title": "NumPy Basics",
-          "channel": "CampusX",
-          "url": "https://www.youtube.com/watch?v=8Mpc9ikopWQ"
-        },
-        {
-          "id": "EE9TmW1N3oA",
-          "title": "NumPy Performance",
-          "channel": "Real Python",
-          "url": "https://www.youtube.com/watch?v=EE9TmW1N3oA"
-        },
-        {
           "id": "QUT1VHiLmmI",
-          "title": "NumPy Tutorial",
-          "channel": "Python Programmer",
+          "title": "NumPy Arrays Tutorial",
+          "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
         },
         {
-          "id": "8mAFf3wYv4M",
-          "title": "NumPy Array Operations",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=8mAFf3wYv4M"
+          "id": "NoPY4aUJxwA",
+          "title": "Vectorized Computing",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
         },
         {
-          "id": "Yrr-u_4D6Oc",
-          "title": "Broadcasting Rules",
-          "channel": "NumPy",
-          "url": "https://www.youtube.com/watch?v=Yrr-u_4D6Oc"
+          "id": "1qz7qUM6yUI",
+          "title": "NumPy Broadcasting",
+          "channel": "Intellipaat",
+          "url": "https://www.youtube.com/watch?v=1qz7qUM6yUI"
         },
         {
-          "id": "DcfVsR6p6wU",
-          "title": "Linear Algebra",
+          "id": "1GppEPl9_QQ",
+          "title": "NumPy Data Science",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "QUT1VHiLmmI",
+          "title": "NumPy Linear Algebra",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=DcfVsR6p6wU"
+          "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+        },
+        {
+          "id": "NoPY4aUJxwA",
+          "title": "NumPy Performance",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
+        },
+        {
+          "id": "1qz7qUM6yUI",
+          "title": "NumPy Random",
+          "channel": "Intellipaat",
+          "url": "https://www.youtube.com/watch?v=1qz7qUM6yUI"
+        },
+        {
+          "id": "QUT1VHiLmmI",
+          "title": "NumPy Indexing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+        },
+        {
+          "id": "1qz7qUM6yUI",
+          "title": "NumPy Math Functions",
+          "channel": "Intellipaat",
+          "url": "https://www.youtube.com/watch?v=1qz7qUM6yUI"
+        },
+        {
+          "id": "NoPY4aUJxwA",
+          "title": "NumPy Best Practices",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
+        },
+        {
+          "id": "QUT1VHiLmmI",
+          "title": "NumPy Reshape",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "NumPy Matrix Ops",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "1qz7qUM6yUI",
+          "title": "NumPy Advanced",
+          "channel": "Intellipaat",
+          "url": "https://www.youtube.com/watch?v=1qz7qUM6yUI"
+        },
+        {
+          "id": "QUT1VHiLmmI",
+          "title": "NumPy Complete Guide",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+        },
+        {
+          "id": "NoPY4aUJxwA",
+          "title": "Scientific Python NumPy",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
         }
       ],
       "cheatSheets": [
@@ -344,24 +344,36 @@
         {
           "id": "vmEHCJofslg",
           "title": "Pandas Full Course",
-          "channel": "freeCodeCamp",
+          "channel": "Keith Galli",
           "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
-          "id": "ZyhVh-qRZpc",
-          "title": "Pandas Tutorial",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+          "id": "r0Lo_XCsEuw",
+          "title": "Pandas Data Analysis 2026",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
         },
         {
-          "id": "9d5-Ti6cqhw",
+          "id": "1GppEPl9_QQ",
+          "title": "Pandas for ML",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "r-uOLxNrNk8",
           "title": "Pandas DataFrames",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "CSV Excel GroupBy",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
           "id": "r0Lo_XCsEuw",
-          "title": "Pandas 2026",
+          "title": "Pandas Series",
           "channel": "Coding News",
           "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
         },
@@ -373,21 +385,15 @@
         },
         {
           "id": "vmEHCJofslg",
-          "title": "Pandas Complete",
+          "title": "Pandas Sorting Filtering",
           "channel": "Keith Galli",
           "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
-          "id": "ZyhVh-qRZpc",
-          "title": "Pandas Series",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
-        },
-        {
-          "id": "9d5-Ti6cqhw",
-          "title": "DataFrames Deep Dive",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
+          "id": "r-uOLxNrNk8",
+          "title": "Data Handling",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
           "id": "r0Lo_XCsEuw",
@@ -396,52 +402,34 @@
           "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
         },
         {
+          "id": "vmEHCJofslg",
+          "title": "Pandas Merge Join",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
           "id": "1GppEPl9_QQ",
           "title": "Pandas GroupBy",
           "channel": "Imarticus",
           "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
         },
         {
-          "id": "vmEHCJofslg",
-          "title": "Merge and Join",
+          "id": "r-uOLxNrNk8",
+          "title": "Pandas EDA",
           "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Pandas Complete Tutorial",
+          "channel": "Keith Galli",
           "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
-        },
-        {
-          "id": "ZyhVh-qRZpc",
-          "title": "Pandas Indexing",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
-        },
-        {
-          "id": "9d5-Ti6cqhw",
-          "title": "Pandas Apply",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
         },
         {
           "id": "r0Lo_XCsEuw",
-          "title": "CSV and Excel",
+          "title": "DataFrames Deep Dive",
           "channel": "Coding News",
           "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
-        },
-        {
-          "id": "vmEHCJofslg",
-          "title": "Pandas EDA",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
-        },
-        {
-          "id": "ZyhVh-qRZpc",
-          "title": "Pandas Best Practices",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
-        },
-        {
-          "id": "9d5-Ti6cqhw",
-          "title": "Pandas Performance",
-          "channel": "Data School",
-          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
         },
         {
           "id": "1GppEPl9_QQ",
@@ -451,15 +439,27 @@
         },
         {
           "id": "vmEHCJofslg",
-          "title": "Pandas Workflow",
-          "channel": "freeCodeCamp",
+          "title": "Pandas Indexing",
+          "channel": "Keith Galli",
           "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
-          "id": "ZyhVh-qRZpc",
-          "title": "Pandas Tips",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+          "id": "r-uOLxNrNk8",
+          "title": "Data Loading",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "r0Lo_XCsEuw",
+          "title": "Pandas Best Practices",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Pandas Workflow",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         }
       ],
       "cheatSheets": [
@@ -522,10 +522,10 @@
           "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
-          "id": "6jr1-HXyJBo",
+          "id": "1GppEPl9_QQ",
           "title": "Seaborn Tutorial",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
         },
         {
           "id": "1GppEPl9_QQ",
@@ -546,10 +546,10 @@
           "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
-          "id": "6jr1-HXyJBo",
+          "id": "1GppEPl9_QQ",
           "title": "Seaborn Plots",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
         },
         {
           "id": "UO98lJQ3QGI",
@@ -558,10 +558,10 @@
           "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
-          "id": "6jr1-HXyJBo",
+          "id": "UO98lJQ3QGI",
           "title": "Heatmaps",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -576,10 +576,10 @@
           "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
-          "id": "6jr1-HXyJBo",
+          "id": "1GppEPl9_QQ",
           "title": "Statistical Plots",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -594,10 +594,10 @@
           "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
-          "id": "6jr1-HXyJBo",
+          "id": "UO98lJQ3QGI",
           "title": "Distribution Plots",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -678,10 +678,10 @@
       "title": "File Formats & Data Pipelines",
       "youtube": [
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "File Handling Python",
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Python",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -690,14 +690,14 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Read Write Files",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "vmEHCJofslg",
+          "title": "CSV Excel Pandas",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
           "id": "K8L6KVGG-7o",
-          "title": "Regex Python",
+          "title": "Regular Expressions",
           "channel": "Corey Schafer",
           "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
         },
@@ -708,50 +708,50 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "JSON Python",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
-        },
-        {
-          "id": "K8L6KVGG-7o",
-          "title": "Regular Expressions",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
-        },
-        {
-          "id": "r-uOLxNrNk8",
-          "title": "Excel with Pandas",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "Eaumz2VuVfQ",
-          "title": "XML Parsing",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
-        },
-        {
           "id": "K8L6KVGG-7o",
           "title": "Regex Patterns",
           "channel": "Corey Schafer",
           "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
         },
         {
-          "id": "r-uOLxNrNk8",
-          "title": "Text Parsing",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "Eaumz2VuVfQ",
-          "title": "Path Operations",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "r0Lo_XCsEuw",
+          "title": "File Formats Pandas",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
         },
         {
           "id": "K8L6KVGG-7o",
           "title": "Regex Groups",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Loading",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Substitution",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Text Parsing",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "ETL Basics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Complete",
           "channel": "Corey Schafer",
           "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
         },
@@ -762,38 +762,38 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "File Formats",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "r0Lo_XCsEuw",
+          "title": "Excel Pandas",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
         },
         {
           "id": "K8L6KVGG-7o",
-          "title": "Regex Substitution",
+          "title": "re Module",
           "channel": "Corey Schafer",
           "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
         },
         {
           "id": "r-uOLxNrNk8",
-          "title": "ETL Basics",
+          "title": "File Handling",
           "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Working with Paths",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "vmEHCJofslg",
+          "title": "Data Cleaning Pipeline",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
           "id": "K8L6KVGG-7o",
-          "title": "Regex Complete",
+          "title": "Regex Match",
           "channel": "Corey Schafer",
           "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
         },
         {
           "id": "r-uOLxNrNk8",
-          "title": "Data Loading",
+          "title": "Cleaning Pipelines",
           "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         }
@@ -846,16 +846,10 @@
       "title": "HTTP, APIs & Web Scraping",
       "youtube": [
         {
-          "id": "t8pPdYpowUE",
-          "title": "Web Scraping Python",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
-        },
-        {
-          "id": "4uuDuF83-A8",
-          "title": "BeautifulSoup",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "id": "DcI_AZqfZVc",
+          "title": "Web Scraping BeautifulSoup",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -864,16 +858,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "t8pPdYpowUE",
-          "title": "Requests Library",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
-        },
-        {
-          "id": "4uuDuF83-A8",
-          "title": "Web Scraping Tutorial",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "id": "DcI_AZqfZVc",
+          "title": "Advanced Web Scraping",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -882,52 +870,40 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "t8pPdYpowUE",
-          "title": "HTTP Basics",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+          "id": "DcI_AZqfZVc",
+          "title": "BeautifulSoup Python",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
-          "id": "4uuDuF83-A8",
-          "title": "BeautifulSoup Deep Dive",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI REST",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
           "id": "r-uOLxNrNk8",
-          "title": "JSON APIs",
+          "title": "JSON Handling",
           "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "t8pPdYpowUE",
-          "title": "Scraping Ethics",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
-        },
-        {
-          "id": "4uuDuF83-A8",
-          "title": "Selectors",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "id": "DcI_AZqfZVc",
+          "title": "Data Extraction",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
           "id": "r-uOLxNrNk8",
-          "title": "API Authentication",
+          "title": "HTTP Requests",
           "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "t8pPdYpowUE",
-          "title": "Scrapy Intro",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
-        },
-        {
-          "id": "4uuDuF83-A8",
+          "id": "DcI_AZqfZVc",
           "title": "Parsing HTML",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -936,16 +912,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "t8pPdYpowUE",
-          "title": "Data Extraction",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
-        },
-        {
-          "id": "4uuDuF83-A8",
-          "title": "Web Scraping Best Practices",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "id": "DcI_AZqfZVc",
+          "title": "Web Scraping Tutorial",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -954,16 +924,46 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "t8pPdYpowUE",
-          "title": "Scraping Workflow",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+          "id": "DcI_AZqfZVc",
+          "title": "Scraping Ethics",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
-          "id": "4uuDuF83-A8",
-          "title": "Handling Errors",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+          "id": "r-uOLxNrNk8",
+          "title": "API Authentication",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "APIs with FastAPI",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "DcI_AZqfZVc",
+          "title": "Selectors",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Pipelines",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "DcI_AZqfZVc",
+          "title": "Scraping Best Practices",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Web Data",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         }
       ],
       "cheatSheets": [
@@ -1182,124 +1182,124 @@
       "title": "Machine Learning with scikit-learn",
       "youtube": [
         {
-          "id": "pqNCD_5JWIc",
-          "title": "Scikit-learn Tutorial",
+          "id": "hDKCxebp88A",
+          "title": "Scikit-learn Full Course",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
-          "title": "Machine Learning Python",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "id": "ngLyX54e1LU",
+          "title": "ML from Scratch",
+          "channel": "Patrick Loeber",
+          "url": "https://www.youtube.com/watch?v=ngLyX54e1LU"
         },
         {
-          "id": "pqNCD_5JWIc",
+          "id": "hDKCxebp88A",
           "title": "ML Workflow",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
-          "title": "Classification",
+          "id": "Gv9_4yMHFhI",
+          "title": "Gentle Intro to ML",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
-          "id": "pqNCD_5JWIc",
-          "title": "Regression",
+          "id": "hDKCxebp88A",
+          "title": "Classification Regression",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
-          "title": "Preprocessing",
+          "id": "_L39rN6gz7Y",
+          "title": "Decision Trees",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
-          "id": "pqNCD_5JWIc",
+          "id": "ngLyX54e1LU",
+          "title": "KNN Python",
+          "channel": "Patrick Loeber",
+          "url": "https://www.youtube.com/watch?v=ngLyX54e1LU"
+        },
+        {
+          "id": "hDKCxebp88A",
+          "title": "Preprocessing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "ML NumPy Pandas",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "hDKCxebp88A",
           "title": "Pipelines",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "Gv9_4yMHFhI",
           "title": "Model Evaluation",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
-          "id": "pqNCD_5JWIc",
+          "id": "hDKCxebp88A",
           "title": "Cross-Validation",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "_L39rN6gz7Y",
           "title": "Random Forest",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
-          "id": "pqNCD_5JWIc",
-          "title": "SVM",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
-        },
-        {
-          "id": "JcI5V2w5sno",
-          "title": "GridSearch",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
-        },
-        {
-          "id": "pqNCD_5JWIc",
-          "title": "Feature Engineering",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
-        },
-        {
-          "id": "JcI5V2w5sno",
-          "title": "Logistic Regression",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
-        },
-        {
-          "id": "pqNCD_5JWIc",
-          "title": "Clustering",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
-        },
-        {
-          "id": "JcI5V2w5sno",
-          "title": "Confusion Matrix",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
-        },
-        {
-          "id": "pqNCD_5JWIc",
+          "id": "hDKCxebp88A",
           "title": "sklearn Pipelines",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
-          "title": "Hyperparameter Tuning",
-          "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "id": "ngLyX54e1LU",
+          "title": "ML Python",
+          "channel": "Patrick Loeber",
+          "url": "https://www.youtube.com/watch?v=ngLyX54e1LU"
         },
         {
-          "id": "pqNCD_5JWIc",
-          "title": "ML Complete Course",
+          "id": "hDKCxebp88A",
+          "title": "Feature Engineering",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "JcI5V2w5sno",
-          "title": "Scikit-learn Explained",
+          "id": "Gv9_4yMHFhI",
+          "title": "Linear Regression",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
+        },
+        {
+          "id": "hDKCxebp88A",
+          "title": "ML Complete",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
+        },
+        {
+          "id": "_L39rN6gz7Y",
+          "title": "Classification Trees",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
+        },
+        {
+          "id": "hDKCxebp88A",
+          "title": "Scikit-learn Tutorial",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         }
       ],
       "cheatSheets": [
@@ -1350,22 +1350,22 @@
       "title": "Scientific Python: SciPy & SymPy",
       "youtube": [
         {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy Tutorial",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+          "id": "NoPY4aUJxwA",
+          "title": "SciPy NumPy Intro",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
         },
         {
-          "id": "r-uOLxNrNk8",
+          "id": "b7Ze4Xe49Ic",
+          "title": "SymPy Math",
+          "channel": "SPAC",
+          "url": "https://www.youtube.com/watch?v=b7Ze4Xe49Ic"
+        },
+        {
+          "id": "1yBPEPhq54M",
           "title": "SymPy Tutorial",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy Optimization",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+          "channel": "Mr. P Solver",
+          "url": "https://www.youtube.com/watch?v=1yBPEPhq54M"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1374,10 +1374,34 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy Integration",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+          "id": "b7Ze4Xe49Ic",
+          "title": "SymPy Equations",
+          "channel": "SPAC",
+          "url": "https://www.youtube.com/watch?v=b7Ze4Xe49Ic"
+        },
+        {
+          "id": "1yBPEPhq54M",
+          "title": "SymPy Calculus",
+          "channel": "Mr. P Solver",
+          "url": "https://www.youtube.com/watch?v=1yBPEPhq54M"
+        },
+        {
+          "id": "NoPY4aUJxwA",
+          "title": "Numerical Python",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
+        },
+        {
+          "id": "b7Ze4Xe49Ic",
+          "title": "SymPy Derivatives",
+          "channel": "SPAC",
+          "url": "https://www.youtube.com/watch?v=b7Ze4Xe49Ic"
+        },
+        {
+          "id": "1yBPEPhq54M",
+          "title": "SymPy Integration",
+          "channel": "Mr. P Solver",
+          "url": "https://www.youtube.com/watch?v=1yBPEPhq54M"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1386,86 +1410,62 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy Linear Algebra",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+          "id": "b7Ze4Xe49Ic",
+          "title": "SymPy Integrals",
+          "channel": "SPAC",
+          "url": "https://www.youtube.com/watch?v=b7Ze4Xe49Ic"
         },
         {
-          "id": "r-uOLxNrNk8",
-          "title": "SymPy Symbolic",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy ODEs",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
-        },
-        {
-          "id": "r-uOLxNrNk8",
-          "title": "Equation Solving",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "j6A2FZgMVs0",
-          "title": "Optimization Methods",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
-        },
-        {
-          "id": "r-uOLxNrNk8",
-          "title": "Numerical Integration",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy Sparse",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
-        },
-        {
-          "id": "r-uOLxNrNk8",
-          "title": "Statistics SciPy",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy Signal",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
-        },
-        {
-          "id": "r-uOLxNrNk8",
+          "id": "1yBPEPhq54M",
           "title": "Symbolic Math",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+          "channel": "Mr. P Solver",
+          "url": "https://www.youtube.com/watch?v=1yBPEPhq54M"
         },
         {
-          "id": "j6A2FZgMVs0",
-          "title": "Interpolation",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
-        },
-        {
-          "id": "r-uOLxNrNk8",
-          "title": "SciPy Complete",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
-        },
-        {
-          "id": "j6A2FZgMVs0",
-          "title": "SciPy FFT",
-          "channel": "Engineer Man",
-          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
-        },
-        {
-          "id": "r-uOLxNrNk8",
+          "id": "NoPY4aUJxwA",
           "title": "Scientific Computing",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Optimization",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "1yBPEPhq54M",
+          "title": "SymPy Lagrangian",
+          "channel": "Mr. P Solver",
+          "url": "https://www.youtube.com/watch?v=1yBPEPhq54M"
+        },
+        {
+          "id": "b7Ze4Xe49Ic",
+          "title": "Equation Solving",
+          "channel": "SPAC",
+          "url": "https://www.youtube.com/watch?v=b7Ze4Xe49Ic"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Statistics Python",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "1yBPEPhq54M",
+          "title": "SymPy Complete",
+          "channel": "Mr. P Solver",
+          "url": "https://www.youtube.com/watch?v=1yBPEPhq54M"
+        },
+        {
+          "id": "NoPY4aUJxwA",
+          "title": "Vectorized Computing",
+          "channel": "SciPy 2024",
+          "url": "https://www.youtube.com/watch?v=NoPY4aUJxwA"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Science SciPy",
           "channel": "freeCodeCamp",
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         }
@@ -1518,10 +1518,10 @@
       "title": "Practical Statistics for Data Science",
       "youtube": [
         {
-          "id": "JcI5V2w5sno",
+          "id": "Gv9_4yMHFhI",
           "title": "Statistics for ML",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1530,10 +1530,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "_L39rN6gz7Y",
           "title": "Hypothesis Testing",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1542,10 +1542,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "Gv9_4yMHFhI",
           "title": "Distributions",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1554,10 +1554,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "_L39rN6gz7Y",
           "title": "Confidence Intervals",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1566,10 +1566,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "Gv9_4yMHFhI",
           "title": "p-values",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1578,10 +1578,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "_L39rN6gz7Y",
           "title": "ANOVA",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1590,10 +1590,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "Gv9_4yMHFhI",
           "title": "Normal Distribution",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1602,10 +1602,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "_L39rN6gz7Y",
           "title": "Bayesian",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1614,10 +1614,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "Gv9_4yMHFhI",
           "title": "Statistical Power",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1626,10 +1626,10 @@
           "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "JcI5V2w5sno",
+          "id": "_L39rN6gz7Y",
           "title": "Stats Python",
           "channel": "StatQuest",
-          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+          "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"
         },
         {
           "id": "r-uOLxNrNk8",
@@ -1686,124 +1686,124 @@
       "title": "NLP: NLTK, spaCy & Transformers",
       "youtube": [
         {
-          "id": "xvFZjo5PgG0",
-          "title": "NLP Python",
+          "id": "dIUTsFT2MeQ",
+          "title": "NLP with spaCy",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
-          "title": "spaCy Tutorial",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
-        },
-        {
-          "id": "xvFZjo5PgG0",
-          "title": "NLTK Tutorial",
+          "id": "dIUTsFT2MeQ",
+          "title": "spaCy Python Course",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
-          "title": "NER spaCy",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
-        },
-        {
-          "id": "xvFZjo5PgG0",
-          "title": "Text Classification",
+          "id": "dIUTsFT2MeQ",
+          "title": "NLP Beginners",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
-          "title": "spaCy Pipelines",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+          "id": "dIUTsFT2MeQ",
+          "title": "spaCy NER",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "xvFZjo5PgG0",
+          "id": "dIUTsFT2MeQ",
           "title": "Tokenization",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
+          "id": "dIUTsFT2MeQ",
+          "title": "spaCy Pipelines",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "Entity Recognition",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "Word Vectors",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "EntityRuler Matcher",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
           "title": "POS Tagging",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "xvFZjo5PgG0",
+          "id": "dIUTsFT2MeQ",
+          "title": "Custom Components",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "spaCy RegEx",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "Text Classification",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "Linguistic Annotations",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
+          "title": "spaCy Containers",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
+        },
+        {
+          "id": "dIUTsFT2MeQ",
           "title": "Hugging Face",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
-          "title": "Transformers spaCy",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+          "id": "dIUTsFT2MeQ",
+          "title": "Transformers NLP",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "xvFZjo5PgG0",
+          "id": "dIUTsFT2MeQ",
           "title": "NLP Complete",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
-          "title": "Entity Recognition",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
-        },
-        {
-          "id": "xvFZjo5PgG0",
-          "title": "Sentiment Analysis",
+          "id": "dIUTsFT2MeQ",
+          "title": "Financial NER",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
-          "id": "sTuaxvkeNcM",
-          "title": "Lemmatization",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
-        },
-        {
-          "id": "xvFZjo5PgG0",
-          "title": "Word Embeddings",
+          "id": "dIUTsFT2MeQ",
+          "title": "spaCy Tutorial",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
-        },
-        {
-          "id": "sTuaxvkeNcM",
-          "title": "Dependency Parsing",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
-        },
-        {
-          "id": "xvFZjo5PgG0",
-          "title": "BERT Introduction",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
-        },
-        {
-          "id": "sTuaxvkeNcM",
-          "title": "spaCy Training",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
-        },
-        {
-          "id": "xvFZjo5PgG0",
-          "title": "NLP Pipeline",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
-        },
-        {
-          "id": "sTuaxvkeNcM",
-          "title": "spaCy Custom",
-          "channel": "Explosion",
-          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         }
       ],
       "cheatSheets": [
@@ -1854,124 +1854,124 @@
       "title": "Computer Vision with OpenCV",
       "youtube": [
         {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "OpenCV Python",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "OpenCV Tutorial",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+          "id": "oXlwWbU8l2o",
+          "title": "OpenCV Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "Image Processing",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "OpenCV Basics",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+          "id": "oXlwWbU8l2o",
+          "title": "Computer Vision",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "Edge Detection",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
+          "id": "oXlwWbU8l2o",
+          "title": "OpenCV Tutorial",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
+        },
+        {
+          "id": "oXlwWbU8l2o",
+          "title": "Image Transformations",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
+        },
+        {
+          "id": "oXlwWbU8l2o",
+          "title": "Face Detection",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
+        },
+        {
+          "id": "oXlwWbU8l2o",
           "title": "Filters OpenCV",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "Contours",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "Face Detection",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
-        },
-        {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "Object Detection",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "Image Transformations",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
-        },
-        {
-          "id": "WQeoO7Q0q8g",
-          "title": "OpenCV Deep Learning",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
-        },
-        {
-          "id": "oXlFd5m_xMg",
-          "title": "Computer Vision",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
-        },
-        {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "Image Representation",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "Morphological Ops",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
-        },
-        {
-          "id": "WQeoO7Q0q8g",
-          "title": "OpenCV Complete",
+          "id": "oXlwWbU8l2o",
+          "title": "OpenCV Basics",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
+          "id": "oXlwWbU8l2o",
+          "title": "Morphological Ops",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
+        },
+        {
+          "id": "oXlwWbU8l2o",
           "title": "Video Processing",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "Feature Detection",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "OpenCV Projects",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+          "id": "oXlwWbU8l2o",
+          "title": "OpenCV Deep Learning",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "WQeoO7Q0q8g",
+          "id": "oXlwWbU8l2o",
           "title": "CV Pipeline",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
-          "id": "oXlFd5m_xMg",
-          "title": "OpenCV Tips",
-          "channel": "Murtaza",
-          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+          "id": "oXlwWbU8l2o",
+          "title": "OpenCV Projects",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
+        },
+        {
+          "id": "oXlwWbU8l2o",
+          "title": "OpenCV Complete",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         }
       ],
       "cheatSheets": [
@@ -2022,124 +2022,124 @@
       "title": "Databases & Data Engineering",
       "youtube": [
         {
-          "id": "xq2SiuBNY7U",
-          "title": "SQL Python",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
-        },
-        {
-          "id": "Btp4_RnUSIg",
-          "title": "SQLAlchemy Tutorial",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
-        },
-        {
-          "id": "xq2SiuBNY7U",
+          "id": "pd-0G0MigUA",
           "title": "SQLite Python",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
-          "title": "SQLAlchemy ORM",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+          "id": "pd-0G0MigUA",
+          "title": "SQL Python Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "xq2SiuBNY7U",
+          "id": "pd-0G0MigUA",
           "title": "Database Python",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
-          "title": "ETL Python",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+          "id": "r-uOLxNrNk8",
+          "title": "Data Engineering",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "xq2SiuBNY7U",
+          "id": "pd-0G0MigUA",
           "title": "SQL Queries",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
-          "title": "Dask Tutorial",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
-        },
-        {
-          "id": "xq2SiuBNY7U",
-          "title": "Data Engineering",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
-        },
-        {
-          "id": "Btp4_RnUSIg",
-          "title": "SQLAlchemy Sessions",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
-        },
-        {
-          "id": "xq2SiuBNY7U",
-          "title": "PostgreSQL Python",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
-        },
-        {
-          "id": "Btp4_RnUSIg",
+          "id": "r-uOLxNrNk8",
           "title": "ETL Pipelines",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "xq2SiuBNY7U",
+          "id": "pd-0G0MigUA",
+          "title": "Creating Database",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
+        },
+        {
+          "id": "r-uOLxNrNk8",
           "title": "Data Pipelines",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "pd-0G0MigUA",
+          "title": "Running Queries",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
-          "title": "Large Data Dask",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+          "id": "vmEHCJofslg",
+          "title": "Pandas Data Loading",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
-          "id": "xq2SiuBNY7U",
-          "title": "Database Design",
+          "id": "pd-0G0MigUA",
+          "title": "SQLAlchemy",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
-          "title": "ORM Patterns",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+          "id": "r-uOLxNrNk8",
+          "title": "Data Science",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
-          "id": "xq2SiuBNY7U",
-          "title": "SQL Best Practices",
+          "id": "pd-0G0MigUA",
+          "title": "Database Table",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
+          "id": "r0Lo_XCsEuw",
+          "title": "Pandas Data",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
+        },
+        {
+          "id": "pd-0G0MigUA",
+          "title": "SQL Complete",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Analysis",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "pd-0G0MigUA",
           "title": "Data Engineering Python",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
-        },
-        {
-          "id": "xq2SiuBNY7U",
-          "title": "SQL Python Complete",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
         },
         {
-          "id": "Btp4_RnUSIg",
-          "title": "ETL Best Practices",
-          "channel": "PyCon",
-          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+          "id": "vmEHCJofslg",
+          "title": "ETL Pandas",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "pd-0G0MigUA",
+          "title": "ORM Basics",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=pd-0G0MigUA"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Large Data",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         }
       ],
       "cheatSheets": [
@@ -2190,124 +2190,124 @@
       "title": "Automation, Scripting & Testing",
       "youtube": [
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Python Automation",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
-        },
-        {
-          "id": "FyuBO8GxB74",
+          "id": "EgpLj86ZHFQ",
           "title": "pytest Tutorial",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=FyuBO8GxB74"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "os pathlib",
+          "id": "YYXdXT2l-Gg",
+          "title": "Python Setup",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
         },
         {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
           "title": "Unit Testing Python",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "subprocess",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "DcI_AZqfZVc",
+          "title": "Automation Scripts",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
           "title": "pytest Fixtures",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Selenium Python",
+          "id": "YYXdXT2l-Gg",
+          "title": "pathlib os",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
         },
         {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
           "title": "Test Automation",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Logging Python",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "EgpLj86ZHFQ",
+          "title": "Python Scripting",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
           "title": "pytest Advanced",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "File Automation",
+          "id": "YYXdXT2l-Gg",
+          "title": "subprocess",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
         },
         {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
           "title": "Mocking Tests",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Scripting Best Practices",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "id": "DcI_AZqfZVc",
+          "title": "Selenium",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=DcI_AZqfZVc"
         },
         {
-          "id": "p-2BpL3y6",
-          "title": "CI CD Python",
-          "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
-        },
-        {
-          "id": "Eaumz2VuVfQ",
-          "title": "Automation Scripts",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
-        },
-        {
-          "id": "p-2BpL3y6",
-          "title": "Testing Patterns",
-          "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
-        },
-        {
-          "id": "Eaumz2VuVfQ",
-          "title": "pathlib Complete",
-          "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
-        },
-        {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
           "title": "pytest Complete",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
         },
         {
-          "id": "Eaumz2VuVfQ",
-          "title": "Automation Workflow",
+          "id": "YYXdXT2l-Gg",
+          "title": "Logging Python",
           "channel": "Corey Schafer",
-          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
         },
         {
-          "id": "p-2BpL3y6",
+          "id": "EgpLj86ZHFQ",
+          "title": "CI CD Python",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
+        },
+        {
+          "id": "YYXdXT2l-Gg",
+          "title": "Automation",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
+        },
+        {
+          "id": "EgpLj86ZHFQ",
+          "title": "Testing Patterns",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
+        },
+        {
+          "id": "EgpLj86ZHFQ",
+          "title": "Scripting",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
+        },
+        {
+          "id": "EgpLj86ZHFQ",
           "title": "Python Testing",
           "channel": "Tech With Tim",
-          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+          "url": "https://www.youtube.com/watch?v=EgpLj86ZHFQ"
+        },
+        {
+          "id": "YYXdXT2l-Gg",
+          "title": "Best Practices",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
         }
       ],
       "cheatSheets": [
@@ -2358,10 +2358,10 @@
       "title": "Capstone Project: Design & Implementation",
       "youtube": [
         {
-          "id": "rfscYS0zFEI",
+          "id": "eWRfhZUzrAc",
           "title": "Python Projects",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=eWRfhZUzrAc"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2370,10 +2370,10 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Project Planning",
+          "id": "hDKCxebp88A",
+          "title": "ML Project",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2382,10 +2382,10 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
+          "id": "r-uOLxNrNk8",
           "title": "Capstone Design",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2394,10 +2394,10 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Project Structure",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "id": "vmEHCJofslg",
+          "title": "Data Science Project",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2406,22 +2406,16 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Data Science Project",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
-        },
-        {
-          "id": "0sOvCWFmrtA",
+          "id": "hDKCxebp88A",
           "title": "ML Pipeline",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Portfolio Project",
-          "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Project",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2430,10 +2424,10 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Project Best Practices",
+          "id": "oXlwWbU8l2o",
+          "title": "Computer Vision Project",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=oXlwWbU8l2o"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2442,10 +2436,10 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Real World Project",
+          "id": "dIUTsFT2MeQ",
+          "title": "NLP Project",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=dIUTsFT2MeQ"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2454,10 +2448,16 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
-          "title": "Project Walkthrough",
+          "id": "r-uOLxNrNk8",
+          "title": "Project Planning",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "qwAFL1597eM",
+          "title": "Portfolio Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=qwAFL1597eM"
         },
         {
           "id": "0sOvCWFmrtA",
@@ -2466,10 +2466,10 @@
           "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
         },
         {
-          "id": "rfscYS0zFEI",
+          "id": "hDKCxebp88A",
           "title": "Capstone Tips",
           "channel": "freeCodeCamp",
-          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+          "url": "https://www.youtube.com/watch?v=hDKCxebp88A"
         },
         {
           "id": "0sOvCWFmrtA",

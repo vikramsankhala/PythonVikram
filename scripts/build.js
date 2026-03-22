@@ -35,6 +35,10 @@ let topicsData = { topics: [] };
 try {
   topicsData = JSON.parse(fs.readFileSync(path.join(CONTENT, 'topics.json'), 'utf8'));
 } catch (e) { console.warn('topics.json not found'); }
+let phdResearchData = { title: '', description: '', researchTopics: [] };
+try {
+  phdResearchData = JSON.parse(fs.readFileSync(path.join(CONTENT, 'phd-research.json'), 'utf8'));
+} catch (e) { console.warn('phd-research.json not found'); }
 
 const getWeekResources = (weekId) => weekResources.weeks.find(r => r.week === weekId) || {};
 
@@ -333,7 +337,7 @@ function renderIndex() {
 
     <section id="extended-topics">
       <h2>Extended Topics</h2>
-      <p>Dive deeper into visualization, vibe coding, SaaS, and DevOps.</p>
+      <p>Dive deeper into visualization, vibe coding, SaaS, DevOps, and <strong>State of the Art 2026</strong> videos.</p>
       <div class="topic-grid">
         ${(topicsData.topics || []).map(t => `
           <a href="/topics/${t.id}.html" class="topic-card">
@@ -351,9 +355,59 @@ function renderIndex() {
         <a href="/progress.html" class="coursebook-link">📊 Progress Monitor &amp; Study Calendar</a>
         <a href="/careers.html" class="coursebook-link">💼 Python Careers &amp; Job Paths</a>
         <a href="/pricing.html" class="coursebook-link">💰 Pricing &amp; Course Comparison</a>
+        <a href="/phd-research.html" class="coursebook-link">🎓 PhD Research &amp; Theses</a>
         <a href="/ai-assistant.html" class="coursebook-link">🤖 AI Assistant (Claude)</a>
       </div>
     </section>
+  </main>
+</body>
+</html>`;
+}
+
+function renderPhdResearch() {
+  const data = phdResearchData;
+  const topics = data.researchTopics || [];
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escape(data.title || 'PhD Research')} | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/#extended-topics">Topics</a>
+    <a href="/careers.html">Careers</a>
+  </nav>
+  <main class="container">
+    <header class="hero">
+      <span style="font-size:2.5rem;">🎓</span>
+      <h1>${escape(data.title || 'PhD-Level Research in Python')}</h1>
+      <p class="description">${escape(data.description || '')}</p>
+    </header>
+    ${topics.map(t => {
+      const yt = (t.youtube || []).slice(0, 10);
+      const papers = (t.paperThesisTopics || []).map(p => `<li>${escape(p)}</li>`).join('');
+      const videosHtml = yt.length ? `
+        <div class="youtube-grid" style="margin-top:1rem;">
+          ${yt.map(v => `
+            <a href="https://www.youtube.com/watch?v=${escape(v.id || '')}" target="_blank" rel="noopener" class="yt-card">
+              <span class="yt-thumb">▶ ${escape(v.title || v.channel)}</span>
+              <span class="yt-channel">${escape(v.channel || '')}</span>
+            </a>`).join('')}
+        </div>` : '';
+      return `
+    <section class="phd-topic" style="margin-bottom:3rem; padding-bottom:2rem; border-bottom:1px solid var(--border);">
+      <h2>${escape(t.title)}</h2>
+      <p>${escape(t.description || '')}</p>
+      <h3>Research Paper &amp; Thesis Topics</h3>
+      <ul>${papers || '<li>—</li>'}</ul>
+      <h3>📺 10 Curated YouTube Videos</h3>
+      ${videosHtml}
+    </section>`;
+    }).join('')}
   </main>
 </body>
 </html>`;
@@ -768,6 +822,18 @@ function renderTopic(topic) {
         ${topic.resources.map(r => `<li><a href="${escape(r.url)}" target="_blank" rel="noopener">${escape(r.title)}</a></li>`).join('')}
       </ul>
     </section>` : '';
+  const yt = (topic.youtube || []).slice(0, 20);
+  const youtubeHtml = yt.length ? `
+    <section>
+      <h2>📺 20 Curated YouTube Videos</h2>
+      <div class="youtube-grid">
+        ${yt.map(v => `
+          <a href="${escape(v.url || 'https://www.youtube.com/watch?v=' + (v.id || ''))}" target="_blank" rel="noopener" class="yt-card">
+            <span class="yt-thumb">▶ ${escape(v.title || v.channel)}</span>
+            <span class="yt-channel">${escape(v.channel || '')}</span>
+          </a>`).join('')}
+      </div>
+    </section>` : '';
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -796,6 +862,7 @@ function renderTopic(topic) {
     ${bestPracticesHtml}
     ${pipelineHtml}
     ${codeHtml}
+    ${youtubeHtml}
     ${resourcesHtml}
   </main>
 </body>
@@ -949,6 +1016,7 @@ if (trailerHtml) {
 
 // Write files
 fs.writeFileSync(path.join(PUBLIC, 'index.html'), renderIndex());
+fs.writeFileSync(path.join(PUBLIC, 'phd-research.html'), renderPhdResearch());
 fs.writeFileSync(path.join(PUBLIC, 'coursebook.html'), renderCoursebook());
 fs.writeFileSync(path.join(PUBLIC, 'careers.html'), renderCareers());
 fs.writeFileSync(path.join(PUBLIC, 'pricing.html'), renderPricing());

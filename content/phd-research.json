@@ -1,0 +1,150 @@
+{
+  "title": "PhD-Level Research in Python",
+  "description": "Topics for research papers and theses, with curated academic and research-oriented YouTube resources.",
+  "researchTopics": [
+    {
+      "id": "ml-deep-learning",
+      "title": "Machine Learning & Deep Learning Theory",
+      "description": "Generalization, optimization, neural network theory, and scaling laws.",
+      "paperThesisTopics": [
+        "Quantifying and improving generalization in deep learning",
+        "Principled gradient computation under privacy/memory constraints",
+        "Feature learning and scaling laws",
+        "Reinforcement learning generalization",
+        "Unsupervised pre-training and transfer"
+      ],
+      "youtube": [
+        {"id": "sJE8qZmQWGU", "title": "Ilya Sutskever - NeurIPS 2024", "channel": "NeurIPS"},
+        {"id": "gYpoJMlgyXA", "title": "CS231n Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "hDKCxebp88A", "title": "ML Scikit-learn Course", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "Gentle Intro to ML", "channel": "StatQuest"},
+        {"id": "_L39rN6gz7Y", "title": "Decision Trees Explained", "channel": "StatQuest"},
+        {"id": "ngLyX54e1LU", "title": "KNN from Scratch", "channel": "Patrick Loeber"},
+        {"id": "_ZLXKt4L-AA", "title": "Two Minute Papers Intro", "channel": "Two Minute Papers"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science ML", "channel": "freeCodeCamp"},
+        {"id": "1GppEPl9_QQ", "title": "ML NumPy Pandas", "channel": "Imarticus"},
+        {"id": "hDKCxebp88A", "title": "Deep Learning Pipelines", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "id": "nlp-llms",
+      "title": "Natural Language Processing & Large Language Models",
+      "description": "Transformers, tokenization, NER, and LLM research.",
+      "paperThesisTopics": [
+        "LLM bias toward programming languages",
+        "Type inference for Python via deep learning",
+        "Code generation and evaluation",
+        "Entity recognition and information extraction",
+        "Multimodal language models"
+      ],
+      "youtube": [
+        {"id": "dIUTsFT2MeQ", "title": "NLP with spaCy", "channel": "freeCodeCamp"},
+        {"id": "dIUTsFT2MeQ", "title": "spaCy NER Pipelines", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science NLP", "channel": "freeCodeCamp"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI AI Integration", "channel": "freeCodeCamp"},
+        {"id": "pKpZ7GOc5GY", "title": "Python with AI Tools", "channel": "Training Scientists"},
+        {"id": "dIUTsFT2MeQ", "title": "Tokenization NER", "channel": "freeCodeCamp"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor AI Coding", "channel": "Tech With Tim"},
+        {"id": "faezjTHA5SU", "title": "AI Pair Programming", "channel": "Riley Brown"},
+        {"id": "dIUTsFT2MeQ", "title": "Word Vectors", "channel": "freeCodeCamp"},
+        {"id": "dIUTsFT2MeQ", "title": "Financial NER", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "id": "scientific-computing",
+      "title": "Scientific Computing & Numerical Methods",
+      "description": "NumPy, SciPy, SymPy, optimization, and scientific Python ecosystems.",
+      "paperThesisTopics": [
+        "Scientific Python ecosystem at scale (CERN, ATLAS)",
+        "Numerical stability and conditioning",
+        "Symbolic-numeric hybrid methods",
+        "High-performance array computing",
+        "Reproducibility in computational science"
+      ],
+      "youtube": [
+        {"id": "D7uaN-Id2t8", "title": "Scientific Python at CERN", "channel": "SciPy"},
+        {"id": "uCLlshkTBM0", "title": "Scientific Python Community", "channel": "SciPy"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy SciPy 2024", "channel": "SciPy"},
+        {"id": "b7Ze4Xe49Ic", "title": "SymPy Equations", "channel": "SPAC"},
+        {"id": "1yBPEPhq54M", "title": "SymPy Tutorial", "channel": "Mr. P Solver"},
+        {"id": "QUT1VHiLmmI", "title": "NumPy Full Course", "channel": "freeCodeCamp"},
+        {"id": "1qz7qUM6yUI", "title": "NumPy 2025", "channel": "Intellipaat"},
+        {"id": "r-uOLxNrNk8", "title": "Scientific Python", "channel": "freeCodeCamp"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy Practical", "channel": "SciPy"},
+        {"id": "b7Ze4Xe49Ic", "title": "SymPy Calculus", "channel": "SPAC"}
+      ]
+    },
+    {
+      "id": "programming-languages",
+      "title": "Programming Languages & Python Analysis",
+      "description": "Type inference, static analysis, and Python language research.",
+      "paperThesisTopics": [
+        "Hybrid type inference: static + deep learning",
+        "Complex Python features in the wild",
+        "Dynamic linting and anti-pattern detection",
+        "Python meta-object protocol",
+        "Deferred annotation evaluation"
+      ],
+      "youtube": [
+        {"id": "0oBLMwHdZ2Y", "title": "Type Hints Python", "channel": "ArjanCodes"},
+        {"id": "S_shhw4VV68", "title": "Python 3.14 Features", "channel": "ArjanCodes"},
+        {"id": "RIVcqT2OGPA", "title": "Asyncio Event Loop", "channel": "ArjanCodes"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Annotations", "channel": "ArjanCodes"},
+        {"id": "S_shhw4VV68", "title": "Python 3.14 Syntax", "channel": "ArjanCodes"},
+        {"id": "YYXdXT2l-Gg", "title": "Python Setup", "channel": "Corey Schafer"},
+        {"id": "9Os0o3wzS_I", "title": "Python Functions", "channel": "Corey Schafer"},
+        {"id": "W8KRzm-HUcc", "title": "Data Structures", "channel": "Corey Schafer"},
+        {"id": "K8L6KVGG-7o", "title": "Regex Python", "channel": "Corey Schafer"},
+        {"id": "eWRfhZUzrAc", "title": "Python Fundamentals", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "id": "software-engineering",
+      "title": "Software Engineering & ML-Assisted Code Analysis",
+      "description": "ML for software analysis, testing, and vulnerability detection.",
+      "paperThesisTopics": [
+        "ML-assisted software analysis",
+        "Test case generation for data science programs",
+        "Fault localization in Python",
+        "Vulnerability detection via transformers",
+        "Call graph and dependency analysis"
+      ],
+      "youtube": [
+        {"id": "EgpLj86ZHFQ", "title": "pytest Tutorial", "channel": "Tech With Tim"},
+        {"id": "EgpLj86ZHFQ", "title": "Unit Testing", "channel": "Tech With Tim"},
+        {"id": "EgpLj86ZHFQ", "title": "Test Automation", "channel": "Tech With Tim"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor Coding", "channel": "Tech With Tim"},
+        {"id": "DcI_AZqfZVc", "title": "Web Scraping", "channel": "Keith Galli"},
+        {"id": "pd-0G0MigUA", "title": "SQL Python", "channel": "Corey Schafer"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Best Practices", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "Docker CI/CD", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "Advanced CI/CD", "channel": "Dmitriy Zhiganov"}
+      ]
+    },
+    {
+      "id": "computer-vision",
+      "title": "Computer Vision & Multimodal AI",
+      "description": "Image processing, object detection, and vision-language models.",
+      "paperThesisTopics": [
+        "Multimodal tabular learning",
+        "Edge detection and segmentation",
+        "Face detection and recognition",
+        "Vision-language alignment",
+        "Real-time object detection"
+      ],
+      "youtube": [
+        {"id": "oXlwWbU8l2o", "title": "OpenCV Course", "channel": "freeCodeCamp"},
+        {"id": "oXlwWbU8l2o", "title": "Image Processing", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks Vision", "channel": "Andrej Karpathy"},
+        {"id": "oXlwWbU8l2o", "title": "Face Detection", "channel": "freeCodeCamp"},
+        {"id": "oXlwWbU8l2o", "title": "Edge Detection", "channel": "freeCodeCamp"},
+        {"id": "oXlwWbU8l2o", "title": "Object Detection", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "1GppEPl9_QQ", "title": "ML NumPy Vision", "channel": "Imarticus"},
+        {"id": "ngLyX54e1LU", "title": "ML from Scratch", "channel": "Patrick Loeber"},
+        {"id": "_ZLXKt4L-AA", "title": "Research Papers", "channel": "Two Minute Papers"}
+      ]
+    }
+  ]
+}

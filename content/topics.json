@@ -26,6 +26,28 @@
         {"title": "Plotly Express", "url": "https://plotly.com/python/plotly-express/"},
         {"title": "Seaborn Gallery", "url": "https://seaborn.pydata.org/examples/"},
         {"title": "Streamlit Docs", "url": "https://docs.streamlit.io/"}
+      ],
+      "youtube": [
+        {"id": "r-uOLxNrNk8", "title": "Matplotlib Seaborn Course", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Matplotlib Tutorial", "channel": "Corey Schafer"},
+        {"id": "7yAw1nPareM", "title": "Streamlit Plotly Dashboard", "channel": "Programming Is Fun"},
+        {"id": "1GppEPl9_QQ", "title": "NumPy Pandas Matplotlib ML", "channel": "Imarticus"},
+        {"id": "r-uOLxNrNk8", "title": "Data Viz Full Course", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Line and Bar Plots", "channel": "Corey Schafer"},
+        {"id": "7yAw1nPareM", "title": "Interactive Dashboards", "channel": "Programming Is Fun"},
+        {"id": "r-uOLxNrNk8", "title": "EDA Visualization", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Subplots", "channel": "Corey Schafer"},
+        {"id": "1GppEPl9_QQ", "title": "Charts and Graphs", "channel": "Imarticus"},
+        {"id": "r-uOLxNrNk8", "title": "Scatter Histogram", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Customization", "channel": "Corey Schafer"},
+        {"id": "7yAw1nPareM", "title": "Python Dashboard", "channel": "Programming Is Fun"},
+        {"id": "r-uOLxNrNk8", "title": "Visual EDA", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Figure and Axes", "channel": "Corey Schafer"},
+        {"id": "1GppEPl9_QQ", "title": "Visualization ML", "channel": "Imarticus"},
+        {"id": "r-uOLxNrNk8", "title": "Matplotlib Basics", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Styling Plots", "channel": "Corey Schafer"},
+        {"id": "7yAw1nPareM", "title": "Plotly Streamlit", "channel": "Programming Is Fun"},
+        {"id": "r-uOLxNrNk8", "title": "Plot Types", "channel": "freeCodeCamp"}
       ]
     },
     {
@@ -59,6 +81,28 @@
         {"title": "GitHub Copilot", "url": "https://github.com/features/copilot"},
         {"title": "Cursor", "url": "https://cursor.com/"},
         {"title": "Claude Code", "url": "https://claude.ai"}
+      ],
+      "youtube": [
+        {"id": "faezjTHA5SU", "title": "Vibe Coding 101", "channel": "Riley Brown"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor Vibe Coding Tutorial", "channel": "Tech With Tim"},
+        {"id": "1bDPMVq69ac", "title": "Vibe Coding Cursor 2.0", "channel": "BridgeMind"},
+        {"id": "faezjTHA5SU", "title": "Cursor for Non-Coders", "channel": "Riley Brown"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor Beginners", "channel": "Tech With Tim"},
+        {"id": "EgpLj86ZHFQ", "title": "Python Scripting", "channel": "Tech With Tim"},
+        {"id": "faezjTHA5SU", "title": "AI Pair Programming", "channel": "Riley Brown"},
+        {"id": "8AWEPx5cHWQ", "title": "AI Coding Assistant", "channel": "Tech With Tim"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing with AI", "channel": "Tech With Tim"},
+        {"id": "faezjTHA5SU", "title": "Prompt-Driven Workflows", "channel": "Riley Brown"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor Complete Guide", "channel": "Tech With Tim"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask with AI", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI AI", "channel": "freeCodeCamp"},
+        {"id": "faezjTHA5SU", "title": "Vibe Coding Basics", "channel": "Riley Brown"},
+        {"id": "8AWEPx5cHWQ", "title": "No Code Needed", "channel": "Tech With Tim"},
+        {"id": "eWRfhZUzrAc", "title": "Python AI", "channel": "freeCodeCamp"},
+        {"id": "faezjTHA5SU", "title": "AI Code Generation", "channel": "Riley Brown"},
+        {"id": "8AWEPx5cHWQ", "title": "Copilot vs Cursor", "channel": "Tech With Tim"},
+        {"id": "qwAFL1597eM", "title": "Python Projects AI", "channel": "freeCodeCamp"},
+        {"id": "faezjTHA5SU", "title": "Cursor Setup", "channel": "Riley Brown"}
       ]
     },
     {
@@ -86,6 +130,28 @@
         {"title": "FastAPI Full-Stack", "url": "https://fastapi.tiangolo.com/"},
         {"title": "Stripe Python", "url": "https://stripe.com/docs/api"},
         {"title": "Django SaaS", "url": "https://www.djangoproject.com/"}
+      ],
+      "youtube": [
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Tutorial", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Tutorial", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI REST API", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Deployment", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "Pydantic", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask SQLAlchemy", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Async", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Blueprints", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Deployment", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Forms", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Security", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Database Python", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "REST API FastAPI", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask REST API", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Best Practices", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Database", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Docs", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask WTForms", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "Full Stack FastAPI", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Project", "channel": "Corey Schafer"}
       ]
     },
     {
@@ -115,6 +181,69 @@
         {"title": "Docker Python", "url": "https://docs.docker.com/language/python/"},
         {"title": "GitHub Actions", "url": "https://docs.github.com/actions"},
         {"title": "Pulumi Python", "url": "https://www.pulumi.com/docs/languages-sdks/python/"}
+      ],
+      "youtube": [
+        {"id": "x7f9x30W_dI", "title": "Docker GitHub Actions", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "CI/CD Docker AWS", "channel": "Dmitriy Zhiganov"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Deployment", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "Build Push Docker", "channel": "Rishab in Cloud"},
+        {"id": "EgpLj86ZHFQ", "title": "pytest CI", "channel": "Tech With Tim"},
+        {"id": "x7f9x30W_dI", "title": "Docker Images", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "Advanced CI/CD", "channel": "Dmitriy Zhiganov"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Deployment", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "GitHub Actions", "channel": "Rishab in Cloud"},
+        {"id": "0sOvCWFmrtA", "title": "Python Deployment", "channel": "freeCodeCamp"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing Automation", "channel": "Tech With Tim"},
+        {"id": "x7f9x30W_dI", "title": "Container Automation", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "Docker Compose", "channel": "Dmitriy Zhiganov"},
+        {"id": "Z1RJmh_OqeA", "title": "CI CD", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "DevOps Python", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "Infrastructure", "channel": "Dmitriy Zhiganov"},
+        {"id": "EgpLj86ZHFQ", "title": "pytest Complete", "channel": "Tech With Tim"},
+        {"id": "x7f9x30W_dI", "title": "Deployment Pipeline", "channel": "Rishab in Cloud"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI CI", "channel": "freeCodeCamp"},
+        {"id": "OziAeEWY514", "title": "Docker AWS", "channel": "Dmitriy Zhiganov"}
+      ]
+    },
+    {
+      "id": "state-of-art-2026",
+      "title": "State of the Art 2026",
+      "icon": "🚀",
+      "description": "Videos from 2025–2026 on cutting-edge Python: Python 3.14, type hints, asyncio, AI tools, uv/Ruff, and modern workflows.",
+      "concepts": [
+        "Python 3.14: t-strings, deferred annotations, syntax improvements",
+        "Type hints for better IDE support and reliability",
+        "Asyncio and the event loop explained",
+        "uv + Ruff + Pydantic: the 2026 Python workflow",
+        "AI-augmented development and vibe coding",
+        "Free-threaded Python and No-GIL (3.13+)"
+      ],
+      "resources": [
+        {"title": "Python 3.14 What's New", "url": "https://docs.python.org/3/whatsnew/3.14.html"},
+        {"title": "ArjanCodes", "url": "https://www.youtube.com/@ArjanCodes"},
+        {"title": "uv Package Manager", "url": "https://github.com/astral-sh/uv"}
+      ],
+      "youtube": [
+        {"id": "S_shhw4VV68", "title": "Python 3.14 Features", "channel": "ArjanCodes"},
+        {"id": "pKpZ7GOc5GY", "title": "Python 2024 with AI Tools", "channel": "Training Scientists"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Hints in Python", "channel": "ArjanCodes"},
+        {"id": "RIVcqT2OGPA", "title": "Asyncio Event Loop Explained", "channel": "ArjanCodes"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor Vibe Coding 2025", "channel": "Tech With Tim"},
+        {"id": "faezjTHA5SU", "title": "Vibe Coding 101", "channel": "Riley Brown"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Modern Python", "channel": "freeCodeCamp"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy SciPy 2024", "channel": "SciPy"},
+        {"id": "1qz7qUM6yUI", "title": "NumPy 2025", "channel": "Intellipaat"},
+        {"id": "hDKCxebp88A", "title": "ML Scikit-learn", "channel": "freeCodeCamp"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP spaCy", "channel": "freeCodeCamp"},
+        {"id": "EgpLj86ZHFQ", "title": "pytest Testing", "channel": "Tech With Tim"},
+        {"id": "oXlwWbU8l2o", "title": "OpenCV Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "S_shhw4VV68", "title": "Python 3.14 Highlights", "channel": "ArjanCodes"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Hints Best Practices", "channel": "ArjanCodes"},
+        {"id": "RIVcqT2OGPA", "title": "Async Python", "channel": "ArjanCodes"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science 2025", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Best Practices", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Docker GitHub Actions", "channel": "Rishab in Cloud"},
+        {"id": "pKpZ7GOc5GY", "title": "Python AI Best Practices", "channel": "Training Scientists"}
       ]
     }
   ]
