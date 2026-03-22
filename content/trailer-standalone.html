@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Mastery — Course Trailer</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700;900&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.vid {
+  font-family: 'Outfit', sans-serif;
+  background: #0a0a0f;
+  color: #f0ede8;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.scene {
+  display: none;
+  padding: 0;
+  animation: fadeIn 0.5s ease;
+}
+.scene.active { display: block; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideRight { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes popIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+@keyframes shimmer { 0%{ background-position: -200% center; } 100%{ background-position: 200% center; } }
+@keyframes countUp { from { opacity:0; } to { opacity:1; } }
+@keyframes barGrow { from { width: 0; } to { width: var(--w); } }
+@keyframes orbit { from { transform: rotate(0deg) translateX(70px) rotate(0deg); } to { transform: rotate(360deg) translateX(70px) rotate(-360deg); } }
+@keyframes floatDot { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* ─── SCENE 1: Hero ─── */
+.hero {
+  background: #0a0a0f;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, #1a1040 0%, #0a0a0f 70%);
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+}
+.orb1 { width: 300px; height: 300px; background: #7c3aed; top: -80px; left: -60px; }
+.orb2 { width: 200px; height: 200px; background: #0ea5e9; bottom: -40px; right: -40px; }
+.orb3 { width: 150px; height: 150px; background: #10b981; bottom: 20px; left: 20%; }
+
+.hero-content { position: relative; z-index: 2; }
+.hero-badge {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a78bfa;
+  border: 1px solid #7c3aed44;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  animation: slideUp 0.6s ease 0.1s both;
+}
+.hero-title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 8px;
+  animation: slideUp 0.6s ease 0.25s both;
+}
+.hero-title .py { color: #f0ede8; }
+.hero-title .mastery {
+  background: linear-gradient(135deg, #7c3aed, #0ea5e9, #10b981);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+.hero-sub {
+  font-size: 17px;
+  color: #9ca3af;
+  font-weight: 300;
+  margin-bottom: 32px;
+  animation: slideUp 0.6s ease 0.4s both;
+}
+.hero-pills {
+  display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+  animation: slideUp 0.6s ease 0.55s both;
+  margin-bottom: 36px;
+}
+.pill {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  border: 1px solid;
+}
+.pill-purple { background: #7c3aed15; border-color: #7c3aed55; color: #c4b5fd; }
+.pill-blue   { background: #0ea5e915; border-color: #0ea5e955; color: #7dd3fc; }
+.pill-green  { background: #10b98115; border-color: #10b98155; color: #6ee7b7; }
+.pill-amber  { background: #f59e0b15; border-color: #f59e0b55; color: #fcd34d; }
+
+.hero-stats {
+  display: flex; gap: 32px; justify-content: center;
+  animation: slideUp 0.6s ease 0.7s both;
+}
+.stat-block { text-align: center; }
+.stat-num { font-size: 28px; font-weight: 700; color: #f0ede8; }
+.stat-label { font-size: 12px; color: #6b7280; margin-top: 2px; }
+
+.hero-floating-dots {
+  position: absolute; z-index: 1;
+  inset: 0; pointer-events: none;
+}
+.fdot {
+  position: absolute;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  animation: floatDot 3s ease-in-out infinite;
+}
+
+/* ─── SCENE 2: Curriculum ─── */
+.curriculum {
+  background: #0a0a0f;
+  padding: 40px 28px;
+}
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #7c3aed;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #f0ede8;
+}
+.parts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.part-card {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 12px;
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.part-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+}
+.part-card.p1::before { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+.part-card.p2::before { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+.part-card.p3::before { background: linear-gradient(90deg, #10b981, #34d399); }
+.part-card.p4::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.part-card.p5::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+
+.part-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  opacity: 0.5;
+}
+.part-name { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #e5e7eb; }
+.part-weeks { font-size: 12px; color: #6b7280; margin-bottom: 10px; }
+.part-libs {
+  display: flex; flex-wrap: wrap; gap: 5px;
+}
+.lib-tag {
+  font-size: 10px;
+  font-family: 'Space Mono', monospace;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #1a1a2e;
+  color: #a78bfa;
+  border: 1px solid #7c3aed22;
+}
+.lib-tag.blue { background: #0c2030; color: #7dd3fc; border-color: #0ea5e922; }
+.lib-tag.green { background: #0a1f18; color: #6ee7b7; border-color: #10b98122; }
+.lib-tag.amber { background: #1f1600; color: #fcd34d; border-color: #f59e0b22; }
+.lib-tag.red { background: #1f0a0a; color: #fca5a5; border-color: #ef444422; }
+
+.part-card.wide { grid-column: span 2; }
+
+.week-ticker {
+  margin-top: 20px;
+  overflow: hidden;
+  border: 1px solid #1e1e2e;
+  border-radius: 8px;
+  padding: 10px 0;
+  position: relative;
+}
+.ticker-inner {
+  display: flex;
+  gap: 0;
+  animation: ticker 20s linear infinite;
+  white-space: nowrap;
+}
+.tick-item {
+  font-size: 12px;
+  color: #6b7280;
+  padding: 0 16px;
+  border-right: 1px solid #1e1e2e;
+  flex-shrink: 0;
+}
+.tick-item span { color: #a78bfa; margin-right: 4px; }
+
+/* ─── SCENE 3: Outcomes ─── */
+.outcomes {
+  background: #0a0a0f;
+  padding: 40px 28px;
+}
+.skill-bars { margin-top: 20px; display: flex; flex-direction: column; gap: 14px; }
+.skill-row { display: flex; align-items: center; gap: 12px; }
+.skill-name { font-size: 13px; color: #9ca3af; width: 120px; flex-shrink: 0; }
+.skill-track {
+  flex: 1; height: 6px; background: #1e1e2e; border-radius: 3px; overflow: hidden;
+}
+.skill-fill {
+  height: 100%; border-radius: 3px;
+  animation: barGrow 1.2s cubic-bezier(.22,1,.36,1) forwards;
+}
+.skill-pct { font-size: 12px; font-family: 'Space Mono', monospace; color: #6b7280; width: 36px; text-align: right; }
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 24px;
+}
+.outcome-card {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 10px;
+  padding: 16px;
+  animation: popIn 0.4s ease both;
+}
+.outcome-icon { font-size: 20px; margin-bottom: 8px; }
+.outcome-title { font-size: 13px; font-weight: 600; color: #e5e7eb; margin-bottom: 4px; }
+.outcome-desc { font-size: 12px; color: #6b7280; line-height: 1.5; }
+
+/* ─── SCENE 4: Pricing ─── */
+.pricing {
+  background: #0a0a0f;
+  padding: 40px 28px;
+}
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+.price-card {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 14px;
+  padding: 20px 16px;
+  position: relative;
+  text-align: center;
+}
+.price-card.featured {
+  border-color: #7c3aed55;
+  background: linear-gradient(160deg, #13101f 0%, #111118 60%);
+}
+.price-card.featured::after {
+  content: 'RECOMMENDED';
+  position: absolute;
+  top: -1px; left: 50%; transform: translateX(-50%);
+  background: linear-gradient(90deg, #7c3aed, #0ea5e9);
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: white;
+  padding: 3px 12px;
+  border-radius: 0 0 8px 8px;
+}
+.price-tier { font-size: 11px; color: #6b7280; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; font-family: 'Space Mono', monospace; }
+.price-amount { font-size: 28px; font-weight: 800; color: #f0ede8; line-height: 1; }
+.price-amount .currency { font-size: 16px; vertical-align: top; margin-top: 4px; display: inline-block; color: #9ca3af; }
+.price-amount .period { font-size: 12px; font-weight: 400; color: #6b7280; }
+.price-eb { font-size: 11px; color: #10b981; margin-top: 4px; }
+.price-divider { border: none; border-top: 1px solid #1e1e2e; margin: 14px 0; }
+.price-feature { font-size: 12px; color: #9ca3af; padding: 4px 0; text-align: left; display: flex; align-items: flex-start; gap: 6px; }
+.check { color: #10b981; flex-shrink: 0; margin-top: 1px; }
+.cross { color: #374151; flex-shrink: 0; margin-top: 1px; }
+
+.discount-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+.disc-card {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  border-radius: 10px;
+  padding: 12px 10px;
+  text-align: center;
+}
+.disc-pct { font-size: 22px; font-weight: 700; color: #f59e0b; }
+.disc-label { font-size: 11px; color: #6b7280; margin-top: 2px; line-height: 1.3; }
+
+/* ─── SCENE 5: CTA ─── */
+.cta-scene {
+  background: #0a0a0f;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-bg {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 100% 80% at 50% 50%, #1a0a30 0%, #0a0a0f 70%);
+}
+.cta-title {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 900;
+  position: relative; z-index: 2;
+  animation: slideUp 0.6s ease both;
+}
+.cta-sub {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 12px 0 28px;
+  position: relative; z-index: 2;
+  animation: slideUp 0.6s ease 0.15s both;
+}
+.cta-btns {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  position: relative; z-index: 2;
+  animation: slideUp 0.6s ease 0.3s both;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: opacity 0.2s;
+}
+.btn-primary:hover { opacity: 0.85; }
+a.btn-primary, a.btn-secondary { text-decoration: none; display: inline-block; }
+.btn-secondary {
+  background: transparent;
+  color: #9ca3af;
+  border: 1px solid #1e1e2e;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: border-color 0.2s;
+}
+.btn-secondary:hover { border-color: #374151; color: #e5e7eb; }
+
+.cohort-dates {
+  margin-top: 28px;
+  display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+  position: relative; z-index: 2;
+  animation: slideUp 0.6s ease 0.45s both;
+}
+.date-chip {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  color: #6b7280;
+}
+.date-chip.next { border-color: #7c3aed44; color: #a78bfa; background: #13101f; }
+
+/* ─── Progress / Nav ─── */
+.nav-bar {
+  background: #0d0d14;
+  border-top: 1px solid #1e1e2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  gap: 12px;
+}
+.nav-dots {
+  display: flex; gap: 6px;
+}
+.nav-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #1e1e2e;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.nav-dot.active { background: #7c3aed; transform: scale(1.4); }
+
+.nav-btns { display: flex; gap: 8px; }
+.nav-btn {
+  background: #111118;
+  border: 1px solid #1e1e2e;
+  color: #9ca3af;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-btn:hover { border-color: #374151; color: #e5e7eb; }
+.nav-btn:disabled { opacity: 0.3; cursor: default; }
+.nav-btn.next-btn {
+  background: #7c3aed22;
+  border-color: #7c3aed44;
+  color: #a78bfa;
+}
+.nav-btn.next-btn:hover { background: #7c3aed33; }
+
+.scene-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: #374151;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="vid">
+  <!-- SCENE 1: Hero -->
+  <div id="s1" class="scene active">
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+      <div class="hero-floating-dots">
+        <div class="fdot" style="top:15%;left:10%;background:#7c3aed;animation-delay:0s;"></div>
+        <div class="fdot" style="top:25%;right:12%;background:#0ea5e9;animation-delay:0.8s;"></div>
+        <div class="fdot" style="bottom:20%;left:18%;background:#10b981;animation-delay:1.6s;"></div>
+        <div class="fdot" style="bottom:30%;right:20%;background:#f59e0b;animation-delay:0.4s;"></div>
+        <div class="fdot" style="top:50%;left:5%;background:#a78bfa;animation-delay:1.2s;"></div>
+        <div class="fdot" style="top:60%;right:8%;background:#34d399;animation-delay:2s;"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">&#x2f;&#x2f; 16-week cohort program</div>
+        <div class="hero-title">
+          <span class="py">Python</span><br>
+          <span class="mastery">Mastery</span>
+        </div>
+        <div class="hero-sub">From absolute beginner to production-ready practitioner</div>
+        <div class="hero-pills">
+          <span class="pill pill-purple">Data Science</span>
+          <span class="pill pill-blue">Machine Learning</span>
+          <span class="pill pill-green">Scientific Computing</span>
+          <span class="pill pill-amber">Web APIs</span>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-block">
+            <div class="stat-num">160</div>
+            <div class="stat-label">learning blocks</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">21+</div>
+            <div class="stat-label">major libraries</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">16</div>
+            <div class="stat-label">weeks</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-num">6</div>
+            <div class="stat-label">cohorts/year</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE 2: Curriculum -->
+  <div id="s2" class="scene">
+    <div class="curriculum">
+      <div class="section-label">// what you'll learn</div>
+      <div class="section-title">5-part curriculum</div>
+      <div class="parts-grid">
+        <div class="part-card p1">
+          <div class="part-num">PART I &mdash; WK 1&ndash;4</div>
+          <div class="part-name">Foundations</div>
+          <div class="part-weeks">Python core &rarr; arrays &rarr; DataFrames &rarr; viz</div>
+          <div class="part-libs">
+            <span class="lib-tag">NumPy</span>
+            <span class="lib-tag">Pandas</span>
+            <span class="lib-tag">Matplotlib</span>
+            <span class="lib-tag">Seaborn</span>
+          </div>
+        </div>
+        <div class="part-card p2">
+          <div class="part-num">PART II &mdash; WK 5&ndash;8</div>
+          <div class="part-name">Data &amp; Web</div>
+          <div class="part-weeks">Pipelines, APIs, scraping, ML</div>
+          <div class="part-libs">
+            <span class="lib-tag blue">requests</span>
+            <span class="lib-tag blue">Flask</span>
+            <span class="lib-tag blue">FastAPI</span>
+            <span class="lib-tag blue">sklearn</span>
+          </div>
+        </div>
+        <div class="part-card p3">
+          <div class="part-num">PART III &mdash; WK 9&ndash;12</div>
+          <div class="part-name">Science, NLP &amp; Vision</div>
+          <div class="part-weeks">Stats, transformers, computer vision</div>
+          <div class="part-libs">
+            <span class="lib-tag green">SciPy</span>
+            <span class="lib-tag green">spaCy</span>
+            <span class="lib-tag green">Transformers</span>
+            <span class="lib-tag green">OpenCV</span>
+          </div>
+        </div>
+        <div class="part-card p4">
+          <div class="part-num">PART IV &mdash; WK 13&ndash;14</div>
+          <div class="part-name">Engineering &amp; Automation</div>
+          <div class="part-weeks">Databases, ETL, testing, scripting</div>
+          <div class="part-libs">
+            <span class="lib-tag amber">SQLAlchemy</span>
+            <span class="lib-tag amber">Dask</span>
+            <span class="lib-tag amber">pytest</span>
+            <span class="lib-tag amber">Selenium</span>
+          </div>
+        </div>
+        <div class="part-card p5 wide">
+          <div class="part-num">PART V &mdash; WK 15&ndash;16</div>
+          <div class="part-name">Capstone: Design &rarr; Deploy &rarr; Present</div>
+          <div class="part-weeks">5 tracks &mdash; Data Analysis / ML API / NLP / Computer Vision / Data Engineering</div>
+          <div class="part-libs">
+            <span class="lib-tag red">Track A: EDA report</span>
+            <span class="lib-tag red">Track B: REST API model</span>
+            <span class="lib-tag red">Track C: NLP web app</span>
+            <span class="lib-tag red">Track D: Vision classifier</span>
+            <span class="lib-tag red">Track E: ETL pipeline</span>
+          </div>
+        </div>
+      </div>
+      <div class="week-ticker">
+        <div class="ticker-inner" id="ticker"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE 3: Learning Outcomes -->
+  <div id="s3" class="scene">
+    <div class="outcomes">
+      <div class="section-label">// learning outcomes</div>
+      <div class="section-title">What you'll be able to build</div>
+      <div class="skill-bars">
+        <div class="skill-row">
+          <div class="skill-name">Data pipelines</div>
+          <div class="skill-track"><div class="skill-fill" style="--w:95%;width:0;background:linear-gradient(90deg,#7c3aed,#a78bfa);animation-delay:0.1s;"></div></div>
+          <div class="skill-pct">95%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">ML models</div>
+          <div class="skill-track"><div class="skill-fill" style="--w:88%;width:0;background:linear-gradient(90deg,#0ea5e9,#38bdf8);animation-delay:0.25s;"></div></div>
+          <div class="skill-pct">88%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">REST APIs</div>
+          <div class="skill-track"><div class="skill-fill" style="--w:85%;width:0;background:linear-gradient(90deg,#10b981,#34d399);animation-delay:0.4s;"></div></div>
+          <div class="skill-pct">85%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">NLP apps</div>
+          <div class="skill-track"><div class="skill-fill" style="--w:80%;width:0;background:linear-gradient(90deg,#f59e0b,#fbbf24);animation-delay:0.55s;"></div></div>
+          <div class="skill-pct">80%</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-name">Computer vision</div>
+          <div class="skill-track"><div class="skill-fill" style="--w:75%;width:0;background:linear-gradient(90deg,#ef4444,#f87171);animation-delay:0.7s;"></div></div>
+          <div class="skill-pct">75%</div>
+        </div>
+      </div>
+      <div class="outcome-grid">
+        <div class="outcome-card" style="animation-delay:0.1s">
+          <div class="outcome-icon">&#128200;</div>
+          <div class="outcome-title">Analyze any dataset</div>
+          <div class="outcome-desc">NumPy, Pandas, SciPy, and statsmodels for end-to-end EDA</div>
+        </div>
+        <div class="outcome-card" style="animation-delay:0.2s">
+          <div class="outcome-icon">&#129504;</div>
+          <div class="outcome-title">Train &amp; ship ML models</div>
+          <div class="outcome-desc">scikit-learn pipelines with FastAPI serving layer</div>
+        </div>
+        <div class="outcome-card" style="animation-delay:0.3s">
+          <div class="outcome-icon">&#128172;</div>
+          <div class="outcome-title">Build NLP pipelines</div>
+          <div class="outcome-desc">BERT, spaCy, and Hugging Face Transformers</div>
+        </div>
+        <div class="outcome-card" style="animation-delay:0.4s">
+          <div class="outcome-icon">&#128640;</div>
+          <div class="outcome-title">Automate &amp; test</div>
+          <div class="outcome-desc">pytest, Selenium, Dask for production-grade code</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE 4: Pricing -->
+  <div id="s4" class="scene">
+    <div class="pricing">
+      <div class="section-label">// investment</div>
+      <div class="section-title">Pricing &amp; tiers</div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">Self-paced</div>
+          <div class="price-amount"><span class="currency">$</span>497</div>
+          <div class="price-eb">&#10003; Early bird $399</div>
+          <hr class="price-divider">
+          <div class="price-feature"><span class="check">&#10003;</span> All 160 blocks</div>
+          <div class="price-feature"><span class="check">&#10003;</span> JupyterLab sandbox</div>
+          <div class="price-feature"><span class="check">&#10003;</span> 6-month access</div>
+          <div class="price-feature"><span class="cross">&#10005;</span> Live instruction</div>
+          <div class="price-feature"><span class="cross">&#10005;</span> Mentoring</div>
+        </div>
+        <div class="price-card featured">
+          <div class="price-tier">Cohort live</div>
+          <div class="price-amount"><span class="currency">$</span>1,997</div>
+          <div class="price-eb">&#10003; Early bird $1,597</div>
+          <hr class="price-divider">
+          <div class="price-feature"><span class="check">&#10003;</span> 2&times;30min live daily</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Weekly 1:1 office hours</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Slack community</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Auto-graded exercises</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Graded certificate</div>
+        </div>
+        <div class="price-card">
+          <div class="price-tier">Corporate</div>
+          <div class="price-amount" style="font-size:20px;padding-top:6px;">from $3,200<span class="period">/learner</span></div>
+          <div class="price-eb">Min 4 learners</div>
+          <hr class="price-divider">
+          <div class="price-feature"><span class="check">&#10003;</span> Dedicated instructor</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Custom projects</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Unlimited 1:1 sessions</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Custom branding cert</div>
+          <div class="price-feature"><span class="check">&#10003;</span> Invoice net 30</div>
+        </div>
+      </div>
+      <div class="discount-row">
+        <div class="disc-card">
+          <div class="disc-pct">20%</div>
+          <div class="disc-label">Early bird 30+ days out</div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-pct">25%</div>
+          <div class="disc-label">Student / recent grad</div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-pct">40%</div>
+          <div class="disc-label">Non-profit / NGO</div>
+        </div>
+        <div class="disc-card">
+          <div class="disc-pct">$100</div>
+          <div class="disc-label">Per referral credit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCENE 5: CTA -->
+  <div id="s5" class="scene">
+    <div class="cta-scene">
+      <div class="cta-bg"></div>
+      <div class="cta-title">Start your Python<br><span style="background:linear-gradient(135deg,#7c3aed,#0ea5e9,#10b981);background-size:300% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite;">journey today</span></div>
+      <div class="cta-sub">6 cohort starts per year &mdash; seats fill fast</div>
+      <div class="cta-btns">
+        <a href="/pricing.html" class="btn-primary" target="_top">Enroll now &#8599;</a>
+        <a href="/#course-structure" class="btn-secondary" target="_top">View syllabus</a>
+      </div>
+      <div class="cohort-dates">
+        <span class="date-chip next">Jan 2026 &mdash; Open</span>
+        <span class="date-chip">Mar 2026</span>
+        <span class="date-chip">May 2026</span>
+        <span class="date-chip">Jul 2026</span>
+        <span class="date-chip">Sep 2026</span>
+        <span class="date-chip">Nov 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Bar -->
+  <div class="nav-bar">
+    <div class="nav-dots">
+      <div class="nav-dot active" onclick="goTo(1)"></div>
+      <div class="nav-dot" onclick="goTo(2)"></div>
+      <div class="nav-dot" onclick="goTo(3)"></div>
+      <div class="nav-dot" onclick="goTo(4)"></div>
+      <div class="nav-dot" onclick="goTo(5)"></div>
+    </div>
+    <div class="scene-label" id="sceneLabel">01 / 05 &mdash; intro</div>
+    <div class="nav-btns">
+      <button class="nav-btn" id="prevBtn" onclick="prevScene()" disabled>&#8592; Back</button>
+      <button class="nav-btn next-btn" id="nextBtn" onclick="nextScene()">Next &#8594;</button>
+    </div>
+  </div>
+</div>
+
+<script>
+var current = 1;
+var total = 5;
+var labels = ['intro','curriculum','outcomes','pricing','enroll'];
+
+var weeks = [
+  'Wk 1: Python Foundations',
+  'Wk 2: NumPy Arrays',
+  'Wk 3: Pandas DataFrames',
+  'Wk 4: Matplotlib & Seaborn',
+  'Wk 5: File Formats & Pipelines',
+  'Wk 6: HTTP & Web Scraping',
+  'Wk 7: Flask & FastAPI',
+  'Wk 8: scikit-learn ML',
+  'Wk 9: SciPy & SymPy',
+  'Wk 10: Practical Statistics',
+  'Wk 11: NLTK, spaCy & Transformers',
+  'Wk 12: Computer Vision OpenCV',
+  'Wk 13: Databases & SQLAlchemy',
+  'Wk 14: Automation & pytest',
+  'Wk 15: Capstone Design',
+  'Wk 16: Capstone Presentation'
+];
+
+(function buildTicker() {
+  var el = document.getElementById('ticker');
+  if (!el) return;
+  var doubled = weeks.concat(weeks);
+  doubled.forEach(function(w) {
+    var d = document.createElement('div');
+    d.className = 'tick-item';
+    d.innerHTML = '<span>&rarr;</span>' + w;
+    el.appendChild(d);
+  });
+})();
+
+function goTo(n) {
+  document.getElementById('s' + current).classList.remove('active');
+  document.querySelectorAll('.nav-dot')[current-1].classList.remove('active');
+  current = n;
+  document.getElementById('s' + current).classList.add('active');
+  document.querySelectorAll('.nav-dot')[current-1].classList.add('active');
+  document.getElementById('sceneLabel').textContent = '0' + current + ' / 0' + total + ' \u2014 ' + labels[current-1];
+  document.getElementById('prevBtn').disabled = current === 1;
+  document.getElementById('nextBtn').textContent = current === total ? 'Start course \u2192' : 'Next \u2192';
+  document.getElementById('nextBtn').disabled = false;
+}
+
+function nextScene() {
+  if (current < total) goTo(current + 1);
+  else window.top.location.href = '/#course-structure';
+}
+function prevScene() { if (current > 1) goTo(current - 1); }
+</script>
+</body>
+</html>
