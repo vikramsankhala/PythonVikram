@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 5 Assessment | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/5.html">Week 5</a>
+  </nav>
+  <main class="container">
+    <h1>📝 Week 5 Assessment</h1>
+    <p>Week 5 Assessment: File Formats</p>
+    <form id="assessment-form">
+      
+        <div class="aq-question">
+          <p><strong>1. Which module is used for JSON in Python?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q1" value="0"> json</label><br>
+              <label><input type="radio" name="q1" value="1"> csv</label><br>
+              <label><input type="radio" name="q1" value="2"> xml</label><br>
+              <label><input type="radio" name="q1" value="3"> yaml</label>
+          </div>
+        </div>
+      <div class="aq-question">
+        <p><strong>2. Read a CSV file 'data.csv' into a pandas DataFrame.</strong></p>
+        <textarea name="q2" rows="4" placeholder="Write your code or answer..."></textarea>
+      </div>
+      <button type="submit">Submit for Grading</button>
+    </form>
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <p id="score"></p>
+      <p id="ai-analysis"></p>
+    </section>
+    <script>
+      document.getElementById('assessment-form').onsubmit=function(e){
+        e.preventDefault();
+        var ans=[{"id":1,"type":"mcq","answer":0},{"id":2,"type":"code","solution":"import pandas as pd; df = pd.read_csv('data.csv')"}];
+        var correct=0;
+        ans.forEach(function(a,i){
+          var el=document.querySelector('[name="q'+a.id+'"]');
+          if(!el)return;
+          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          if(a.type==='mcq'&&v===a.answer)correct++;
+          if(a.type==='code'&&v&&v.length>0)correct++;
+        });
+        var total=ans.length;
+        var pct=Math.round(correct/total*100);
+        document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
+        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+"Assess file I/O and data loading skills."+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('results').classList.remove('hidden');
+      };
+    </script>
+  </main>
+</body>
+</html>

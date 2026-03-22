@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 Assessment | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/3.html">Week 3</a>
+  </nav>
+  <main class="container">
+    <h1>📝 Week 3 Assessment</h1>
+    <p>Week 3 Assessment: Pandas</p>
+    <form id="assessment-form">
+      
+        <div class="aq-question">
+          <p><strong>1. What is a pandas Series?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q1" value="0"> 1D array with labels</label><br>
+              <label><input type="radio" name="q1" value="1"> 2D table</label><br>
+              <label><input type="radio" name="q1" value="2"> Database row</label><br>
+              <label><input type="radio" name="q1" value="3"> List</label>
+          </div>
+        </div>
+        <div class="aq-question">
+          <p><strong>2. Given df, how do you select column 'age'?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q2" value="0"> df.age</label><br>
+              <label><input type="radio" name="q2" value="1"> df['age']</label><br>
+              <label><input type="radio" name="q2" value="2"> Both work</label><br>
+              <label><input type="radio" name="q2" value="3"> df.column</label>
+          </div>
+        </div>
+      <div class="aq-question">
+        <p><strong>3. Group df by 'category' and get mean of 'value'.</strong></p>
+        <textarea name="q3" rows="4" placeholder="Write your code or answer..."></textarea>
+      </div>
+        <div class="aq-question">
+          <p><strong>4. merge() in pandas performs?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q4" value="0"> Concatenation</label><br>
+              <label><input type="radio" name="q4" value="1"> SQL-like join</label><br>
+              <label><input type="radio" name="q4" value="2"> Append</label><br>
+              <label><input type="radio" name="q4" value="3"> Replace</label>
+          </div>
+        </div>
+      <div class="aq-question">
+        <p><strong>5. Drop rows with NaN in column 'x'.</strong></p>
+        <textarea name="q5" rows="4" placeholder="Write your code or answer..."></textarea>
+      </div>
+      <button type="submit">Submit for Grading</button>
+    </form>
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <p id="score"></p>
+      <p id="ai-analysis"></p>
+    </section>
+    <script>
+      document.getElementById('assessment-form').onsubmit=function(e){
+        e.preventDefault();
+        var ans=[{"id":1,"type":"mcq","answer":0},{"id":2,"type":"mcq","answer":2},{"id":3,"type":"code","solution":"df.groupby('category')['value'].mean()"},{"id":4,"type":"mcq","answer":1},{"id":5,"type":"code","solution":"df.dropna(subset=['x'])"}];
+        var correct=0;
+        ans.forEach(function(a,i){
+          var el=document.querySelector('[name="q'+a.id+'"]');
+          if(!el)return;
+          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          if(a.type==='mcq'&&v===a.answer)correct++;
+          if(a.type==='code'&&v&&v.length>0)correct++;
+        });
+        var total=ans.length;
+        var pct=Math.round(correct/total*100);
+        document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
+        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+"Assess Pandas fluency. Recommend groupby/merge practice if needed."+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('results').classList.remove('hidden');
+      };
+    </script>
+  </main>
+</body>
+</html>

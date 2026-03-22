@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 16 Assessment | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/16.html">Week 16</a>
+  </nav>
+  <main class="container">
+    <h1>📝 Week 16 Assessment</h1>
+    <p>Week 16 Assessment: Capstone Delivery</p>
+    <form id="assessment-form">
+      
+        <div class="aq-question">
+          <p><strong>1. README should include?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q1" value="0"> Install steps</label><br>
+              <label><input type="radio" name="q1" value="1"> Usage</label><br>
+              <label><input type="radio" name="q1" value="2"> Both</label><br>
+              <label><input type="radio" name="q1" value="3"> Neither</label>
+          </div>
+        </div>
+      <button type="submit">Submit for Grading</button>
+    </form>
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <p id="score"></p>
+      <p id="ai-analysis"></p>
+    </section>
+    <script>
+      document.getElementById('assessment-form').onsubmit=function(e){
+        e.preventDefault();
+        var ans=[{"id":1,"type":"mcq","answer":2}];
+        var correct=0;
+        ans.forEach(function(a,i){
+          var el=document.querySelector('[name="q'+a.id+'"]');
+          if(!el)return;
+          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          if(a.type==='mcq'&&v===a.answer)correct++;
+          if(a.type==='code'&&v&&v.length>0)correct++;
+        });
+        var total=ans.length;
+        var pct=Math.round(correct/total*100);
+        document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
+        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+"Assess packaging and documentation knowledge."+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('results').classList.remove('hidden');
+      };
+    </script>
+  </main>
+</body>
+</html>

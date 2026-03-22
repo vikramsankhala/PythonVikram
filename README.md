@@ -2,6 +2,25 @@
 
 A complete 16-week, 160-block training program for Data Science, Machine Learning & Scientific Computing. Built from the curriculum in `complete_python_training_course.docx`.
 
+## Features
+
+- **320 curated YouTube links** — 20 per week from top channels (freeCodeCamp, Corey Schafer, StatQuest, etc.)
+- **Visualizations & cheat sheets** — Mermaid diagrams, code snippets, quick references per week
+- **Week assessments** — Practice quizzes with grading and AI-based analysis (Claude)
+- **Progress monitor** — Study calendar, block tracker, strategy guidance per week
+- **Careers section** — 9 Python job roles with skills, salary ranges, assessments
+- **Pricing & comparison** — Course pricing and comparison with Coursera, DataCamp, Udemy, etc.
+- **AI Assistant** — Anthropic Claude integration for course Q&A
+
+## Deploy on Render
+
+1. Push to GitHub
+2. Go to [render.com](https://render.com) → New → Static Site
+3. Connect your repo, set Build Command: `npm run build`, Publish Directory: `public`
+4. Deploy
+
+See `render.yaml` for blueprint config.
+
 ## Deploy on Netlify via GitHub
 
 ### 1. Push to GitHub

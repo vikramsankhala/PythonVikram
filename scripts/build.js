@@ -9,10 +9,29 @@ const PUBLIC = path.join(BASE, 'public');
 if (!fs.existsSync(PUBLIC)) fs.mkdirSync(PUBLIC, { recursive: true });
 if (!fs.existsSync(path.join(PUBLIC, 'block'))) fs.mkdirSync(path.join(PUBLIC, 'block'), { recursive: true });
 if (!fs.existsSync(path.join(PUBLIC, 'week'))) fs.mkdirSync(path.join(PUBLIC, 'week'), { recursive: true });
+if (!fs.existsSync(path.join(PUBLIC, 'assessment'))) fs.mkdirSync(path.join(PUBLIC, 'assessment'), { recursive: true });
 
 // Load data
 const course = JSON.parse(fs.readFileSync(path.join(CONTENT, 'course-structure.json'), 'utf8'));
 const blocksMeta = JSON.parse(fs.readFileSync(path.join(CONTENT, 'blocks-metadata.json'), 'utf8'));
+let weekResources = { weeks: [] };
+let careers = { jobs: [] };
+let pricing = { ourPricing: {}, comparison: [] };
+let weekAssessments = { assessments: [] };
+try {
+  weekResources = JSON.parse(fs.readFileSync(path.join(CONTENT, 'week-resources.json'), 'utf8'));
+} catch (e) { console.warn('week-resources.json not found'); }
+try {
+  careers = JSON.parse(fs.readFileSync(path.join(CONTENT, 'careers.json'), 'utf8'));
+} catch (e) { console.warn('careers.json not found'); }
+try {
+  pricing = JSON.parse(fs.readFileSync(path.join(CONTENT, 'pricing.json'), 'utf8'));
+} catch (e) { console.warn('pricing.json not found'); }
+try {
+  weekAssessments = JSON.parse(fs.readFileSync(path.join(CONTENT, 'week-assessments.json'), 'utf8'));
+} catch (e) { console.warn('week-assessments.json not found'); }
+
+const getWeekResources = (weekId) => weekResources.weeks.find(r => r.week === weekId) || {};
 
 // Build blocks map: merge full content (blocks 1-10) with metadata
 const blocks = {};
@@ -129,6 +148,77 @@ function renderBlock(block) {
 
 function renderWeek(week) {
   const weekBlocks = blocksMeta.filter(b => b.week === week.id);
+  const res = getWeekResources(week.id);
+  const yt = (res.youtube || []).slice(0, 20);
+  const cheatSheets = res.cheatSheets || [];
+  const snippets = res.codeSnippets || [];
+  const viz = res.visualizations || [];
+  const strategy = res.strategyGuidance || '';
+
+  let ytHtml = '';
+  if (yt.length) {
+    ytHtml = `
+    <section>
+      <h2>📺 20 Curated YouTube Videos</h2>
+      <div class="youtube-grid">
+        ${yt.map(v => `
+          <a href="${escape(v.url || 'https://www.youtube.com/watch?v=' + v.id)}" target="_blank" rel="noopener" class="yt-card">
+            <span class="yt-thumb">▶ ${escape(v.title || v.channel)}</span>
+            <span class="yt-channel">${escape(v.channel || '')}</span>
+          </a>`).join('')}
+      </div>
+    </section>`;
+  }
+
+  let cheatHtml = '';
+  if (cheatSheets.length) {
+    cheatHtml = `
+    <section>
+      <h2>📋 Cheat Sheets</h2>
+      <div class="cheat-grid">
+        ${cheatSheets.map(c => `
+          <div class="cheat-card">
+            <h4>${escape(c.title)}</h4>
+            <pre class="cheat-pre">${escape(c.content)}</pre>
+          </div>`).join('')}
+      </div>
+    </section>`;
+  }
+
+  let snippetHtml = '';
+  if (snippets.length) {
+    snippetHtml = `
+    <section>
+      <h2>💻 Code Snippets</h2>
+      <div class="snippet-list">
+        ${snippets.map(s => `
+          <div class="code-block">
+            <h4>${escape(s.title)}</h4>
+            <pre><code>${escape(s.code)}</code></pre>
+          </div>`).join('')}
+      </div>
+    </section>`;
+  }
+
+  let vizHtml = '';
+  if (viz.length) {
+    vizHtml = `
+    <section>
+      <h2>📊 Visualizations &amp; Diagrams</h2>
+      <div class="viz-list">
+        ${viz.map(v => `
+          <div class="viz-card">
+            <h4>${escape(v.title)}</h4>
+            <pre class="viz-pre">${escape(v.content)}</pre>
+            ${v.type === 'mermaid' ? '<p class="viz-note">Paste into <a href="https://mermaid.live" target="_blank">mermaid.live</a> to render</p>' : ''}
+          </div>`).join('')}
+      </div>
+    </section>`;
+  }
+
+  const assessment = weekAssessments.assessments.find(a => a.week === week.id);
+  const assessmentLink = assessment ? `<a href="/assessment/${week.id}.html" class="assessment-cta">📝 Week ${week.id} Assessment (Practice + AI Analysis)</a>` : '';
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,18 +230,30 @@ function renderWeek(week) {
 <body>
   <nav class="top-nav">
     <a href="/">← Course</a>
+    <a href="/progress.html">Progress</a>
   </nav>
   <main class="container">
     <h1>Week ${week.id}: ${escape(week.title)}</h1>
     <p class="theme">${escape(week.theme)}</p>
-    <div class="block-list">
-      ${weekBlocks.map(b => `
-        <a href="/block/${b.id}.html" class="block-card">
-          <span class="block-num">Block ${b.id}</span>
-          <span class="block-day">${b.day}</span>
-          <h3>${escape(b.title)}</h3>
-        </a>`).join('')}
-    </div>
+
+    ${strategy ? `<section><h2>📌 Strategy &amp; Study Guidance</h2><p class="strategy-box">${escape(strategy)}</p></section>` : ''}
+
+    <section>
+      <h2>Blocks</h2>
+      <div class="block-list">
+        ${weekBlocks.map(b => `
+          <a href="/block/${b.id}.html" class="block-card">
+            <span class="block-num">Block ${b.id}</span>
+            <span class="block-day">${b.day}</span>
+            <h3>${escape(b.title)}</h3>
+          </a>`).join('')}
+      </div>
+    </section>
+    ${ytHtml}
+    ${cheatHtml}
+    ${snippetHtml}
+    ${vizHtml}
+    ${assessmentLink ? `<section><h2>Assessment</h2>${assessmentLink}</section>` : ''}
   </main>
 </body>
 </html>`;
@@ -176,6 +278,10 @@ function renderIndex() {
 <body>
   <nav class="top-nav">
     <a href="/">Python Mastery</a>
+    <a href="/progress.html">📊 Progress</a>
+    <a href="/careers.html">💼 Careers</a>
+    <a href="/pricing.html">💰 Pricing</a>
+    <a href="/ai-assistant.html">🤖 AI Assistant</a>
   </nav>
   <main class="container">
     <header class="hero">
@@ -216,10 +322,284 @@ function renderIndex() {
     </section>
 
     <section>
-      <h2>Complete Course Book</h2>
-      <p>The full course book from <em>python_mastery_coursebook.docx</em> is available below.</p>
-      <a href="/coursebook.html" class="coursebook-link">📖 View Complete Course Book →</a>
+      <h2>Resources &amp; Tools</h2>
+      <div class="resource-links">
+        <a href="/coursebook.html" class="coursebook-link">📖 Complete Course Book</a>
+        <a href="/progress.html" class="coursebook-link">📊 Progress Monitor &amp; Study Calendar</a>
+        <a href="/careers.html" class="coursebook-link">💼 Python Careers &amp; Job Paths</a>
+        <a href="/pricing.html" class="coursebook-link">💰 Pricing &amp; Course Comparison</a>
+        <a href="/ai-assistant.html" class="coursebook-link">🤖 AI Assistant (Claude)</a>
+      </div>
     </section>
+  </main>
+</body>
+</html>`;
+}
+
+function renderCareers() {
+  const jobs = careers.jobs || [];
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Careers | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/careers.html">Careers</a>
+  </nav>
+  <main class="container">
+    <h1>${escape(careers.title || 'Python Careers')}</h1>
+    <p class="description">${escape(careers.description || '')}</p>
+    <div class="jobs-grid">
+      ${jobs.map(j => `
+        <div class="job-card">
+          <h3>${escape(j.title)}</h3>
+          <p class="job-salary">${escape(j.salaryRange)}</p>
+          <p class="job-demand">Demand: ${escape(j.demand)}</p>
+          <h4>Skills Required</h4>
+          <ul>${(j.skills || []).map(s => `<li>${escape(s)}</li>`).join('')}</ul>
+          <h4>Relevant Course Weeks</h4>
+          <p>Weeks ${(j.courseWeeks || []).join(', ')}</p>
+          <h4>Assessment</h4>
+          <p>${escape(j.assessment || '')}</p>
+        </div>`).join('')}
+    </div>
+  </main>
+</body>
+</html>`;
+}
+
+function renderPricing() {
+  const our = pricing.ourPricing || {};
+  const comp = pricing.comparison || [];
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing &amp; Comparison | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+  </nav>
+  <main class="container">
+    <h1>${escape(pricing.title || 'Pricing & Course Comparison')}</h1>
+    <section>
+      <h2>Our Pricing</h2>
+      <div class="pricing-grid">
+        ${Object.entries(our).map(([k, v]) => `
+          <div class="price-card">
+            <h3>${escape(v.name)}</h3>
+            <p class="price">${escape(v.price)}</p>
+            <ul>${(v.features || []).map(f => `<li>${escape(f)}</li>`).join('')}</ul>
+            ${(v.limitations || []).length ? `<p class="limits">${(v.limitations || []).map(l => escape(l)).join('; ')}</p>` : ''}
+          </div>`).join('')}
+      </div>
+    </section>
+    <section>
+      <h2>Comparative Assessment</h2>
+      <div class="comparison-table">
+        ${comp.map(c => `
+          <div class="comp-card">
+            <h3>${escape(c.name)}</h3>
+            <p><strong>Price:</strong> ${escape(c.price)} | <strong>Duration:</strong> ${escape(c.duration)}</p>
+            <p>${escape(c.focus)}</p>
+            <h4>Pros</h4><ul>${(c.pros || []).map(p => `<li>${escape(p)}</li>`).join('')}</ul>
+            <h4>Cons</h4><ul>${(c.cons || []).map(c => `<li>${escape(c)}</li>`).join('')}</ul>
+          </div>`).join('')}
+      </div>
+    </section>
+  </main>
+</body>
+</html>`;
+}
+
+function renderProgress() {
+  const totalBlocks = 160;
+  const weeks = course.weeks || [];
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Monitor &amp; Study Tracker | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/progress.html">Progress</a>
+  </nav>
+  <main class="container">
+    <h1>📊 Progress Monitor &amp; Study Tracker</h1>
+    <section>
+      <h2>Study Calendar</h2>
+      <p>16 weeks × 5 days × 2 blocks/day = 160 blocks. Check off as you complete.</p>
+      <div class="calendar-grid">
+        ${weeks.map(w => `
+          <div class="calendar-week">
+            <h4>Week ${w.id}</h4>
+            <p>${escape(w.title)}</p>
+            <div class="block-checks">
+              ${Array.from({ length: 10 }, (_, i) => (w.id - 1) * 10 + i + 1).map(bid => `
+                <label class="check-label"><input type="checkbox" data-block="${bid}"> B${bid}</label>`).join('')}
+            </div>
+          </div>`).join('')}
+      </div>
+    </section>
+    <section>
+      <h2>Progress Tracker</h2>
+      <div class="progress-bar-wrap">
+        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+      </div>
+      <p id="progress-text">0 / ${totalBlocks} blocks completed</p>
+    </section>
+    <section>
+      <h2>Study Strategy by Week</h2>
+      <div class="strategy-list">
+        ${(weekResources.weeks || []).map(r => `
+          <div class="strategy-item">
+            <h4>Week ${r.week}: ${escape(r.title || course.weeks.find(w=>w.id===r.week)?.title || '')}</h4>
+            <p>${escape(r.strategyGuidance || 'Review blocks and complete exercises.')}</p>
+          </div>`).join('')}
+        ${(!weekResources.weeks || weekResources.weeks.length === 0) ? '<p>Complete 2 blocks per day. Review previous week before starting new content.</p>' : ''}
+      </div>
+    </section>
+    <script>
+      (function(){
+        var k='python-mastery-progress';
+        var done=JSON.parse(localStorage.getItem(k)||'[]');
+        function save(){localStorage.setItem(k,JSON.stringify(done));update();}
+        function update(){
+          var c=document.querySelectorAll('input[data-block]');
+          c.forEach(function(i){
+            i.checked=done.indexOf(parseInt(i.dataset.block))>=0;
+            i.onchange=function(){
+              if(i.checked)done.push(parseInt(i.dataset.block));
+              else done=done.filter(function(x){return x!==parseInt(i.dataset.block);});
+              save();
+            };
+          });
+          var pct=Math.round(done.length/160*100);
+          var bar=document.getElementById('progress-bar');
+          var txt=document.getElementById('progress-text');
+          if(bar){bar.style.width=pct+'%';}
+          if(txt){txt.textContent=done.length+' / 160 blocks completed ('+pct+'%)';}
+        }
+        update();
+      })();
+    </script>
+  </main>
+</body>
+</html>`;
+}
+
+function renderAIAssistant() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant (Claude) | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+  </nav>
+  <main class="container">
+    <h1>🤖 Anthropic AI Assistant (Claude)</h1>
+    <p>Ask questions about the Python Mastery course. Get help with concepts, code, and exercises.</p>
+    <section class="ai-box">
+      <h2>How to Use</h2>
+      <ol>
+        <li>Visit <a href="https://claude.ai" target="_blank">claude.ai</a> for free access to Claude.</li>
+        <li>Copy this context and paste it into your first message: <em>"I am taking the Python Mastery 16-week course (Data Science, ML, Scientific Computing). Help me with..."</em></li>
+        <li>Ask specific questions about blocks, weeks, or concepts.</li>
+      </ol>
+      <h2>Example Questions</h2>
+      <ul>
+        <li>Explain NumPy broadcasting with an example.</li>
+        <li>How do I use groupby in Pandas?</li>
+        <li>What's the difference between Flask and FastAPI?</li>
+        <li>Help me debug this scikit-learn pipeline.</li>
+      </ul>
+      <h2>Integration (Premium)</h2>
+      <p>For embedded Claude chat, you need an <a href="https://console.anthropic.com" target="_blank">Anthropic API key</a>. Use services like Embeddable or Social Intents to add a chatbot to this site. See <a href="/pricing.html">Pricing</a> for premium options.</p>
+    </section>
+  </main>
+</body>
+</html>`;
+}
+
+function renderWeekAssessment(assessment) {
+  const qHtml = (assessment.questions || []).map((q, i) => {
+    if (q.type === 'mcq') {
+      return `
+        <div class="aq-question">
+          <p><strong>${i + 1}. ${escape(q.q)}</strong></p>
+          <div class="aq-options">
+            ${(q.options || []).map((o, j) => `
+              <label><input type="radio" name="q${q.id}" value="${j}"> ${escape(o)}</label>`).join('<br>')}
+          </div>
+        </div>`;
+    }
+    return `
+      <div class="aq-question">
+        <p><strong>${i + 1}. ${escape(q.q)}</strong></p>
+        <textarea name="q${q.id}" rows="4" placeholder="Write your code or answer..."></textarea>
+      </div>`;
+  }).join('');
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week ${assessment.week} Assessment | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/${assessment.week}.html">Week ${assessment.week}</a>
+  </nav>
+  <main class="container">
+    <h1>📝 Week ${assessment.week} Assessment</h1>
+    <p>${escape(assessment.title || '')}</p>
+    <form id="assessment-form">
+      ${qHtml}
+      <button type="submit">Submit for Grading</button>
+    </form>
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <p id="score"></p>
+      <p id="ai-analysis"></p>
+    </section>
+    <script>
+      document.getElementById('assessment-form').onsubmit=function(e){
+        e.preventDefault();
+        var ans=${JSON.stringify((assessment.questions || []).map(q => ({ id: q.id, type: q.type, answer: q.answer, solution: q.solution })))};
+        var correct=0;
+        ans.forEach(function(a,i){
+          var el=document.querySelector('[name="q'+a.id+'"]');
+          if(!el)return;
+          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          if(a.type==='mcq'&&v===a.answer)correct++;
+          if(a.type==='code'&&v&&v.length>0)correct++;
+        });
+        var total=ans.length;
+        var pct=Math.round(correct/total*100);
+        document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
+        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+${JSON.stringify(assessment.aiAnalysisPrompt || '')}+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('results').classList.remove('hidden');
+      };
+    </script>
   </main>
 </body>
 </html>`;
@@ -262,8 +642,15 @@ function renderCoursebook() {
 // Write files
 fs.writeFileSync(path.join(PUBLIC, 'index.html'), renderIndex());
 fs.writeFileSync(path.join(PUBLIC, 'coursebook.html'), renderCoursebook());
+fs.writeFileSync(path.join(PUBLIC, 'careers.html'), renderCareers());
+fs.writeFileSync(path.join(PUBLIC, 'pricing.html'), renderPricing());
+fs.writeFileSync(path.join(PUBLIC, 'progress.html'), renderProgress());
+fs.writeFileSync(path.join(PUBLIC, 'ai-assistant.html'), renderAIAssistant());
 course.weeks.forEach(w => {
   fs.writeFileSync(path.join(PUBLIC, 'week', `${w.id}.html`), renderWeek(w));
+});
+(weekAssessments.assessments || []).forEach(a => {
+  fs.writeFileSync(path.join(PUBLIC, 'assessment', `${a.week}.html`), renderWeekAssessment(a));
 });
 for (let i = 1; i <= 160; i++) {
   const block = blocks[i] || blocksMeta.find(b => b.id === i);
@@ -469,6 +856,40 @@ li { margin: 0.5rem 0; }
   border-radius: 8px;
   overflow-x: auto;
 }
+
+.resource-links { display: flex; flex-direction: column; gap: 0.75rem; }
+.resource-links .coursebook-link { display: inline-block; }
+.youtube-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
+.yt-card { background: var(--surface); padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border); text-decoration: none; color: inherit; display: block; }
+.yt-card:hover { border-color: var(--accent); }
+.yt-channel { font-size: 0.8rem; color: var(--muted); }
+.cheat-grid, .snippet-list, .viz-list { display: flex; flex-direction: column; gap: 1rem; }
+.cheat-card, .viz-card { background: var(--surface); padding: 1rem; border-radius: 6px; border: 1px solid var(--border); }
+.cheat-pre, .viz-pre { font-size: 0.85rem; white-space: pre-wrap; background: #0d1117; padding: 0.75rem; border-radius: 4px; margin: 0.5rem 0; }
+.viz-note { font-size: 0.85rem; color: var(--muted); }
+.strategy-box { background: var(--surface); padding: 1rem; border-radius: 6px; border-left: 4px solid var(--accent); }
+.assessment-cta { display: inline-block; padding: 0.75rem 1rem; background: var(--accent2); color: var(--bg); border-radius: 6px; text-decoration: none; font-weight: 500; margin-top: 0.5rem; }
+.assessment-cta:hover { opacity: 0.9; }
+.jobs-grid { display: grid; gap: 1.5rem; }
+.job-card { background: var(--surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border); }
+.job-salary, .job-demand { color: var(--accent); font-weight: 500; }
+.pricing-grid, .comparison-table { display: grid; gap: 1rem; }
+.price-card, .comp-card { background: var(--surface); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--border); }
+.price { font-size: 1.5rem; color: var(--accent2); }
+.limits { color: var(--muted); font-size: 0.9rem; }
+.calendar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.calendar-week { background: var(--surface); padding: 1rem; border-radius: 6px; border: 1px solid var(--border); }
+.block-checks { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.5rem; }
+.check-label { font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+.progress-bar-wrap { height: 24px; background: var(--surface); border-radius: 4px; overflow: hidden; margin: 1rem 0; }
+.progress-bar { height: 100%; background: var(--accent2); transition: width 0.3s; }
+.strategy-list { display: flex; flex-direction: column; gap: 1rem; }
+.strategy-item { background: var(--surface); padding: 1rem; border-radius: 6px; }
+.ai-box { background: var(--surface); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); }
+.aq-question { margin: 1.5rem 0; }
+.aq-options label { display: block; margin: 0.5rem 0; }
+.aq-question textarea { width: 100%; font-family: monospace; }
+.hidden { display: none !important; }
 
 @media (max-width: 600px) {
   .container { padding: 1rem; }

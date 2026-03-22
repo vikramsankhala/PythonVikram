@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Monitor &amp; Study Tracker | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/progress.html">Progress</a>
+  </nav>
+  <main class="container">
+    <h1>📊 Progress Monitor &amp; Study Tracker</h1>
+    <section>
+      <h2>Study Calendar</h2>
+      <p>16 weeks × 5 days × 2 blocks/day = 160 blocks. Check off as you complete.</p>
+      <div class="calendar-grid">
+        
+          <div class="calendar-week">
+            <h4>Week 1</h4>
+            <p>Python Foundations &amp; Standard Library</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="1"> B1</label>
+                <label class="check-label"><input type="checkbox" data-block="2"> B2</label>
+                <label class="check-label"><input type="checkbox" data-block="3"> B3</label>
+                <label class="check-label"><input type="checkbox" data-block="4"> B4</label>
+                <label class="check-label"><input type="checkbox" data-block="5"> B5</label>
+                <label class="check-label"><input type="checkbox" data-block="6"> B6</label>
+                <label class="check-label"><input type="checkbox" data-block="7"> B7</label>
+                <label class="check-label"><input type="checkbox" data-block="8"> B8</label>
+                <label class="check-label"><input type="checkbox" data-block="9"> B9</label>
+                <label class="check-label"><input type="checkbox" data-block="10"> B10</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 2</h4>
+            <p>NumPy: Arrays &amp; Vectorized Computing</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="11"> B11</label>
+                <label class="check-label"><input type="checkbox" data-block="12"> B12</label>
+                <label class="check-label"><input type="checkbox" data-block="13"> B13</label>
+                <label class="check-label"><input type="checkbox" data-block="14"> B14</label>
+                <label class="check-label"><input type="checkbox" data-block="15"> B15</label>
+                <label class="check-label"><input type="checkbox" data-block="16"> B16</label>
+                <label class="check-label"><input type="checkbox" data-block="17"> B17</label>
+                <label class="check-label"><input type="checkbox" data-block="18"> B18</label>
+                <label class="check-label"><input type="checkbox" data-block="19"> B19</label>
+                <label class="check-label"><input type="checkbox" data-block="20"> B20</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 3</h4>
+            <p>Pandas: DataFrames &amp; Data Handling</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="21"> B21</label>
+                <label class="check-label"><input type="checkbox" data-block="22"> B22</label>
+                <label class="check-label"><input type="checkbox" data-block="23"> B23</label>
+                <label class="check-label"><input type="checkbox" data-block="24"> B24</label>
+                <label class="check-label"><input type="checkbox" data-block="25"> B25</label>
+                <label class="check-label"><input type="checkbox" data-block="26"> B26</label>
+                <label class="check-label"><input type="checkbox" data-block="27"> B27</label>
+                <label class="check-label"><input type="checkbox" data-block="28"> B28</label>
+                <label class="check-label"><input type="checkbox" data-block="29"> B29</label>
+                <label class="check-label"><input type="checkbox" data-block="30"> B30</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 4</h4>
+            <p>Visualization: Matplotlib &amp; Seaborn</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="31"> B31</label>
+                <label class="check-label"><input type="checkbox" data-block="32"> B32</label>
+                <label class="check-label"><input type="checkbox" data-block="33"> B33</label>
+                <label class="check-label"><input type="checkbox" data-block="34"> B34</label>
+                <label class="check-label"><input type="checkbox" data-block="35"> B35</label>
+                <label class="check-label"><input type="checkbox" data-block="36"> B36</label>
+                <label class="check-label"><input type="checkbox" data-block="37"> B37</label>
+                <label class="check-label"><input type="checkbox" data-block="38"> B38</label>
+                <label class="check-label"><input type="checkbox" data-block="39"> B39</label>
+                <label class="check-label"><input type="checkbox" data-block="40"> B40</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 5</h4>
+            <p>File Formats &amp; Data Pipelines</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="41"> B41</label>
+                <label class="check-label"><input type="checkbox" data-block="42"> B42</label>
+                <label class="check-label"><input type="checkbox" data-block="43"> B43</label>
+                <label class="check-label"><input type="checkbox" data-block="44"> B44</label>
+                <label class="check-label"><input type="checkbox" data-block="45"> B45</label>
+                <label class="check-label"><input type="checkbox" data-block="46"> B46</label>
+                <label class="check-label"><input type="checkbox" data-block="47"> B47</label>
+                <label class="check-label"><input type="checkbox" data-block="48"> B48</label>
+                <label class="check-label"><input type="checkbox" data-block="49"> B49</label>
+                <label class="check-label"><input type="checkbox" data-block="50"> B50</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 6</h4>
+            <p>HTTP, APIs &amp; Web Scraping</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="51"> B51</label>
+                <label class="check-label"><input type="checkbox" data-block="52"> B52</label>
+                <label class="check-label"><input type="checkbox" data-block="53"> B53</label>
+                <label class="check-label"><input type="checkbox" data-block="54"> B54</label>
+                <label class="check-label"><input type="checkbox" data-block="55"> B55</label>
+                <label class="check-label"><input type="checkbox" data-block="56"> B56</label>
+                <label class="check-label"><input type="checkbox" data-block="57"> B57</label>
+                <label class="check-label"><input type="checkbox" data-block="58"> B58</label>
+                <label class="check-label"><input type="checkbox" data-block="59"> B59</label>
+                <label class="check-label"><input type="checkbox" data-block="60"> B60</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 7</h4>
+            <p>Web Frameworks: Flask &amp; FastAPI</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="61"> B61</label>
+                <label class="check-label"><input type="checkbox" data-block="62"> B62</label>
+                <label class="check-label"><input type="checkbox" data-block="63"> B63</label>
+                <label class="check-label"><input type="checkbox" data-block="64"> B64</label>
+                <label class="check-label"><input type="checkbox" data-block="65"> B65</label>
+                <label class="check-label"><input type="checkbox" data-block="66"> B66</label>
+                <label class="check-label"><input type="checkbox" data-block="67"> B67</label>
+                <label class="check-label"><input type="checkbox" data-block="68"> B68</label>
+                <label class="check-label"><input type="checkbox" data-block="69"> B69</label>
+                <label class="check-label"><input type="checkbox" data-block="70"> B70</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 8</h4>
+            <p>Machine Learning with scikit-learn</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="71"> B71</label>
+                <label class="check-label"><input type="checkbox" data-block="72"> B72</label>
+                <label class="check-label"><input type="checkbox" data-block="73"> B73</label>
+                <label class="check-label"><input type="checkbox" data-block="74"> B74</label>
+                <label class="check-label"><input type="checkbox" data-block="75"> B75</label>
+                <label class="check-label"><input type="checkbox" data-block="76"> B76</label>
+                <label class="check-label"><input type="checkbox" data-block="77"> B77</label>
+                <label class="check-label"><input type="checkbox" data-block="78"> B78</label>
+                <label class="check-label"><input type="checkbox" data-block="79"> B79</label>
+                <label class="check-label"><input type="checkbox" data-block="80"> B80</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 9</h4>
+            <p>Scientific Python: SciPy &amp; SymPy</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="81"> B81</label>
+                <label class="check-label"><input type="checkbox" data-block="82"> B82</label>
+                <label class="check-label"><input type="checkbox" data-block="83"> B83</label>
+                <label class="check-label"><input type="checkbox" data-block="84"> B84</label>
+                <label class="check-label"><input type="checkbox" data-block="85"> B85</label>
+                <label class="check-label"><input type="checkbox" data-block="86"> B86</label>
+                <label class="check-label"><input type="checkbox" data-block="87"> B87</label>
+                <label class="check-label"><input type="checkbox" data-block="88"> B88</label>
+                <label class="check-label"><input type="checkbox" data-block="89"> B89</label>
+                <label class="check-label"><input type="checkbox" data-block="90"> B90</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 10</h4>
+            <p>Practical Statistics for Data Science</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="91"> B91</label>
+                <label class="check-label"><input type="checkbox" data-block="92"> B92</label>
+                <label class="check-label"><input type="checkbox" data-block="93"> B93</label>
+                <label class="check-label"><input type="checkbox" data-block="94"> B94</label>
+                <label class="check-label"><input type="checkbox" data-block="95"> B95</label>
+                <label class="check-label"><input type="checkbox" data-block="96"> B96</label>
+                <label class="check-label"><input type="checkbox" data-block="97"> B97</label>
+                <label class="check-label"><input type="checkbox" data-block="98"> B98</label>
+                <label class="check-label"><input type="checkbox" data-block="99"> B99</label>
+                <label class="check-label"><input type="checkbox" data-block="100"> B100</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 11</h4>
+            <p>NLP: NLTK, spaCy &amp; Transformers</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="101"> B101</label>
+                <label class="check-label"><input type="checkbox" data-block="102"> B102</label>
+                <label class="check-label"><input type="checkbox" data-block="103"> B103</label>
+                <label class="check-label"><input type="checkbox" data-block="104"> B104</label>
+                <label class="check-label"><input type="checkbox" data-block="105"> B105</label>
+                <label class="check-label"><input type="checkbox" data-block="106"> B106</label>
+                <label class="check-label"><input type="checkbox" data-block="107"> B107</label>
+                <label class="check-label"><input type="checkbox" data-block="108"> B108</label>
+                <label class="check-label"><input type="checkbox" data-block="109"> B109</label>
+                <label class="check-label"><input type="checkbox" data-block="110"> B110</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 12</h4>
+            <p>Computer Vision with OpenCV</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="111"> B111</label>
+                <label class="check-label"><input type="checkbox" data-block="112"> B112</label>
+                <label class="check-label"><input type="checkbox" data-block="113"> B113</label>
+                <label class="check-label"><input type="checkbox" data-block="114"> B114</label>
+                <label class="check-label"><input type="checkbox" data-block="115"> B115</label>
+                <label class="check-label"><input type="checkbox" data-block="116"> B116</label>
+                <label class="check-label"><input type="checkbox" data-block="117"> B117</label>
+                <label class="check-label"><input type="checkbox" data-block="118"> B118</label>
+                <label class="check-label"><input type="checkbox" data-block="119"> B119</label>
+                <label class="check-label"><input type="checkbox" data-block="120"> B120</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 13</h4>
+            <p>Databases &amp; Data Engineering</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="121"> B121</label>
+                <label class="check-label"><input type="checkbox" data-block="122"> B122</label>
+                <label class="check-label"><input type="checkbox" data-block="123"> B123</label>
+                <label class="check-label"><input type="checkbox" data-block="124"> B124</label>
+                <label class="check-label"><input type="checkbox" data-block="125"> B125</label>
+                <label class="check-label"><input type="checkbox" data-block="126"> B126</label>
+                <label class="check-label"><input type="checkbox" data-block="127"> B127</label>
+                <label class="check-label"><input type="checkbox" data-block="128"> B128</label>
+                <label class="check-label"><input type="checkbox" data-block="129"> B129</label>
+                <label class="check-label"><input type="checkbox" data-block="130"> B130</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 14</h4>
+            <p>Automation, Scripting &amp; Testing</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="131"> B131</label>
+                <label class="check-label"><input type="checkbox" data-block="132"> B132</label>
+                <label class="check-label"><input type="checkbox" data-block="133"> B133</label>
+                <label class="check-label"><input type="checkbox" data-block="134"> B134</label>
+                <label class="check-label"><input type="checkbox" data-block="135"> B135</label>
+                <label class="check-label"><input type="checkbox" data-block="136"> B136</label>
+                <label class="check-label"><input type="checkbox" data-block="137"> B137</label>
+                <label class="check-label"><input type="checkbox" data-block="138"> B138</label>
+                <label class="check-label"><input type="checkbox" data-block="139"> B139</label>
+                <label class="check-label"><input type="checkbox" data-block="140"> B140</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 15</h4>
+            <p>Capstone Project: Design &amp; Implementation</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="141"> B141</label>
+                <label class="check-label"><input type="checkbox" data-block="142"> B142</label>
+                <label class="check-label"><input type="checkbox" data-block="143"> B143</label>
+                <label class="check-label"><input type="checkbox" data-block="144"> B144</label>
+                <label class="check-label"><input type="checkbox" data-block="145"> B145</label>
+                <label class="check-label"><input type="checkbox" data-block="146"> B146</label>
+                <label class="check-label"><input type="checkbox" data-block="147"> B147</label>
+                <label class="check-label"><input type="checkbox" data-block="148"> B148</label>
+                <label class="check-label"><input type="checkbox" data-block="149"> B149</label>
+                <label class="check-label"><input type="checkbox" data-block="150"> B150</label>
+            </div>
+          </div>
+          <div class="calendar-week">
+            <h4>Week 16</h4>
+            <p>Capstone Project: Polish, Package &amp; Present</p>
+            <div class="block-checks">
+              
+                <label class="check-label"><input type="checkbox" data-block="151"> B151</label>
+                <label class="check-label"><input type="checkbox" data-block="152"> B152</label>
+                <label class="check-label"><input type="checkbox" data-block="153"> B153</label>
+                <label class="check-label"><input type="checkbox" data-block="154"> B154</label>
+                <label class="check-label"><input type="checkbox" data-block="155"> B155</label>
+                <label class="check-label"><input type="checkbox" data-block="156"> B156</label>
+                <label class="check-label"><input type="checkbox" data-block="157"> B157</label>
+                <label class="check-label"><input type="checkbox" data-block="158"> B158</label>
+                <label class="check-label"><input type="checkbox" data-block="159"> B159</label>
+                <label class="check-label"><input type="checkbox" data-block="160"> B160</label>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section>
+      <h2>Progress Tracker</h2>
+      <div class="progress-bar-wrap">
+        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+      </div>
+      <p id="progress-text">0 / 160 blocks completed</p>
+    </section>
+    <section>
+      <h2>Study Strategy by Week</h2>
+      <div class="strategy-list">
+        
+          <div class="strategy-item">
+            <h4>Week 1: Python Foundations &amp; Standard Library</h4>
+            <p>Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 2: NumPy: Arrays &amp; Vectorized Computing</h4>
+            <p>Build incrementally. Master fundamentals before advanced topics.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 3: Pandas: DataFrames &amp; Data Handling</h4>
+            <p>Use Jupyter for experimentation. Transition to .py for production code.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 4: Visualization: Matplotlib &amp; Seaborn</h4>
+            <p>Review previous week before starting new content.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 5: File Formats &amp; Data Pipelines</h4>
+            <p>Complete all exercises before moving to next block.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 6: HTTP, APIs &amp; Web Scraping</h4>
+            <p>Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 7: Web Frameworks: Flask &amp; FastAPI</h4>
+            <p>Build incrementally. Master fundamentals before advanced topics.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 8: Machine Learning with scikit-learn</h4>
+            <p>Use Jupyter for experimentation. Transition to .py for production code.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 9: Scientific Python: SciPy &amp; SymPy</h4>
+            <p>Review previous week before starting new content.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 10: Practical Statistics for Data Science</h4>
+            <p>Complete all exercises before moving to next block.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 11: NLP: NLTK, spaCy &amp; Transformers</h4>
+            <p>Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 12: Computer Vision with OpenCV</h4>
+            <p>Build incrementally. Master fundamentals before advanced topics.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 13: Databases &amp; Data Engineering</h4>
+            <p>Use Jupyter for experimentation. Transition to .py for production code.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 14: Automation, Scripting &amp; Testing</h4>
+            <p>Review previous week before starting new content.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 15: Capstone Project: Design &amp; Implementation</h4>
+            <p>Complete all exercises before moving to next block.</p>
+          </div>
+          <div class="strategy-item">
+            <h4>Week 16: Capstone Project: Polish, Package &amp; Present</h4>
+            <p>Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice.</p>
+          </div>
+        
+      </div>
+    </section>
+    <script>
+      (function(){
+        var k='python-mastery-progress';
+        var done=JSON.parse(localStorage.getItem(k)||'[]');
+        function save(){localStorage.setItem(k,JSON.stringify(done));update();}
+        function update(){
+          var c=document.querySelectorAll('input[data-block]');
+          c.forEach(function(i){
+            i.checked=done.indexOf(parseInt(i.dataset.block))>=0;
+            i.onchange=function(){
+              if(i.checked)done.push(parseInt(i.dataset.block));
+              else done=done.filter(function(x){return x!==parseInt(i.dataset.block);});
+              save();
+            };
+          });
+          var pct=Math.round(done.length/160*100);
+          var bar=document.getElementById('progress-bar');
+          var txt=document.getElementById('progress-text');
+          if(bar){bar.style.width=pct+'%';}
+          if(txt){txt.textContent=done.length+' / 160 blocks completed ('+pct+'%)';}
+        }
+        update();
+      })();
+    </script>
+  </main>
+</body>
+</html>

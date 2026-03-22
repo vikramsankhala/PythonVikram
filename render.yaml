@@ -1,0 +1,9 @@
+# Render.com Static Site Configuration
+# Deploy: Connect GitHub repo, Render auto-detects. Or use render.yaml
+# https://render.com/docs/static-sites
+services:
+  - type: web
+    name: python-mastery-course
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: public

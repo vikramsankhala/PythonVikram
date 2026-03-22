@@ -1,0 +1,2692 @@
+{
+  "weeks": [
+    {
+      "week": 1,
+      "theme": "Environment setup, syntax, core data structures, functions",
+      "title": "Python Foundations & Standard Library",
+      "youtube": [
+        {
+          "id": "kB7FDsX8en4",
+          "title": "Python for Beginners - Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=kB7FDsX8en4"
+        },
+        {
+          "id": "YYXdXT2l-Gg",
+          "title": "Python Tutorial for Absolute Beginners",
+          "channel": "Mosh",
+          "url": "https://www.youtube.com/watch?v=YYXdXT2l-Gg"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Learn Python - Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "k9TUpCWMN9M",
+          "title": "Python 3 Variables",
+          "channel": "Sentdex",
+          "url": "https://www.youtube.com/watch?v=k9TUpCWMN9M"
+        },
+        {
+          "id": "AWek49wXGZI",
+          "title": "Python Conditionals",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=AWek49wXGZI"
+        },
+        {
+          "id": "0lWY2QaRPoI",
+          "title": "Python Loops",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=0lWY2QaRPoI"
+        },
+        {
+          "id": "9Os0o3wzS_I",
+          "title": "Python Functions",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=9Os0o3wzS_I"
+        },
+        {
+          "id": "W8KRzm-HUcc",
+          "title": "Lists, Tuples, Dictionaries",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=W8KRzm-HUcc"
+        },
+        {
+          "id": "LHBE6Q9XlzI",
+          "title": "Python for Data Science",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=LHBE6Q9XlzI"
+        },
+        {
+          "id": "khKv-8q7YmY",
+          "title": "Variables and Data Types",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=khKv-8q7YmY"
+        },
+        {
+          "id": "nsbIQmYdR34",
+          "title": "Functions Explained",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=nsbIQmYdR34"
+        },
+        {
+          "id": "3dtbkdEwtOc",
+          "title": "Standard Library",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=3dtbkdEwtOc"
+        },
+        {
+          "id": "pTT7HMqdkjo",
+          "title": "Data Structures",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=pTT7HMqdkjo"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Analysis Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "2yryVkAe8z8",
+          "title": "Python Beginner to Pro",
+          "channel": "TechWorld",
+          "url": "https://www.youtube.com/watch?v=2yryVkAe8z8"
+        },
+        {
+          "id": "cQT33yu9pY8",
+          "title": "Python Variables",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=cQT33yu9pY8"
+        },
+        {
+          "id": "JkQ0FegQr4o",
+          "title": "Loops Tutorial",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=JkQ0FegQr4o"
+        },
+        {
+          "id": "5V_nJRkqdO8",
+          "title": "Functions Complete Guide",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=5V_nJRkqdO8"
+        },
+        {
+          "id": "7wn2f8lqpnE",
+          "title": "Python Basics 2024",
+          "channel": "NetworkChuck",
+          "url": "https://www.youtube.com/watch?v=7wn2f8lqpnE"
+        },
+        {
+          "id": "u2vQONCs1L4",
+          "title": "Python Crash Course",
+          "channel": "Traversy Media",
+          "url": "https://www.youtube.com/watch?v=u2vQONCs1L4"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 1 - Environment setup, syntax, core data structures, functions"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 1 - Environment setup, syntax, core data structures, functions"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 1 - Environment setup, syntax, core data structures, functions"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 1: Python Foundations & Standard Library\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 1: Python Foundations & Standard Library\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 1: Python Foundations & Standard Library\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice."
+    },
+    {
+      "week": 2,
+      "theme": "Numerical arrays, vectorization, broadcasting, linear algebra, random",
+      "title": "NumPy: Arrays & Vectorized Computing",
+      "youtube": [
+        {
+          "id": "QUT1VHiLmmI",
+          "title": "NumPy Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+        },
+        {
+          "id": "8mAFf3wYv4M",
+          "title": "NumPy Arrays Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=8mAFf3wYv4M"
+        },
+        {
+          "id": "8Mpc9ikopWQ",
+          "title": "NumPy for Data Science",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=8Mpc9ikopWQ"
+        },
+        {
+          "id": "Yrr-u_4D6Oc",
+          "title": "NumPy Broadcasting",
+          "channel": "NumPy",
+          "url": "https://www.youtube.com/watch?v=Yrr-u_4D6Oc"
+        },
+        {
+          "id": "DcfVsR6p6wU",
+          "title": "NumPy Linear Algebra",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=DcfVsR6p6wU"
+        },
+        {
+          "id": "EE9TmW1N3oA",
+          "title": "Vectorization in NumPy",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=EE9TmW1N3oA"
+        },
+        {
+          "id": "ngLyX54e1LU",
+          "title": "NumPy Random",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=ngLyX54e1LU"
+        },
+        {
+          "id": "7evF3Ot65A8",
+          "title": "NumPy Indexing",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=7evF3Ot65A8"
+        },
+        {
+          "id": "9OWmnPPgMfc",
+          "title": "NumPy vs Lists",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=9OWmnPPgMfc"
+        },
+        {
+          "id": "rBAS2z4fV9w",
+          "title": "NumPy Advanced",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rBAS2z4fV9w"
+        },
+        {
+          "id": "1td1dHfLwl8",
+          "title": "NumPy Math Functions",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=1td1dHfLwl8"
+        },
+        {
+          "id": "tqX5Fod7qFs",
+          "title": "Reshape and Transpose",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=tqX5Fod7qFs"
+        },
+        {
+          "id": "nGOPonoDx2Q",
+          "title": "Stack and Concatenate",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=nGOPonoDx2Q"
+        },
+        {
+          "id": "hV0WFoNqBpQ",
+          "title": "NumPy Complete Guide",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=hV0WFoNqBpQ"
+        },
+        {
+          "id": "8Mpc9ikopWQ",
+          "title": "NumPy Basics",
+          "channel": "CampusX",
+          "url": "https://www.youtube.com/watch?v=8Mpc9ikopWQ"
+        },
+        {
+          "id": "EE9TmW1N3oA",
+          "title": "NumPy Performance",
+          "channel": "Real Python",
+          "url": "https://www.youtube.com/watch?v=EE9TmW1N3oA"
+        },
+        {
+          "id": "QUT1VHiLmmI",
+          "title": "NumPy Tutorial",
+          "channel": "Python Programmer",
+          "url": "https://www.youtube.com/watch?v=QUT1VHiLmmI"
+        },
+        {
+          "id": "8mAFf3wYv4M",
+          "title": "NumPy Array Operations",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=8mAFf3wYv4M"
+        },
+        {
+          "id": "Yrr-u_4D6Oc",
+          "title": "Broadcasting Rules",
+          "channel": "NumPy",
+          "url": "https://www.youtube.com/watch?v=Yrr-u_4D6Oc"
+        },
+        {
+          "id": "DcfVsR6p6wU",
+          "title": "Linear Algebra",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=DcfVsR6p6wU"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 2 - Numerical arrays, vectorization, broadcasting, linear algebra, random"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 2 - Numerical arrays, vectorization, broadcasting, linear algebra, random"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 2 - Numerical arrays, vectorization, broadcasting, linear algebra, random"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 2: NumPy: Arrays & Vectorized Computing\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 2: NumPy: Arrays & Vectorized Computing\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 2: NumPy: Arrays & Vectorized Computing\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Build incrementally. Master fundamentals before advanced topics."
+    },
+    {
+      "week": 3,
+      "theme": "Series, DataFrame, loading data, cleaning, grouping, merging",
+      "title": "Pandas: DataFrames & Data Handling",
+      "youtube": [
+        {
+          "id": "vmEHCJofslg",
+          "title": "Pandas Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "ZyhVh-qRZpc",
+          "title": "Pandas Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+        },
+        {
+          "id": "9d5-Ti6cqhw",
+          "title": "Pandas DataFrames",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
+        },
+        {
+          "id": "r0Lo_XCsEuw",
+          "title": "Pandas 2026",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "Pandas Data Science",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Pandas Complete",
+          "channel": "Keith Galli",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "ZyhVh-qRZpc",
+          "title": "Pandas Series",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+        },
+        {
+          "id": "9d5-Ti6cqhw",
+          "title": "DataFrames Deep Dive",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
+        },
+        {
+          "id": "r0Lo_XCsEuw",
+          "title": "Pandas Cleaning",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "Pandas GroupBy",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Merge and Join",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "ZyhVh-qRZpc",
+          "title": "Pandas Indexing",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+        },
+        {
+          "id": "9d5-Ti6cqhw",
+          "title": "Pandas Apply",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
+        },
+        {
+          "id": "r0Lo_XCsEuw",
+          "title": "CSV and Excel",
+          "channel": "Coding News",
+          "url": "https://www.youtube.com/watch?v=r0Lo_XCsEuw"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Pandas EDA",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "ZyhVh-qRZpc",
+          "title": "Pandas Best Practices",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+        },
+        {
+          "id": "9d5-Ti6cqhw",
+          "title": "Pandas Performance",
+          "channel": "Data School",
+          "url": "https://www.youtube.com/watch?v=9d5-Ti6cqhw"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "Pandas Visualization",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "vmEHCJofslg",
+          "title": "Pandas Workflow",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=vmEHCJofslg"
+        },
+        {
+          "id": "ZyhVh-qRZpc",
+          "title": "Pandas Tips",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=ZyhVh-qRZpc"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 3 - Series, DataFrame, loading data, cleaning, grouping, merging"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 3 - Series, DataFrame, loading data, cleaning, grouping, merging"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 3 - Series, DataFrame, loading data, cleaning, grouping, merging"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 3: Pandas: DataFrames & Data Handling\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 3: Pandas: DataFrames & Data Handling\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 3: Pandas: DataFrames & Data Handling\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Use Jupyter for experimentation. Transition to .py for production code."
+    },
+    {
+      "week": 4,
+      "theme": "Line, bar, scatter, histogram, boxplot, subplots, styling, visual EDA",
+      "title": "Visualization: Matplotlib & Seaborn",
+      "youtube": [
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Matplotlib Seaborn Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Matplotlib Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        },
+        {
+          "id": "6jr1-HXyJBo",
+          "title": "Seaborn Tutorial",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "Visualization ML",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Viz Full Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Line and Bar Plots",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        },
+        {
+          "id": "6jr1-HXyJBo",
+          "title": "Seaborn Plots",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Subplots",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        },
+        {
+          "id": "6jr1-HXyJBo",
+          "title": "Heatmaps",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "EDA Visualization",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Customization",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        },
+        {
+          "id": "6jr1-HXyJBo",
+          "title": "Statistical Plots",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Scatter Histogram",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Figure and Axes",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        },
+        {
+          "id": "6jr1-HXyJBo",
+          "title": "Distribution Plots",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=6jr1-HXyJBo"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Matplotlib Basics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Styling",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        },
+        {
+          "id": "1GppEPl9_QQ",
+          "title": "Charts and Graphs",
+          "channel": "Imarticus",
+          "url": "https://www.youtube.com/watch?v=1GppEPl9_QQ"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Visual EDA",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "UO98lJQ3QGI",
+          "title": "Plot Types",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=UO98lJQ3QGI"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 4 - Line, bar, scatter, histogram, boxplot, subplots, styling, visual EDA"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 4 - Line, bar, scatter, histogram, boxplot, subplots, styling, visual EDA"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 4 - Line, bar, scatter, histogram, boxplot, subplots, styling, visual EDA"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 4: Visualization: Matplotlib & Seaborn\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 4: Visualization: Matplotlib & Seaborn\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 4: Visualization: Matplotlib & Seaborn\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Review previous week before starting new content."
+    },
+    {
+      "week": 5,
+      "theme": "CSV, JSON, XML, Excel, text parsing, regex, cleaning pipelines",
+      "title": "File Formats & Data Pipelines",
+      "youtube": [
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "File Handling Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "CSV JSON Excel",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Read Write Files",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Pipelines",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "JSON Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regular Expressions",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Excel with Pandas",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "XML Parsing",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Patterns",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Text Parsing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Path Operations",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Groups",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Cleaning",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "File Formats",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Substitution",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "ETL Basics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Working with Paths",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "K8L6KVGG-7o",
+          "title": "Regex Complete",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=K8L6KVGG-7o"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Loading",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 5 - CSV, JSON, XML, Excel, text parsing, regex, cleaning pipelines"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 5 - CSV, JSON, XML, Excel, text parsing, regex, cleaning pipelines"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 5 - CSV, JSON, XML, Excel, text parsing, regex, cleaning pipelines"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 5: File Formats & Data Pipelines\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 5: File Formats & Data Pipelines\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 5: File Formats & Data Pipelines\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Complete all exercises before moving to next block."
+    },
+    {
+      "week": 6,
+      "theme": "requests library, REST APIs, JSON handling, BeautifulSoup, ethics",
+      "title": "HTTP, APIs & Web Scraping",
+      "youtube": [
+        {
+          "id": "t8pPdYpowUE",
+          "title": "Web Scraping Python",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "BeautifulSoup",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "APIs Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "t8pPdYpowUE",
+          "title": "Requests Library",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "Web Scraping Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "REST APIs",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "t8pPdYpowUE",
+          "title": "HTTP Basics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "BeautifulSoup Deep Dive",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "JSON APIs",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "t8pPdYpowUE",
+          "title": "Scraping Ethics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "Selectors",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "API Authentication",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "t8pPdYpowUE",
+          "title": "Scrapy Intro",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "Parsing HTML",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "API Design",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "t8pPdYpowUE",
+          "title": "Data Extraction",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "Web Scraping Best Practices",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "HTTP Methods",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "t8pPdYpowUE",
+          "title": "Scraping Workflow",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=t8pPdYpowUE"
+        },
+        {
+          "id": "4uuDuF83-A8",
+          "title": "Handling Errors",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=4uuDuF83-A8"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 6 - requests library, REST APIs, JSON handling, BeautifulSoup, ethics"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 6 - requests library, REST APIs, JSON handling, BeautifulSoup, ethics"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 6 - requests library, REST APIs, JSON handling, BeautifulSoup, ethics"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 6: HTTP, APIs & Web Scraping\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 6: HTTP, APIs & Web Scraping\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 6: HTTP, APIs & Web Scraping\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice."
+    },
+    {
+      "week": 7,
+      "theme": "Routing, templates, REST APIs, Pydantic, async basics, deployment concepts",
+      "title": "Web Frameworks: Flask & FastAPI",
+      "youtube": [
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Tutorial",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Tutorial",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Routes",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Crash Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Templates",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Pydantic",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask REST API",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Async",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Forms",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Deployment",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Database",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Docs",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask SQLAlchemy",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Security",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Deployment",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "REST API FastAPI",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask Blueprints",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Testing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Flask WTForms",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "FastAPI Best Practices",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 7 - Routing, templates, REST APIs, Pydantic, async basics, deployment concepts"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 7 - Routing, templates, REST APIs, Pydantic, async basics, deployment concepts"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 7 - Routing, templates, REST APIs, Pydantic, async basics, deployment concepts"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 7: Web Frameworks: Flask & FastAPI\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 7: Web Frameworks: Flask & FastAPI\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 7: Web Frameworks: Flask & FastAPI\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Build incrementally. Master fundamentals before advanced topics."
+    },
+    {
+      "week": 8,
+      "theme": "ML workflow, preprocessing, classification, regression, pipelines, evaluation",
+      "title": "Machine Learning with scikit-learn",
+      "youtube": [
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "Scikit-learn Tutorial",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Machine Learning Python",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "ML Workflow",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Classification",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "Regression",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Preprocessing",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "Pipelines",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Model Evaluation",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "Cross-Validation",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Random Forest",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "SVM",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "GridSearch",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "Feature Engineering",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Logistic Regression",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "Clustering",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Confusion Matrix",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "sklearn Pipelines",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Hyperparameter Tuning",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "pqNCD_5JWIc",
+          "title": "ML Complete Course",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=pqNCD_5JWIc"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Scikit-learn Explained",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 8 - ML workflow, preprocessing, classification, regression, pipelines, evaluation"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 8 - ML workflow, preprocessing, classification, regression, pipelines, evaluation"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 8 - ML workflow, preprocessing, classification, regression, pipelines, evaluation"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 8: Machine Learning with scikit-learn\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 8: Machine Learning with scikit-learn\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 8: Machine Learning with scikit-learn\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Use Jupyter for experimentation. Transition to .py for production code."
+    },
+    {
+      "week": 9,
+      "theme": "Optimization, integration, statistics, symbolic math, equation solving",
+      "title": "Scientific Python: SciPy & SymPy",
+      "youtube": [
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy Tutorial",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "SymPy Tutorial",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy Optimization",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Scientific Python",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy Integration",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "SciPy Stats",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy Linear Algebra",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "SymPy Symbolic",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy ODEs",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Equation Solving",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "Optimization Methods",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Numerical Integration",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy Sparse",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Statistics SciPy",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy Signal",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Symbolic Math",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "Interpolation",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "SciPy Complete",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "j6A2FZgMVs0",
+          "title": "SciPy FFT",
+          "channel": "Engineer Man",
+          "url": "https://www.youtube.com/watch?v=j6A2FZgMVs0"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Scientific Computing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 9 - Optimization, integration, statistics, symbolic math, equation solving"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 9 - Optimization, integration, statistics, symbolic math, equation solving"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 9 - Optimization, integration, statistics, symbolic math, equation solving"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 9: Scientific Python: SciPy & SymPy\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 9: Scientific Python: SciPy & SymPy\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 9: Scientific Python: SciPy & SymPy\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Review previous week before starting new content."
+    },
+    {
+      "week": 10,
+      "theme": "Descriptive stats, distributions, correlation, hypothesis testing, confidence intervals",
+      "title": "Practical Statistics for Data Science",
+      "youtube": [
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Statistics for ML",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Science Stats",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Hypothesis Testing",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Descriptive Statistics",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Distributions",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Correlation",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Confidence Intervals",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Statistical Tests",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "p-values",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Probability",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "ANOVA",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Regression Stats",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Normal Distribution",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Inferential Stats",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Bayesian",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "A/B Testing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Statistical Power",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Data Analysis Stats",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        },
+        {
+          "id": "JcI5V2w5sno",
+          "title": "Stats Python",
+          "channel": "StatQuest",
+          "url": "https://www.youtube.com/watch?v=JcI5V2w5sno"
+        },
+        {
+          "id": "r-uOLxNrNk8",
+          "title": "Practical Stats",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=r-uOLxNrNk8"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 10 - Descriptive stats, distributions, correlation, hypothesis testing, confidence intervals"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 10 - Descriptive stats, distributions, correlation, hypothesis testing, confidence intervals"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 10 - Descriptive stats, distributions, correlation, hypothesis testing, confidence intervals"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 10: Practical Statistics for Data Science\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 10: Practical Statistics for Data Science\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 10: Practical Statistics for Data Science\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Complete all exercises before moving to next block."
+    },
+    {
+      "week": 11,
+      "theme": "Tokenization, stemming, NER, POS tagging, text classification, Hugging Face",
+      "title": "NLP: NLTK, spaCy & Transformers",
+      "youtube": [
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "NLP Python",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "spaCy Tutorial",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "NLTK Tutorial",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "NER spaCy",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "Text Classification",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "spaCy Pipelines",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "Tokenization",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "POS Tagging",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "Hugging Face",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "Transformers spaCy",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "NLP Complete",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "Entity Recognition",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "Sentiment Analysis",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "Lemmatization",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "Word Embeddings",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "Dependency Parsing",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "BERT Introduction",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "spaCy Training",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        },
+        {
+          "id": "xvFZjo5PgG0",
+          "title": "NLP Pipeline",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        },
+        {
+          "id": "sTuaxvkeNcM",
+          "title": "spaCy Custom",
+          "channel": "Explosion",
+          "url": "https://www.youtube.com/watch?v=sTuaxvkeNcM"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 11 - Tokenization, stemming, NER, POS tagging, text classification, Hugging Face"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 11 - Tokenization, stemming, NER, POS tagging, text classification, Hugging Face"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 11 - Tokenization, stemming, NER, POS tagging, text classification, Hugging Face"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 11: NLP: NLTK, spaCy & Transformers\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 11: NLP: NLTK, spaCy & Transformers\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 11: NLP: NLTK, spaCy & Transformers\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice."
+    },
+    {
+      "week": 12,
+      "theme": "Image representation, transformations, filters, edge detection, contours",
+      "title": "Computer Vision with OpenCV",
+      "youtube": [
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "OpenCV Python",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "OpenCV Tutorial",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "Image Processing",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "OpenCV Basics",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "Edge Detection",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "Filters OpenCV",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "Contours",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "Face Detection",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "Object Detection",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "Image Transformations",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "OpenCV Deep Learning",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "Computer Vision",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "Image Representation",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "Morphological Ops",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "OpenCV Complete",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "Video Processing",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "Feature Detection",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "OpenCV Projects",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        },
+        {
+          "id": "WQeoO7Q0q8g",
+          "title": "CV Pipeline",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=WQeoO7Q0q8g"
+        },
+        {
+          "id": "oXlFd5m_xMg",
+          "title": "OpenCV Tips",
+          "channel": "Murtaza",
+          "url": "https://www.youtube.com/watch?v=oXlFd5m_xMg"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 12 - Image representation, transformations, filters, edge detection, contours"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 12 - Image representation, transformations, filters, edge detection, contours"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 12 - Image representation, transformations, filters, edge detection, contours"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 12: Computer Vision with OpenCV\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 12: Computer Vision with OpenCV\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 12: Computer Vision with OpenCV\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Build incrementally. Master fundamentals before advanced topics."
+    },
+    {
+      "week": 13,
+      "theme": "SQLite, SQLAlchemy ORM, ETL pipelines, Dask for large data",
+      "title": "Databases & Data Engineering",
+      "youtube": [
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "SQL Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "SQLAlchemy Tutorial",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "SQLite Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "SQLAlchemy ORM",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "Database Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "ETL Python",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "SQL Queries",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "Dask Tutorial",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "Data Engineering",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "SQLAlchemy Sessions",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "PostgreSQL Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "ETL Pipelines",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "Data Pipelines",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "Large Data Dask",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "Database Design",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "ORM Patterns",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "SQL Best Practices",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "Data Engineering Python",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        },
+        {
+          "id": "xq2SiuBNY7U",
+          "title": "SQL Python Complete",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=xq2SiuBNY7U"
+        },
+        {
+          "id": "Btp4_RnUSIg",
+          "title": "ETL Best Practices",
+          "channel": "PyCon",
+          "url": "https://www.youtube.com/watch?v=Btp4_RnUSIg"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 13 - SQLite, SQLAlchemy ORM, ETL pipelines, Dask for large data"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 13 - SQLite, SQLAlchemy ORM, ETL pipelines, Dask for large data"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 13 - SQLite, SQLAlchemy ORM, ETL pipelines, Dask for large data"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 13: Databases & Data Engineering\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 13: Databases & Data Engineering\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 13: Databases & Data Engineering\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Use Jupyter for experimentation. Transition to .py for production code."
+    },
+    {
+      "week": 14,
+      "theme": "os/pathlib, subprocess, selenium, logging, pytest, automation scripts",
+      "title": "Automation, Scripting & Testing",
+      "youtube": [
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Python Automation",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "FyuBO8GxB74",
+          "title": "pytest Tutorial",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=FyuBO8GxB74"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "os pathlib",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "Unit Testing Python",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "subprocess",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "pytest Fixtures",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Selenium Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "Test Automation",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Logging Python",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "pytest Advanced",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "File Automation",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "Mocking Tests",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Scripting Best Practices",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "CI CD Python",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Automation Scripts",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "Testing Patterns",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "pathlib Complete",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "pytest Complete",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        },
+        {
+          "id": "Eaumz2VuVfQ",
+          "title": "Automation Workflow",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Eaumz2VuVfQ"
+        },
+        {
+          "id": "p-2BpL3y6",
+          "title": "Python Testing",
+          "channel": "Tech With Tim",
+          "url": "https://www.youtube.com/watch?v=p-2BpL3y6"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 14 - os/pathlib, subprocess, selenium, logging, pytest, automation scripts"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 14 - os/pathlib, subprocess, selenium, logging, pytest, automation scripts"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 14 - os/pathlib, subprocess, selenium, logging, pytest, automation scripts"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 14: Automation, Scripting & Testing\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 14: Automation, Scripting & Testing\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 14: Automation, Scripting & Testing\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Review previous week before starting new content."
+    },
+    {
+      "week": 15,
+      "theme": "Project planning, data acquisition, preprocessing, modeling/analysis, integration",
+      "title": "Capstone Project: Design & Implementation",
+      "youtube": [
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Python Projects",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Full Stack Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Project Planning",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Data Acquisition",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Capstone Design",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Preprocessing Pipeline",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Project Structure",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Modeling Integration",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Data Science Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "ML Pipeline",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Portfolio Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "End-to-End Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Project Best Practices",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Deployment Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Real World Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Analysis Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Project Walkthrough",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Integration Project",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "rfscYS0zFEI",
+          "title": "Capstone Tips",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=rfscYS0zFEI"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Project Demo",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 15 - Project planning, data acquisition, preprocessing, modeling/analysis, integration"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 15 - Project planning, data acquisition, preprocessing, modeling/analysis, integration"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 15 - Project planning, data acquisition, preprocessing, modeling/analysis, integration"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 15: Capstone Project: Design & Implementation\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 15: Capstone Project: Design & Implementation\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 15: Capstone Project: Design & Implementation\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Complete all exercises before moving to next block."
+    },
+    {
+      "week": 16,
+      "theme": "Packaging, documentation, README, demo, retrospective, deployment concepts",
+      "title": "Capstone Project: Polish, Package & Present",
+      "youtube": [
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Python Packaging",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Deployment",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Documentation",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "README Best Practices",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Package Python",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "PyPI Upload",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Sphinx Docs",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Project Polish",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Demo Presentation",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "GitHub Repo",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Retrospective",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "CI CD",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Deployment Concepts",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Portfolio",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Presenting Code",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Professional Repo",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Package Complete",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Deployment Guide",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        },
+        {
+          "id": "0sOvCWFmrtA",
+          "title": "Project Presentation",
+          "channel": "freeCodeCamp",
+          "url": "https://www.youtube.com/watch?v=0sOvCWFmrtA"
+        },
+        {
+          "id": "Z1RJmh_OqeA",
+          "title": "Final Polish",
+          "channel": "Corey Schafer",
+          "url": "https://www.youtube.com/watch?v=Z1RJmh_OqeA"
+        }
+      ],
+      "cheatSheets": [
+        {
+          "title": "Quick Reference",
+          "content": "Core syntax and common patterns for this week. Week 16 - Packaging, documentation, README, demo, retrospective, deployment concepts"
+        },
+        {
+          "title": "API Cheat Sheet",
+          "content": "Key functions and methods. Week 16 - Packaging, documentation, README, demo, retrospective, deployment concepts"
+        },
+        {
+          "title": "Best Practices",
+          "content": "Style and performance tips. Week 16 - Packaging, documentation, README, demo, retrospective, deployment concepts"
+        }
+      ],
+      "codeSnippets": [
+        {
+          "title": "Basic Example",
+          "code": "# Week 16: Capstone Project: Polish, Package & Present\n# Basic pattern for this topic\nresult = process(data)"
+        },
+        {
+          "title": "Common Pattern",
+          "code": "# Week 16: Capstone Project: Polish, Package & Present\n# Frequently used pattern"
+        },
+        {
+          "title": "Quick Start",
+          "code": "# Week 16: Capstone Project: Polish, Package & Present\n# Minimal working example"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Concept Diagram",
+          "type": "mermaid",
+          "content": "flowchart LR\n  A[Input] --> B[Process]\n  B --> C[Output]"
+        },
+        {
+          "title": "Workflow",
+          "type": "diagram",
+          "content": "Step 1 -> Step 2 -> Step 3"
+        }
+      ],
+      "strategyGuidance": "Focus on hands-on coding. Allocate 2 blocks daily: concept review + practice."
+    }
+  ]
+}

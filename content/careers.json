@@ -1,0 +1,96 @@
+{
+  "title": "Python Careers & Opportunities",
+  "description": "Explore job roles, skill requirements, and assessment paths for Python professionals.",
+  "jobs": [
+    {
+      "id": "data-analyst",
+      "title": "Data Analyst",
+      "salaryRange": "$55,000 - $95,000",
+      "demand": "High",
+      "skills": ["Python", "Pandas", "NumPy", "SQL", "Excel", "Matplotlib/Seaborn", "Statistical Analysis"],
+      "courseWeeks": [1, 2, 3, 4, 5, 10],
+      "assessment": "Complete data cleaning, analysis, and visualization on a provided dataset. Present findings.",
+      "typicalTasks": ["Data cleaning and transformation", "Create dashboards and reports", "A/B testing", "SQL queries"]
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist",
+      "salaryRange": "$95,000 - $160,000",
+      "demand": "Very High",
+      "skills": ["Python", "Pandas", "NumPy", "scikit-learn", "Statistics", "ML", "SQL", "Visualization"],
+      "courseWeeks": [1, 2, 3, 4, 5, 8, 10],
+      "assessment": "Build and evaluate an ML model. Explain methodology, metrics, and business impact.",
+      "typicalTasks": ["Model development", "Feature engineering", "Hypothesis testing", "Deployment"]
+    },
+    {
+      "id": "ml-engineer",
+      "title": "Machine Learning Engineer",
+      "salaryRange": "$110,000 - $180,000",
+      "demand": "Very High",
+      "skills": ["Python", "scikit-learn", "TensorFlow/PyTorch", "MLOps", "SQL", "APIs", "Docker"],
+      "courseWeeks": [1, 2, 3, 4, 5, 6, 7, 8],
+      "assessment": "Design ML pipeline: data → model → API. Include testing and deployment considerations.",
+      "typicalTasks": ["Model training and tuning", "Model deployment", "Pipeline automation", "Monitoring"]
+    },
+    {
+      "id": "backend-developer",
+      "title": "Backend Developer (Python)",
+      "salaryRange": "$80,000 - $140,000",
+      "demand": "High",
+      "skills": ["Python", "Flask/FastAPI/Django", "SQL", "REST APIs", "Redis", "Testing", "Docker"],
+      "courseWeeks": [1, 5, 6, 7, 13, 14],
+      "assessment": "Build a REST API with authentication, database, and unit tests.",
+      "typicalTasks": ["API development", "Database design", "Integrations", "Performance optimization"]
+    },
+    {
+      "id": "nlp-engineer",
+      "title": "NLP Engineer",
+      "salaryRange": "$100,000 - $170,000",
+      "demand": "High",
+      "skills": ["Python", "NLTK", "spaCy", "Transformers", "Hugging Face", "PyTorch", "APIs"],
+      "courseWeeks": [1, 2, 3, 5, 6, 8, 11],
+      "assessment": "Build a text classification or NER pipeline. Explain model choice and metrics.",
+      "typicalTasks": ["Text preprocessing", "Model fine-tuning", "NER/POS tagging", "Deployment"]
+    },
+    {
+      "id": "computer-vision-engineer",
+      "title": "Computer Vision Engineer",
+      "salaryRange": "$105,000 - $175,000",
+      "demand": "High",
+      "skills": ["Python", "OpenCV", "TensorFlow/PyTorch", "Image processing", "Deep Learning"],
+      "courseWeeks": [1, 2, 3, 8, 12],
+      "assessment": "Implement image preprocessing and a CV pipeline (e.g., object detection).",
+      "typicalTasks": ["Image processing", "Model training", "Edge detection", "Real-time inference"]
+    },
+    {
+      "id": "data-engineer",
+      "title": "Data Engineer",
+      "salaryRange": "$90,000 - $155,000",
+      "demand": "Very High",
+      "skills": ["Python", "SQL", "ETL", "SQLAlchemy", "Spark/Dask", "Airflow", "Databases"],
+      "courseWeeks": [1, 5, 6, 13, 14],
+      "assessment": "Design and implement an ETL pipeline. Handle large datasets and errors.",
+      "typicalTasks": ["ETL pipelines", "Data warehousing", "Schema design", "Data quality"]
+    },
+    {
+      "id": "automation-engineer",
+      "title": "Automation / DevOps Engineer",
+      "salaryRange": "$75,000 - $130,000",
+      "demand": "High",
+      "skills": ["Python", "Bash", "pytest", "CI/CD", "Docker", "Linux", "Scripting"],
+      "courseWeeks": [1, 5, 14],
+      "assessment": "Create an automation script with tests, logging, and error handling.",
+      "typicalTasks": ["Scripting", "Test automation", "CI/CD", "Monitoring"]
+    },
+    {
+      "id": "research-scientist",
+      "title": "Research Scientist (Python)",
+      "salaryRange": "$90,000 - $150,000",
+      "demand": "Medium",
+      "skills": ["Python", "NumPy", "SciPy", "SymPy", "Matplotlib", "Statistics", "ML"],
+      "courseWeeks": [1, 2, 3, 4, 9, 10, 8],
+      "assessment": "Implement a numerical method or statistical analysis. Document methodology.",
+      "typicalTasks": ["Numerical methods", "Experiments", "Papers", "Reproducible research"]
+    }
+  ]
+}

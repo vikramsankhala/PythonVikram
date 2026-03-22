@@ -1,0 +1,85 @@
+{
+  "assessments": [
+    {
+      "week": 1,
+      "title": "Week 1 Assessment: Python Foundations",
+      "questions": [
+        {"id": 1, "type": "mcq", "q": "What is the output of print(type([1,2,3]))?", "options": ["<class 'list'>", "<class 'tuple'>", "<class 'array'>", "list"], "answer": 0},
+        {"id": 2, "type": "mcq", "q": "Which keyword is used to define a function?", "options": ["func", "def", "function", "define"], "answer": 1},
+        {"id": 3, "type": "mcq", "q": "What does range(5) produce?", "options": ["[0,1,2,3,4,5]", "0 to 4", "[1,2,3,4,5]", "0 to 5"], "answer": 1},
+        {"id": 4, "type": "code", "q": "Write a function that returns the sum of a list of numbers.", "solution": "def sum_list(lst): return sum(lst)"},
+        {"id": 5, "type": "code", "q": "Write a loop that prints even numbers from 0 to 10.", "solution": "for i in range(0, 11, 2): print(i)"}
+      ],
+      "passingScore": 70,
+      "aiAnalysisPrompt": "Analyze the learner's responses. Identify strengths and gaps. Suggest 2-3 focused review blocks."
+    },
+    {
+      "week": 2,
+      "title": "Week 2 Assessment: NumPy",
+      "questions": [
+        {"id": 1, "type": "mcq", "q": "What is broadcasting in NumPy?", "options": ["Converting to broadcast type", "Element-wise operations with different shapes", "Sending arrays over network", "None"], "answer": 1},
+        {"id": 2, "type": "mcq", "q": "np.array([1,2,3]).shape returns?", "options": ["(1,3)", "(3,)", "(3,1)", "3"], "answer": 1},
+        {"id": 3, "type": "code", "q": "Create a 3x3 identity matrix using NumPy.", "solution": "import numpy as np; np.eye(3)"},
+        {"id": 4, "type": "code", "q": "Compute mean and std of array [1,2,3,4,5].", "solution": "arr = np.array([1,2,3,4,5]); arr.mean(), arr.std()"},
+        {"id": 5, "type": "mcq", "q": "Which is faster: NumPy vectorized op or Python loop?", "options": ["Python loop", "NumPy", "Same", "Depends"], "answer": 1}
+      ],
+      "passingScore": 70,
+      "aiAnalysisPrompt": "Analyze NumPy comprehension. Suggest practice on broadcasting or indexing if weak."
+    },
+    {
+      "week": 3,
+      "title": "Week 3 Assessment: Pandas",
+      "questions": [
+        {"id": 1, "type": "mcq", "q": "What is a pandas Series?", "options": ["1D array with labels", "2D table", "Database row", "List"], "answer": 0},
+        {"id": 2, "type": "mcq", "q": "Given df, how do you select column 'age'?", "options": ["df.age", "df['age']", "Both work", "df.column"], "answer": 2},
+        {"id": 3, "type": "code", "q": "Group df by 'category' and get mean of 'value'.", "solution": "df.groupby('category')['value'].mean()"},
+        {"id": 4, "type": "mcq", "q": "merge() in pandas performs?", "options": ["Concatenation", "SQL-like join", "Append", "Replace"], "answer": 1},
+        {"id": 5, "type": "code", "q": "Drop rows with NaN in column 'x'.", "solution": "df.dropna(subset=['x'])"}
+      ],
+      "passingScore": 70,
+      "aiAnalysisPrompt": "Assess Pandas fluency. Recommend groupby/merge practice if needed."
+    },
+    {"week": 4, "title": "Week 4 Assessment: Visualization", "questions": [
+      {"id": 1, "type": "mcq", "q": "Which library provides high-level statistical plots?", "options": ["Matplotlib", "Seaborn", "Pandas", "NumPy"], "answer": 1},
+      {"id": 2, "type": "code", "q": "Create a simple line plot of [1,2,3,4,5] vs [10,15,13,17,20].", "solution": "import matplotlib.pyplot as plt; plt.plot([1,2,3,4,5],[10,15,13,17,20]); plt.show()"}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess visualization understanding. Suggest Matplotlib/Seaborn practice if needed."},
+    {"week": 5, "title": "Week 5 Assessment: File Formats", "questions": [
+      {"id": 1, "type": "mcq", "q": "Which module is used for JSON in Python?", "options": ["json", "csv", "xml", "yaml"], "answer": 0},
+      {"id": 2, "type": "code", "q": "Read a CSV file 'data.csv' into a pandas DataFrame.", "solution": "import pandas as pd; df = pd.read_csv('data.csv')"}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess file I/O and data loading skills."},
+    {"week": 6, "title": "Week 6 Assessment: APIs & Scraping", "questions": [
+      {"id": 1, "type": "mcq", "q": "What does requests.get() return?", "options": ["HTML string", "Response object", "JSON", "None"], "answer": 1},
+      {"id": 2, "type": "mcq", "q": "BeautifulSoup is used for?", "options": ["REST APIs", "HTML parsing", "Database", "ML"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess HTTP and web scraping understanding."},
+    {"week": 7, "title": "Week 7 Assessment: Web Frameworks", "questions": [
+      {"id": 1, "type": "mcq", "q": "FastAPI uses which validation library?", "options": ["Marshmallow", "Pydantic", "Cerberus", "None"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess Flask/FastAPI knowledge."},
+    {"week": 8, "title": "Week 8 Assessment: ML", "questions": [
+      {"id": 1, "type": "mcq", "q": "Which sklearn function splits data for train/test?", "options": ["split()", "train_test_split()", "divide()", "partition()"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess ML workflow understanding."},
+    {"week": 9, "title": "Week 9 Assessment: SciPy/SymPy", "questions": [
+      {"id": 1, "type": "mcq", "q": "SciPy is used for?", "options": ["Web dev", "Scientific computing", "Databases", "APIs"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess scientific Python knowledge."},
+    {"week": 10, "title": "Week 10 Assessment: Statistics", "questions": [
+      {"id": 1, "type": "mcq", "q": "p-value < 0.05 typically means?", "options": ["Result is wrong", "Statistically significant", "Sample size too small", "None"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess statistics understanding."},
+    {"week": 11, "title": "Week 11 Assessment: NLP", "questions": [
+      {"id": 1, "type": "mcq", "q": "spaCy provides?", "options": ["Web scraping", "NLP pipelines", "DB ORM", "Plotting"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess NLP pipeline knowledge."},
+    {"week": 12, "title": "Week 12 Assessment: Computer Vision", "questions": [
+      {"id": 1, "type": "mcq", "q": "OpenCV is used for?", "options": ["NLP", "Image processing", "Web APIs", "Databases"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess CV and OpenCV knowledge."},
+    {"week": 13, "title": "Week 13 Assessment: Databases", "questions": [
+      {"id": 1, "type": "mcq", "q": "SQLAlchemy is a?", "options": ["Web framework", "ORM", "ML library", "Viz library"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess database and ETL knowledge."},
+    {"week": 14, "title": "Week 14 Assessment: Testing", "questions": [
+      {"id": 1, "type": "mcq", "q": "pytest discovers tests by?", "options": ["test_ prefix", "assert keyword", "Both", "manual config"], "answer": 0}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess testing and automation knowledge."},
+    {"week": 15, "title": "Week 15 Assessment: Capstone Design", "questions": [
+      {"id": 1, "type": "mcq", "q": "First step in a data project?", "options": ["Train model", "Define problem", "Deploy", "Collect data"], "answer": 1}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess project planning understanding."},
+    {"week": 16, "title": "Week 16 Assessment: Capstone Delivery", "questions": [
+      {"id": 1, "type": "mcq", "q": "README should include?", "options": ["Install steps", "Usage", "Both", "Neither"], "answer": 2}
+    ], "passingScore": 70, "aiAnalysisPrompt": "Assess packaging and documentation knowledge."}
+  ]
+}

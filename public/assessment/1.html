@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1 Assessment | Python Mastery</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="/">← Course</a>
+    <a href="/week/1.html">Week 1</a>
+  </nav>
+  <main class="container">
+    <h1>📝 Week 1 Assessment</h1>
+    <p>Week 1 Assessment: Python Foundations</p>
+    <form id="assessment-form">
+      
+        <div class="aq-question">
+          <p><strong>1. What is the output of print(type([1,2,3]))?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q1" value="0"> &lt;class 'list'&gt;</label><br>
+              <label><input type="radio" name="q1" value="1"> &lt;class 'tuple'&gt;</label><br>
+              <label><input type="radio" name="q1" value="2"> &lt;class 'array'&gt;</label><br>
+              <label><input type="radio" name="q1" value="3"> list</label>
+          </div>
+        </div>
+        <div class="aq-question">
+          <p><strong>2. Which keyword is used to define a function?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q2" value="0"> func</label><br>
+              <label><input type="radio" name="q2" value="1"> def</label><br>
+              <label><input type="radio" name="q2" value="2"> function</label><br>
+              <label><input type="radio" name="q2" value="3"> define</label>
+          </div>
+        </div>
+        <div class="aq-question">
+          <p><strong>3. What does range(5) produce?</strong></p>
+          <div class="aq-options">
+            
+              <label><input type="radio" name="q3" value="0"> [0,1,2,3,4,5]</label><br>
+              <label><input type="radio" name="q3" value="1"> 0 to 4</label><br>
+              <label><input type="radio" name="q3" value="2"> [1,2,3,4,5]</label><br>
+              <label><input type="radio" name="q3" value="3"> 0 to 5</label>
+          </div>
+        </div>
+      <div class="aq-question">
+        <p><strong>4. Write a function that returns the sum of a list of numbers.</strong></p>
+        <textarea name="q4" rows="4" placeholder="Write your code or answer..."></textarea>
+      </div>
+      <div class="aq-question">
+        <p><strong>5. Write a loop that prints even numbers from 0 to 10.</strong></p>
+        <textarea name="q5" rows="4" placeholder="Write your code or answer..."></textarea>
+      </div>
+      <button type="submit">Submit for Grading</button>
+    </form>
+    <section id="results" class="hidden">
+      <h2>Results</h2>
+      <p id="score"></p>
+      <p id="ai-analysis"></p>
+    </section>
+    <script>
+      document.getElementById('assessment-form').onsubmit=function(e){
+        e.preventDefault();
+        var ans=[{"id":1,"type":"mcq","answer":0},{"id":2,"type":"mcq","answer":1},{"id":3,"type":"mcq","answer":1},{"id":4,"type":"code","solution":"def sum_list(lst): return sum(lst)"},{"id":5,"type":"code","solution":"for i in range(0, 11, 2): print(i)"}];
+        var correct=0;
+        ans.forEach(function(a,i){
+          var el=document.querySelector('[name="q'+a.id+'"]');
+          if(!el)return;
+          var v=el.type==='radio'?parseInt(el.checked?document.querySelector('[name="q'+a.id+']:checked')?.value:-1):el.value.trim();
+          if(a.type==='mcq'&&v===a.answer)correct++;
+          if(a.type==='code'&&v&&v.length>0)correct++;
+        });
+        var total=ans.length;
+        var pct=Math.round(correct/total*100);
+        document.getElementById('score').textContent='Score: '+correct+'/'+total+' ('+pct+'%). Passing: '+(assessment.passingScore||70)+'%';
+        document.getElementById('ai-analysis').innerHTML='<strong>AI Analysis:</strong> '+"Analyze the learner's responses. Identify strengths and gaps. Suggest 2-3 focused review blocks."+' Paste your answers into Claude at claude.ai for personalized feedback.';
+        document.getElementById('results').classList.remove('hidden');
+      };
+    </script>
+  </main>
+</body>
+</html>

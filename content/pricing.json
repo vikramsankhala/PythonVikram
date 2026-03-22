@@ -1,0 +1,67 @@
+{
+  "title": "Pricing & Course Comparison",
+  "ourPricing": {
+    "free": {
+      "name": "Free Tier",
+      "price": "$0",
+      "features": ["Full 16-week course", "All blocks and materials", "YouTube resources", "Cheat sheets", "Code snippets", "Week assessments", "Progress tracker", "Study calendar"],
+      "limitations": ["Community support only", "No 1:1 mentoring", "No certificate"]
+    },
+    "premium": {
+      "name": "Premium (Coming Soon)",
+      "price": "TBD",
+      "features": ["Everything in Free", "AI Assistant (Claude)", "Certificate of completion", "1:1 office hours", "Career coaching", "Priority support"],
+      "limitations": []
+    }
+  },
+  "comparison": [
+    {
+      "name": "Python Mastery (This Course)",
+      "price": "Free",
+      "duration": "16 weeks",
+      "focus": "Data Science, ML, Scientific Computing",
+      "pros": ["Structured 160-block curriculum", "Hands-on weekly assessments", "Progress tracking", "Career paths", "Comprehensive cheat sheets", "320+ curated YouTube links"],
+      "cons": ["Self-paced only (free tier)", "No live instructor"]
+    },
+    {
+      "name": "Coursera - Python for Everybody",
+      "price": "$49/month or $39-79/course",
+      "duration": "~4 months",
+      "focus": "General Python, Web scraping",
+      "pros": ["University-backed", "Certificate", "Structured"],
+      "cons": ["Lighter on NumPy/Pandas/ML", "Subscription model"]
+    },
+    {
+      "name": "DataCamp - Python Programmer",
+      "price": "$25/month or $250/year",
+      "duration": "Flexible",
+      "focus": "Data Science, Python",
+      "pros": ["Interactive exercises", "Video + practice", "Career tracks"],
+      "cons": ["Paid only", "Browser-only environment"]
+    },
+    {
+      "name": "Udemy - Python/Data Science Courses",
+      "price": "$10-200 one-time",
+      "duration": "10-40 hours",
+      "focus": "Various (Python, DS, ML)",
+      "pros": ["One-time purchase", "Lifetime access", "Many options"],
+      "cons": ["Inconsistent quality", "No structured curriculum", "Often outdated"]
+    },
+    {
+      "name": "freeCodeCamp - Python/Data Analysis",
+      "price": "Free",
+      "duration": "~300 hours",
+      "focus": "Full-stack, Data Science",
+      "pros": ["Free", "Community", "Certificates"],
+      "cons": ["Longer path", "Less ML depth", "Broader scope"]
+    },
+    {
+      "name": "edX - MIT/Stanford Python",
+      "price": "Free (audit) / $150-300 (certificate)",
+      "duration": "8-12 weeks",
+      "focus": "CS fundamentals, Algorithms",
+      "pros": ["Top universities", "Rigorous"],
+      "cons": ["More CS than DS", "Certificate paid"]
+    }
+  ]
+}
