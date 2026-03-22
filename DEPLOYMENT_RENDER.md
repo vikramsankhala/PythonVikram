@@ -6,7 +6,7 @@
 2. **Create Render account** at [render.com](https://render.com)
 3. **New → Web Service** (not Static Site)
 4. Connect your GitHub repository
-5. Build Command: `npm install && npm run build`
+5. Build Command: `npm run render-build` (installs deps + builds; or use `npm install && npm run build`)
 6. Start Command: `npm start`
 
 ## AI Features (Anthropic Claude)

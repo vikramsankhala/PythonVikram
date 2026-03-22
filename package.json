@@ -4,6 +4,7 @@
   "description": "Python Mastery - 16-Week Training Program for Data Science, ML & Scientific Computing",
   "scripts": {
     "build": "node scripts/build.js",
+    "render-build": "npm install && npm run build",
     "dev": "node server.js",
     "start": "node server.js"
   },
