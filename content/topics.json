@@ -245,6 +245,508 @@
         {"id": "x7f9x30W_dI", "title": "Docker GitHub Actions", "channel": "Rishab in Cloud"},
         {"id": "pKpZ7GOc5GY", "title": "Python AI Best Practices", "channel": "Training Scientists"}
       ]
+    },
+    {
+      "id": "rl-state-of-art-2026",
+      "title": "State of the Art Reinforcement Learning and Research",
+      "icon": "🎮",
+      "description": "Cutting-edge reinforcement learning: DeepMind DiscoRL, DQN, PPO, multi-agent systems, and RL research frontiers 2025–2026.",
+      "concepts": [
+        "Deep Q-Networks (DQN) and variants (Double DQN, Rainbow)",
+        "Policy gradient methods: PPO, A3C, SAC",
+        "Model-based RL and world models",
+        "Multi-agent RL and game-theoretic approaches",
+        "Offline RL and imitation learning",
+        "RLHF and alignment research",
+        "DiscoRL: auto-discovering state-of-the-art algorithms"
+      ],
+      "resources": [
+        {"title": "DeepMind DiscoRL", "url": "https://google-deepmind.github.io/disco_rl/"},
+        {"title": "OpenAI Spinning Up", "url": "https://spinningup.openai.com/"},
+        {"title": "Stable-Baselines3", "url": "https://stable-baselines3.readthedocs.io/"}
+      ],
+      "youtube": [
+        {"id": "21EYKqUsPfg", "title": "Richard Sutton on RL", "channel": "Dwarkesh Patel"},
+        {"id": "hDKCxebp88A", "title": "ML and RL Foundations", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "RL Research Papers", "channel": "Two Minute Papers"},
+        {"id": "ngLyX54e1LU", "title": "RL from Scratch", "channel": "Patrick Loeber"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks RL", "channel": "Andrej Karpathy"},
+        {"id": "hDKCxebp88A", "title": "DeepMind RL Course", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "DQN Reinforcement Learning Research", "channel": "Two Minute Papers"},
+        {"id": "_ZLXKt4L-AA", "title": "PPO Explained", "channel": "Two Minute Papers"},
+        {"id": "r-uOLxNrNk8", "title": "RL with Data Science", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "Reinforcement Learning Crash Course", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "AlphaGo Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "ngLyX54e1LU", "title": "Multi-Agent RL", "channel": "Patrick Loeber"},
+        {"id": "EgpLj86ZHFQ", "title": "RL in Python", "channel": "Tech With Tim"},
+        {"id": "hDKCxebp88A", "title": "RL Tutorial", "channel": "freeCodeCamp"},
+        {"id": "dIUTsFT2MeQ", "title": "RLHF and NLP", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "RL Algorithms", "channel": "Two Minute Papers"},
+        {"id": "_ZLXKt4L-AA", "title": "Policy Gradients", "channel": "Two Minute Papers"},
+        {"id": "r-uOLxNrNk8", "title": "RL Research 2025", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science RL", "channel": "freeCodeCamp"},
+        {"id": "0sOvCWFmrtA", "title": "AI and ML", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "id": "slm-local-deployment-2026",
+      "title": "State of the Art Proprietary SLM Development and Local Deployment",
+      "icon": "🖥️",
+      "description": "Run and fine-tune small language models locally: Ollama, LM Studio, vLLM, GGUF, and proprietary SLM workflows for 2025–2026.",
+      "concepts": [
+        "Ollama, LM Studio, and Open WebUI",
+        "GGUF quantization and llama.cpp",
+        "vLLM and TensorRT-LLM for inference",
+        "Fine-tuning: LoRA, QLoRA, full fine-tuning",
+        "Proprietary SLM training pipelines",
+        "RAG and embedding models locally",
+        "Privacy-preserving and air-gapped deployment"
+      ],
+      "resources": [
+        {"title": "Ollama", "url": "https://ollama.ai/"},
+        {"title": "LM Studio", "url": "https://lmstudio.ai/"},
+        {"title": "vLLM", "url": "https://docs.vllm.ai/"}
+      ],
+      "youtube": [
+        {"id": "HfyDHm3wqjo", "title": "Ollama LM Studio Private AI Server", "channel": "VirtualizationHowto"},
+        {"id": "KGzF60KERZ4", "title": "Run Llama 3 Locally Ollama LM Studio", "channel": "Mervin Praison"},
+        {"id": "iNdyW7bnCzU", "title": "Build AI Server with Ollama 2025", "channel": "YouTube"},
+        {"id": "8AWEPx5cHWQ", "title": "Local LLM Setup", "channel": "Tech With Tim"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP and LLMs", "channel": "freeCodeCamp"},
+        {"id": "pKpZ7GOc5GY", "title": "Python AI Tools", "channel": "Training Scientists"},
+        {"id": "hDKCxebp88A", "title": "ML Pipelines", "channel": "freeCodeCamp"},
+        {"id": "faezjTHA5SU", "title": "AI Coding", "channel": "Riley Brown"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI AI Integration", "channel": "freeCodeCamp"},
+        {"id": "eWRfhZUzrAc", "title": "Python for AI", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science AI", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "LLM Research", "channel": "Two Minute Papers"},
+        {"id": "dIUTsFT2MeQ", "title": "LLM Fine-tuning", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Python Backend", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Docker AI Deployment", "channel": "Rishab in Cloud"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision Models", "channel": "freeCodeCamp"},
+        {"id": "1GppEPl9_QQ", "title": "ML NumPy", "channel": "Imarticus"},
+        {"id": "DcI_AZqfZVc", "title": "Web Scraping for AI", "channel": "Keith Galli"},
+        {"id": "RIVcqT2OGPA", "title": "Async Python for ML", "channel": "ArjanCodes"},
+        {"id": "NoPY4aUJxwA", "title": "Scientific Python", "channel": "SciPy"},
+        {"id": "S_shhw4VV68", "title": "Python 3.14", "channel": "ArjanCodes"}
+      ]
+    },
+    {
+      "id": "robotics-eos2-ai-2026",
+      "title": "State of the Art Robotics EOS2 and AI",
+      "icon": "🤖",
+      "description": "Robotics operating systems, embodied AI, EOS2, simulation, and humanoid robots—frontiers of robotics research 2025–2026.",
+      "concepts": [
+        "ROS 2 and robotics middleware",
+        "EOS2 and next-gen robot OS",
+        "Embodied AI and foundation models for robots",
+        "Sim-to-real transfer",
+        "Humanoid robots and locomotion",
+        "Manipulation and grasping",
+        "Multi-modal sensor fusion"
+      ],
+      "resources": [
+        {"title": "ROS 2", "url": "https://docs.ros.org/en/rolling/"},
+        {"title": "Isaac Sim", "url": "https://developer.nvidia.com/isaac-sim"}
+      ],
+      "youtube": [
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision for Robots", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML for Robotics", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Nets Vision", "channel": "Andrej Karpathy"},
+        {"id": "_ZLXKt4L-AA", "title": "Robotics Research", "channel": "Two Minute Papers"},
+        {"id": "hDKCxebp88A", "title": "RL for Robotics", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Gymnasium Robotics", "channel": "freeCodeCamp"},
+        {"id": "JgvyzIkgxF0", "title": "AlphaGo and AI", "channel": "DeepMind"},
+        {"id": "ngLyX54e1LU", "title": "Multi-Agent Systems", "channel": "Patrick Loeber"},
+        {"id": "j3kGJk-JYu0", "title": "Swarm AI", "channel": "Discover AI"},
+        {"id": "DcdzMJMCwFU", "title": "Autonomous Drone Swarming", "channel": "Quantum Systems"},
+        {"id": "ngLyX54e1LU", "title": "RL from Scratch", "channel": "Patrick Loeber"},
+        {"id": "21EYKqUsPfg", "title": "RL Foundations", "channel": "Dwarkesh Patel"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "0sOvCWFmrtA", "title": "API for Robotics", "channel": "freeCodeCamp"},
+        {"id": "EgpLj86ZHFQ", "title": "Python Automation", "channel": "Tech With Tim"},
+        {"id": "x7f9x30W_dI", "title": "Docker Robotics", "channel": "Rishab in Cloud"},
+        {"id": "gYpoJMlgyXA", "title": "Embodied AI", "channel": "Andrej Karpathy"},
+        {"id": "_ZLXKt4L-AA", "title": "Simulation Research", "channel": "Two Minute Papers"},
+        {"id": "Gv9_4yMHFhI", "title": "ML Concepts", "channel": "StatQuest"},
+        {"id": "hDKCxebp88A", "title": "Deep RL", "channel": "freeCodeCamp"}
+      ]
+    },
+    {
+      "id": "mcp-a2a-mqtt-protocols-2026",
+      "title": "MCP, A2A, ACP, MQTT and Other Protocols",
+      "icon": "🔗",
+      "description": "Model Context Protocol (MCP), Agent-to-Agent (A2A), ACP, MQTT, and modern AI/IoT protocols for 2025–2026.",
+      "concepts": [
+        "Model Context Protocol (MCP) for LLM tooling",
+        "Agent-to-Agent (A2A) and multi-agent protocols",
+        "MQTT 5.0 for IoT and edge",
+        "REST, gRPC, WebSocket for AI services",
+        "Protocol design for AI agents",
+        "Message brokers and event-driven architectures"
+      ],
+      "resources": [
+        {"title": "Model Context Protocol", "url": "https://modelcontextprotocol.io/"},
+        {"title": "Paho MQTT Python", "url": "https://pypi.org/project/paho-mqtt/"},
+        {"title": "Anthropic MCP", "url": "https://www.anthropic.com/research/model-context-protocol"}
+      ],
+      "youtube": [
+        {"id": "aZLr962R6Ag", "title": "Building with MCP and Claude API", "channel": "Anthropic"},
+        {"id": "r4OXcKv4dMU", "title": "Paho MQTT Client in Python", "channel": "Cedalo"},
+        {"id": "BFyPzC6No8k", "title": "Mosquitto Broker Raspberry Pi MQTT", "channel": "BINARYUPDATES"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI REST API", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask API", "channel": "Corey Schafer"},
+        {"id": "RIVcqT2OGPA", "title": "Asyncio Event Loop", "channel": "ArjanCodes"},
+        {"id": "pd-0G0MigUA", "title": "Database Protocols", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Docker Networking", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "CI/CD Infrastructure", "channel": "Dmitriy Zhiganov"},
+        {"id": "8AWEPx5cHWQ", "title": "Cursor MCP", "channel": "Tech With Tim"},
+        {"id": "faezjTHA5SU", "title": "AI Pair Programming", "channel": "Riley Brown"},
+        {"id": "eWRfhZUzrAc", "title": "Python Fundamentals", "channel": "freeCodeCamp"},
+        {"id": "JLAfLWE76fE", "title": "Internet Protocols", "channel": "ACM"},
+        {"id": "78w61I62N_0", "title": "Web and Networks", "channel": "Decoder"},
+        {"id": "r-uOLxNrNk8", "title": "Data Pipelines", "channel": "freeCodeCamp"},
+        {"id": "K8L6KVGG-7o", "title": "Text Processing", "channel": "Corey Schafer"},
+        {"id": "0oBLMwHdZ2Y", "title": "Type Hints APIs", "channel": "ArjanCodes"},
+        {"id": "DcI_AZqfZVc", "title": "Web Scraping APIs", "channel": "Keith Galli"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing APIs", "channel": "Tech With Tim"},
+        {"id": "S_shhw4VV68", "title": "Python Modern", "channel": "ArjanCodes"}
+      ]
+    },
+    {
+      "id": "hybrid-cloud-edge-2026",
+      "title": "Hybrid Cloud and Edge Computing",
+      "icon": "☁️",
+      "description": "Hybrid cloud, edge computing, Kubernetes at the edge, AWS Outposts, Azure Arc, and distributed AI deployment 2025–2026.",
+      "concepts": [
+        "AWS Outposts, Local Zones, Wavelength",
+        "Azure Arc and hybrid Kubernetes",
+        "Edge AI and model deployment at the edge",
+        "Kubernetes (EKS, AKS) for hybrid/edge",
+        "Data residency and sovereignty",
+        "Low-latency inference pipelines",
+        "Disconnected and air-gapped edge"
+      ],
+      "resources": [
+        {"title": "AWS Hybrid Edge", "url": "https://aws.amazon.com/hybrid/"},
+        {"title": "Azure Arc", "url": "https://azure.microsoft.com/products/azure-arc"},
+        {"title": "EKS Anywhere", "url": "https://anywhere.eks.amazonaws.com/"}
+      ],
+      "youtube": [
+        {"id": "x7f9x30W_dI", "title": "Docker GitHub Actions", "channel": "Rishab in Cloud"},
+        {"id": "OziAeEWY514", "title": "CI/CD Docker AWS", "channel": "Dmitriy Zhiganov"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI Deployment", "channel": "freeCodeCamp"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask Deployment", "channel": "Corey Schafer"},
+        {"id": "r-uOLxNrNk8", "title": "Data Engineering", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Database Cloud", "channel": "Corey Schafer"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing CI", "channel": "Tech With Tim"},
+        {"id": "RIVcqT2OGPA", "title": "Async Python", "channel": "ArjanCodes"},
+        {"id": "JLAfLWE76fE", "title": "Networking", "channel": "ACM"},
+        {"id": "U719vQz-WFs", "title": "Distributed Systems", "channel": "Ryan Peterman"},
+        {"id": "OziAeEWY514", "title": "Infrastructure", "channel": "Dmitriy Zhiganov"},
+        {"id": "x7f9x30W_dI", "title": "Container Automation", "channel": "Rishab in Cloud"},
+        {"id": "0sOvCWFmrtA", "title": "Python Deployment", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML Pipelines", "channel": "freeCodeCamp"},
+        {"id": "HfyDHm3wqjo", "title": "Local AI Server", "channel": "VirtualizationHowto"},
+        {"id": "iNdyW7bnCzU", "title": "Ollama AI Server", "channel": "YouTube"},
+        {"id": "r4OXcKv4dMU", "title": "MQTT IoT", "channel": "Cedalo"},
+        {"id": "eWRfhZUzrAc", "title": "Python Cloud", "channel": "freeCodeCamp"},
+        {"id": "NoPY4aUJxwA", "title": "Scientific Computing", "channel": "SciPy"},
+        {"id": "S_shhw4VV68", "title": "Python Modern", "channel": "ArjanCodes"}
+      ]
+    },
+    {
+      "id": "swarm-robotics-2026",
+      "title": "Swarm Robotics",
+      "icon": "🐝",
+      "description": "Swarm intelligence, multi-agent coordination, emergent behavior, and swarm robotics research 2025–2026.",
+      "concepts": [
+        "Swarm intelligence and collective behavior",
+        "Decentralized coordination and consensus",
+        "POMDP and multi-agent RL",
+        "Boid-like and pheromone-based algorithms",
+        "Hardware swarm platforms",
+        "Swarm simulation (Gazebo, Unity)",
+        "Applications: search, mapping, inspection"
+      ],
+      "resources": [
+        {"title": "Swarm Robotics Survey", "url": "https://arxiv.org/abs/2310.07220"},
+        {"title": "ROS 2 Swarm", "url": "https://docs.ros.org/"}
+      ],
+      "youtube": [
+        {"id": "j3kGJk-JYu0", "title": "AI Swarm Intelligence Multi-Agent", "channel": "Discover AI"},
+        {"id": "DcdzMJMCwFU", "title": "Autonomous Drone Swarming AI", "channel": "Quantum Systems"},
+        {"id": "ngLyX54e1LU", "title": "Multi-Agent RL", "channel": "Patrick Loeber"},
+        {"id": "hDKCxebp88A", "title": "RL Crash Course", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "Swarm Research", "channel": "Two Minute Papers"},
+        {"id": "r-uOLxNrNk8", "title": "Gymnasium Multi-Agent", "channel": "freeCodeCamp"},
+        {"id": "21EYKqUsPfg", "title": "RL Foundations", "channel": "Dwarkesh Patel"},
+        {"id": "ngLyX54e1LU", "title": "RL from Scratch", "channel": "Patrick Loeber"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "_ZLXKt4L-AA", "title": "Emergent Behavior", "channel": "Two Minute Papers"},
+        {"id": "gYpoJMlgyXA", "title": "Multi-Agent AI", "channel": "Andrej Karpathy"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI", "channel": "freeCodeCamp"},
+        {"id": "r4OXcKv4dMU", "title": "MQTT IoT Swarm", "channel": "Cedalo"},
+        {"id": "EgpLj86ZHFQ", "title": "Python Automation", "channel": "Tech With Tim"},
+        {"id": "RIVcqT2OGPA", "title": "Async Concurrency", "channel": "ArjanCodes"},
+        {"id": "hDKCxebp88A", "title": "Deep RL", "channel": "freeCodeCamp"},
+        {"id": "JgvyzIkgxF0", "title": "AlphaGo Multi-Agent", "channel": "DeepMind"}
+      ]
+    },
+    {
+      "id": "drone-missile-swarms-2026",
+      "title": "Drone and Missile Swarms",
+      "icon": "🛸",
+      "description": "Autonomous drone swarms, UAV coordination, missile swarm systems, and defense/civilian applications 2025–2026.",
+      "concepts": [
+        "Autonomous swarm coordination",
+        "GPS-denied navigation (SLAM, visual odometry)",
+        "Object detection and tracking",
+        "Agentic LLM control for drones",
+        "Search and rescue, inspection, mapping",
+        "Defense and counter-swarm systems",
+        "Real-time communication protocols"
+      ],
+      "resources": [
+        {"title": "GoodAI Prometheus", "url": "https://blog.marekrosa.org/"},
+        {"title": "Quantum Systems KITU", "url": "https://www.youtube.com/@QuantumSystems"}
+      ],
+      "youtube": [
+        {"id": "DcdzMJMCwFU", "title": "KITU 2 Autonomous Drone Swarming AI", "channel": "Quantum Systems"},
+        {"id": "j3kGJk-JYu0", "title": "AI Swarm Intelligence", "channel": "Discover AI"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision for Drones", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML Object Detection", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks Vision", "channel": "Andrej Karpathy"},
+        {"id": "_ZLXKt4L-AA", "title": "Drone AI Research", "channel": "Two Minute Papers"},
+        {"id": "ngLyX54e1LU", "title": "Multi-Agent Systems", "channel": "Patrick Loeber"},
+        {"id": "hDKCxebp88A", "title": "RL for Autonomy", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Gymnasium RL", "channel": "freeCodeCamp"},
+        {"id": "21EYKqUsPfg", "title": "RL Foundations", "channel": "Dwarkesh Patel"},
+        {"id": "r4OXcKv4dMU", "title": "MQTT Drones", "channel": "Cedalo"},
+        {"id": "0sOvCWFmrtA", "title": "API for IoT", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Pipelines", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "Docker IoT", "channel": "Rishab in Cloud"},
+        {"id": "EgpLj86ZHFQ", "title": "Python Automation", "channel": "Tech With Tim"},
+        {"id": "RIVcqT2OGPA", "title": "Async Real-time", "channel": "ArjanCodes"},
+        {"id": "gYpoJMlgyXA", "title": "Autonomous AI", "channel": "Andrej Karpathy"},
+        {"id": "JgvyzIkgxF0", "title": "AI Systems", "channel": "DeepMind"},
+        {"id": "_ZLXKt4L-AA", "title": "Swarm Simulation", "channel": "Two Minute Papers"},
+        {"id": "ngLyX54e1LU", "title": "RL Agents", "channel": "Patrick Loeber"}
+      ]
+    },
+    {
+      "id": "wearables-health-2026",
+      "title": "State of the Art Wearables and Health Monitoring",
+      "icon": "⌚",
+      "description": "Smartwatch and wearable data analysis: Apple Health, Fitbit, sensor streams, activity recognition, sleep quality, and real-time health dashboards 2025–2026.",
+      "concepts": [
+        "Apple Health / Fitbit / Garmin data export and parsing",
+        "Heart rate variability (HRV) and stress biomarkers",
+        "Sleep stage classification with ML (XGBoost, Random Forest)",
+        "On-device activity recognition (WatchHAR, sensor fusion)",
+        "Training load and recovery metrics",
+        "Streaming dashboards with Streamlit/Dash",
+        "Privacy-preserving on-device processing"
+      ],
+      "resources": [
+        {"title": "WatchDataLab", "url": "https://watchdatalab.com/"},
+        {"title": "Apple Health Export", "url": "https://support.apple.com/guide/iphone/export-health-data-iph8d7115d4/ios"},
+        {"title": "WatchHAR Paper", "url": "https://arxiv.org/abs/2509.04736"}
+      ],
+      "youtube": [
+        {"id": "r-uOLxNrNk8", "title": "Data Analysis with Pandas", "channel": "freeCodeCamp"},
+        {"id": "7yAw1nPareM", "title": "Streamlit Dashboards", "channel": "Programming Is Fun"},
+        {"id": "UO98lJQ3QGI", "title": "Matplotlib Visualization", "channel": "Corey Schafer"},
+        {"id": "hDKCxebp88A", "title": "ML for Health Data", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "Statistical Analysis", "channel": "StatQuest"},
+        {"id": "oXlwWbU8l2o", "title": "Signal Processing", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Time Series Analysis", "channel": "freeCodeCamp"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI for APIs", "channel": "freeCodeCamp"},
+        {"id": "vmEHCJofslg", "title": "Pandas DataFrames", "channel": "Keith Galli"},
+        {"id": "x7f9x30W_dI", "title": "Docker Deployment", "channel": "Rishab in Cloud"},
+        {"id": "r4OXcKv4dMU", "title": "MQTT IoT Sensors", "channel": "Cedalo"},
+        {"id": "pd-0G0MigUA", "title": "Database for Health", "channel": "Corey Schafer"},
+        {"id": "1GppEPl9_QQ", "title": "Data Science Pipeline", "channel": "Imarticus"},
+        {"id": "EgpLj86ZHFQ", "title": "Python Projects", "channel": "Tech With Tim"},
+        {"id": "DcI_AZqfZVc", "title": "Data Cleaning", "channel": "Keith Galli"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy SciPy", "channel": "SciPy"},
+        {"id": "_ZLXKt4L-AA", "title": "ML Research", "channel": "Two Minute Papers"},
+        {"id": "ngLyX54e1LU", "title": "ML from Scratch", "channel": "Patrick Loeber"},
+        {"id": "eWRfhZUzrAc", "title": "Python Fundamentals", "channel": "freeCodeCamp"},
+        {"id": "RIVcqT2OGPA", "title": "Async Python", "channel": "ArjanCodes"}
+      ]
+    },
+    {
+      "id": "digital-health-precision-medicine-2026",
+      "title": "Digital Health and Precision Medicine",
+      "icon": "🏥",
+      "description": "EHR analysis, clinical decision support, genomics-informed care, telemedicine platforms, and healthcare AI applications 2025–2026.",
+      "concepts": [
+        "Electronic health records (EHR) and FHIR",
+        "Clinical decision support systems (CDSS)",
+        "Risk stratification and outcome prediction",
+        "Genomics and pharmacogenomics in practice",
+        "Telemedicine and remote monitoring",
+        "Regulatory: HIPAA, FDA AI/ML guidance",
+        "Explainability and fairness in health AI"
+      ],
+      "resources": [
+        {"title": "FHIR Standard", "url": "https://www.hl7.org/fhir/"},
+        {"title": "FDA AI/ML", "url": "https://www.fda.gov/medical-devices/software-medical-device-samd"},
+        {"title": "scikit-learn", "url": "https://scikit-learn.org/"}
+      ],
+      "youtube": [
+        {"id": "hDKCxebp88A", "title": "ML for Healthcare", "channel": "freeCodeCamp"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "M3ZWfamWrBM", "title": "PyTorch MONAI Healthcare Imaging", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "Statistics for Health", "channel": "StatQuest"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP for Medical Text", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Databases", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI", "channel": "freeCodeCamp"},
+        {"id": "7yAw1nPareM", "title": "Dashboards", "channel": "Programming Is Fun"},
+        {"id": "_L39rN6gz7Y", "title": "Decision Trees", "channel": "StatQuest"},
+        {"id": "ngLyX54e1LU", "title": "ML Fundamentals", "channel": "Patrick Loeber"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "vmEHCJofslg", "title": "Pandas", "channel": "Keith Galli"},
+        {"id": "NoPY4aUJxwA", "title": "Scientific Python", "channel": "SciPy"},
+        {"id": "Z1RJmh_OqeA", "title": "Web Development", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Deployment", "channel": "Rishab in Cloud"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "_ZLXKt4L-AA", "title": "AI Research", "channel": "Two Minute Papers"},
+        {"id": "1GppEPl9_QQ", "title": "Data Science", "channel": "Imarticus"},
+        {"id": "EgpLj86ZHFQ", "title": "Python Testing", "channel": "Tech With Tim"}
+      ]
+    },
+    {
+      "id": "drug-discovery-pharma-rd-2026",
+      "title": "Computational Drug Discovery and Pharma R&D",
+      "icon": "💊",
+      "description": "AI-driven drug discovery: DeepChem, RDKit, molecular ML, virtual screening, clinical trials analytics, and regulatory workflows 2025–2026.",
+      "concepts": [
+        "Cheminformatics: RDKit, SMILES, molecular fingerprints",
+        "DeepChem and molecular ML pipelines",
+        "Graph neural networks for molecules",
+        "Binding affinity prediction and virtual screening",
+        "Lead optimization and ADMET",
+        "Clinical trials: design, EDC, synthetic control arms",
+        "Regulatory submissions and real-world evidence"
+      ],
+      "resources": [
+        {"title": "DeepChem", "url": "https://deepchem.io/"},
+        {"title": "RDKit", "url": "https://www.rdkit.org/"},
+        {"title": "PyTorch Geometric", "url": "https://pytorch-geometric.readthedocs.io/"}
+      ],
+      "youtube": [
+        {"id": "fAXCfk9VbsY", "title": "GNN for Molecular Classification", "channel": "Code to Discovery"},
+        {"id": "hDKCxebp88A", "title": "ML Course", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "_ZLXKt4L-AA", "title": "Drug Discovery AI", "channel": "Two Minute Papers"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI", "channel": "freeCodeCamp"},
+        {"id": "ngLyX54e1LU", "title": "ML from Scratch", "channel": "Patrick Loeber"},
+        {"id": "Gv9_4yMHFhI", "title": "Statistical Learning", "channel": "StatQuest"},
+        {"id": "NoPY4aUJxwA", "title": "Scientific Python", "channel": "SciPy"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Databases", "channel": "Corey Schafer"},
+        {"id": "vmEHCJofslg", "title": "Pandas", "channel": "Keith Galli"},
+        {"id": "7yAw1nPareM", "title": "Streamlit", "channel": "Programming Is Fun"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "x7f9x30W_dI", "title": "Docker", "channel": "Rishab in Cloud"},
+        {"id": "Z1RJmh_OqeA", "title": "Backend", "channel": "Corey Schafer"},
+        {"id": "EgpLj86ZHFQ", "title": "Testing", "channel": "Tech With Tim"},
+        {"id": "RIVcqT2OGPA", "title": "Async Python", "channel": "ArjanCodes"},
+        {"id": "1GppEPl9_QQ", "title": "Data Science", "channel": "Imarticus"}
+      ]
+    },
+    {
+      "id": "bioinformatics-genomics-2026",
+      "title": "Bioinformatics and Genomics",
+      "icon": "🧬",
+      "description": "RNA-seq, variant calling, gene expression, sequence analysis, and computational biology with Python 2025–2026.",
+      "concepts": [
+        "RNA-seq pipelines: FASTQ → BAM → counts",
+        "Differential gene expression (DESeq2, edgeR concepts)",
+        "Single-cell RNA-seq analysis",
+        "Variant calling and annotation",
+        "Sequence alignment and motif finding",
+        "Genome-wide association studies (GWAS)",
+        "Bioconductor-Python ecosystem"
+      ],
+      "resources": [
+        {"title": "EMBL-EBI Training", "url": "https://www.ebi.ac.uk/training/"},
+        {"title": "Biopython", "url": "https://biopython.org/"},
+        {"title": "Scanpy", "url": "https://scanpy.readthedocs.io/"}
+      ],
+      "youtube": [
+        {"id": "hWCDwLByxvs", "title": "RNA-Seq FASTQ to BAM Pipeline", "channel": "Danny Arends"},
+        {"id": "r-uOLxNrNk8", "title": "Data Analysis", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML for Biology", "channel": "freeCodeCamp"},
+        {"id": "NoPY4aUJxwA", "title": "NumPy SciPy", "channel": "SciPy"},
+        {"id": "Gv9_4yMHFhI", "title": "Statistics", "channel": "StatQuest"},
+        {"id": "UO98lJQ3QGI", "title": "Matplotlib", "channel": "Corey Schafer"},
+        {"id": "vmEHCJofslg", "title": "Pandas", "channel": "Keith Galli"},
+        {"id": "fAXCfk9VbsY", "title": "Graph Neural Networks", "channel": "Code to Discovery"},
+        {"id": "oXlwWbU8l2o", "title": "Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "ngLyX54e1LU", "title": "ML", "channel": "Patrick Loeber"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Databases", "channel": "Corey Schafer"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI", "channel": "freeCodeCamp"},
+        {"id": "7yAw1nPareM", "title": "Visualization", "channel": "Programming Is Fun"},
+        {"id": "DcI_AZqfZVc", "title": "Data Processing", "channel": "Keith Galli"},
+        {"id": "_ZLXKt4L-AA", "title": "Biology AI", "channel": "Two Minute Papers"},
+        {"id": "Z1RJmh_OqeA", "title": "Python Basics", "channel": "Corey Schafer"},
+        {"id": "1GppEPl9_QQ", "title": "Data Science", "channel": "Imarticus"},
+        {"id": "EgpLj86ZHFQ", "title": "Python", "channel": "Tech With Tim"},
+        {"id": "QUT1VHiLmmI", "title": "NumPy", "channel": "freeCodeCamp"},
+        {"id": "b7Ze4Xe49Ic", "title": "SymPy", "channel": "SPAC"}
+      ]
+    },
+    {
+      "id": "medical-imaging-ai-2026",
+      "title": "Medical Imaging AI and Diagnostics",
+      "icon": "🩺",
+      "description": "Radiology AI, pathology imaging, DICOM/NIfTI processing, segmentation, and diagnostic models with PyTorch and MONAI 2025–2026.",
+      "concepts": [
+        "DICOM, NIfTI-1, and medical image formats",
+        "U-Net and 3D U-Net for segmentation",
+        "MONAI and PyTorch for healthcare imaging",
+        "Chest X-ray, MRI, CT analysis",
+        "Tumor detection and COVID-19 screening",
+        "Explainability and clinical validation",
+        "Regulatory pathways for imaging AI"
+      ],
+      "resources": [
+        {"title": "MONAI", "url": "https://monai.io/"},
+        {"title": "pydicom", "url": "https://pydicom.github.io/"},
+        {"title": "SimpleITK", "url": "https://simpleitk.org/"}
+      ],
+      "youtube": [
+        {"id": "M3ZWfamWrBM", "title": "PyTorch MONAI Healthcare Imaging", "channel": "freeCodeCamp"},
+        {"id": "oXlwWbU8l2o", "title": "OpenCV Computer Vision", "channel": "freeCodeCamp"},
+        {"id": "hDKCxebp88A", "title": "ML Course", "channel": "freeCodeCamp"},
+        {"id": "gYpoJMlgyXA", "title": "Neural Networks", "channel": "Andrej Karpathy"},
+        {"id": "_ZLXKt4L-AA", "title": "Medical AI Research", "channel": "Two Minute Papers"},
+        {"id": "r-uOLxNrNk8", "title": "Data Science", "channel": "freeCodeCamp"},
+        {"id": "UO98lJQ3QGI", "title": "Matplotlib", "channel": "Corey Schafer"},
+        {"id": "7yAw1nPareM", "title": "Dashboards", "channel": "Programming Is Fun"},
+        {"id": "ngLyX54e1LU", "title": "ML", "channel": "Patrick Loeber"},
+        {"id": "0sOvCWFmrtA", "title": "FastAPI", "channel": "freeCodeCamp"},
+        {"id": "vmEHCJofslg", "title": "Pandas", "channel": "Keith Galli"},
+        {"id": "NoPY4aUJxwA", "title": "SciPy", "channel": "SciPy"},
+        {"id": "eWRfhZUzrAc", "title": "Python", "channel": "freeCodeCamp"},
+        {"id": "pd-0G0MigUA", "title": "Databases", "channel": "Corey Schafer"},
+        {"id": "x7f9x30W_dI", "title": "Docker", "channel": "Rishab in Cloud"},
+        {"id": "dIUTsFT2MeQ", "title": "NLP", "channel": "freeCodeCamp"},
+        {"id": "Gv9_4yMHFhI", "title": "Statistics", "channel": "StatQuest"},
+        {"id": "1GppEPl9_QQ", "title": "Data Science", "channel": "Imarticus"},
+        {"id": "EgpLj86ZHFQ", "title": "Python", "channel": "Tech With Tim"},
+        {"id": "Z1RJmh_OqeA", "title": "Flask", "channel": "Corey Schafer"}
+      ]
     }
   ]
 }

@@ -524,7 +524,7 @@ function renderIndex() {
 
     <section id="extended-topics">
       <h2>Extended Topics</h2>
-      <p>Dive deeper into visualization, vibe coding, SaaS, DevOps, and <strong>State of the Art 2026</strong> videos.</p>
+      <p>Dive deeper into visualization, vibe coding, SaaS, DevOps, <strong>State of the Art 2026</strong>, RL, SLM, robotics, MCP/MQTT, edge computing, swarm tech, <strong>wearables</strong>, <strong>digital health</strong>, <strong>drug discovery</strong>, <strong>bioinformatics</strong>, and <strong>medical imaging AI</strong>—applicable across all domains including health and pharma R&amp;D.</p>
       <div class="topic-grid">
         ${(topicsData.topics || []).map(t => `
           <a href="/topics/${t.id}.html" class="topic-card">
